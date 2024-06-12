@@ -7,4 +7,27 @@
     under {{ external_link("Paradox Interactive", "https://www.paradoxinteractive.com/games/world-of-darkness/about") }}
     license.
 </p>
+
+<div id="CardSearch" class="display">
+    <label for="cardSearch">Name of Card:</label>
+    <input type="text" id = "cardSearch" name="cardSearch"><br>
+    <button id="cardSearchButton">Find Card</button>
+</div>
+<div id="SearchDisplay" class="dont-display">
+    <ul id="SearchResults"></ul>
+</div>
+<div id="CardDisplay" class="dont-display">
+    <p id="DisplayCard"></p>
+    <label for="rulingSubmission">Ruling to Submit:</label>
+    <input type="text" name="rulingSubmission" id="rulingSubmission">
+    <label for="linkSubmission">Link to Official Ruling:</label>
+    <input type="text" name="linkSubmission"   id="linkSubmission">
+</div>
+{#
+Ideas: 
+search bar for looking at cards using API https://api.krcg.org/complete/{user input from search bar}
+from there, user can click on one of the names generated from that list for full description of the rulings related to the specific card
+this page will also have a text box allowing the user to submit a ruling via the "https://api.krcg.org/submit-ruling/{card from list}
+and another one for the link to official ruling from a rules director. 
+#}
 {% endblock %}
