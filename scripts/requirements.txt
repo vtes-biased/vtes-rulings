@@ -1,0 +1,4 @@
+krcg
+pyyaml
+yamllint
+unidecode

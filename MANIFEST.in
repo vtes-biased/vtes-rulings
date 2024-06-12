@@ -1,0 +1,13 @@
+include LICENSE README.md CHANGELOG.md
+
+graft rulings
+graft src
+prune scripts
+
+exclude Makefile
+exclude .yamllint.yaml
+
+global-include *.yaml
+global-exclude */__pycache__/*
+global-exclude *.egg-info/*
+global-exclude *.DS_Store
