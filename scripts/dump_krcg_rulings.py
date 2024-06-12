@@ -16,8 +16,8 @@ def main():
     multiple_references = {}
     all_rulings = {}
     for card in vtes.VTES:
-        for ruling in card.rulings["text"]:
-            ruling, references = _extract_references(ruling)
+        for original_ruling in card.rulings["text"]:
+            ruling, references = _extract_references(original_ruling)
             ruling, symbols = _extract_symbols(ruling)
             for r in references:
                 all_references.setdefault(r, {})
@@ -36,7 +36,7 @@ def main():
                     {"ruling": ruling, "symbols": list(symbols)}
                 )
             all_rulings.setdefault(f"{card.id}|{card._name}", [])
-            all_rulings[f"{card.id}|{card._name}"].append(ruling)
+            all_rulings[f"{card.id}|{card._name}"].append(original_ruling)
     os.makedirs("output", exist_ok=True)
     with open("output/rulings.yaml", "w") as outf:
         yaml.dump(
