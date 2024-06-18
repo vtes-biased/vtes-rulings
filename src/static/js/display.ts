@@ -109,16 +109,21 @@ const processSearchData = (data: string[]) =>{
 }
 
 const processCardData = (data: CardInfo) => {
-    cardDisplay.innerHTML = "Card name: " + data.name + "\nCard ID: " + data.id + "\nCard Types:";
+    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.name + "</span>\nCard ID: " + data.id + "\nCard Types: ";
     for(let i = 0; i < data.types.length; i++){
-        cardDisplay.innerHTML = cardDisplay.innerHTML + data.types[i] + ", ";
+        cardDisplay.innerHTML = cardDisplay.innerHTML + typeIcon(data.types[i]) + ", ";
     }
     cardDisplay.innerHTML = cardDisplay.innerHTML + "\nCard Disciplines: ";
     for(let i = 0; i < data.disciplines.length; i++){
-        cardDisplay.innerHTML = cardDisplay.innerHTML + data.disciplines[i] + ", ";
+        cardDisplay.innerHTML = cardDisplay.innerHTML + discIcon(data.disciplines[i]) + ", ";
+    }
+    cardDisplay.innerHTML = cardDisplay.innerHTML + "\nCard Clans: ";
+    for(let i = 0; i < data.disciplines.length; i++){
+        cardDisplay.innerHTML = cardDisplay.innerHTML + clanIcon(data.clans[i]) + ", ";
     }
     cardDisplay.innerHTML = 
     cardDisplay.innerHTML + 
+    "\nCapacity: " + data.capacity +
     "\nCard Text: " + data.card_text + 
     "\nFlavor Text: " + data.flavor_text + 
     "\nSets: ";
@@ -130,9 +135,215 @@ const processCardData = (data: CardInfo) => {
         cardDisplay.innerHTML = cardDisplay.innerHTML + data.artists[i] + ", ";
     }
     cardDisplay.innerHTML = cardDisplay.innerHTML + 
-    "Rulings Made: ";
-    
+    "Rulings Made: \n";
+    for(let i = 0; i < data.rulings.text.length; i++){
+        cardDisplay.innerHTML = cardDisplay.innerHTML + data.rulings.text.length[i] + "\n";
+    }
+    //use the .replace() function to replace the text with an icon.
+    for(let i = cardDisplay.innerHTML.indexOf("["); i != undefined; i = cardDisplay.innerHTML.indexOf("[")){
+        let holster = cardDisplay.innerHTML.substring(cardDisplay.innerHTML.indexOf("[") + 1, cardDisplay.innerHTML.indexOf("]"));
+
+    }
 }
+
+//TODO: create function that returns icon based on the input
+function discIcon(iconName: string){
+    let returnValue = "";
+    switch(iconName){
+        case "test":
+            returnValue = "test case sucess";
+        break;
+        case "Abombwe":
+            returnValue = "<span class=\"krcg-icon\">w</span>";
+        break;
+        case "Animalism":
+            returnValue = "<span class=\"krcg-icon\">i</span>";
+        break;
+        case "Auspex":
+            returnValue = "<span class=\"krcg-icon\">a</span>";
+            break;
+        case "Celerity":
+            returnValue = "<span class=\"krcg-icon\">c</span>";
+        break;
+        case "Chimerstry":
+            returnValue = "<span class=\"krcg-icon\">k</span>";
+        break;
+        case "Daimoinon":
+            returnValue = "<span class=\"krcg-icon\">y</span>";
+        break;
+        case "Dementation":
+            returnValue = "<span class=\"krcg-icon\">e</span>";
+        break;
+        case "Dominate":
+            returnValue = "<span class=\"krcg-icon\">d</span>";
+        break;
+        case "Fortitude":
+            returnValue = "<span class=\"krcg-icon\">f</span>";
+        break;
+        case "Melpominee":
+            returnValue = "<span class=\"krcg-icon\">m</span>";
+        break;
+        case "Mytherceria":
+            returnValue = "<span class=\"krcg-icon\">x</span>";
+        break;
+        case "Necromancy":
+            returnValue = "<span class=\"krcg-icon\">n</span>";
+        break;
+        case "Obeah":
+            returnValue = "<span class=\"krcg-icon\">b</span>";
+        break;
+        case "Obfuscate":
+            returnValue = "<span class=\"krcg-icon\">o</span>";
+        break;
+        case "Obtenebration":
+            returnValue = "<span class=\"krcg-icon\">$</span>";
+        break;
+        case "Potence":
+            returnValue = "<span class=\"krcg-icon\">p</span>";
+        break;
+        case "Presence":
+            returnValue = "<span class=\"krcg-icon\">r</span>";
+        break;
+        case "Protean":
+            returnValue = "<span class=\"krcg-icon\">j</span>";
+        break;
+        case "Quietus":
+            returnValue = "<span class=\"krcg-icon\">q</span>";
+        break;
+        case "Sanguinus":
+            returnValue = "<span class=\"krcg-icon\">g</span>";
+        break;
+        case "Serpentis":
+            returnValue = "<span class=\"krcg-icon\">s</span>";
+        break;
+        case "Spiritus":
+            returnValue = "<span class=\"krcg-icon\">z</span>";
+        break;
+        case "Temporis":
+            returnValue = "<span class=\"krcg-icon\">?</span>";
+        break;
+        case "Thanatosis":
+            returnValue = "<span class=\"krcg-icon\">h</span>";
+        break;
+        case "Thaumaturgy":
+            returnValue = "<span class=\"krcg-icon\">t</span>";
+        break;
+        case "Valeren":
+            returnValue = "<span class=\"krcg-icon\">l</span>";
+        break;
+        case "Vicissitude":
+            returnValue = "<span class=\"krcg-icon\">v</span>";
+        break;
+        case "Visceratika":
+            returnValue = "<span class=\"krcg-icon\">u</span>";
+        break;
+        case "Maleficia":
+            returnValue = "<span class=\"krcg-icon\">â</span>";
+        break;
+        case "Striga":
+            returnValue = "<span class=\"krcg-icon\">à</span>";
+        break;
+        default:
+        break;
+    }
+    return returnValue;
+}
+const clanIcon = (iconName: string) => {
+    let returnValue = "";
+    switch(iconName){
+        case "test":
+
+        break;
+        case "Brujah":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Malkavian":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Nosferatu":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Toreador":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Tremere":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Ventrue":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Caitiff":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Abomination":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Assamite":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Baali":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Followers of Set":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Gangrel":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Gargoyle":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Giovanni":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Nagaraja":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Ravnos":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Salubri":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Samedi":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "True Brujah":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Akunanse":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Guruhi":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Ishtarri":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        case "Osebo":
+            returnValue = "<span class=\"krcg-clan\"></span>";
+        break;
+        default:
+
+        break;
+    }
+}
+const typeIcon = (iconName: string) => {
+    let returnValue = "";
+    switch(iconName){
+        case "test":
+
+        break;
+        default:
+
+        break;
+    }
+}
+
+
 
 //Interfaces:
 
@@ -140,6 +351,8 @@ interface CardInfo {
     id: number,
     name: string,
     url: string,
+    capacity: number,
+    clans: string[],
     types: string[],
     disciplines: string[],
     card_text: string,
@@ -151,12 +364,12 @@ interface CardInfo {
 
 interface Rulings{
     text: string[],
-    links: Links,
+    //links: Links,
 }
 
-interface Links{
-    links: string[],
-}
+// interface Links{
+//     links: string[],
+// }
 
 //event listeners
 cardSearchButton.addEventListener('click', performSearch);
