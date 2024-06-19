@@ -6,7 +6,6 @@
 
 //div element(s)
 const cardSearchRegion = document.querySelector('#cardSearch') as HTMLDivElement;
-const searchResultsRegion = document.querySelector('#searchDisplay') as HTMLDivElement;
 const cardDisplayRegion = document.querySelector('#cardDisplay') as HTMLDivElement;
 //button element(s)
 const cardSearchButton = document.querySelector('#cardSearchButton') as HTMLButtonElement;
@@ -28,7 +27,6 @@ const cardDisplay = document.querySelector('#displayCard') as HTMLParagraphEleme
 //gets information about a specific card
 export const getCard = async (cardName: string) =>{
     cardSearchRegion.className = "dont-display";
-    searchResultsRegion.className = "dont-display";
     cardDisplayRegion.className = "display";
     //initialize request
     let request;
@@ -51,7 +49,6 @@ export const getCard = async (cardName: string) =>{
         processCardData(data);
         //changes regions shown
         cardSearchRegion.className = "dont-display";
-        searchResultsRegion.className = "dont-display";
         cardDisplayRegion.className = "display";
     })
     .catch((error) => { //if an error occurs, catches it here, and logs it into the console
@@ -61,13 +58,10 @@ export const getCard = async (cardName: string) =>{
 
 //returns a list of cards that are similar to the typed item
 export const performSearch = async () =>{
+    cardSearchInput.innerHTML.replace(' ', '')
     if(cardSearchInput.innerHTML.length <= 2){
         return;
     }
-    //changes regions shown
-    cardSearchRegion.className = "dont-display";
-    searchResultsRegion.className = "display";
-    cardDisplayRegion.className = "dont-display";
     //initialize request
     let request;
     //generate request
@@ -87,8 +81,6 @@ export const performSearch = async () =>{
     .then((data) => { // <= after response is recieved, Process the data recieved
         processSearchData(data);
         //changes regions shown
-        cardSearchRegion.className = "dont-display";
-        searchResultsRegion.className = "display";
         cardDisplayRegion.className = "dont-display";
         
     })

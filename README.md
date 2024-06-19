@@ -90,10 +90,19 @@ Use a [Python3 virtual environment](https://docs.python.org/3/library/venv.html)
 > source venv/bin/activate
 ```
 
+```windows
+> python3 -m venv venv
+> . .\venv\Scripts\activate
+```
+
 Install all the requirements:
 
 ```bash
 > make update
+```
+
+```windows
+pip install --upgrade --upgrade-strategy eager -e ".[dev]"
 ```
 
 Run the website:
