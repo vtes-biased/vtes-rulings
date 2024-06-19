@@ -1,8 +1,6 @@
 //    Plan: 
-//    search bar for looking at cards using API https://api.krcg.org/complete/{user input from search bar}
-//    from there, user can click on one of the names generated from that list for full description of the rulings related to the specific card
-//    this page will also have a text box allowing the user to submit a ruling via the "https://api.krcg.org/submit-ruling/{card from list}
-//    and another one for the link to official ruling from a rules director. 
+//    set up map elemets for icons
+//    make changes so that code functions on local server
 
 //div element(s)
 const cardSearchRegion = document.querySelector('#cardSearch') as HTMLDivElement;
@@ -13,7 +11,7 @@ const rulingSubmissionButton = document.querySelector('#rulingSubmissionButton')
 //input element(s)
 const cardSearchInput = document.querySelector('#cardSearch') as HTMLInputElement;
 const rulingInput = document.querySelector('#rulingSubmission') as HTMLInputElement;
-const linkInput = document.querySelector('#linkSubmission') as HTMLInputElement;
+//const linkInput = document.querySelector('#linkSubmission') as HTMLInputElement;
 //list element(s)
 const searchResults = document.querySelector('#searchResults') as HTMLUListElement;
 //p element(s)
@@ -32,7 +30,7 @@ export const getCard = async (cardName: string) =>{
     let request;
     //generate request
     request = new Request(
-        'https://api.krcg.org/card/' + cardName, 
+        'https://api.krcg.org/card/' + cardName.replace(' ',''), 
         { method: 'GET' }
     );
     //send request
@@ -146,7 +144,7 @@ const processCardData = (data: CardInfo) => {
     }
 }
 
-//TODO: create function that returns icon based on the input
+//TODO: convert to map object
 function discIcon(iconName: string){
     let returnValue = "";
     switch(iconName){
