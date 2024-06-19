@@ -61,6 +61,9 @@ export const getCard = async (cardName: string) =>{
 
 //returns a list of cards that are similar to the typed item
 export const performSearch = async () =>{
+    if(cardSearchInput.innerHTML.length <= 2){
+        return;
+    }
     //changes regions shown
     cardSearchRegion.className = "dont-display";
     searchResultsRegion.className = "display";
@@ -101,7 +104,7 @@ const processSearchData = (data: string[]) =>{
         const newSpan = document.createElement("span");
         newSpan.className = "krcg-card";
         newSpan.innerHTML = data[i];
-        newSpan.addEventListener('click', event => getCard(data[i]));
+        newSpan.addEventListener('click', event => getCard(data[i].replace(' ', '')));
         //add items to list
         newLi.appendChild(newSpan);
         searchResults.appendChild(newLi);
@@ -142,7 +145,12 @@ const processCardData = (data: CardInfo) => {
     //use the .replace() function to replace the text with an icon.
     for(let i = cardDisplay.innerHTML.indexOf("["); i != undefined; i = cardDisplay.innerHTML.indexOf("[")){
         let holster = cardDisplay.innerHTML.substring(cardDisplay.innerHTML.indexOf("[") + 1, cardDisplay.innerHTML.indexOf("]"));
+        cardDisplay.innerHTML.replace(holster, discIcon(holster));
 
+        let firstPart = cardDisplay.innerHTML.substring(0, cardDisplay.innerHTML.indexOf("["));
+        let secondPart = cardDisplay.innerHTML.substring(cardDisplay.innerHTML.indexOf("[") + 1, cardDisplay.innerHTML.indexOf("]"));
+        let thirdPart = cardDisplay.innerHTML.substring(cardDisplay.innerHTML.indexOf("]") + 1);
+        cardDisplay.innerHTML = firstPart + secondPart + thirdPart;
     }
 }
 
@@ -244,6 +252,7 @@ function discIcon(iconName: string){
             returnValue = "<span class=\"krcg-icon\">à</span>";
         break;
         default:
+            console.log("an error has occured with the disc icon input, must fix");
         break;
     }
     return returnValue;
@@ -327,7 +336,7 @@ const clanIcon = (iconName: string) => {
             returnValue = "<span class=\"krcg-clan\"></span>";
         break;
         default:
-
+            console.log("an error has occured with the clan icon input, must fix");
         break;
     }
 }
@@ -372,4 +381,5 @@ interface Rulings{
 // }
 
 //event listeners
-cardSearchButton.addEventListener('click', performSearch);
+//cardSearchButton.addEventListener('click', performSearch);
+cardSearchInput.addEventListener('keydown', performSearch);
