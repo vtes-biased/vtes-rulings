@@ -1,4 +1,15 @@
-
+#searchResults{
+    position: absolute;
+    border: 3px solid black;
+    height: fit-content;
+    width: 10vmax;
+}
+#cardSearchBar{
+    width: 13vmax;
+}
+#cardSearch{
+    display: flex;
+}
 
 
 /* able to swap between these classes to have HTML elements appear / disappear. */

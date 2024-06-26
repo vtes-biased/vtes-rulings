@@ -9,7 +9,7 @@ const cardDisplayRegion = document.querySelector('#cardDisplay') as HTMLDivEleme
 const cardSearchButton = document.querySelector('#cardSearchButton') as HTMLButtonElement;
 const rulingSubmissionButton = document.querySelector('#rulingSubmissionButton') as HTMLButtonElement;
 //input element(s)
-const cardSearchInput = document.querySelector('#cardSearch') as HTMLInputElement;
+const cardSearchInput = document.querySelector('#cardSearchBar') as HTMLInputElement;
 const rulingInput = document.querySelector('#rulingSubmission') as HTMLInputElement;
 //const linkInput = document.querySelector('#linkSubmission') as HTMLInputElement;
 //list element(s)
@@ -19,6 +19,64 @@ const cardDisplay = document.querySelector('#displayCard') as HTMLParagraphEleme
 
 //Code:
 
+//Variables:
+let discIconMap = new Map();
+let clanIconMap = new Map();
+
+discIconMap.set("Abombwe", "<span class=\"krcg-icon\">w</span>");
+discIconMap.set("Animalism", "<span class=\"krcg-icon\">i</span>");
+discIconMap.set("Auspex", "<span class=\"krcg-icon\">a</span>");
+discIconMap.set("Celerity", "<span class=\"krcg-icon\">c</span>");
+discIconMap.set("Chimerstry", "<span class=\"krcg-icon\">k</span>");
+discIconMap.set("Daimoinon", "<span class=\"krcg-icon\">y</span>");
+discIconMap.set("Dementation", "<span class=\"krcg-icon\">e</span>");
+discIconMap.set("Dominate", "<span class=\"krcg-icon\">d</span>");
+discIconMap.set("Fortitude", "<span class=\"krcg-icon\">f</span>");
+discIconMap.set("Melpominee", "<span class=\"krcg-icon\">m</span>");
+discIconMap.set("Mytherceria", "<span class=\"krcg-icon\">x</span>");
+discIconMap.set("Necromancy", "<span class=\"krcg-icon\">n</span>");
+discIconMap.set("Obeah", "<span class=\"krcg-icon\">b</span>");
+discIconMap.set("Obfuscate", "<span class=\"krcg-icon\">o</span>");
+discIconMap.set("Obtenebration", "<span class=\"krcg-icon\">$</span>");
+discIconMap.set("Potence", "<span class=\"krcg-icon\">p</span>");
+discIconMap.set("Presence", "<span class=\"krcg-icon\">r</span>");
+discIconMap.set("Protean", "<span class=\"krcg-icon\">j</span>");
+discIconMap.set("Quietus", "<span class=\"krcg-icon\">q</span>");
+discIconMap.set("Sanguinus", "<span class=\"krcg-icon\">g</span>");
+discIconMap.set("Serpentis", "<span class=\"krcg-icon\">s</span>");
+discIconMap.set("Spiritus", "<span class=\"krcg-icon\">z</span>");
+discIconMap.set("Temporis", "<span class=\"krcg-icon\">?</span>");
+discIconMap.set("Thanatosis", "<span class=\"krcg-icon\">h</span>");
+discIconMap.set("Thaumaturgy", "<span class=\"krcg-icon\">t</span>");
+discIconMap.set("Valeren", "<span class=\"krcg-icon\">l</span>");
+discIconMap.set("Vicissitude", "<span class=\"krcg-icon\">v</span>");
+discIconMap.set("Visceratika", "<span class=\"krcg-icon\">u</span>");
+discIconMap.set("Maleficia", "<span class=\"krcg-icon\">â</span>");
+discIconMap.set("Striga", "<span class=\"krcg-icon\">à</span>");
+
+clanIconMap.set("Brujah",       "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Malkavian",    "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Nosferatu",    "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Toreador",     "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Tremere",      "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Ventrue",      "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Caitiff",      "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Abomination",  "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Assamite",     "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Baali",        "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Followers of Set","<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Gangrel",      "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Gargoyle",     "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Giovanni",     "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Nagaraja",     "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Ravnos",       "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Salubri",      "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Samedi",       "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("True Brujah",  "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Akunanse",     "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Guruhi",       "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Ishtarri",     "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Osebo",        "<span class=\"krcg-clan\"></span>");
 
 //Functions:
 
@@ -130,7 +188,7 @@ const processCardData = (data: CardInfo) => {
     cardDisplay.innerHTML = cardDisplay.innerHTML + 
     "Rulings Made: \n";
     for(let i = 0; i < data.rulings.text.length; i++){
-        cardDisplay.innerHTML = cardDisplay.innerHTML + data.rulings.text.length[i] + "\n";
+        cardDisplay.innerHTML = cardDisplay.innerHTML + data.rulings.text[i] + "\n";
     }
     //use the .replace() function to replace the text with an icon.
     for(let i = cardDisplay.innerHTML.indexOf("["); i != undefined; i = cardDisplay.innerHTML.indexOf("[")){
@@ -146,189 +204,13 @@ const processCardData = (data: CardInfo) => {
 
 //TODO: convert to map object
 function discIcon(iconName: string){
-    let returnValue = "";
-    switch(iconName){
-        case "test":
-            returnValue = "test case sucess";
-        break;
-        case "Abombwe":
-            returnValue = "<span class=\"krcg-icon\">w</span>";
-        break;
-        case "Animalism":
-            returnValue = "<span class=\"krcg-icon\">i</span>";
-        break;
-        case "Auspex":
-            returnValue = "<span class=\"krcg-icon\">a</span>";
-            break;
-        case "Celerity":
-            returnValue = "<span class=\"krcg-icon\">c</span>";
-        break;
-        case "Chimerstry":
-            returnValue = "<span class=\"krcg-icon\">k</span>";
-        break;
-        case "Daimoinon":
-            returnValue = "<span class=\"krcg-icon\">y</span>";
-        break;
-        case "Dementation":
-            returnValue = "<span class=\"krcg-icon\">e</span>";
-        break;
-        case "Dominate":
-            returnValue = "<span class=\"krcg-icon\">d</span>";
-        break;
-        case "Fortitude":
-            returnValue = "<span class=\"krcg-icon\">f</span>";
-        break;
-        case "Melpominee":
-            returnValue = "<span class=\"krcg-icon\">m</span>";
-        break;
-        case "Mytherceria":
-            returnValue = "<span class=\"krcg-icon\">x</span>";
-        break;
-        case "Necromancy":
-            returnValue = "<span class=\"krcg-icon\">n</span>";
-        break;
-        case "Obeah":
-            returnValue = "<span class=\"krcg-icon\">b</span>";
-        break;
-        case "Obfuscate":
-            returnValue = "<span class=\"krcg-icon\">o</span>";
-        break;
-        case "Obtenebration":
-            returnValue = "<span class=\"krcg-icon\">$</span>";
-        break;
-        case "Potence":
-            returnValue = "<span class=\"krcg-icon\">p</span>";
-        break;
-        case "Presence":
-            returnValue = "<span class=\"krcg-icon\">r</span>";
-        break;
-        case "Protean":
-            returnValue = "<span class=\"krcg-icon\">j</span>";
-        break;
-        case "Quietus":
-            returnValue = "<span class=\"krcg-icon\">q</span>";
-        break;
-        case "Sanguinus":
-            returnValue = "<span class=\"krcg-icon\">g</span>";
-        break;
-        case "Serpentis":
-            returnValue = "<span class=\"krcg-icon\">s</span>";
-        break;
-        case "Spiritus":
-            returnValue = "<span class=\"krcg-icon\">z</span>";
-        break;
-        case "Temporis":
-            returnValue = "<span class=\"krcg-icon\">?</span>";
-        break;
-        case "Thanatosis":
-            returnValue = "<span class=\"krcg-icon\">h</span>";
-        break;
-        case "Thaumaturgy":
-            returnValue = "<span class=\"krcg-icon\">t</span>";
-        break;
-        case "Valeren":
-            returnValue = "<span class=\"krcg-icon\">l</span>";
-        break;
-        case "Vicissitude":
-            returnValue = "<span class=\"krcg-icon\">v</span>";
-        break;
-        case "Visceratika":
-            returnValue = "<span class=\"krcg-icon\">u</span>";
-        break;
-        case "Maleficia":
-            returnValue = "<span class=\"krcg-icon\">â</span>";
-        break;
-        case "Striga":
-            returnValue = "<span class=\"krcg-icon\">à</span>";
-        break;
-        default:
-            console.log("an error has occured with the disc icon input, must fix");
-        break;
-    }
+    let returnValue = discIconMap.get(iconName);
     return returnValue;
 }
-const clanIcon = (iconName: string) => {
-    let returnValue = "";
-    switch(iconName){
-        case "test":
 
-        break;
-        case "Brujah":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Malkavian":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Nosferatu":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Toreador":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Tremere":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Ventrue":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Caitiff":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Abomination":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Assamite":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Baali":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Followers of Set":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Gangrel":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Gargoyle":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Giovanni":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Nagaraja":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Ravnos":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Salubri":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Samedi":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "True Brujah":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Akunanse":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Guruhi":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Ishtarri":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        case "Osebo":
-            returnValue = "<span class=\"krcg-clan\"></span>";
-        break;
-        default:
-            console.log("an error has occured with the clan icon input, must fix");
-        break;
-    }
+const clanIcon = (iconName: string) => {
+    let returnValue = clanIconMap.get(iconName);
+    return returnValue;
 }
 const typeIcon = (iconName: string) => {
     let returnValue = "";
@@ -371,5 +253,5 @@ interface Rulings{
 // }
 
 //event listeners
-//cardSearchButton.addEventListener('click', performSearch);
+cardSearchButton.addEventListener('click', performSearch);
 cardSearchInput.addEventListener('keydown', performSearch);
