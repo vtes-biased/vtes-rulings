@@ -1,4 +1,4 @@
-//    @ts-check
+//    @ts-chec
 //    Plan: 
 //    set up map elemets for icons
 //    make changes so that code functions on local server
