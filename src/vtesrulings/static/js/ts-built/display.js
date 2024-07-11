@@ -1,4 +1,3 @@
-"use strict";
 //    Plan: 
 //    set up map elemets for icons
 //    make changes so that code functions on local server
@@ -11,8 +10,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.performSearch = exports.getCard = void 0;
 //div element(s)
 const cardSearchRegion = document.querySelector('#cardSearch');
 const cardDisplayRegion = document.querySelector('#cardDisplay');
@@ -86,7 +83,7 @@ clanIconMap.set("Ishtarri", "<span class=\"krcg-clan\"></span>");
 clanIconMap.set("Osebo", "<span class=\"krcg-clan\"></span>");
 //Functions:
 //gets information about a specific card
-const getCard = (cardName) => __awaiter(void 0, void 0, void 0, function* () {
+const getCard = (cardName) => __awaiter(this, void 0, void 0, function* () {
     cardSearchRegion.className = "dont-display";
     cardDisplayRegion.className = "display";
     //initialize request
@@ -113,9 +110,8 @@ const getCard = (cardName) => __awaiter(void 0, void 0, void 0, function* () {
         console.log(error);
     });
 });
-exports.getCard = getCard;
 //returns a list of cards that are similar to the typed item
-const performSearch = () => __awaiter(void 0, void 0, void 0, function* () {
+const performSearch = () => __awaiter(this, void 0, void 0, function* () {
     cardSearchInput.innerHTML.replace(' ', '');
     if (cardSearchInput.innerHTML.length <= 2) {
         return;
@@ -142,7 +138,6 @@ const performSearch = () => __awaiter(void 0, void 0, void 0, function* () {
         console.log(error);
     });
 });
-exports.performSearch = performSearch;
 const processSearchData = (data) => {
     let length = data.length;
     for (let i = 0; i < length; i++) {
@@ -150,7 +145,7 @@ const processSearchData = (data) => {
         const newSpan = document.createElement("span");
         newSpan.className = "krcg-card";
         newSpan.innerHTML = data[i];
-        newSpan.addEventListener('click', event => (0, exports.getCard)(data[i].replace(' ', '')));
+        newSpan.addEventListener('click', event => getCard(data[i].replace(' ', '')));
         //add items to list
         newLi.appendChild(newSpan);
         searchResults.appendChild(newLi);
@@ -213,7 +208,5 @@ const typeIcon = (iconName) => {
 //     links: string[],
 // }
 //event listeners
-cardSearchButton.addEventListener('click', exports.performSearch);
-cardSearchInput.addEventListener('keydown', exports.performSearch);
-
-export{};
+cardSearchButton.addEventListener('click', performSearch);
+cardSearchInput.addEventListener('keydown', performSearch);

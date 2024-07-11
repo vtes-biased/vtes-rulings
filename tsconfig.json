@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES2015",
-    "outDir": "src/static/js/ts-built",
-    "rootDir": "src/static/js"
+    "module": "none",
+    "target": "es2015",
+    "outFile": "src/vtesrulings/static/js/ts-built/display.js",
+    "rootDir": "src/vtesrulings/static/js"
   },
   //"include": ["src"]
 }
