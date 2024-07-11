@@ -147,6 +147,7 @@ export const performSearch = async () =>{
 
 const processSearchData = (data: string[]) =>{
     let length = data.length;
+    searchResults.replaceChildren();
     for (let i = 0; i < length; i++) {
         const newLi = document.createElement("li");
         const newSpan = document.createElement("span");
@@ -245,3 +246,5 @@ interface Rulings{
 //event listeners
 cardSearchButton.addEventListener('click', performSearch);
 cardSearchInput.addEventListener('keydown', performSearch);
+
+export {};

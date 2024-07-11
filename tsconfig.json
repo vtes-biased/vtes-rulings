@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES2015",
+    //"module": "commonjs",
+    "target": "ESNext",
     "outDir": "src/static/js/ts-built",
     "rootDir": "src/static/js"
   },
