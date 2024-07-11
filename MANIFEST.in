@@ -1,13 +1,19 @@
-include LICENSE README.md CHANGELOG.md
+include LICENSE README.md
 
-graft rulings
-graft src
+graft src/vtesrulings
 prune scripts
+prune tests
+prune node_modules
 
 exclude Makefile
 exclude .yamllint.yaml
+exclude .gitignore
+exclude package.json
+exclude package-lock.json
+exclude tsconfig.json
+exclude vite.config.js
 
-global-include *.yaml
+global-include src/**/*.yaml
 global-exclude */__pycache__/*
 global-exclude *.egg-info/*
 global-exclude *.DS_Store
