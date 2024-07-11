@@ -202,7 +202,6 @@ const processCardData = (data: CardInfo) => {
     }
 }
 
-//TODO: convert to map object
 function discIcon(iconName: string){
     let returnValue = discIconMap.get(iconName);
     return returnValue;
@@ -214,17 +213,8 @@ const clanIcon = (iconName: string) => {
 }
 const typeIcon = (iconName: string) => {
     let returnValue = "";
-    switch(iconName){
-        case "test":
-
-        break;
-        default:
-
-        break;
-    }
+    return returnValue;
 }
-
-
 
 //Interfaces:
 

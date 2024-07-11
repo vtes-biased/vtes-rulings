@@ -111,3 +111,12 @@ Run the website:
 rulings-web
 ```
 
+How to compile Typescript into Javascript for use:
+
+Navigate your file pointer in console to vtes-rulings using cd command
+
+run the following code: tsc -w
+
+this code allows for the typescript to be updated when you save, so long as it's running.
+
+press ctrl + C to end the above program

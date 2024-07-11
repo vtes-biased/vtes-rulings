@@ -1,29 +1,36 @@
-//    @ts-chec
+"use strict";
 //    Plan: 
 //    set up map elemets for icons
 //    make changes so that code functions on local server
-
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.performSearch = exports.getCard = void 0;
 //div element(s)
-const cardSearchRegion = document.querySelector('#cardSearch') //as HTMLDivElement;
-const cardDisplayRegion = document.querySelector('#cardDisplay') //as HTMLDivElement;
+const cardSearchRegion = document.querySelector('#cardSearch');
+const cardDisplayRegion = document.querySelector('#cardDisplay');
 //button element(s)
-const cardSearchButton = document.querySelector('#cardSearchButton') //as HTMLButtonElement;
-const rulingSubmissionButton = document.querySelector('#rulingSubmissionButton') //as HTMLButtonElement;
+const cardSearchButton = document.querySelector('#cardSearchButton');
+const rulingSubmissionButton = document.querySelector('#rulingSubmissionButton');
 //input element(s)
-const cardSearchInput = document.querySelector('#cardSearch') //as HTMLInputElement;
-const rulingInput = document.querySelector('#rulingSubmission') //as HTMLInputElement;
+const cardSearchInput = document.querySelector('#cardSearchBar');
+const rulingInput = document.querySelector('#rulingSubmission');
 //const linkInput = document.querySelector('#linkSubmission') as HTMLInputElement;
 //list element(s)
-const searchResults = document.querySelector('#searchResults') //as HTMLUListElement;
+const searchResults = document.querySelector('#searchResults');
 //p element(s)
-const cardDisplay = document.querySelector('#displayCard') //as HTMLParagraphElement;
-
+const cardDisplay = document.querySelector('#displayCard');
 //Code:
-
 //Variables:
 let discIconMap = new Map();
 let clanIconMap = new Map();
-
 discIconMap.set("Abombwe", "<span class=\"krcg-icon\">w</span>");
 discIconMap.set("Animalism", "<span class=\"krcg-icon\">i</span>");
 discIconMap.set("Auspex", "<span class=\"krcg-icon\">a</span>");
@@ -54,205 +61,159 @@ discIconMap.set("Vicissitude", "<span class=\"krcg-icon\">v</span>");
 discIconMap.set("Visceratika", "<span class=\"krcg-icon\">u</span>");
 discIconMap.set("Maleficia", "<span class=\"krcg-icon\">â</span>");
 discIconMap.set("Striga", "<span class=\"krcg-icon\">à</span>");
-
-clanIconMap.set("Brujah",       "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Malkavian",    "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Nosferatu",    "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Toreador",     "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Tremere",      "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Ventrue",      "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Caitiff",      "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Abomination",  "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Assamite",     "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Baali",        "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Followers of Set","<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Gangrel",      "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Gargoyle",     "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Giovanni",     "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Nagaraja",     "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Ravnos",       "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Salubri",      "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Samedi",       "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("True Brujah",  "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Akunanse",     "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Guruhi",       "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Ishtarri",     "<span class=\"krcg-clan\"></span>");
-clanIconMap.set("Osebo",        "<span class=\"krcg-clan\"></span>");
-
+clanIconMap.set("Brujah", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Malkavian", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Nosferatu", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Toreador", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Tremere", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Ventrue", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Caitiff", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Abomination", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Assamite", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Baali", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Followers of Set", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Gangrel", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Gargoyle", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Giovanni", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Nagaraja", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Ravnos", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Salubri", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Samedi", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("True Brujah", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Akunanse", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Guruhi", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Ishtarri", "<span class=\"krcg-clan\"></span>");
+clanIconMap.set("Osebo", "<span class=\"krcg-clan\"></span>");
 //Functions:
-
 //gets information about a specific card
-export const getCard = async (cardName) =>{
+const getCard = (cardName) => __awaiter(void 0, void 0, void 0, function* () {
     cardSearchRegion.className = "dont-display";
     cardDisplayRegion.className = "display";
     //initialize request
     let request;
     //generate request
-    request = new Request(
-        'https://api.krcg.org/card/' + cardName.replace(' ',''), 
-        { method: 'GET' }
-    );
+    request = new Request('https://api.krcg.org/card/' + cardName.replace(' ', ''), { method: 'GET' });
     //send request
     fetch(request)
-    .then((response) =>{ // <= wait until response is recieved from API
+        .then((response) => {
         //if the request doesn't come back OK
-        if(!response.ok){
+        if (!response.ok) {
             //throw an error
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         return response.json(); //converts json response to js variables & returns them
     })
-    .then((data) => { // <= after response is recieved, Process the data recieved
+        .then((data) => {
         processCardData(data);
         //changes regions shown
         cardSearchRegion.className = "dont-display";
         cardDisplayRegion.className = "display";
     })
-    .catch((error) => { //if an error occurs, catches it here, and logs it into the console
+        .catch((error) => {
         console.log(error);
-    })
-}
-
+    });
+});
+exports.getCard = getCard;
 //returns a list of cards that are similar to the typed item
-export const performSearch = async () =>{
-    cardSearchInput.innerHTML.replace(' ', '')
-    if(cardSearchInput.innerHTML.length <= 2){
+const performSearch = () => __awaiter(void 0, void 0, void 0, function* () {
+    cardSearchInput.innerHTML.replace(' ', '');
+    if (cardSearchInput.innerHTML.length <= 2) {
         return;
     }
     //initialize request
     let request;
     //generate request
-    request = new Request(
-        'https://api.krcg.org/complete/' + cardSearchInput.innerText, 
-        { method: 'GET' }
-    );
+    request = new Request('https://api.krcg.org/complete/' + cardSearchInput.innerText, { method: 'GET' });
     //send request
     fetch(request)
-    .then((response) =>{ // <= wait until response is recieved from API
-        if(!response.ok){//if the request doesn't come back valid
+        .then((response) => {
+        if (!response.ok) { //if the request doesn't come back valid
             //throw an error
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         return response.json(); //converts json response to js variables & returns them
     })
-    .then((data) => { // <= after response is recieved, Process the data recieved
+        .then((data) => {
         processSearchData(data);
         //changes regions shown
         cardDisplayRegion.className = "dont-display";
-        
     })
-    .catch((error) => { //if an error occurs, catches it here, and logs it into the console
+        .catch((error) => {
         console.log(error);
-    })
-}
-
-const processSearchData = (data) =>{
+    });
+});
+exports.performSearch = performSearch;
+const processSearchData = (data) => {
     let length = data.length;
     for (let i = 0; i < length; i++) {
         const newLi = document.createElement("li");
         const newSpan = document.createElement("span");
         newSpan.className = "krcg-card";
         newSpan.innerHTML = data[i];
-        newSpan.addEventListener('click', event => getCard(data[i].replace(' ', '')));
+        newSpan.addEventListener('click', event => (0, exports.getCard)(data[i].replace(' ', '')));
         //add items to list
         newLi.appendChild(newSpan);
         searchResults.appendChild(newLi);
     }
-}
-
+};
 const processCardData = (data) => {
     cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.name + "</span>\nCard ID: " + data.id + "\nCard Types: ";
-    for(let i = 0; i < data.types.length; i++){
+    for (let i = 0; i < data.types.length; i++) {
         cardDisplay.innerHTML = cardDisplay.innerHTML + typeIcon(data.types[i]) + ", ";
     }
     cardDisplay.innerHTML = cardDisplay.innerHTML + "\nCard Disciplines: ";
-    for(let i = 0; i < data.disciplines.length; i++){
+    for (let i = 0; i < data.disciplines.length; i++) {
         cardDisplay.innerHTML = cardDisplay.innerHTML + discIcon(data.disciplines[i]) + ", ";
     }
     cardDisplay.innerHTML = cardDisplay.innerHTML + "\nCard Clans: ";
-    for(let i = 0; i < data.disciplines.length; i++){
+    for (let i = 0; i < data.disciplines.length; i++) {
         cardDisplay.innerHTML = cardDisplay.innerHTML + clanIcon(data.clans[i]) + ", ";
     }
-    cardDisplay.innerHTML = 
-    cardDisplay.innerHTML + 
-    "\nCapacity: " + data.capacity +
-    "\nCard Text: " + data.card_text + 
-    "\nFlavor Text: " + data.flavor_text + 
-    "\nSets: ";
-    for(let i = 0; i < data.ordered_sets.length; i++){
+    cardDisplay.innerHTML =
+        cardDisplay.innerHTML +
+            "\nCapacity: " + data.capacity +
+            "\nCard Text: " + data.card_text +
+            "\nFlavor Text: " + data.flavor_text +
+            "\nSets: ";
+    for (let i = 0; i < data.ordered_sets.length; i++) {
         cardDisplay.innerHTML = cardDisplay.innerHTML + data.ordered_sets[i] + ", ";
     }
     cardDisplay.innerHTML = cardDisplay.innerHTML + "\nArtists: ";
-    for(let i = 0; i < data.artists.length; i++){
+    for (let i = 0; i < data.artists.length; i++) {
         cardDisplay.innerHTML = cardDisplay.innerHTML + data.artists[i] + ", ";
     }
-    cardDisplay.innerHTML = cardDisplay.innerHTML + 
-    "Rulings Made: \n";
-    for(let i = 0; i < data.rulings.text.length; i++){
+    cardDisplay.innerHTML = cardDisplay.innerHTML +
+        "Rulings Made: \n";
+    for (let i = 0; i < data.rulings.text.length; i++) {
         cardDisplay.innerHTML = cardDisplay.innerHTML + data.rulings.text[i] + "\n";
     }
     //use the .replace() function to replace the text with an icon.
-    for(let i = cardDisplay.innerHTML.indexOf("["); i != undefined; i = cardDisplay.innerHTML.indexOf("[")){
+    for (let i = cardDisplay.innerHTML.indexOf("["); i != undefined; i = cardDisplay.innerHTML.indexOf("[")) {
         let holster = cardDisplay.innerHTML.substring(cardDisplay.innerHTML.indexOf("[") + 1, cardDisplay.innerHTML.indexOf("]"));
         cardDisplay.innerHTML.replace(holster, discIcon(holster));
-
         let firstPart = cardDisplay.innerHTML.substring(0, cardDisplay.innerHTML.indexOf("["));
         let secondPart = cardDisplay.innerHTML.substring(cardDisplay.innerHTML.indexOf("[") + 1, cardDisplay.innerHTML.indexOf("]"));
         let thirdPart = cardDisplay.innerHTML.substring(cardDisplay.innerHTML.indexOf("]") + 1);
         cardDisplay.innerHTML = firstPart + secondPart + thirdPart;
     }
-}
-
-//TODO: convert to map object
-function discIcon(iconName){
+};
+function discIcon(iconName) {
     let returnValue = discIconMap.get(iconName);
     return returnValue;
 }
-
 const clanIcon = (iconName) => {
     let returnValue = clanIconMap.get(iconName);
     return returnValue;
-}
+};
 const typeIcon = (iconName) => {
     let returnValue = "";
-    switch(iconName){
-        case "test":
-
-        break;
-        default:
-
-        break;
-    }
-}
-
-
-
-//Interfaces:
-/*
-interface CardInfo {
-    id: number,
-    name: string,
-    url: string,
-    capacity: number,
-    clans: string[],
-    types: string[],
-    disciplines: string[],
-    card_text: string,
-    flavor_text: string,
-    ordered_sets: string[],
-    artists: string[],
-    rulings: Rulings,
-}
-
-interface Rulings{
-    text: string[],
-    //links: Links,
-}
-
+    return returnValue;
+};
 // interface Links{
 //     links: string[],
 // }
-*/
 //event listeners
-cardSearchButton.addEventListener('click', performSearch);
-cardSearchInput.addEventListener('keydown', performSearch);
+cardSearchButton.addEventListener('click', exports.performSearch);
+cardSearchInput.addEventListener('keydown', exports.performSearch);
+
+export{};
