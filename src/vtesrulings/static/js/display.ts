@@ -81,7 +81,7 @@ clanIconMap.set("Osebo", "<span class=\"krcg-clan\"></span>");
 //Functions:
 
 //gets information about a specific card
-const getCard = async (cardName: string) => {
+export const getCard = async (cardName: string) => {
     cardSearchRegion.className = "dont-display";
     cardDisplayRegion.className = "display";
     //initialize request
@@ -113,16 +113,16 @@ const getCard = async (cardName: string) => {
 }
 
 //returns a list of cards that are similar to the typed item
-const performSearch = async () => {
-    cardSearchInput.innerHTML.replace(' ', '')
-    if (cardSearchInput.innerHTML.length <= 2) {
+export const performSearch = async () => {
+    cardSearchInput.value.replace(' ', '')
+    if (cardSearchInput.value.length <= 2) {
         return;
     }
     //initialize request
     let request;
     //generate request
     request = new Request(
-        'https://api.krcg.org/complete/' + cardSearchInput.innerText,
+        'https://api.krcg.org/complete/' + cardSearchInput.value,
         { method: 'GET' }
     );
     //send request
@@ -137,7 +137,7 @@ const performSearch = async () => {
         .then((data) => { // <= after response is recieved, Process the data recieved
             processSearchData(data);
             //changes regions shown
-            cardDisplayRegion.className = "dont-display";
+            //cardDisplayRegion.className = "dont-display";
 
         })
         .catch((error) => { //if an error occurs, catches it here, and logs it into the console
