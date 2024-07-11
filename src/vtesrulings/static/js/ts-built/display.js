@@ -1,6 +1,15 @@
 //    Plan: 
 //    set up map elemets for icons
 //    make changes so that code functions on local server
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 //div element(s)
 const cardSearchRegion = document.querySelector('#cardSearch');
 const cardDisplayRegion = document.querySelector('#cardDisplay');
@@ -74,7 +83,7 @@ clanIconMap.set("Ishtarri", "<span class=\"krcg-clan\"></span>");
 clanIconMap.set("Osebo", "<span class=\"krcg-clan\"></span>");
 //Functions:
 //gets information about a specific card
-export const getCard = async (cardName) => {
+const getCard = (cardName) => __awaiter(this, void 0, void 0, function* () {
     cardSearchRegion.className = "dont-display";
     cardDisplayRegion.className = "display";
     //initialize request
@@ -100,9 +109,9 @@ export const getCard = async (cardName) => {
         .catch((error) => {
         console.log(error);
     });
-};
+});
 //returns a list of cards that are similar to the typed item
-export const performSearch = async () => {
+const performSearch = () => __awaiter(this, void 0, void 0, function* () {
     cardSearchInput.innerHTML.replace(' ', '');
     if (cardSearchInput.innerHTML.length <= 2) {
         return;
@@ -128,10 +137,9 @@ export const performSearch = async () => {
         .catch((error) => {
         console.log(error);
     });
-};
+});
 const processSearchData = (data) => {
     let length = data.length;
-    searchResults.replaceChildren();
     for (let i = 0; i < length; i++) {
         const newLi = document.createElement("li");
         const newSpan = document.createElement("span");
