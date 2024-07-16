@@ -144,35 +144,17 @@ const processSearchData = (data) => {
     }
 };
 const processCardData = (data) => {
-    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.name + "</span>\nCard ID: " + data.id + "\nCard Types: ";
+    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span>\nCard ID: " + data.uid + "\nCard Types: ";
     for (let i = 0; i < data.types.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + typeIcon(data.types[i]) + ", ";
+        InfoDisplayUpdate(typeIcon(data.types[i]) + ", ");
     }
-    cardDisplay.innerHTML = cardDisplay.innerHTML + "\nCard Disciplines: ";
+    InfoDisplayUpdate("\nCard Disciplines: ");
     for (let i = 0; i < data.disciplines.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + discIcon(data.disciplines[i]) + ", ";
+        InfoDisplayUpdate(discIcon(data.disciplines[i]) + ", ");
     }
-    cardDisplay.innerHTML = cardDisplay.innerHTML + "\nCard Clans: ";
-    for (let i = 0; i < data.disciplines.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + clanIcon(data.clans[i]) + ", ";
-    }
-    cardDisplay.innerHTML =
-        cardDisplay.innerHTML +
-            "\nCapacity: " + data.capacity +
-            "\nCard Text: " + data.card_text +
-            "\nFlavor Text: " + data.flavor_text +
-            "\nSets: ";
-    for (let i = 0; i < data.ordered_sets.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + data.ordered_sets[i] + ", ";
-    }
-    cardDisplay.innerHTML = cardDisplay.innerHTML + "\nArtists: ";
-    for (let i = 0; i < data.artists.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + data.artists[i] + ", ";
-    }
-    cardDisplay.innerHTML = cardDisplay.innerHTML +
-        "Rulings Made: \n";
-    for (let i = 0; i < data.rulings.text.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + data.rulings.text[i] + "\n";
+    InfoDisplayUpdate("Rulings Made: \n");
+    for (let i = 0; i < data.rulings.length; i++) {
+        InfoDisplayUpdate(data.rulings[i].text + "\n");
     }
     //use the .replace() function to replace the text with an icon.
     for (let i = cardDisplay.innerHTML.indexOf("["); i != undefined; i = cardDisplay.innerHTML.indexOf("[")) {
@@ -184,6 +166,9 @@ const processCardData = (data) => {
         cardDisplay.innerHTML = firstPart + secondPart + thirdPart;
     }
 };
+function InfoDisplayUpdate(additionalText) {
+    cardDisplay.innerHTML = cardDisplay.innerHTML + additionalText;
+}
 function discIcon(iconName) {
     let returnValue = discIconMap.get(iconName);
     return returnValue;
@@ -196,9 +181,6 @@ const typeIcon = (iconName) => {
     let returnValue = "";
     return returnValue;
 };
-// interface Links{
-//     links: string[],
-// }
 //event listeners
 cardSearchButton.addEventListener('click', performSearch);
-cardSearchInput.addEventListener('keydown', performSearch);
+cardSearchInput.addEventListener('keyup', performSearch);

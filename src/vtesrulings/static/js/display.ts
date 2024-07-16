@@ -161,35 +161,17 @@ const processSearchData = (data: string[]) => {
 }
 
 const processCardData = (data: CardInfo) => {
-    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.name + "</span>\nCard ID: " + data.id + "\nCard Types: ";
+    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span>\nCard ID: " + data.uid + "\nCard Types: ";
     for (let i = 0; i < data.types.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + typeIcon(data.types[i]) + ", ";
+        InfoDisplayUpdate(typeIcon(data.types[i]) + ", ");
     }
-    cardDisplay.innerHTML = cardDisplay.innerHTML + "\nCard Disciplines: ";
+    InfoDisplayUpdate("\nCard Disciplines: ");
     for (let i = 0; i < data.disciplines.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + discIcon(data.disciplines[i]) + ", ";
+        InfoDisplayUpdate(discIcon(data.disciplines[i]) + ", ");
     }
-    cardDisplay.innerHTML = cardDisplay.innerHTML + "\nCard Clans: ";
-    for (let i = 0; i < data.disciplines.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + clanIcon(data.clans[i]) + ", ";
-    }
-    cardDisplay.innerHTML =
-        cardDisplay.innerHTML +
-        "\nCapacity: " + data.capacity +
-        "\nCard Text: " + data.card_text +
-        "\nFlavor Text: " + data.flavor_text +
-        "\nSets: ";
-    for (let i = 0; i < data.ordered_sets.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + data.ordered_sets[i] + ", ";
-    }
-    cardDisplay.innerHTML = cardDisplay.innerHTML + "\nArtists: ";
-    for (let i = 0; i < data.artists.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + data.artists[i] + ", ";
-    }
-    cardDisplay.innerHTML = cardDisplay.innerHTML +
-        "Rulings Made: \n";
-    for (let i = 0; i < data.rulings.text.length; i++) {
-        cardDisplay.innerHTML = cardDisplay.innerHTML + data.rulings.text[i] + "\n";
+    InfoDisplayUpdate("Rulings Made: \n");
+    for (let i = 0; i < data.rulings.length; i++) {
+        InfoDisplayUpdate(data.rulings[i].text + "\n");
     }
     //use the .replace() function to replace the text with an icon.
     for (let i = cardDisplay.innerHTML.indexOf("["); i != undefined; i = cardDisplay.innerHTML.indexOf("[")) {
@@ -201,6 +183,10 @@ const processCardData = (data: CardInfo) => {
         let thirdPart = cardDisplay.innerHTML.substring(cardDisplay.innerHTML.indexOf("]") + 1);
         cardDisplay.innerHTML = firstPart + secondPart + thirdPart;
     }
+}
+
+function InfoDisplayUpdate(additionalText: string){
+    cardDisplay.innerHTML = cardDisplay.innerHTML + additionalText;
 }
 
 function discIcon(iconName: string) {
@@ -220,31 +206,61 @@ const typeIcon = (iconName: string) => {
 //Interfaces:
 
 interface CardInfo {
-    id: number,
-    name: string,
-    url: string,
-    capacity: number,
-    clans: string[],
-    types: string[],
+    backrefs: string[],
+    blood_cost: number,
+    conviction_cost: number,
     disciplines: string[],
-    card_text: string,
-    flavor_text: string,
-    ordered_sets: string[],
-    artists: string[],
-    rulings: Rulings,
+    groups: string[],
+    img: string,
+    pool_cost: number,
+    printed_name: string,
+    rulings: Rulings[],
+    symbols: Symbols,
+    text: string,
+    text_symbols: Symbols[],
+    types: string[],
+    uid: string,
+    unique_name : string,
+}
+
+interface GroupInfo{
+    cards: Cards[],
+    name: string,
+    rulings: Rulings[],
+    status: string,
+    uid: string,
 }
 
 interface Rulings {
-    text: string[],
-    //links: Links,
+    cards: Cards,
+    group: RulingGroups,
+    references: holder,
+    status: string,
+    symbols: Symbols
+    text: string,
 }
 
-// interface Links{
-//     links: string[],
-// }
+interface RulingGroups{
+    name: string,
+    uid: string,
+}
+
+interface Symbols{
+
+}
+
+interface Cards {
+    img: string,
+    name: string,
+    prefix: string,
+    printed_name: string,
+    symbols: Symbols,
+    uid: string,
+    unique_name: string,
+}
 
 //event listeners
 cardSearchButton.addEventListener('click', performSearch);
-cardSearchInput.addEventListener('keydown', performSearch);
+cardSearchInput.addEventListener('keyup', performSearch);
 
 export {};
