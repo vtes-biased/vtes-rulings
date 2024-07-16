@@ -17,15 +17,16 @@ def test_get_card(client):
             {
                 "cards": {},
                 "group": None,
-                "references": {
-                    "[LSJ 20040518]": {
+                "references": [
+                    #"[LSJ 20040518]": 
+                    {
                         "uid": "LSJ 20040518",
                         "url": (
                             "https://groups.google.com/d/msg/"
                             "rec.games.trading-cards.jyhad/4emymfUPwAM/B2SCC7L6kuMJ"
                         ),
                     },
-                },
+                ],
                 "status": "approved",
                 "symbols": {},
                 "text": "If the weapon retrieved costs blood, that cost is paid by the "
