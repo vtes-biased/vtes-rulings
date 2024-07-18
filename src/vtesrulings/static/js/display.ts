@@ -102,10 +102,14 @@ export const getCard = async (cardName: string) => {
             return response.json(); //converts json response to js variables & returns them
         })
         .then((data) => { // <= after response is recieved, Process the data recieved
-            processCardData(data);
-            //changes regions shown
+            console.log('1');
             cardSearchRegion.className = "dont-display";
+            console.log('2');
             cardDisplayRegion.className = "display";
+            console.log('3');
+            processCardData(data);
+            console.log('4');
+            //changes regions shown
         })
         .catch((error) => { //if an error occurs, catches it here, and logs it into the console
             console.log(error);
@@ -162,6 +166,7 @@ const processSearchData = (data: string[]) => {
 
 const processCardData = (data: CardInfo) => {
     cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span>\nCard ID: " + data.uid + "\nCard Types: ";
+    //add if statemets to handle possible errors!
     for (let i = 0; i < data.types.length; i++) {
         InfoDisplayUpdate(typeIcon(data.types[i]) + ", ");
     }
@@ -234,7 +239,7 @@ interface GroupInfo{
 interface Rulings {
     cards: Cards,
     group: RulingGroups,
-    references: holder,
+    references: References,
     status: string,
     symbols: Symbols
     text: string,
@@ -243,6 +248,11 @@ interface Rulings {
 interface RulingGroups{
     name: string,
     uid: string,
+}
+
+interface References{
+    uid: string,
+    url: URL,
 }
 
 interface Symbols{

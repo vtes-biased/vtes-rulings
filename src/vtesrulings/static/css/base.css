@@ -7,11 +7,12 @@
 #cardSearchBar{
     width: 13vmax;
 }
+/*
 #cardSearch{
     display: flex;
 }
-
+*/
 
 /* able to swap between these classes to have HTML elements appear / disappear. */
-.display{ display: block; }
+.display{ display: flex; }
 .dont-display{ display: none; }

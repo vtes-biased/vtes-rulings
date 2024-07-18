@@ -92,10 +92,14 @@ export const getCard = async (cardName) => {
         return response.json(); //converts json response to js variables & returns them
     })
         .then((data) => {
-        processCardData(data);
-        //changes regions shown
+        console.log('1');
         cardSearchRegion.className = "dont-display";
+        console.log('2');
         cardDisplayRegion.className = "display";
+        console.log('3');
+        processCardData(data);
+        console.log('4');
+        //changes regions shown
     })
         .catch((error) => {
         console.log(error);
@@ -145,6 +149,7 @@ const processSearchData = (data) => {
 };
 const processCardData = (data) => {
     cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span>\nCard ID: " + data.uid + "\nCard Types: ";
+    //add if statemets to handle possible errors!
     for (let i = 0; i < data.types.length; i++) {
         InfoDisplayUpdate(typeIcon(data.types[i]) + ", ");
     }
