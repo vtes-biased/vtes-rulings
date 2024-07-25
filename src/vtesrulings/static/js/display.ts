@@ -17,6 +17,13 @@ const searchResults = document.querySelector('#searchResults') as HTMLUListEleme
 //p element(s)
 const cardDisplay = document.querySelector('#displayCard') as HTMLParagraphElement;
 
+//navigation elements
+const cardSearchNavigation = document.querySelector('#cardNav') as HTMLDivElement;
+const groupSearchNavigation = document.querySelector('#groupNav') as HTMLDivElement;
+//search Regions
+const searchByCard = document.querySelector('#SearchByCard') as HTMLDivElement;
+const searchByGroup = document.querySelector('#SearchByGroup') as HTMLDivElement;
+
 //Code:
 
 //Variables:
@@ -165,18 +172,18 @@ const processSearchData = (data: string[]) => {
 }
 
 const processCardData = (data: CardInfo) => {
-    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span>\nCard ID: " + data.uid + "\nCard Types: ";
+    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span></br>\nCard ID: " + data.uid + "</br>\nCard Types: ";
     //add if statemets to handle possible errors!
     for (let i = 0; i < data.types.length; i++) {
         InfoDisplayUpdate(typeIcon(data.types[i]) + ", ");
     }
-    InfoDisplayUpdate("\nCard Disciplines: ");
+    InfoDisplayUpdate("</br>\nCard Disciplines: ");
     for (let i = 0; i < data.disciplines.length; i++) {
         InfoDisplayUpdate(discIcon(data.disciplines[i]) + ", ");
     }
-    InfoDisplayUpdate("Rulings Made: \n");
+    InfoDisplayUpdate("Rulings Made: </br>\n");
     for (let i = 0; i < data.rulings.length; i++) {
-        InfoDisplayUpdate(data.rulings[i].text + "\n");
+        InfoDisplayUpdate(data.rulings[i].text + "</br>\n");
     }
     //use the .replace() function to replace the text with an icon.
     for (let i = cardDisplay.innerHTML.indexOf("["); i != undefined; i = cardDisplay.innerHTML.indexOf("[")) {
@@ -206,6 +213,16 @@ const clanIcon = (iconName: string) => {
 const typeIcon = (iconName: string) => {
     let returnValue = "";
     return returnValue;
+}
+
+const cardNavSwap = () =>{
+    searchByCard.className = "display";
+    searchByGroup.className = "dont-display";
+}
+
+const groupNavSwap = () =>{
+    searchByCard.className = "dont-display";
+    searchByGroup.className = "display"; 
 }
 
 //Interfaces:
@@ -272,5 +289,8 @@ interface Cards {
 //event listeners
 cardSearchButton.addEventListener('click', performSearch);
 cardSearchInput.addEventListener('keyup', performSearch);
+
+cardSearchNavigation.addEventListener('click', cardNavSwap);
+groupSearchNavigation.addEventListener('click', groupNavSwap);
 
 export {};

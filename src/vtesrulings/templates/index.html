@@ -8,24 +8,36 @@
     license.
 </p>
 
-<div id="cardSearch" class="display">
-    <label for="cardSearch">Name of Card:</label>
-    <div id="orientation">
-        <input type="text" id = "cardSearchBar" name="cardSearchBar">
-        <ul id="searchResults">
-        </ul>
+<div id="SearchByCard" class="display">
+    <div id="cardSearch" class="display">
+        <label for="cardSearch">Name of Card: </label>
+        <div id="orientation">
+            <input type="text" id = "cardSearchBar" name="cardSearchBar">
+            <ul id="cardSearchResults"></ul>
+        </div>
+        <label for=""> </label>
+        <button id="cardSearchButton">Find Card</button>
     </div>
-    <button id="cardSearchButton">Find Card</button>
+    <div id="cardDisplay" class="dont-display">
+        <p id="displayCard"></p>
+        <label for="cardRulingSubmission">Ruling to Submit: </label>
+        <input type="text" name="cardRulingSubmission" id="cardRulingSubmission">
+        <button id="cardRulingSubButton">Submit Ruling</button>
+    </div>
 </div>
-<div id="cardDisplay" class="dont-display">
-    <p id="displayCard"></p>
-    <label for="rulingSubmission">Ruling to Submit:</label>
-    <input type="text" name="rulingSubmission" id="rulingSubmission">
-    {#
-    <label for="linkSubmission">Link to Official Ruling:</label>
-    <input type="text" name="linkSubmission"   id="linkSubmission">
-    #}
-    <button id="rulingSubmissionButton">Submit Ruling</button>
+<div id="SearchByGroup" class="dont-display">
+    <div id="groupSearch" class="display">
+        <input type="text" id = "groupSearchBar" name="groupSearchBar">
+            <ul id="groupSearchResults"></ul>
+        {# fill with a list of links to specific groups #}
+    </div>
+    <div id="groupDisplay" class="dont-display">
+        <p id="displayGroup"></p>
+        <ul id="cardsInGroup"></ul>
+        <label for="groupRulingSubmission">Ruling to Submit: </label>
+        <input type="text" name="groupRulingSubmission" id="groupRulingSubmission">
+        <button id="groupRulingSubButton">Submit Ruling</button>
+    </div>
 </div>
 {#
 Plan: 

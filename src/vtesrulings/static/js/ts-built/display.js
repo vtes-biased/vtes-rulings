@@ -4,17 +4,29 @@
 //div element(s)
 const cardSearchRegion = document.querySelector('#cardSearch');
 const cardDisplayRegion = document.querySelector('#cardDisplay');
+const groupSearchRegion = document.querySelector('#groupSearch');
+const groupDisplayRegion = document.querySelector('#groupDisplay');
 //button element(s)
 const cardSearchButton = document.querySelector('#cardSearchButton');
-const rulingSubmissionButton = document.querySelector('#rulingSubmissionButton');
+const cardRulingSubButton = document.querySelector('#cardRulingSubButton');
+const groupRulingSubButton = document.querySelector('#groupRulingSubButton');
 //input element(s)
 const cardSearchInput = document.querySelector('#cardSearchBar');
-const rulingInput = document.querySelector('#rulingSubmission');
+const groupSearchInput = document.querySelector('#groupSearchBar');
+const cardRulingInput = document.querySelector('#cardRulingSubmission');
 //const linkInput = document.querySelector('#linkSubmission') as HTMLInputElement;
 //list element(s)
-const searchResults = document.querySelector('#searchResults');
+const cardSearchResults = document.querySelector('#cardSearchResults');
+const groupSearchResults = document.querySelector('#groupSearchResults');
+const cardsInGroup = document.querySelector('#cardsInGroup');
 //p element(s)
 const cardDisplay = document.querySelector('#displayCard');
+//navigation elements
+const cardSearchNavigation = document.querySelector('#cardNav');
+const groupSearchNavigation = document.querySelector('#groupNav');
+//search Regions
+const searchByCard = document.querySelector('#SearchByCard');
+const searchByGroup = document.querySelector('#SearchByGroup');
 //Code:
 //Variables:
 let discIconMap = new Map();
@@ -135,7 +147,7 @@ export const performSearch = async () => {
 };
 const processSearchData = (data) => {
     let length = data.length;
-    searchResults.replaceChildren();
+    cardSearchResults.replaceChildren();
     for (let i = 0; i < length; i++) {
         const newLi = document.createElement("li");
         const newSpan = document.createElement("span");
@@ -144,22 +156,22 @@ const processSearchData = (data) => {
         newSpan.addEventListener('click', event => getCard(data[i].replace(' ', '')));
         //add items to list
         newLi.appendChild(newSpan);
-        searchResults.appendChild(newLi);
+        cardSearchResults.appendChild(newLi);
     }
 };
 const processCardData = (data) => {
-    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span>\nCard ID: " + data.uid + "\nCard Types: ";
+    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span></br>\nCard ID: " + data.uid + "</br>\nCard Types: ";
     //add if statemets to handle possible errors!
     for (let i = 0; i < data.types.length; i++) {
         InfoDisplayUpdate(typeIcon(data.types[i]) + ", ");
     }
-    InfoDisplayUpdate("\nCard Disciplines: ");
+    InfoDisplayUpdate("</br>\nCard Disciplines: ");
     for (let i = 0; i < data.disciplines.length; i++) {
         InfoDisplayUpdate(discIcon(data.disciplines[i]) + ", ");
     }
-    InfoDisplayUpdate("Rulings Made: \n");
+    InfoDisplayUpdate("Rulings Made: </br>\n");
     for (let i = 0; i < data.rulings.length; i++) {
-        InfoDisplayUpdate(data.rulings[i].text + "\n");
+        InfoDisplayUpdate(data.rulings[i].text + "</br>\n");
     }
     //use the .replace() function to replace the text with an icon.
     for (let i = cardDisplay.innerHTML.indexOf("["); i != undefined; i = cardDisplay.innerHTML.indexOf("[")) {
@@ -186,6 +198,16 @@ const typeIcon = (iconName) => {
     let returnValue = "";
     return returnValue;
 };
+const cardNavSwap = () => {
+    searchByCard.className = "display";
+    searchByGroup.className = "dont-display";
+};
+const groupNavSwap = () => {
+    searchByCard.className = "dont-display";
+    searchByGroup.className = "display";
+};
 //event listeners
 cardSearchButton.addEventListener('click', performSearch);
 cardSearchInput.addEventListener('keyup', performSearch);
+cardSearchNavigation.addEventListener('click', cardNavSwap);
+groupSearchNavigation.addEventListener('click', groupNavSwap);
