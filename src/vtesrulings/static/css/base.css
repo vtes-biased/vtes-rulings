@@ -20,6 +20,11 @@ header{
     background-color: #ffffff;
 }
 
+.backrefs{
+    color: blue;
+    text-decoration: underline;
+}
+
 .site-logo{
     display: flex;
     flex-direction: row;

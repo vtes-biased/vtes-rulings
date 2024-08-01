@@ -237,7 +237,7 @@ const processCardSearchData = (data: string[]) => {
 }
 
 const processCardData = (data: CardInfo) => {
-    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span></br>\nCard ID: " + data.uid;
+    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span></br>\nCard ID: " + data.uid + "</br>\n";
     //add if statemets to handle possible errors!
     //Card Image
     if (data.img != undefined){
@@ -257,54 +257,62 @@ const processCardData = (data: CardInfo) => {
     }
 
     //Disciplines
-    if (data.disciplines[0].length > 1){
-        CardInfoDisplayUpdate("</br>\nCard Disciplines: ");
-        for (let i = 0; i < data.disciplines.length; i++) {
-            CardInfoDisplayUpdate(discIcon(data.disciplines[i]) + ", ");
+    if(data.disciplines[0] != undefined){
+        if (data.disciplines[0].length > 1){
+            CardInfoDisplayUpdate("</br>\nCard Disciplines: ");
+            for (let i = 0; i < data.disciplines.length; i++) {
+                CardInfoDisplayUpdate(discIcon(data.disciplines[i]) + ", ");
+            }
         }
-    }
-    else if(data.disciplines[0].length > 0){
-        CardInfoDisplayUpdate("</br>\nCard Discipline: " + data.disciplines[0]);
+        else if(data.disciplines[0].length > 0){
+            CardInfoDisplayUpdate("</br>\nCard Discipline: " + data.disciplines[0]);
+        }
     }
     //Groups
-    if (data.groups.length > 1){
-        CardInfoDisplayUpdate("</br>\nCard Groups: ");
-        for (let i = 0; i < data.groups.length; i++) {
-            CardInfoDisplayUpdate(discIcon(data.groups[i]) + ", ");
+    if(data.groups[0] != undefined){
+        if (data.groups.length > 1){
+            CardInfoDisplayUpdate("</br>\nCard Groups: ");
+            for (let i = 0; i < data.groups.length; i++) {
+                CardInfoDisplayUpdate(discIcon(data.groups[i]) + ", ");
+            }
         }
-    }
-    else if(data.groups.length > 0){
-        CardInfoDisplayUpdate("</br>\nCard Group: " + data.groups[0]);
+        else if(data.groups.length > 0){
+            CardInfoDisplayUpdate("</br>\nCard Group: " + data.groups[0]);
+        }
     }
     //Card Types
-    if (data.types.length > 1){
-        CardInfoDisplayUpdate("</br>\nCard Types: ");
-        for (let i = 0; i < data.types.length; i++) {
-            if(i != data.types.length - 1){
-                CardInfoDisplayUpdate(typeIcon(data.types[i]) + ", ");
-            }
-            else{
-                CardInfoDisplayUpdate(typeIcon(data.types[i]));
+    if(data.types[0] != undefined){
+        if (data.types.length > 1){
+            CardInfoDisplayUpdate("</br>\nCard Types: ");
+            for (let i = 0; i < data.types.length; i++) {
+                if(i != data.types.length - 1){
+                    CardInfoDisplayUpdate(typeIcon(data.types[i]) + ", ");
+                }
+                else{
+                    CardInfoDisplayUpdate(typeIcon(data.types[i]));
+                }
             }
         }
-    }
-    else if(data.types.length > 0){
-        CardInfoDisplayUpdate("</br>\nCard Type: " + data.types[0]);
+        else if(data.types.length > 0){
+            CardInfoDisplayUpdate("</br>\nCard Type: " + data.types[0]);
+        }
     }
     //Symbols
-    if (data.symbols.length > 1){
-        CardInfoDisplayUpdate("</br>\nCard Symbols: ");
-        for (let i = 0; i < data.symbols.length; i++) {
-            if(i != data.symbols.length - 1){
-                CardInfoDisplayUpdate(typeIcon(data.symbols[i].text) + ": <span class=\"krcg-icon\">" + data.symbols[i].symbol + "</span>, ");
-            }
-            else{
-                CardInfoDisplayUpdate(typeIcon(data.symbols[i].text) + ": <span class=\"krcg-icon\">" + data.symbols[i].symbol + "</span>");
+    if(data.symbols[0] != undefined){
+        if (data.symbols.length > 1){
+            CardInfoDisplayUpdate("</br>\nCard Symbols: ");
+            for (let i = 0; i < data.symbols.length; i++) {
+                if(i != data.symbols.length - 1){
+                    CardInfoDisplayUpdate(data.symbols[i].text + ": <span class=\"krcg-icon\">" + data.symbols[i].symbol + "</span>, ");
+                }
+                else{
+                    CardInfoDisplayUpdate(data.symbols[i].text + ": <span class=\"krcg-icon\">" + data.symbols[i].symbol + "</span>");
+                }
             }
         }
-    }
-    else if(data.symbols.length > 0){
-        CardInfoDisplayUpdate("</br>\nCard Symbols: " + typeIcon(data.symbols[0].text) + ": <span class=\"krcg-icon\">" + data.symbols[0].symbol + "</span>");
+        else if(data.symbols.length > 0){
+            CardInfoDisplayUpdate("</br>\nCard Symbol: " + typeIcon(data.symbols[0].text) + ": <span class=\"krcg-icon\">" + data.symbols[0].symbol + "</span>");
+        }
     }
     //Card Text
     if (data.text != undefined){
@@ -313,14 +321,14 @@ const processCardData = (data: CardInfo) => {
     //Rulings
     cardRulingList.replaceChildren();
     if (data.rulings.length > 1){
-        CardInfoDisplayUpdate("Relevant Rulings: </br>\n");
+        CardInfoDisplayUpdate("</br>\nRelevant Rulings: </br>\n");
         for (let i = 0; i < data.rulings.length; i++) {
             const newLi = document.createElement('li');
             newLi.innerHTML = newLi.innerHTML + "Ruling ID: " + data.rulings[i].uid;
-            newLi.innerHTML = newLi.innerHTML + "</br>\nRuling Made: " + data.rulings[i].text + "</br>\n";
+            newLi.innerHTML = newLi.innerHTML + "</br>\nRuling Made: " + data.rulings[i].text;
             if (data.rulings[i].references.length > 0){
                 for(let j = 0; j < data.rulings[i].references.length; j++){
-                    newLi.innerHTML = newLi.innerHTML + "<a href=\"" + data.rulings[i].references[j].url +"\">"+ data.rulings[i].references[j].text + "</a>";
+                    newLi.innerHTML = newLi.innerHTML + "</br>\n<a href=\"" + data.rulings[i].references[j].url +"\">"+ data.rulings[i].references[j].text + "</a>";
                     newLi.innerHTML = newLi.innerHTML + "</br>\nDate Updated / Created: " + data.rulings[i].references[j].date;
                 }
             }
@@ -345,7 +353,7 @@ const processCardData = (data: CardInfo) => {
         }
     }
     else if (data.rulings.length > 0){
-        CardInfoDisplayUpdate("Relevant Ruling: </br>\n");
+        CardInfoDisplayUpdate("</br>\nRelevant Ruling: </br>\n");
         const newLi = document.createElement('li');
         newLi.innerHTML = newLi.innerHTML + "Ruling ID: " + data.rulings[0].uid;
         newLi.innerHTML = newLi.innerHTML + "</br>\nRuling Made: " + data.rulings[0].text + "</br>\n";
@@ -384,6 +392,7 @@ const processCardData = (data: CardInfo) => {
             newSpan.className = "krcg-card";
             newSpan.innerHTML = data.backrefs[i].name;
             newSpan.addEventListener('click', event => getCard_1(data.backrefs[i].name.replace(' ', '')));
+            newLi.className = "backrefs";
             //add items to list
             newLi.appendChild(newSpan);
             cardBackrefs.appendChild(newLi);
