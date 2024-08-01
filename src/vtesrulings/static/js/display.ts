@@ -5,6 +5,7 @@
 //div element(s)
 const cardSearchRegion = document.querySelector('#cardSearch') as HTMLDivElement;
 const cardDisplayRegion = document.querySelector('#cardDisplay') as HTMLDivElement;
+
 const groupSearchRegion = document.querySelector('#groupSearch') as HTMLDivElement;
 const groupDisplayRegion = document.querySelector('#groupDisplay') as HTMLDivElement;
 //button element(s)
@@ -194,6 +195,8 @@ export const performCardSearch = async () => {
 
 export const performGroupSearch = async (groupName: string) => {
     let request;
+    groupSearchRegion.className = "dont-display";
+    groupDisplayRegion.className = "display";
     //generate request
     request = new Request(
         'http://127.0.0.1:5000/group' + groupName.replace(' ', ''),
@@ -210,8 +213,6 @@ export const performGroupSearch = async (groupName: string) => {
             return response.json(); //converts json response to js variables & returns them
         })
         .then((data) => { // <= after response is recieved, Process the data recieved
-            groupSearchRegion.className = "dont-display";
-            groupDisplayRegion.className = "display";
             processGroupData(data);
             //changes regions shown
         })
@@ -503,11 +504,15 @@ const typeIcon = (iconName: string) => {
 const cardNavSwap = () =>{
     searchByCard.className = "display";
     searchByGroup.className = "dont-display";
+    cardSearchRegion.className = "display";
+    cardDisplayRegion.className = "dont-display";
 }
 
 const groupNavSwap = () =>{
     searchByCard.className = "dont-display";
     searchByGroup.className = "display"; 
+    groupSearchRegion.className = "display";
+    groupDisplayRegion.className = "dont-display";
 }
 
 //Interfaces:

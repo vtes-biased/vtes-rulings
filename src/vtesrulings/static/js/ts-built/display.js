@@ -174,6 +174,8 @@ export const performCardSearch = async () => {
 };
 export const performGroupSearch = async (groupName) => {
     let request;
+    groupSearchRegion.className = "dont-display";
+    groupDisplayRegion.className = "display";
     //generate request
     request = new Request('http://127.0.0.1:5000/group' + groupName.replace(' ', ''), { method: 'GET' });
     //send request
@@ -187,8 +189,6 @@ export const performGroupSearch = async (groupName) => {
         return response.json(); //converts json response to js variables & returns them
     })
         .then((data) => {
-        groupSearchRegion.className = "dont-display";
-        groupDisplayRegion.className = "display";
         processGroupData(data);
         //changes regions shown
     })
@@ -462,10 +462,14 @@ const typeIcon = (iconName) => {
 const cardNavSwap = () => {
     searchByCard.className = "display";
     searchByGroup.className = "dont-display";
+    cardSearchRegion.className = "display";
+    cardDisplayRegion.className = "dont-display";
 };
 const groupNavSwap = () => {
     searchByCard.className = "dont-display";
     searchByGroup.className = "display";
+    groupSearchRegion.className = "display";
+    groupDisplayRegion.className = "dont-display";
 };
 //event listeners
 cardSearchButton.addEventListener('click', performCardSearch);
