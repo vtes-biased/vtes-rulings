@@ -23,6 +23,12 @@ test:
 	black --check src
 	ruff check src
 	yamllint rulings
+	pytest -vvs
 
 update:
 	pip install --upgrade --upgrade-strategy eager -e ".[dev]"
+	npm install --include=dev
+
+serve:
+	tsc
+	rulings-web
