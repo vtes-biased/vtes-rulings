@@ -1,3 +1,4 @@
+import aiohttp
 import base64
 import collections
 import dataclasses
@@ -7,6 +8,7 @@ import functools
 import hashlib
 import importlib
 import itertools
+import os
 import random
 import re
 import typing
@@ -18,6 +20,10 @@ import krcg.utils
 import krcg.vtes
 
 
+WEBHOOK_ID = os.getenv("WEBHOOK_ID")
+WEBHOOK_TOKEN = os.getenv("WEBHOOK_TOKEN")
+GUILD_ID = os.getenv("GUILD_ID")
+WEBHOOK_URL = f"https://discord.com/api/webhooks/{WEBHOOK_ID}/{WEBHOOK_TOKEN}"
 ANKHA_SYMBOLS = {
     "abo": "w",
     "ani": "i",
@@ -322,11 +328,14 @@ class LibraryCard(Card):
 
 @dataclasses.dataclass
 class Proposal(UID):
+    name: str
+    description: str
     rulings: dict[str, dict[str, Ruling]] = dataclasses.field(
         default_factory=lambda: collections.defaultdict(dict)
     )
     references: dict[str, Reference] = dataclasses.field(default_factory=dict)
     groups: dict[str, Group] = dataclasses.field(default_factory=dict)
+    channel_id: str = ""
 
 
 YAML_REFERENCES = yaml.safe_load(
@@ -424,12 +433,12 @@ class Index:
             raise FormatError(f'No reference found in <{target}> ruling: "{text}"')
         return ruling
 
-    def start_proposal(self) -> str:
+    def start_proposal(self, name: str = "", description: str = "") -> str:
         """Start a new proposal. This allows modifications."""
         ret = gen_proposal_id()
         while ret in self.proposals:
             ret = gen_proposal_id()
-        proposal = Proposal(uid=ret)
+        proposal = Proposal(uid=ret, name=name, description=description)
         self.proposals[ret] = proposal
         self.proposal = proposal
         return ret
@@ -438,15 +447,71 @@ class Index:
         """Use an existing proposal. This allows modifications."""
         self.proposal = self.proposals[uid]
 
+    def update_proposal(self, name: str = "", description: str = "") -> None:
+        if not self.proposal:
+            raise ConsistencyError("No active proposal")
+        if name:
+            self.proposal.name = name
+        if description:
+            self.proposal.description = description
+
     def off_proposals(self) -> None:
         """Turn the proposal off, if any. This prevents modifications.
         Data retrieved thereafter is the clean official YAML content.
         """
         self.proposal = None
 
-    def submit_proposal(self, prop: str) -> None:
-        # TODO Discord workflow for submission and approval
-        pass
+    async def submit_proposal(self) -> None:
+        # TODO: improve embed
+        if not self.proposal:
+            raise ConsistencyError("No active proposal")
+        if not self.proposal.name.strip():
+            raise FormatError("Proposal needs a name for submission")
+        async with aiohttp.ClientSession() as session:
+            async with session.post(
+                WEBHOOK_URL + "?wait=true",
+                json={
+                    "embeds": [
+                        {
+                            "title": self.proposal.name,
+                            "description": self.proposal.description,
+                            "fields": [
+                                {
+                                    "name": "Groups",
+                                    "inline": True,
+                                    "value": (
+                                        f"{len(self.proposal.groups)} change(s)"
+                                        if self.proposal.groups
+                                        else "No change"
+                                    ),
+                                },
+                                {
+                                    "name": "Rulings",
+                                    "inline": True,
+                                    "value": (
+                                        f"{len(self.proposal.rulings)} change(s)"
+                                        if self.proposal.rulings
+                                        else "No change"
+                                    ),
+                                },
+                                {
+                                    "name": "References",
+                                    "inline": True,
+                                    "value": (
+                                        f"{len(self.proposal.references)} change(s)"
+                                        if self.proposal.references
+                                        else "No change"
+                                    ),
+                                },
+                            ],
+                        }
+                    ],
+                    "thread_name": f"Proposal: {self.proposal.name}",
+                },
+            ) as resp:
+                resp.raise_for_status()
+                data = await resp.json()
+                self.proposal.channel_id = data["channel_id"]
 
     def approve_proposal(self, prop: str) -> None:
         # TODO YAML generation and github commit
@@ -462,12 +527,13 @@ class Index:
         return self.base_references[uid]
 
     def all_groups(self) -> typing.Generator[None, None, Group]:
-        for group in sorted(
-            self.proposal.groups.values(), key=lambda g: g.name if g else ""
-        ):
-            if group is None:
-                continue
-            yield group
+        if self.proposal:
+            for group in sorted(
+                self.proposal.groups.values(), key=lambda g: g.name if g else ""
+            ):
+                if group is None:
+                    continue
+                yield group
         for group in sorted(self.base_groups.values(), key=lambda g: g.name):
             if self.proposal and group.uid in self.proposal.groups:
                 continue

@@ -1,3 +1,7 @@
+import pytest
+import vtesrulings.rulings
+
+
 def test_get_card(client):
     response = client.get("/card/NotACard")
     assert response.status_code == 404
@@ -355,6 +359,24 @@ def test_check_references(client):
     response = client.get("/check-references")
     assert response.status_code == 200
     assert response.json == []
+
+
+def test_start_update_proposal(client):
+    # can be started empty
+    response = client.post("/proposal")
+    assert response.status_code == 200
+    assert "proposal_id" in response.json
+    # then updated
+    response = client.put(
+        "/proposal", json={"name": "Test", "description": "A test proposal."}
+    )
+    assert response.status_code == 200
+    # or started with name and description directly
+    response = client.post(
+        "/proposal", json={"name": "Test", "description": "A test proposal."}
+    )
+    assert response.status_code == 200
+    assert "proposal_id" in response.json
 
 
 def test_add_reference(client):
@@ -1166,3 +1188,27 @@ def test_list_groups(client):
     assert response.json[0]["uid"] == "G00008"
     assert response.json[0]["name"] == "Do Not Unlock as Normal"
     assert len(response.json[0]["cards"]) > 10
+
+
+@pytest.mark.discord
+def test_proposal_workflow(client):
+    vtesrulings.rulings.WEBHOOK_URL = (
+        "https://discord.com/api/webhooks/"
+        "1269051147470246061/"
+        "vlOan36vpR2sLnzBTcOj26tG05HDPs3pWHzBHbYC6sLQYwMlgMAquHlu_FO4WLd0Y4Pm"
+    )
+    response = client.post(
+        "/proposal", json={"name": "Test", "description": "A test proposal."}
+    )
+    assert response.status_code == 200
+    assert "proposal_id" in response.json
+    # add a dummy reference
+    response = client.post(
+        "/reference",
+        json={
+            "uid": "LSJ 20001225",
+            "url": "https://groups.google.com/g/rec.games.trading-cards.jyhad/test",
+        },
+    )
+    # submit sends
+    response = client.post("/proposal/submit")

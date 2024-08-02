@@ -136,24 +136,26 @@ async def get_group(group_id: str):
 
 @app.route("/proposal", methods=["POST"])
 async def start_proposal():
-    ret = INDEX.start_proposal()
+    data = flask.request.form or flask.request.get_json(force=True, silent=True) or {}
+    ret = INDEX.start_proposal(**data)
     flask.session["proposal"] = ret
     return {"proposal_id": ret}
 
 
-@app.route("/proposal/<proposal_id>", methods=["GET"])
-async def use_proposal(proposal_id: str):
-    try:
-        ret = INDEX.use_proposal(proposal_id)
-        flask.session["proposal"] = ret.uid
-    except KeyError:
-        flask.abort(404)
-    return asdict(ret)
+@app.route("/proposal", methods=["PUT"])
+@proposal_required
+async def update_proposal():
+    data = flask.request.form or flask.request.get_json(force=True)
+    ret = INDEX.update_proposal(**data)
+    flask.session["proposal"] = ret
+    return {"proposal_id": ret}
 
 
-@app.route("/proposal/<proposal_id>", methods=["POST"])
-async def submit_proposal(proposal_id):
-    INDEX.submit_proposal(proposal_id)
+@app.route("/proposal/submit", methods=["POST"])
+@proposal_required
+async def submit_proposal():
+    await INDEX.submit_proposal()
+    return INDEX.proposal.channel_id
 
 
 @app.route("/proposal", methods=["GET"])
