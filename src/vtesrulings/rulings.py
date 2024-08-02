@@ -136,6 +136,10 @@ class ConsistencyError(ValueError): ...
 KRCG_CARDS: dict[int | str, krcg.cards.Card] = krcg.cards.CardMap()
 KRCG_CARDS.load_from_vekn()
 
+KRCG_SEARCH = krcg.cards.CardSearch()
+for card in KRCG_CARDS:
+    KRCG_SEARCH.add(card)
+
 
 def gen_proposal_id() -> str:
     return base64.b32encode(random.randbytes(5)).decode("utf-8")
@@ -760,11 +764,11 @@ class Index:
         and that the dates make sense depending on the source. (see RULING_SOURCES)
         """
         if uid in self.base_references:
-            raise FormatError("Reference already listed: use a suffix")
+            raise FormatError(f"Reference already listed: {uid}, use a suffix")
         if self.proposal and uid in self.proposal.references:
-            raise FormatError("Reference already listed: use a suffix")
+            raise FormatError(f"Reference already listed: {uid}, use a suffix")
         if uid[3] != " ":
-            raise FormatError(f"Reference must have a space after prefix")
+            raise FormatError(f"Reference must have a space after prefix: {uid}")
         reference = Reference.from_uid(uid=uid, url=url)
         reference.check_url()
         reference.check_source_and_date()

@@ -1128,3 +1128,32 @@ def test_delete_group(client):
     # neither do group rulings
     for r in response.json["rulings"]:
         assert r["target"]["uid"] != "G00005"
+
+
+def test_complete(client):
+    response = client.get("/complete/")
+    assert response.status_code == 404
+    response = client.get("/complete/paris")
+    assert response.status_code == 200
+    assert response.json == [
+        {
+            "id": 101352,
+            "name": "Paris Opera House",
+            "score": 10,
+        },
+        {
+            "id": 100468,
+            "name": "Crusade: Paris",
+            "score": 5,
+        },
+        {
+            "id": 101467,
+            "name": "Praxis Seizure: Paris",
+            "score": 5,
+        },
+        {
+            "id": 101127,
+            "name": "The Louvre, Paris",
+            "score": 5,
+        },
+    ]

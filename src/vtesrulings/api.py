@@ -7,11 +7,12 @@ import urllib
 import markupsafe
 
 
+from . import rulings
+
+
 version = importlib.metadata.version("vtes-rulings")
 app = flask.Flask(__name__, template_folder="templates")
 app.secret_key = b"FAKE_SECRET_DEBUG"
-
-from . import rulings
 
 INDEX = rulings.INDEX
 
@@ -86,6 +87,19 @@ def linker():
     return dict(
         external_link=external_link,
     )
+
+
+@app.route("/complete/<text>")
+def complete_card(text: str):
+    """Card name completion, with IDs."""
+    text = urllib.parse.unquote(text)
+    ret = rulings.KRCG_SEARCH.name.search(text)["en"]
+    ret = [
+        ({"name": card.usual_name, "id": card.id, "score": score})
+        for card, score in ret.items()
+    ]
+    ret.sort(key=lambda x: (-x["score"], x["name"]))
+    return ret
 
 
 @app.route("/card/<int:card_id>")
