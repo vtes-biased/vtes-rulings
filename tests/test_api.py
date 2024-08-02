@@ -1157,3 +1157,12 @@ def test_complete(client):
             "score": 5,
         },
     ]
+
+
+def test_list_groups(client):
+    response = client.get("/group")
+    assert response.status_code == 200
+    assert response.json
+    assert response.json[0]["uid"] == "G00008"
+    assert response.json[0]["name"] == "Do Not Unlock as Normal"
+    assert len(response.json[0]["cards"]) > 10

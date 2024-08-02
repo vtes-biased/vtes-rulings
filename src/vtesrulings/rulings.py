@@ -461,6 +461,18 @@ class Index:
             return ret
         return self.base_references[uid]
 
+    def all_groups(self) -> typing.Generator[None, None, Group]:
+        for group in sorted(
+            self.proposal.groups.values(), key=lambda g: g.name if g else ""
+        ):
+            if group is None:
+                continue
+            yield group
+        for group in sorted(self.base_groups.values(), key=lambda g: g.name):
+            if self.proposal and group.uid in self.proposal.groups:
+                continue
+            yield group
+
     def get_group(self, uid: str) -> Group:
         """Return the Group object if it exists. Raise KeyError otherwise."""
         if self.proposal and uid in self.proposal.groups:

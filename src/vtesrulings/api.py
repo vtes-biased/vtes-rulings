@@ -116,6 +116,13 @@ def get_card(card_id: int):
         flask.abort(404)
 
 
+@app.route("/group")
+@proposal_facultative
+def list_groups():
+    ret = list(asdict(g) for g in INDEX.all_groups())
+    return flask.jsonify(ret)
+
+
 @app.route("/group/<group_id>")
 @proposal_facultative
 def get_group(group_id: str):
