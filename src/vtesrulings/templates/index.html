@@ -16,10 +16,12 @@
             <ul id="cardSearchResults"></ul>
         </div>
         <label for=""> </label>
-        <button id="cardSearchButton">Find Card</button>
     </div>
     <div id="cardDisplay" class="dont-display">
-        <p id="displayCard"></p>
+        <div class="display" id="column">
+            <img src="" alt="" id="displayCardImg">
+            <p id="cardInfo"></p>
+        </div>
         <ul id="cardRulings"></ul>
         <h3>Backreferences: </h3>
         <ul id="cardBackrefs"></ul>
@@ -30,12 +32,13 @@
 </div>
 <div id="SearchByGroup" class="dont-display">
     <div id="groupSearch" class="display">
+        <label for="groupSearch">Name of Group: </label>
         <input type="text" id = "groupSearchBar" name="groupSearchBar">
             <ul id="groupSearchResults"></ul>
         {# fill with a list of links to specific groups #}
     </div>
     <div id="groupDisplay" class="dont-display">
-        <p id="displayGroup"></p>
+        <p id="groupInfo"></p>
         <h3 id="cardsInGroupLabel"></h3>
         <ul id="cardsInGroup"></ul>
         <ul id="groupRulings"></ul>

@@ -7,7 +7,6 @@ const cardDisplayRegion = document.querySelector('#cardDisplay');
 const groupSearchRegion = document.querySelector('#groupSearch');
 const groupDisplayRegion = document.querySelector('#groupDisplay');
 //button element(s)
-const cardSearchButton = document.querySelector('#cardSearchButton');
 const rulingSubmissionButton = document.querySelector('#rulingSubmissionButton');
 //input element(s)
 const cardSearchInput = document.querySelector('#cardSearchBar');
@@ -21,10 +20,12 @@ const cardsInGroup = document.querySelector('#cardsInGroup');
 const groupRulingList = document.querySelector('#groupRulings');
 const groupBackrefs = document.querySelector('#groupBackrefs');
 //p element(s)
-const cardDisplay = document.querySelector('#displayCard');
-const groupDisplay = document.querySelector('#displayGroup');
+const cardDisplay = document.querySelector('#cardInfo');
+const groupDisplay = document.querySelector('#groupInfo');
 //h elements
 const cardsInGroupLabel = document.querySelector('#cardsInGroupLabel');
+//img elements
+const displayCardImg = document.querySelector('#displayCardImg');
 //navigation elements
 const cardSearchNavigation = document.querySelector('#cardNav');
 const groupSearchNavigation = document.querySelector('#groupNav');
@@ -92,8 +93,6 @@ clanIconMap.set("Osebo", "<span class=\"krcg-clan\"></span>");
 //Functions:
 //gets information about a specific card
 export const getCard_1 = async (cardName) => {
-    cardDisplayRegion.className = "display";
-    cardSearchRegion.className = "dont-display";
     //cardSearchRegion.className = "dont-display";
     //cardDisplayRegion.className = "display";
     //initialize request
@@ -112,7 +111,8 @@ export const getCard_1 = async (cardName) => {
         return response.json(); //converts json response to js variables & returns them
     })
         .then((data) => {
-        getCard_2(data);
+        changeURL(data);
+        //getCard_2(data);
         console.log('4');
         //changes regions shown
     })
@@ -120,11 +120,13 @@ export const getCard_1 = async (cardName) => {
         console.log(error);
     });
 };
+const changeURL = (cardID) => {
+    location.href = "http://127.0.0.1:5000/index.html?id=" + cardID.id;
+};
 export const getCard_2 = async (cardID) => {
     let request;
     //generate request
-    request = new Request('http://127.0.0.1:5000/card/' + cardID.id, //cardName.replace(' ', ''), //Use ID, not name!!
-    { method: 'GET' });
+    request = new Request('http://127.0.0.1:5000/card/' + cardID, { method: 'GET' });
     //send request
     fetch(request)
         .then((response) => {
@@ -137,6 +139,8 @@ export const getCard_2 = async (cardID) => {
     })
         .then((data) => {
         processCardData(data);
+        cardDisplayRegion.className = "display";
+        cardSearchRegion.className = "dont-display";
         console.log('4');
         //changes regions shown
     })
@@ -200,22 +204,23 @@ const processCardSearchData = (data) => {
     let length = data.length;
     searchResults.replaceChildren();
     for (let i = 0; i < length; i++) {
-        const newLi = document.createElement("li");
+        const newDiv = document.createElement("div");
         const newSpan = document.createElement("span");
         newSpan.className = "krcg-card";
         newSpan.innerHTML = data[i];
         newSpan.addEventListener('click', event => getCard_1(data[i].replace(' ', '')));
         //add items to list
-        newLi.appendChild(newSpan);
-        searchResults.appendChild(newLi);
+        newDiv.appendChild(newSpan);
+        searchResults.appendChild(newDiv);
     }
 };
 const processCardData = (data) => {
-    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span></br>\nCard ID: " + data.uid + "</br>\n";
+    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span></br>\nCard ID: " + data.uid;
     //add if statemets to handle possible errors!
     //Card Image
     if (data.img != undefined) {
-        CardInfoDisplayUpdate("<img src=\"" + data.img + "\" alt=\"" + data.printed_name + " card image\">");
+        displayCardImg.src = data.img;
+        displayCardImg.alt = data.printed_name + " card image";
     }
     //Blood Cost
     if (data.blood_cost != undefined) {
@@ -284,7 +289,7 @@ const processCardData = (data) => {
             }
         }
         else if (data.symbols.length > 0) {
-            CardInfoDisplayUpdate("</br>\nCard Symbol: " + typeIcon(data.symbols[0].text) + ": <span class=\"krcg-icon\">" + data.symbols[0].symbol + "</span>");
+            CardInfoDisplayUpdate("</br>\nCard Symbol: " + data.symbols[0].text + ": <span class=\"krcg-icon\">" + data.symbols[0].symbol + "</span>");
         }
     }
     //Card Text
@@ -296,28 +301,24 @@ const processCardData = (data) => {
     if (data.rulings.length > 1) {
         CardInfoDisplayUpdate("</br>\nRelevant Rulings: </br>\n");
         for (let i = 0; i < data.rulings.length; i++) {
-            const newLi = document.createElement('li');
-            newLi.innerHTML = newLi.innerHTML + "Ruling ID: " + data.rulings[i].uid;
+            const newLi = document.createElement('div');
+            //newLi.innerHTML = newLi.innerHTML + "Ruling ID: " + data.rulings[i].uid;
             newLi.innerHTML = newLi.innerHTML + "</br>\nRuling Made: " + data.rulings[i].text;
             if (data.rulings[i].references.length > 0) {
                 for (let j = 0; j < data.rulings[i].references.length; j++) {
-                    newLi.innerHTML = newLi.innerHTML + "</br>\n<a href=\"" + data.rulings[i].references[j].url + "\">" + data.rulings[i].references[j].text + "</a>";
-                    newLi.innerHTML = newLi.innerHTML + "</br>\nDate Updated / Created: " + data.rulings[i].references[j].date;
+                    newLi.innerHTML.replace(data.rulings[i].references[j].text, "</br>\n<a href=\"" + data.rulings[i].references[j].url + "\">" + data.rulings[i].references[j].text + "</a>");
                 }
             }
             if (data.rulings[i].symbols.length > 0) {
-                newLi.innerHTML = newLi.innerHTML + "Included Symbols: </br>\n";
+                newLi.innerHTML = newLi.innerHTML + "</br>\nIncluded Symbols: </br>\n";
                 for (let j = 0; j < data.rulings[i].symbols.length; j++) {
-                    newLi.innerHTML = newLi.innerHTML + "<span class=\"krcg-icon\">" + data.rulings[i].symbols[j].symbol + "</span>";
+                    newLi.innerHTML.replace(data.rulings[i].symbols[j].text, "<span class=\"krcg-icon\">" + data.rulings[i].symbols[j].symbol + "</span>");
                 }
             }
             if (data.rulings[i].cards.length > 0) {
                 newLi.innerHTML = newLi.innerHTML + "</br>\nRelevant Card(s): </br>\n";
                 for (let j = 0; j < data.rulings[i].cards.length; j++) {
-                    const newDiv = document.createElement('div');
-                    newDiv.innerHTML = data.rulings[i].cards[j].name + "</br>\n";
-                    newDiv.addEventListener('click', event => getCard_1(data.rulings[i].cards[j].name.replace(' ', '')));
-                    newLi.appendChild(newDiv);
+                    newLi.innerHTML.replace(data.rulings[i].cards[j].name, "<a href=\"http://127.0.0.1:5000/card/" + data.rulings[i].cards[j].name + "\">" + data.rulings[i].cards[j].name + "</a>");
                 }
             }
             cardRulingList.appendChild(newLi);
@@ -341,12 +342,13 @@ const processCardData = (data) => {
             }
         }
         if (data.rulings[0].cards.length > 0) {
-            newLi.innerHTML = newLi.innerHTML + "</br>\nRelevant Card(s): </br>\n";
             for (let j = 0; j < data.rulings[0].cards.length; j++) {
-                const newDiv = document.createElement('div');
-                newDiv.innerHTML = data.rulings[0].cards[j].name + "</br>\n";
-                newDiv.addEventListener('click', event => getCard_1(data.rulings[0].cards[j].name.replace(' ', '')));
-                newLi.appendChild(newDiv);
+                newLi.innerHTML.replace(data.rulings[0].cards[j].name, "<a href=\"http://127.0.0.1:5000/card/" + data.rulings[0].cards[j].uid +
+                    "\" , id=\"referenceLink\">" + data.rulings[0].cards[j].name + "</a>");
+                // const newDiv = document.createElement('div'); 
+                // newDiv.innerHTML = data.rulings[0].cards[j].name + "</br>\n";
+                // newDiv.addEventListener('click', event => getCard_1(data.rulings[0].cards[j].name.replace(' ', '')));
+                // newLi.appendChild(newDiv);
             }
         }
         cardRulingList.appendChild(newLi);
@@ -481,7 +483,18 @@ const groupNavSwap = () => {
     groupDisplayRegion.className = "dont-display";
 };
 //event listeners
-cardSearchButton.addEventListener('click', performCardSearch);
 cardSearchInput.addEventListener('keyup', performCardSearch);
 cardSearchNavigation.addEventListener('click', cardNavSwap);
 groupSearchNavigation.addEventListener('click', groupNavSwap);
+//
+if (location.href.includes("id") && location.href.includes("group")) {
+    let position = location.href.indexOf("id");
+    let idSearch = location.href.slice(position + 3, position + 9);
+    console.log(idSearch);
+}
+else if (location.href.includes("id")) {
+    let position = location.href.indexOf("id");
+    let idSearch = location.href.slice(position + 3, position + 9);
+    console.log(idSearch);
+    getCard_2(idSearch);
+}
