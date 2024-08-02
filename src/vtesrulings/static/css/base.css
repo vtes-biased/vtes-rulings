@@ -55,6 +55,8 @@ label{
 }
 #SearchByCard{
     justify-content: center;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 #searchResults{
     position: absolute;

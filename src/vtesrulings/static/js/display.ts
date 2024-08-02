@@ -12,14 +12,16 @@ const groupDisplayRegion = document.querySelector('#groupDisplay') as HTMLDivEle
 const rulingSubmissionButton = document.querySelector('#rulingSubmissionButton') as HTMLButtonElement;
 //input element(s)
 const cardSearchInput = document.querySelector('#cardSearchBar') as HTMLInputElement;
+const groupSearchInput = document.querySelector('#groupSearchBar') as HTMLInputElement;
 const rulingInput = document.querySelector('#rulingSubmission') as HTMLInputElement;
 //const linkInput = document.querySelector('#linkSubmission') as HTMLInputElement;
 //list element(s)
-const searchResults = document.querySelector('#cardSearchResults') as HTMLUListElement;
+const cardSearchResults = document.querySelector('#cardSearchResults') as HTMLUListElement;
 const cardRulingList = document.querySelector('#cardRulings') as HTMLUListElement;
 const cardBackrefs = document.querySelector('#cardBackrefs') as HTMLUListElement;
 
 const cardsInGroup = document.querySelector('#cardsInGroup') as HTMLUListElement;
+const groupSearchResults = document.querySelector('#groupSearchResults') as HTMLUListElement;
 const groupRulingList = document.querySelector('#groupRulings') as HTMLUListElement;
 const groupBackrefs = document.querySelector('#groupBackrefs') as HTMLUListElement;
 //p element(s)
@@ -135,10 +137,11 @@ export const getCard_1 = async (cardName: string) => {
 }
 
 const changeURL = (cardID: IdQuery) =>{
-    location.href = "http://127.0.0.1:5000/index.html?id=" + cardID.id;
+    window.history.pushState({}, "", "http://127.0.0.1:5000/index.html?id=" + cardID.id);
+    getCard_2(cardID.id);
 }
 
-export const getCard_2 = async (cardID: string) => {
+export const getCard_2 = async (cardID: number) => {
     let request;
     //generate request
     request = new Request(
@@ -230,7 +233,7 @@ export const performGroupSearch = async (groupName: string) => {
 
 const processCardSearchData = (data: string[]) => {
     let length = data.length;
-    searchResults.replaceChildren();
+    cardSearchResults.replaceChildren();
     for (let i = 0; i < length; i++) {
         const newDiv = document.createElement("div");
         const newSpan = document.createElement("span");
@@ -239,7 +242,7 @@ const processCardSearchData = (data: string[]) => {
         newSpan.addEventListener('click', event => getCard_1(data[i].replace(' ', '')));
         //add items to list
         newDiv.appendChild(newSpan);
-        searchResults.appendChild(newDiv);
+        cardSearchResults.appendChild(newDiv);
     }
 }
 
@@ -519,18 +522,28 @@ const typeIcon = (iconName: string) => {
     return returnValue;
 }
 
-const cardNavSwap = () =>{
+const cardNavSwap = (swap : boolean) =>{
+    cardSearchResults.replaceChildren();
+    cardSearchInput.value = "";
     searchByCard.className = "display";
     searchByGroup.className = "dont-display";
     cardSearchRegion.className = "display";
     cardDisplayRegion.className = "dont-display";
+    if(swap){
+        window.history.pushState({}, "", "http://127.0.0.1:5000/index.html");
+    }
 }
 
-const groupNavSwap = () =>{
+const groupNavSwap = (swap : boolean) =>{
+    groupSearchResults.replaceChildren();
+    groupSearchInput.value = "";
     searchByCard.className = "dont-display";
     searchByGroup.className = "display"; 
     groupSearchRegion.className = "display";
     groupDisplayRegion.className = "dont-display";
+    if(swap){
+        window.history.pushState({}, "", "http://127.0.0.1:5000/index.html");
+    }
 }
 
 //Interfaces:
@@ -611,20 +624,28 @@ interface IdQuery{
 //event listeners
 cardSearchInput.addEventListener('keyup', performCardSearch);
 
-cardSearchNavigation.addEventListener('click', cardNavSwap);
-groupSearchNavigation.addEventListener('click', groupNavSwap);
+cardSearchNavigation.addEventListener('click', event => cardNavSwap(true));
+groupSearchNavigation.addEventListener('click', event => groupNavSwap(true));
 //
-if(location.href.includes("id") && location.href.includes("group")){
-    let position = location.href.indexOf("id");
-    let idSearch = location.href.slice(position + 3, position + 9);
-    console.log(idSearch);
+const hrefCheck = () => {
+    if(location.href.includes("id") && location.href.includes("group")){
+        let position = location.href.indexOf("id");
+        let idSearch = location.href.slice(position + 3, position + 9);
+        console.log(idSearch);
+    }
+    else if(location.href.includes("id")){
+        let position = location.href.indexOf("id");
+        let idSearch = parseInt(location.href.slice(position + 3, position + 9), 10);
+        console.log(idSearch);
+        getCard_2(idSearch);
+    }
+    else{
+        cardNavSwap(false);
+    }
+}
+hrefCheck();
+window.addEventListener('popstate', hrefCheck);
 
-}
-else if(location.href.includes("id")){
-    let position = location.href.indexOf("id");
-    let idSearch = location.href.slice(position + 3, position + 9);
-    console.log(idSearch);
-    getCard_2(idSearch);
-}
+
 
 export {};
