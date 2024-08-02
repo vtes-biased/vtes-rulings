@@ -103,6 +103,21 @@ Install all the requirements:
 
 ```windows
 pip install --upgrade --upgrade-strategy eager -e ".[dev]"
+npm install --include=dev
+```
+
+Compile Typescript:
+
+Make sure `node_modules/.bin` is in your `PATH` and run:
+
+```
+tsc
+```
+
+You can use the `-w` option to enable typescript live compiler while developing:
+
+```
+tsc -w
 ```
 
 Run the website:
@@ -110,13 +125,3 @@ Run the website:
 ```
 rulings-web
 ```
-
-How to compile Typescript into Javascript for use:
-
-Navigate your file pointer in console to vtes-rulings using cd command
-
-run the following code: tsc -w
-
-this code allows for the typescript to be updated when you save, so long as it's running.
-
-press ctrl + C to end the above program
