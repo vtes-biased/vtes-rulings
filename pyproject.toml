@@ -22,7 +22,7 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
 ]
 dependencies = [
-    "flask>=3",
+    "flask[async]>=3",
     "flask-babel>=4",
     "unidecode>=1",
     "Jinja2>=3",
