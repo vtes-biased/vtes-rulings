@@ -4,7 +4,8 @@ node_modules/
 .vscode/
 *.DS_Store
 *.egg-info/
-.*_cache/
+.*cache/
 scripts/output/
+src/vtesrulings/static/js/*.js*
 venv/
 package-lock.json

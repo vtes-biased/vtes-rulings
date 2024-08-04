@@ -1,5 +1,15 @@
 {
+    "scripts": {
+        "watch": "parcel src/vtesrulings/static/js/display.ts --dist-dir src/vtesrulings/static/js/",
+        "build": "parcel build src/vtesrulings/static/js/display.ts --dist-dir src/vtesrulings/static/js/"
+    },
+    "targets": {
+        "default": {
+            "distDir": "src/vtesrulings/static/js/"
+        }
+    },
     "devDependencies": {
-        "typescript": "^5.5.2"
+        "typescript": "^5.5.2",
+        "parcel": "^2.12.0"
     }
 }

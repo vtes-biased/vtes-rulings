@@ -79,12 +79,8 @@ def linker():
 @app.route("/")
 @app.route("/<path:page>")
 async def index(page=None):
-    redirect = False
     if not page:
-        page = "index.html"
-        redirect = True
-    if redirect:
-        return flask.redirect(page, 301)
+        return flask.redirect("index.html", 301)
     context = {}
     return flask.render_template(page, **context)
 

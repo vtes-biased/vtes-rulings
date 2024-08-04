@@ -30,5 +30,4 @@ update:
 	npm install --include=dev
 
 serve:
-	tsc
-	source .env && rulings-web
+	npm run watch & source .env && FLASK_APP=src/vtesrulings/api.py flask run
