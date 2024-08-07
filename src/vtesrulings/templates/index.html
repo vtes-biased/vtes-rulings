@@ -25,9 +25,20 @@
         <ul id="cardRulings"></ul>
         <h3>Backreferences: </h3>
         <ul id="cardBackrefs"></ul>
-        <label for="cardRulingSubmission">Ruling to Submit: </label>
-        <input type="text" name="cardRulingSubmission" id="cardRulingSubmission">
-        <button id="cardRulingSubButton">Submit Ruling</button>
+    </div>
+    <div id="cardRulingEdit" class="dont-display">
+        <label for="cardEditRulingInput">Proposed Ruling: </label>
+        <input type="text" id="cardEditRulingInput">
+        <label for="cardRulingReference">Reference: </label>
+        <input type="text" id="cardEditRulingReference">
+        <button id="cardEditRulingSub">Submit</button>
+    </div>
+    <div id="createCardRuling" class="dont-display">
+        <label for="cardNewRulingInput">Proposed Ruling: </label>
+        <input type="text" id="cardNewRulingInput">
+        <label for="cardNewRulingReference">Reference: </label>
+        <input type="text" id="cardNewRulingReference">
+        <button id="cardNewRulingSub">Submit</button>
     </div>
 </div>
 <div id="SearchByGroup" class="dont-display">
@@ -39,12 +50,23 @@
     </div>
     <div id="groupDisplay" class="dont-display">
         <p id="groupInfo"></p>
+        <ul id="groupRulings"></ul>
         <h3 id="cardsInGroupLabel"></h3>
         <ul id="cardsInGroup"></ul>
-        <ul id="groupRulings"></ul>
-        <label for="groupRulingSubmission">Ruling to Submit: </label>
-        <input type="text" name="groupRulingSubmission" id="groupRulingSubmission">
-        <button id="groupRulingSubButton">Submit Ruling</button>
+    </div>
+    <div id="groupRulingEdit" class="dont-display">
+        <label for="groupEditRulingInput">Proposed Ruling: </label>
+        <input type="text" id="groupEditRulingInput">
+        <label for="groupRulingReference">Reference: </label>
+        <input type="text" id="groupEditRulingReference">
+        <button id="groupEditRulingSub">Submit</button>
+    </div>
+    <div id="createGroupRuling" class="dont-display">
+        <label for="groupNewRulingInput">Proposed Ruling: </label>
+        <input type="text" id="groupNewRulingInput">
+        <label for="groupNewRulingReference">Reference: </label>
+        <input type="text" id="groupRulingReference">
+        <button id="groupNewRulingSub">Submit</button>
     </div>
 </div>
 {#

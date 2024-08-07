@@ -1,4 +1,4 @@
-//    Plan: 
+//    Plan: Try it out!
 //    set up map elemets for icons
 //    make changes so that code functions on local server
 //div element(s)
@@ -7,11 +7,18 @@ const cardDisplayRegion = document.querySelector('#cardDisplay');
 const groupSearchRegion = document.querySelector('#groupSearch');
 const groupDisplayRegion = document.querySelector('#groupDisplay');
 //button element(s)
-const rulingSubmissionButton = document.querySelector('#rulingSubmissionButton');
+const cardNewRulingSub = document.querySelector('#cardNewRulingSub');
+const cardEditRulingSub = document.querySelector('#cardEditRulingSub');
+const groupNewRulingSub = document.querySelector('#groupNewRulingSub');
+const groupEditRulingSub = document.querySelector('#groupEditRulingSub');
 //input element(s)
 const cardSearchInput = document.querySelector('#cardSearchBar');
 const groupSearchInput = document.querySelector('#groupSearchBar');
 const rulingInput = document.querySelector('#rulingSubmission');
+const cardNewRulingInput = document.querySelector('#cardNewRulingInput');
+const cardNewRulingReference = document.querySelector('#cardNewRulingReference');
+const cardEditRulingInput = document.querySelector('#cardEditRulingInput');
+const cardEditRulingReference = document.querySelector('#cardEditRulingReference');
 //const linkInput = document.querySelector('#linkSubmission') as HTMLInputElement;
 //list element(s)
 const cardSearchResults = document.querySelector('#cardSearchResults');
@@ -34,6 +41,9 @@ const groupSearchNavigation = document.querySelector('#groupNav');
 //search input
 const searchByCard = document.querySelector('#SearchByCard');
 const searchByGroup = document.querySelector('#SearchByGroup');
+//search result navigation
+let dropdownResults = cardSearchResults.getElementsByTagName('div');
+let dropdownIndex = 0;
 //Code:
 //Variables:
 let discIconMap = new Map();
@@ -208,17 +218,18 @@ const processCardSearchData = (data) => {
     cardSearchResults.replaceChildren();
     for (let i = 0; i < length; i++) {
         const newDiv = document.createElement("div");
-        const newSpan = document.createElement("span");
-        newSpan.className = "krcg-card";
-        newSpan.innerHTML = data[i];
-        newSpan.addEventListener('click', event => getCard_1(data[i].replace(' ', '')));
+        newDiv.className = "cardSearchOption";
+        newDiv.innerHTML = data[i];
+        newDiv.addEventListener('click', event => getCard_1(data[i].replace(' ', '')));
         //add items to list
-        newDiv.appendChild(newSpan);
         cardSearchResults.appendChild(newDiv);
     }
+    dropdownIndex = 0;
+    dropdownResults = cardSearchResults.getElementsByTagName('div');
+    dropdownResults.item(dropdownIndex).className = "cardSearchOptionSelected";
 };
 const processCardData = (data) => {
-    cardDisplay.innerHTML = "Card name: <span class=\"krcg-card\">" + data.printed_name + "</span></br>\nCard ID: " + data.uid;
+    cardDisplay.innerHTML = "<div>" + data.uid + "</div>" + "<h2>" + data.printed_name + "<h2>";
     //add if statemets to handle possible errors!
     //Card Image
     if (data.img != undefined) {
@@ -240,31 +251,31 @@ const processCardData = (data) => {
     //Disciplines
     if (data.disciplines[0] != undefined) {
         if (data.disciplines[0].length > 1) {
-            CardInfoDisplayUpdate("</br>\nCard Disciplines: ");
+            CardInfoDisplayUpdate("</br>\nDisciplines: ");
             for (let i = 0; i < data.disciplines.length; i++) {
                 CardInfoDisplayUpdate(discIcon(data.disciplines[i]) + ", ");
             }
         }
         else if (data.disciplines[0].length > 0) {
-            CardInfoDisplayUpdate("</br>\nCard Discipline: " + data.disciplines[0]);
+            CardInfoDisplayUpdate("</br>\nDiscipline: " + data.disciplines[0]);
         }
     }
     //Groups
     if (data.groups[0] != undefined) {
         if (data.groups.length > 1) {
-            CardInfoDisplayUpdate("</br>\nCard Groups: ");
+            CardInfoDisplayUpdate("</br>\nGroups: ");
             for (let i = 0; i < data.groups.length; i++) {
                 CardInfoDisplayUpdate(discIcon(data.groups[i]) + ", ");
             }
         }
         else if (data.groups.length > 0) {
-            CardInfoDisplayUpdate("</br>\nCard Group: " + data.groups[0]);
+            CardInfoDisplayUpdate("</br>\nGroup: " + data.groups[0]);
         }
     }
     //Card Types
     if (data.types[0] != undefined) {
         if (data.types.length > 1) {
-            CardInfoDisplayUpdate("</br>\nCard Types: ");
+            CardInfoDisplayUpdate("</br>\nTypes: ");
             for (let i = 0; i < data.types.length; i++) {
                 if (i != data.types.length - 1) {
                     CardInfoDisplayUpdate(typeIcon(data.types[i]) + ", ");
@@ -275,13 +286,13 @@ const processCardData = (data) => {
             }
         }
         else if (data.types.length > 0) {
-            CardInfoDisplayUpdate("</br>\nCard Type: " + data.types[0]);
+            CardInfoDisplayUpdate("</br>\nType: " + data.types[0]);
         }
     }
     //Symbols
     if (data.symbols[0] != undefined) {
         if (data.symbols.length > 1) {
-            CardInfoDisplayUpdate("</br>\nCard Symbols: ");
+            CardInfoDisplayUpdate("</br>\nSymbols: ");
             for (let i = 0; i < data.symbols.length; i++) {
                 if (i != data.symbols.length - 1) {
                     CardInfoDisplayUpdate(data.symbols[i].text + ": <span class=\"krcg-icon\">" + data.symbols[i].symbol + "</span>, ");
@@ -305,63 +316,87 @@ const processCardData = (data) => {
         CardInfoDisplayUpdate("</br>\nRelevant Rulings: </br>\n");
         for (let i = 0; i < data.rulings.length; i++) {
             const newLi = document.createElement('div');
+            newLi.className = "ruling";
             //newLi.innerHTML = newLi.innerHTML + "Ruling ID: " + data.rulings[i].uid;
-            newLi.innerHTML = newLi.innerHTML + "</br>\nRuling Made: " + data.rulings[i].text;
+            const rulingName = document.createElement('div');
+            const rulingText = document.createElement('div');
+            rulingText.className = "rulingText";
+            rulingText.innerHTML = data.rulings[i].text;
+            rulingName.className = "rulingName";
+            rulingName.innerHTML = data.rulings[i].uid;
             if (data.rulings[i].references.length > 0) {
                 for (let j = 0; j < data.rulings[i].references.length; j++) {
-                    newLi.innerHTML.replace(data.rulings[i].references[j].text, "</br>\n<a href=\"" + data.rulings[i].references[j].url + "\">" + data.rulings[i].references[j].text + "</a>");
+                    rulingText.innerHTML.replace(data.rulings[i].references[j].text, "</br>\n<a href=\"" + data.rulings[i].references[j].url + "\">" + data.rulings[i].references[j].text + "</a>");
                 }
             }
             if (data.rulings[i].symbols.length > 0) {
-                newLi.innerHTML = newLi.innerHTML + "</br>\nIncluded Symbols: </br>\n";
                 for (let j = 0; j < data.rulings[i].symbols.length; j++) {
-                    newLi.innerHTML.replace(data.rulings[i].symbols[j].text, "<span class=\"krcg-icon\">" + data.rulings[i].symbols[j].symbol + "</span>");
+                    rulingText.innerHTML.replace(data.rulings[i].symbols[j].text, "<span class=\"krcg-icon\">" + data.rulings[i].symbols[j].symbol + "</span>");
                 }
             }
             if (data.rulings[i].cards.length > 0) {
-                newLi.innerHTML = newLi.innerHTML + "</br>\nRelevant Card(s): </br>\n";
                 for (let j = 0; j < data.rulings[i].cards.length; j++) {
-                    newLi.innerHTML.replace(data.rulings[i].cards[j].name, "<a href=\"http://127.0.0.1:5000/card/" + data.rulings[i].cards[j].name + "\">" + data.rulings[i].cards[j].name + "</a>");
+                    rulingText.innerHTML.replace(data.rulings[i].cards[j].name, "<a href=\"http://127.0.0.1:5000/card/" + data.rulings[i].cards[j].name + "\" id=\"cardLink\">" + data.rulings[i].cards[j].name + "</a>");
                 }
             }
+            const editButton = document.createElement('button');
+            editButton.className = "rulingEdit";
+            editButton.innerHTML = "edit";
+            editButton.addEventListener('click', EditCardRuling);
+            newLi.appendChild(rulingName);
+            newLi.appendChild(rulingText);
+            newLi.appendChild(editButton);
             cardRulingList.appendChild(newLi);
+            cardRulingList.appendChild(document.createElement('br'));
         }
     }
     else if (data.rulings.length > 0) {
         CardInfoDisplayUpdate("</br>\nRelevant Ruling: </br>\n");
-        const newLi = document.createElement('li');
-        newLi.innerHTML = newLi.innerHTML + "Ruling ID: " + data.rulings[0].uid;
-        newLi.innerHTML = newLi.innerHTML + "</br>\nRuling Made: " + data.rulings[0].text + "</br>\n";
+        const newLi = document.createElement('div');
+        newLi.className = "ruling";
+        //newLi.innerHTML = newLi.innerHTML + "Ruling ID: " + data.rulings[i].uid;
+        const rulingName = document.createElement('div');
+        const rulingText = document.createElement('div');
+        rulingText.className = "rulingText";
+        rulingText.innerHTML = data.rulings[0].text;
+        rulingName.className = "rulingName";
+        rulingName.innerHTML = data.rulings[0].uid;
         if (data.rulings[0].references.length > 0) {
             for (let j = 0; j < data.rulings[0].references.length; j++) {
-                newLi.innerHTML = newLi.innerHTML + "<a href=\"" + data.rulings[0].references[j].url + "\">" + data.rulings[0].references[j].text + "</a>";
-                newLi.innerHTML = newLi.innerHTML + "</br>\nDate Updated / Created: " + data.rulings[0].references[j].date;
+                rulingText.innerHTML.replace(data.rulings[0].references[j].text, "</br>\n<a href=\"" + data.rulings[0].references[j].url + "\">" + data.rulings[0].references[j].text + "</a>");
             }
         }
         if (data.rulings[0].symbols.length > 0) {
-            newLi.innerHTML = newLi.innerHTML + "Included Symbols: </br>\n";
             for (let j = 0; j < data.rulings[0].symbols.length; j++) {
-                newLi.innerHTML = newLi.innerHTML + "<span class=\"krcg-icon\">" + data.rulings[0].symbols[j].symbol + "</span>";
+                rulingText.innerHTML.replace(data.rulings[0].symbols[j].text, "<span class=\"krcg-icon\">" + data.rulings[0].symbols[j].symbol + "</span>");
             }
         }
         if (data.rulings[0].cards.length > 0) {
             for (let j = 0; j < data.rulings[0].cards.length; j++) {
-                newLi.innerHTML.replace(data.rulings[0].cards[j].name, "<a href=\"http://127.0.0.1:5000/card/" + data.rulings[0].cards[j].uid +
-                    "\" , id=\"referenceLink\">" + data.rulings[0].cards[j].name + "</a>");
-                // const newDiv = document.createElement('div'); 
-                // newDiv.innerHTML = data.rulings[0].cards[j].name + "</br>\n";
-                // newDiv.addEventListener('click', event => getCard_1(data.rulings[0].cards[j].name.replace(' ', '')));
-                // newLi.appendChild(newDiv);
+                rulingText.innerHTML.replace(data.rulings[0].cards[j].name, "<a href=\"http://127.0.0.1:5000/card/" + data.rulings[0].cards[j].name + "\" id=\"cardLink\">" + data.rulings[0].cards[j].name + "</a>");
             }
         }
+        const editButton = document.createElement('button');
+        editButton.className = "rulingEdit";
+        editButton.innerHTML = "edit";
+        editButton.addEventListener('click', EditCardRuling);
+        newLi.appendChild(rulingName);
+        newLi.appendChild(rulingText);
+        newLi.appendChild(editButton);
         cardRulingList.appendChild(newLi);
+        cardRulingList.appendChild(document.createElement('br'));
     }
+    const createRuling = document.createElement('button');
+    createRuling.className = "rulingCreate";
+    createRuling.innerHTML = "New Ruling";
+    createRuling.addEventListener('click', CreateCardRuling);
+    cardRulingList.appendChild(createRuling);
     //Backreferences
     cardBackrefs.replaceChildren();
     if ((data.backrefs[0] != undefined)) {
         let length = data.backrefs.length;
         for (let i = 0; i < length; i++) {
-            const newLi = document.createElement("li");
+            const newLi = document.createElement("div");
             const newSpan = document.createElement("span");
             newSpan.className = "krcg-card";
             newSpan.innerHTML = data.backrefs[i].name;
@@ -373,6 +408,47 @@ const processCardData = (data) => {
         }
     }
 };
+const EditCardRuling = () => {
+    if ((cardEditRulingInput.value != "") && (cardEditRulingReference.value != "")) {
+        fetch('http://127.0.0.1:5000/proposal', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                card: "",
+                symbol: "",
+                text: '',
+            })
+        })
+            .then(response => response.json())
+            .then(response => console.log(JSON.stringify(response)));
+    }
+    else if (cardEditRulingInput.value != "") {
+    }
+};
+cardEditRulingSub.addEventListener('click', EditCardRuling);
+const CreateCardRuling = () => {
+    if (cardNewRulingInput.value != "") {
+        fetch('http://127.0.0.1:5000/proposal', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                card: "",
+                symbol: "",
+                reference: '',
+                text: '',
+            })
+        })
+            .then(response => response.json())
+            .then(response => console.log(JSON.stringify(response)));
+    }
+};
+cardNewRulingSub.addEventListener('click', CreateCardRuling);
 const processGroupData = (data) => {
     groupDisplay.innerHTML = "Group Name: " + data.name + "</br>\n";
     groupRulingList.replaceChildren();
@@ -452,6 +528,12 @@ const processGroupData = (data) => {
         cardsInGroup.appendChild(newLi);
     }
 };
+const EditGroupRuling = () => {
+};
+groupEditRulingSub.addEventListener('click', EditGroupRuling);
+const CreateGroupRuling = () => {
+};
+groupNewRulingSub.addEventListener('click', CreateGroupRuling);
 function CardInfoDisplayUpdate(additionalText) {
     cardDisplay.innerHTML = cardDisplay.innerHTML + additionalText;
 }
@@ -492,9 +574,46 @@ const groupNavSwap = (swap) => {
     groupSearchRegion.className = "display";
     groupDisplayRegion.className = "dont-display";
     if (swap) {
-        window.history.pushState({}, "", "http://127.0.0.1:5000/index.html");
+        window.history.pushState({}, "", "http://127.0.0.1:5000/index.html?group");
     }
 };
+const SearchResultNavUp = () => {
+    if (dropdownIndex > 0) {
+        dropdownIndex -= 1;
+        dropdownResults[dropdownIndex].className = "cardSearchOptionSelected";
+        dropdownResults[dropdownIndex + 1].className = "cardSearchOption";
+    }
+};
+const SearchResultNavDown = () => {
+    if (dropdownIndex < dropdownResults.length) {
+        dropdownIndex += 1;
+        dropdownResults.item(dropdownIndex).className = "cardSearchOptionSelected";
+        dropdownResults.item(dropdownIndex - 1).className = "cardSearchOption";
+    }
+};
+const SearchResultNavSelect = () => {
+    getCard_1(dropdownResults.item(dropdownIndex).innerHTML.replace(' ', ''));
+};
+//check for key presses, and have things occur based on state / key pressed
+document.onkeydown = checkKey;
+function checkKey(e) {
+    e = e || window.event;
+    if (e.keyCode == '38') {
+        //up arrow
+        SearchResultNavUp();
+    }
+    else if (e.keyCode == '40') {
+        //down arrow
+        SearchResultNavDown();
+    }
+    else if (e.keyCode == '13') {
+        //enter key
+        SearchResultNavSelect();
+    }
+    else {
+        console.log(e.keyCode);
+    }
+}
 //event listeners
 cardSearchInput.addEventListener('keyup', performCardSearch);
 cardSearchNavigation.addEventListener('click', event => cardNavSwap(true));
@@ -505,6 +624,7 @@ const hrefCheck = () => {
         let position = location.href.indexOf("id");
         let idSearch = location.href.slice(position + 3, position + 9);
         console.log(idSearch);
+        performGroupSearch(idSearch);
     }
     else if (location.href.includes("id")) {
         let position = location.href.indexOf("id");
