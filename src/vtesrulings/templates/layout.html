@@ -8,36 +8,93 @@
     <meta name="description" content="Vampire: the Eternal Struggle (VTES) rulings database">
     <meta name="keywords" content="Vampire, the Eternal Struggle, VtES, CCG">
     {% block meta %}{% endblock %}
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
     <link rel="stylesheet" href="https://static.krcg.org/web/krcg.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css', v=version) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/base.css', v=version) }}">
     <script async src="https://static.krcg.org/web/krcg.js"></script>
-    <script async src="{{ url_for('static', filename='js/display.js') }}" type="module"></script>
+    <script async src="{{ url_for('static', filename='dist/js/display.js') }}" type="module"></script>
     {% block scripts %}{% endblock %}
     <title>V:TES Rulings Database</title>
     {% endblock %}
 </head>
+{% if proposal %}
+<meta name="proposal" content='{{ proposal | tojson }}' />
+{% endif %}
 
 <body>
     <header role="banner">
-        <a href="{{ url_for('index') }}" , class="site-logo">
-            <img src="{{ url_for('static', filename='img/black-chantry-icon.webp') }}" alt="Site logo">
-            <h1>V:TES Rulings Database</h1>
-        </a>
-        <nav role="navigation">
-            {# TODO #}
-            <div id="cardNav" class="navigation">Card</div>
-            <div id="groupNav" class="navigation">Group</div>
-            <div id="loginNav" class="navigation">Login</div>
+        <nav id="navigation" class="navbar bg-dark navbar-expand-sm" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="{{ url_for('static', filename='img/black-chantry-icon.webp') }}" alt="BCP logo"
+                        width="48px">
+                </a>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="groups.html">Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Login</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="proposalButton">
+                    {% if proposal %}
+                    Submit proposal
+                    {% else %}
+                    Start proposal
+                    {% endif %}
+                </button>
+            </div>
         </nav>
     </header>
-
-    {% block article %}
-    <article>
+    <div class="modal fade" id="proposalModal" tabindex="-1" aria-hidden="true" aria-labelledby="proposalModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="proposalModalLabel">
+                        {% if proposal %}
+                        Submit proposal
+                        {% else %}
+                        Start proposal
+                        {% endif %}
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form class="modal-body" id="proposalForm" method="post" action="http://127.0.0.1:5000/proposal">
+                    <input type="text" class="form-control" placeholder="Name" id="proposalName" name="name"
+                        value="{{ proposal.name if proposal else ''}}">
+                    {% if proposal %}
+                    <textarea class="form-control" id="proposalDescription" name="description">
+                    {{ proposal.description }}
+                    </textarea>
+                    {% else %}
+                    <textarea class="form-control" id="proposalDescription" placeholder="Description"></textarea>
+                    {% endif %}
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    {% if proposal %}
+                    <button type="button" class="btn btn-primary" id="proposalSubmit" form="proposalForm"
+                        formaction="http://127.0.0.1:5000/proposal/submit">
+                        Submit
+                    </button>
+                    {% else %}
+                    <button type="button" class="btn btn-primary" id="proposalStart" form="proposalForm"
+                        formaction="http://127.0.0.1:5000/proposal">
+                        Start
+                    </button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
         {% block content %}{% endblock %}
-    </article>
-    {% endblock %}
-
-    <footer>
+    </div>
+    <footer class="container-fluid">
         {% block footer %}{% endblock %}
     </footer>
 </body>

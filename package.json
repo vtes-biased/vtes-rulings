@@ -1,15 +1,23 @@
 {
-    "scripts": {
-        "watch": "parcel src/vtesrulings/static/js/display.ts --dist-dir src/vtesrulings/static/js/",
-        "build": "parcel build src/vtesrulings/static/js/display.ts --dist-dir src/vtesrulings/static/js/"
-    },
     "targets": {
         "default": {
-            "distDir": "src/vtesrulings/static/js/"
+            "distDir": "src/vtesrulings/static/dist/"
         }
     },
+    "scripts": {
+        "watch": "parcel watch src/vtesrulings/static/js/*.ts src/vtesrulings/static/css/*.scss --dist-dir src/vtesrulings/static/dist/ -p 1234",
+        "build": "parcel build src/vtesrulings/static/js/*.ts src/vtesrulings/static/css/*.scss --dist-dir src/vtesrulings/static/dist/"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11",
+        "bootstrap": "^5.3",
+        "bootstrap-icons": "^1.11",
+        "bootstrap5-autocomplete": "latest"
+    },
     "devDependencies": {
-        "typescript": "^5.5.2",
-        "parcel": "^2.12.0"
+        "@parcel/transformer-sass": "^2.12.0",
+        "@types/bootstrap": "^5.2",
+        "parcel": "^2.12.0",
+        "typescript": "^5.5.2"
     }
 }

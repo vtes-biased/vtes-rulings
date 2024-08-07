@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
-    //"module": "commonjs",
-    "target": "ESNext",
+    "module": "NodeNext",
+    "target": "ES2023",
+    "lib": [
+      "es2023",
+      "dom",
+      "dom.iterable"
+    ],
+    "moduleResolution": "nodenext",
     "outDir": "src/vtesrulings/static/js/ts-built",
-    "rootDir": "src/vtesrulings/static/js"
-  },
-  //"include": ["src"]
+    "rootDir": "src/vtesrulings/static/js",
+  }
 }

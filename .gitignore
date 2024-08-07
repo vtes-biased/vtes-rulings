@@ -6,6 +6,6 @@ node_modules/
 *.egg-info/
 .*cache/
 scripts/output/
-src/vtesrulings/static/js/*.js*
+src/vtesrulings/static/dist/
 venv/
 package-lock.json

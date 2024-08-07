@@ -30,4 +30,4 @@ update:
 	npm install --include=dev
 
 serve:
-	npm run watch & source .env && FLASK_APP=src/vtesrulings/api.py flask run
+	npm run watch & source .env && FLASK_APP=src/vtesrulings/api.py FLASK_ENV=development FLASK_DEBUG=1 flask run

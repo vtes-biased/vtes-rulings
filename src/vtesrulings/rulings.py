@@ -580,8 +580,20 @@ class Index:
                 yield ruling
         if uid.startswith(("G", "P")):
             return
-        for group, _ in self.get_groups_of(uid):
-            yield from self.get_rulings(group.uid)
+        for group, card_in_group in self.get_groups_of(uid):
+            for ruling in self.get_rulings(group.uid):
+                yield Ruling(
+                    uid=ruling.uid,
+                    target=ruling.target,
+                    text=(
+                        card_in_group.prefix
+                        + (" " if card_in_group.prefix else "")
+                        + ruling.text
+                    ),
+                    symbols=ruling.symbols + card_in_group.symbols,
+                    references=ruling.references,
+                    cards=ruling.cards,
+                )
 
     def get_ruling(self, target_uid: str, ruling_uid: str) -> Ruling:
         """Retrieve a ruling by its target (card or group) and its uid.

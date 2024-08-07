@@ -1,0 +1,19 @@
+@import "bootstrap/scss/bootstrap";
+$bootstrap-icons-font-dir: "../../../../node_modules/bootstrap-icons/font/fonts";
+@import "bootstrap-icons/font/bootstrap-icons";
+
+.krcg-card {
+    color: $secondary;
+    font-style: italic;
+}
+
+.krcg-card:hover {
+    text-decoration: underline;
+    text-underline-offset: .25em;
+}
+
+.dropdown-menu {
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 50vh;
+}

@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row my-2">
+    {% if current %}
+    <div class="col list-group" id="groupDisplay" data-uid="{{ current.uid }}"
+        data-rulings='{{ current.rulings | tojson }}'>
+        <h2>{{ current.name }}</h2>
+        {% for card in current.cards %}
+        <a href="index.html?uid={{ card.uid }}"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            {{ card.name }}
+            <span class="krcg-icon">
+                {% for symbol in card.symbols %}
+                {{ symbol["symbol"] }}
+                {% endfor %}
+            </span>
+        </a>
+        {% endfor %}
+        <h3 class="my-2">Rulings</h3>
+        <!-- Ruling cards insert by JS -->
+    </div>
+    {% else %}
+    <div class="col"></div>
+    {% endif %}
+    <div class="col list-group" id="groupsList">
+        {% for group in groups %}
+        {% if current and group.uid == current.uid %}
+        <a href="?uid={{ group.uid }}"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active">
+            {{ group.name }}
+            <span class="badge text-bg-primary rounded-pill">{{ group.cards | length}}</span>
+        </a>
+        {% else %}
+        <a href="?uid={{ group.uid }}"
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            {{ group.name }}
+            <span class="badge text-bg-primary rounded-pill">{{ group.cards | length}}</span>
+        </a>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

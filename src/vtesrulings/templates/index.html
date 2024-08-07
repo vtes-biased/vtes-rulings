@@ -1,57 +1,39 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<p>
-    This site is the official rulings database for <strong>Vampire: The Eternal Struggle</strong>.
-    VTES is a game published by {{ external_link("Black Chantry Productions", "https://www.blackchantry.com") }},
-    under {{ external_link("Paradox Interactive", "https://www.paradoxinteractive.com/games/world-of-darkness/about") }}
-    license.
-</p>
+<div id="SearchByCard" class="row my-3">
+    <search>
+        <form id="cardSearchForm" class="col-md-4">
+            <input type="search" id="cardSearchInput" list="cardOptions" placeholder="Card name"
+                class="form-control autocomplete" data-server="http://127.0.0.1:5000/complete/" data-live-server="true"
+                data-suggestions-threshold="3">
+        </form>
+    </search>
+</div>
+<div id="cardDisplay" class="row my-3">
+    <div class="col-md-auto" id="column">
+        <img src="" alt="" id="cardImg" class="h-90">
+    </div>
+    <div class="col-md">
+        <div class="d-flex align-items-center">
+            <div class="badge bg-info-subtle text-info-emphasis" id="cardID"></div>
+            <h2 class="px-3" id="cardName"></h2>
+            <div class="badge rounded-pill bg-secondary-subtle text-secondary-emphasis invisible" id="cardGroup"></div>
+            <div class="krcg-icon invisible" id="cardAdv">|</div>
+        </div>
+        <div class="row justify-content-start">
+            <p class="col-8" id="cardText"></p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-3 invisible" id="rulingsDiv">
+    <h4>Rulings</h4>
+    <div id="rulingsList">No Ruling.</div>
+</div>
+<div class="container-fluid my-3 invisible" id="backrefTitle">
+    <h4>Referenced by</h4>
+</div>
+<div class="row my-3 gx-0" id="backrefList">
+</div>
 
-<div id="SearchByCard" class="display">
-    <div id="cardSearch" class="display">
-        <label for="cardSearch">Name of Card: </label>
-        <div id="orientation">
-            <input type="text" id = "cardSearchBar" name="cardSearchBar">
-            <ul id="cardSearchResults"></ul>
-        </div>
-        <label for=""> </label>
-    </div>
-    <div id="cardDisplay" class="dont-display">
-        <div class="display" id="column">
-            <img src="" alt="" id="displayCardImg">
-            <p id="cardInfo"></p>
-        </div>
-        <ul id="cardRulings"></ul>
-        <h3>Backreferences: </h3>
-        <ul id="cardBackrefs"></ul>
-        <label for="cardRulingSubmission">Ruling to Submit: </label>
-        <input type="text" name="cardRulingSubmission" id="cardRulingSubmission">
-        <button id="cardRulingSubButton">Submit Ruling</button>
-    </div>
-</div>
-<div id="SearchByGroup" class="dont-display">
-    <div id="groupSearch" class="display">
-        <label for="groupSearch">Name of Group: </label>
-        <input type="text" id = "groupSearchBar" name="groupSearchBar">
-            <ul id="groupSearchResults"></ul>
-        {# fill with a list of links to specific groups #}
-    </div>
-    <div id="groupDisplay" class="dont-display">
-        <p id="groupInfo"></p>
-        <h3 id="cardsInGroupLabel"></h3>
-        <ul id="cardsInGroup"></ul>
-        <ul id="groupRulings"></ul>
-        <label for="groupRulingSubmission">Ruling to Submit: </label>
-        <input type="text" name="groupRulingSubmission" id="groupRulingSubmission">
-        <button id="groupRulingSubButton">Submit Ruling</button>
-    </div>
-</div>
-{#
-Plan: 
-search bar for looking at cards using API: https://api.krcg.org/complete/{user input from search bar}
-from there, user can click on one of the names generated from that list for full description of the rulings related to the specific card
-this page will also have a text box allowing the user to submit a ruling via the "https://api.krcg.org/submit-ruling/{card from list}
-and another one for the link to official ruling from a rules director. 
-#}
 {% endblock %}

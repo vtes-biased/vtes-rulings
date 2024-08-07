@@ -18,7 +18,7 @@ INDEX = rulings.INDEX
 
 
 def main():
-    app.run(debug=__debug__)
+    app.run(debug=True)
 
 
 def proposal_required(f):
@@ -36,7 +36,11 @@ def proposal_facultative(f):
     @functools.wraps(f)
     async def decorated_function(*args, **kwargs):
         if "proposal" in flask.session:
-            rulings.INDEX.use_proposal(flask.session["proposal"])
+            try:
+                rulings.INDEX.use_proposal(flask.session["proposal"])
+            except KeyError:
+                del flask.session["proposal"]
+                rulings.INDEX.off_proposals()
         else:
             rulings.INDEX.off_proposals()
         return await f(*args, **kwargs)
@@ -78,23 +82,32 @@ def linker():
 # Default route
 @app.route("/")
 @app.route("/<path:page>")
+@proposal_facultative
 async def index(page=None):
     if not page:
         return flask.redirect("index.html", 301)
     context = {}
+    if "proposal" in flask.session:
+        context["proposal"] = INDEX.proposals.get(flask.session["proposal"], None)
+    if page == "groups.html":
+        context["groups"] = list(asdict(g) for g in INDEX.all_groups())
+        uid = flask.request.args.get("uid", None)
+        if uid:
+            current = asdict(INDEX.get_group(uid))
+            current["rulings"] = [asdict(r) for r in INDEX.get_rulings(uid)]
+            context["current"] = current
     return flask.render_template(page, **context)
 
 
-@app.route("/complete/<text>")
-async def complete_card(text: str):
+@app.route("/complete/")
+async def complete_card():
     """Card name completion, with IDs."""
-    text = urllib.parse.unquote(text)
+    text = urllib.parse.unquote(flask.request.args.get("query"))
     ret = rulings.KRCG_SEARCH.name.search(text)["en"]
     ret = [
-        ({"name": card.usual_name, "id": card.id, "score": score})
-        for card, score in ret.items()
+        {"label": card.usual_name, "value": card.id}
+        for card, _ in sorted(ret.items(), key=lambda x: (-x[1], x[0]))
     ]
-    ret.sort(key=lambda x: (-x["score"], x["name"]))
     return ret
 
 
@@ -135,7 +148,7 @@ async def start_proposal():
     data = flask.request.form or flask.request.get_json(force=True, silent=True) or {}
     ret = INDEX.start_proposal(**data)
     flask.session["proposal"] = ret
-    return {"proposal_id": ret}
+    return flask.redirect("index.html", 302)
 
 
 @app.route("/proposal", methods=["PUT"])
