@@ -22,6 +22,7 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
 ]
 dependencies = [
+    "aiohttp>=3",
     "flask[async]>=3",
     "flask-babel>=4",
     "unidecode>=1",
@@ -57,3 +58,7 @@ include = ["vtesrulings*"]
 "*" = ["*.yaml"]
 
 [tool.setuptools_scm]
+
+[tool.pytest.ini_options]
+addopts = "-vvs --strict-markers -m 'not discord'"
+markers = ["discord: marks tests as running against Discord Test Server"]

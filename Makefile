@@ -31,4 +31,4 @@ update:
 
 serve:
 	tsc
-	rulings-web
+	source .env && rulings-web
