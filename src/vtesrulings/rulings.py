@@ -7,7 +7,6 @@ import enum
 import functools
 import git
 import hashlib
-import importlib
 import itertools
 import logging
 import os

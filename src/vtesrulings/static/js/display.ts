@@ -571,6 +571,50 @@ class GroupPage extends EditMode {
         for (let ruling of rulings) {
             this.displayRulingCard(this.groupDisplay, ruling, this.groupDisplay.dataset.uid)
         }
+        const proposalMeta = document.querySelector('meta[name="proposal"]') as HTMLMetaElement
+        if (proposalMeta) {
+            const proposal = JSON.parse(this.proposalMeta.content)
+            const groupName = document.getElementById("groupName")
+            groupName.contentEditable = "true"
+            groupName.addEventListener("input", debounce(async () => { await groupSave(this.groupDisplay) }))
+        }
+    }
+}
+
+async function groupSave(groupDisplay: HTMLDivElement) {
+    console.log("in groupSave", groupDisplay)
+    const name = groupDisplay.querySelector("h2").innerText
+    const cards = groupDisplay.querySelectorAll("a.list-group-item")
+    let body = {
+        name: name,
+        cards: {}
+    }
+    console.log(body)
+    for (const card of cards) {
+        const card_a = card as HTMLAnchorElement
+        let prefix = ""
+        const symbol_span = card_a.querySelector("span.krcg-icon") as HTMLSpanElement
+        for (const char of symbol_span.innerText) {
+            prefix += `[${ANKHA_SYMBOLS_REVERSE[char]}]`
+        }
+        body.cards[card_a.dataset.uid] = prefix
+    }
+    console.log("Updating group", body)
+    try {
+        const response = await fetch(
+            `http://127.0.0.1:5000/group/${groupDisplay.dataset.uid}`,
+            {
+                method: "put",
+                body: JSON.stringify(body)
+            }
+        )
+        if (!response.ok) {
+            throw new Error((await response.json())[0])
+        }
+    }
+    catch (error) {
+        console.log("Error updating group", error.message)
+        displayError(error.message)
     }
 }
 

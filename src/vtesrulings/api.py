@@ -94,6 +94,8 @@ async def index(page=None):
         proposal["modified"] = []
         for target in proposal["rulings"].keys():
             if target.startswith(("G", "P")):
+                if target in proposal["groups"]:
+                    continue
                 group = INDEX.get_group(target)
                 proposal["modified"].append(
                     {"type": "group", "uid": target, "name": group.name}
@@ -103,6 +105,13 @@ async def index(page=None):
                 proposal["modified"].append(
                     {"type": "card", "uid": target, "name": card.name}
                 )
+        for group_id, group in proposal["groups"].items():
+            if not group:
+                continue
+            proposal["modified"].append(
+                {"type": "group", "uid": group_id, "name": group["name"]}
+            )
+
         context["proposal"] = proposal
     if page == "groups.html":
         context["groups"] = list(asdict(g) for g in INDEX.all_groups())
