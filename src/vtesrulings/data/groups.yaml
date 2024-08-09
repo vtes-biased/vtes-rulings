@@ -6,7 +6,7 @@ G00001|Up Bed Two:
   101519|Puppeteer: ''
   101848|Spirit Marionette: ''
   101954|Temptation: ''
-G00002|Chance Speech Up:
+G00002|From ash heap to deck:
   100316|Chain of Command: ''
   101036|Kaymakli Nightmares: ''
   101200|Memory's Fading Glimpse: ''
@@ -294,7 +294,7 @@ G00016|Often Between To:
   102107|Vengeful Spirit: ''
   102191|Wolf Companion: ''
   102210|Zombie: ''
-G00017|Close Follow Suddenly:
+G00017|Environmental damage:
   100153|Bestial Vengeance: ''
   100301|Carrion Crows: ''
   100476|Crypt's Sons: ''
@@ -313,7 +313,7 @@ G00017|Close Follow Suddenly:
   102210|Zombie: ''
   200017|Aeron: ''
   200908|Mambo Jeanne: ''
-G00018|Billion Produce Scientist:
+G00018|Ally with discipline level:
   100427|Corpse Balloon: ''
   100891|Hatch the Viper: ''
   100932|Homunculus: ''
@@ -325,7 +325,7 @@ G00018|Billion Produce Scientist:
   101550|Raven Spy: ''
   101734|Shade: ''
   102191|Wolf Companion: ''
-G00019|Child Mention Plan:
+G00019|Animal:
   100568|Dog Pack: ''
   100593|Duma Rafiki: ''
   100626|Elephant Guardian: ''
@@ -409,7 +409,7 @@ G00024|Official Maybe Buy:
   101065|Kpist m/45: ''
   101682|Saturday-Night Special: ''
   101891|Submachine Gun: ''
-G00025|All Stand Last:
+G00025|Replace next turn:
   100668|Evil Eye: ''
   100681|Eyes of Blades: ''
   100834|Glancing Blow: ''
@@ -420,7 +420,7 @@ G00025|All Stand Last:
   101349|Pandora's Whisper: ''
   102137|Wake with Evening's Freshness: ''
   102151|Wash: ''
-G00026|Away Paper Data:
+G00026|Immune to damage:
   100044|Ambrosius, The Ferryman: ''
   100335|Charnas the Imp: ''
   100669|Ex Nihilo: ''
@@ -488,11 +488,11 @@ G00032|Cost X:
   101897|Summon History: ''
   101899|Summon Spirit Beast: ''
   102183|Will-o'-the-Wisp: ''
-G00033|Away At Four:
+G00033|Prevent non-aggravated:
   101082|Leathery Hide: ''
   101817|Soak: ''
   102172|Well-Marked: ''
-G00034|Chair Traditional Cell:
+G00034|Justicar title vote:
   100262|Brujah Justicar: ''
   101154|Malkavian Justicar: ''
   101299|Nosferatu Justicar: ''
@@ -519,7 +519,7 @@ G00035|Will Structure Operation:
   200166|Barbaro Lucchese: ''
   201451|Virgil: ''
   201454|Virstania, The Great Mother: ''
-G00036|Brother Leader Individual:
+G00036|Directed at a card:
   100094|Arson: ''
   100233|Bomb: ''
   100259|Bruisers, The: ''
@@ -530,7 +530,7 @@ G00036|Brother Leader Individual:
   101632|Rewilding: ''
   101809|Smash and Grab: ''
   102193|World's a Canvas, The: ''
-G00037|Card Message Responsibility:
+G00037|Require a Baron:
   100320|Chameleon: ''
   101324|Open War: ''
   101377|Patsy: ''
@@ -570,7 +570,7 @@ G00040|Scientist Parent Late:
   201314|Stefano Giovanni: ''
   201325|Sundown: ''
   201529|Alexa Draper: ''
-G00041|Anything Deep Fast:
+G00041|True Brujah:
   200037|Al-Muntaquim, The Avenger: ''
   200038|Al-Muntathir, God's Witness: ''
   200618|Ibn Khaldun, Scholar: ''
@@ -645,7 +645,7 @@ G00044|Everybody Amount Responsibility:
   100911|Hellhound: ''
   101164|Marijava Ghoul: ''
   101165|Marijava Thuggee: ''
-G00045|Back Involve Pm:
+G00045|Weapon once per combat:
   100246|Brass Knuckles: ''
   100317|Chainsaw: ''
   100811|Gas-Powered Chainsaw: ''
@@ -676,7 +676,7 @@ G00047|Past Health Responsibility:
   101677|San Nicolás de los Servitas: ''
   102184|Winchester Mansion: ''
   102203|Zaire River Ferry: ''
-G00050|Both May Who:
+G00050|Improve weapon before resolution:
   100121|Baal's Bloody Talons: ''
   100304|Caseless Rounds: ''
   100580|Dragon's Breath Rounds: ''

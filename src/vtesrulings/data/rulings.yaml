@@ -5158,7 +5158,7 @@
     [LSJ 20080114]
 G00001|Up Bed Two:
   - If one is ousted while having temporary control of a minion, the minion is removed from the game. [LSJ 20081105]
-G00002|Chance Speech Up:
+G00002|From ash heap to deck:
   - Crypt cards cannot be put in the library and library cards cannot be put in the crypt. [LSJ 20041201]
 G00003|Unit Role Church:
   - A vampire with no circle designation is in his own unique circle. Vampires with the same name (eg. {The Embrace}, non-unique
@@ -5197,13 +5197,13 @@ G00015|Either Political Page:
 G00016|Often Between To:
   - The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works against it.
     [ANK 20180612] [ANK 20211127]
-G00017|Close Follow Suddenly:
+G00017|Environmental damage:
   - 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as will a combattant
     going to torpor during first strike. [RTR 19941109] [TOM 19951216] [PIB 20140324] [ANK 20200422]'
-G00018|Billion Produce Scientist:
+G00018|Ally with discipline level:
   - The discipline level used to recruit it decides which version it is (inferior or superior). This does not change once
     it is in play. [RTR 19941109] [ANK 20180612]
-G00019|Child Mention Plan:
+G00019|Animal:
   - Is neither a mortal nor a monster. [ANK 20200203-2] [LSJ 20060515]
 G00020|Shake Discuss Source:
   - 'Is not replaced if the action is blocked: it is replaced when the action ends, after all combats. [LSJ 20001120]'
@@ -5215,10 +5215,10 @@ G00023|Interview Month Speak:
   - Can be used during an action, when the controller has the opportunity to play an effect. [ANK 20200616]
 G00024|Official Maybe Buy:
   - The optional maneuver cannot be used if the strike cannot be used (eg. {Hidden Lurker}). [LSJ 20021028]
-G00025|All Stand Last:
+G00025|Replace next turn:
   - 'Is replaced before unlocking cards: other unlock effects cannot be ordered before. [ANK 20200129] [LSJ 20091208] [RTR
     19951017]'
-G00026|Away Paper Data:
+G00026|Immune to damage:
   - Immune means damage is not inflicted, even if non-preventable or outside combat. [LSJ 20010627] [LSJ 20010629] [LSJ 20090304-1]
 G00027|Mission Purpose End:
   - The ability can be used when in torpor. [LSJ 20011022] [LSJ 20100902-2]
@@ -5232,17 +5232,17 @@ G00031|Necessary Culture Agency:
   - The vampire's controller chooses to use the effect of the card or not. [ANK 20210309-3]
 G00032|Cost X:
   - X can be zero. [LSJ 20030502]
-G00033|Away At Four:
+G00033|Prevent non-aggravated:
   - Cannot be used to prevent aggravated damage, even if the minion treats them as normal damage (eg. {Skin of Night}). [LSJ
     20040812-2] [PIB 20130327]
-G00034|Chair Traditional Cell:
+G00034|Justicar title vote:
   - Only a Camarilla vampire can be chosen, it cannot be played without a valid target. [LSJ 20041026]
 G00035|Will Structure Operation:
   - The two actions provided are not cross-restrictive. Each can be performed once during the same turn by the same minion.
     [LSJ 20100909]
-G00036|Brother Leader Individual:
+G00036|Directed at a card:
   - An action directed at a card controlled by another Methuselah is directed at that Methuselah. [RBK 20200701-9] [LSJ 20090324]
-G00037|Card Message Responsibility:
+G00037|Require a Baron:
   - 'Counts as requiring an Anarch (for eg. {Powerbase: Los Angeles}). [LSJ 20080603] [LSJ 20050128]'
 G00038|Rule Figure Pattern:
   - The additional capacity is lost if the title is lost. [TOM 19960210]
@@ -5251,7 +5251,7 @@ G00039|Sort Suggest Country:
     [LSJ 20100902-2] [ANK 20180307-2] [RBK 20200701-4]
 G00040|Scientist Parent Late:
   - The ability can be used while locked, only once per referendum. [ANK 20220705]
-G00041|Anything Deep Fast:
+G00041|True Brujah:
   - Can use a multi-discipline card with a potential (unused) Celerity [cel] effect. [LSJ 20050322-2]
 G00042|Miss Especially Rate:
   - If the title is contested, the card is turned face down out of play and the provided action cannot be used. [LSJ 20070808-2]
@@ -5260,7 +5260,7 @@ G00043|Paper Until Speech:
     20011015]
 G00044|Everybody Amount Responsibility:
   - Ghouls are monsters, not mortal. [ANK 20200203-2] [LSJ 20060515]
-G00045|Back Involve Pm:
+G00045|Weapon once per combat:
   - A second copy allows a second use in the same combat. [ANK 20230316]
 G00046|Teacher Support Know:
   - A second copy allows a second use in the same round. [ANK 20230316]
@@ -5269,7 +5269,7 @@ G00047|Past Health Responsibility:
   - An action targeting it (eg. {Conceal}) is directed at the Methuselah controlling it, not the minion it is on. [LSJ 20090324]"
   - Is an equipment while in hand, library or ash heap, both equipment and location when played (eg. for cost-related effects),
     and just a location while in play. [LSJ 20080114]
-G00050|Both May Who:
+G00050|Improve weapon before resolution:
   - '"Before resolution" means after strikes have been declared but before they resolve. [RTR 19990105]'
   - Cannot be played on an opponent's weapon. [LSJ 20020425]
 G00052|Edge Watch Which:
