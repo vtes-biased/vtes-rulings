@@ -1,4 +1,6 @@
 krcg
 pyyaml
+yamlfix
 yamllint
 unidecode
+Faker

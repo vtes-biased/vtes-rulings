@@ -1,9 +1,8 @@
-//    Plan: 
-//    set up map elemets for icons
-//    make changes so that code functions on local server
-
+import { main } from '@popperjs/core';
 import * as bootstrap from 'bootstrap'
 import Autocomplete from "bootstrap5-autocomplete/autocomplete.js";
+
+Autocomplete.init();
 
 class UrlState {
     state: Object
@@ -66,42 +65,79 @@ class UrlState {
     }
 }
 
-let DISC_DROPDOWN: HTMLDivElement | undefined = undefined
+
+const ERROR_TOAST_DIV = document.getElementById('errorToast') as HTMLDivElement
+let ERROR_TOAST = bootstrap.Toast.getOrCreateInstance(ERROR_TOAST_DIV)
+
+// class ModalWithOrigin extends bootstrap.Modal {
+//     origin: HTMLElement | undefined
+
+//     constructor(...args: ConstructorParameters<typeof bootstrap.Modal>) {
+//         super(...args)
+//         this.origin = undefined
+//     }
+
+//     show(relatedTarget?: HTMLElement): void {
+
+//     }
+// }
+
+function displayError(msg: string) {
+    let body = ERROR_TOAST_DIV.querySelector("div.toast-body") as HTMLDivElement
+    body.innerText = msg
+    ERROR_TOAST.show()
+}
 
 class EditMode {
     proposalButton: HTMLButtonElement
     proposalForm: HTMLFormElement
     proposalStart: HTMLButtonElement
     proposalSubmit: HTMLButtonElement
+    proposalApprove: HTMLButtonElement
     proposalMeta: HTMLMetaElement
+    referenceNewButton: HTMLButtonElement
     rulings: NodeListOf<HTMLDivElement>
     proposal: Proposal
     proposalModal: bootstrap.Modal
+    referencelModal: bootstrap.Modal
 
     constructor() {
         this.proposalButton = document.getElementById('proposalButton') as HTMLButtonElement
         this.proposalForm = document.getElementById('proposalForm') as HTMLFormElement
         this.proposalStart = document.getElementById("proposalStart") as HTMLButtonElement
         this.proposalSubmit = document.getElementById('proposalSubmit') as HTMLButtonElement
+        this.proposalApprove = document.getElementById('proposalApprove') as HTMLButtonElement
         this.proposalMeta = document.querySelector('meta[name="proposal"]') as HTMLMetaElement
+        this.referenceNewButton = document.getElementById('referenceNewButton') as HTMLButtonElement
         if (this.proposalMeta) {
             this.proposal = JSON.parse(this.proposalMeta.content)
+            this.displayProposal(this.proposal)
         }
         this.proposalModal = new bootstrap.Modal('#proposalModal')
+        this.referencelModal = new bootstrap.Modal('#referenceModal')
         this.proposalButton.addEventListener("click", (event) => this.proposalModal.show())
+        console.log(window.location)
+        const next = encodeURIComponent(window.location.pathname + window.location.search)
         if (this.proposalStart) {
-            this.proposalForm.action = "http://127.0.0.1:5000/proposal"
+            this.proposalForm.action = `http://127.0.0.1:5000/proposal?next=${next}`
             this.proposalStart.addEventListener("click", (event) => this.proposalForm.submit())
         }
         if (this.proposalSubmit) {
-            this.proposalForm.action = "http://127.0.0.1:5000/proposal/submit"
+            this.proposalForm.action = `http://127.0.0.1:5000/proposal/submit?next=${next}`
             this.proposalSubmit.addEventListener("click", (event) => this.proposalForm.submit())
+        }
+        if (this.proposalApprove) {
+            this.proposalForm.action = `http://127.0.0.1:5000/proposal/approve?next=${next}`
+            this.proposalApprove.addEventListener("click", (event) => this.proposalForm.submit())
         }
     }
 
     displayRulingCard(elem: HTMLDivElement, ruling: Ruling, mainUid: string = "") {
         let card = document.createElement("div")
         card.classList.add("card", "my-1", "krcg-ruling")
+        card.dataset.KrcgRulingText = ruling.text
+        card.dataset.KrcgRulingUid = ruling.uid
+        card.dataset.KrcgRulingTargetUid = mainUid
         elem.append(card)
         let body = document.createElement("div")
         body.classList.add("card-body", "d-flex", "flex-column", "align-items-start")
@@ -119,20 +155,32 @@ class EditMode {
         for (const symbol of ruling.symbols) {
             text = text.replaceAll(
                 symbol.text,
-                `<span class="krcg-icon">${symbol.symbol}</span>`
+                `<span class="krcg-icon" contenteditable="false">${symbol.symbol}</span>`
             )
         }
         for (const card of ruling.cards) {
             let elem = document.createElement("span")
             elem.classList.add("krcg-card")
+            elem.contentEditable = "false"
             elem.innerText = card.name
             text = text.replaceAll(card.text, elem.outerHTML.toString())
         }
         let card_text = document.createElement("p")
         card_text.classList.add("card-text", "my-2")
-        if (this.proposal) {
+        if (this.proposal && ruling.target.uid === mainUid) {
             card_text.contentEditable = "true"
-            card_text.addEventListener("focusin", this.displayEditTools);
+            card_text.addEventListener("focusin", displayEditTools)
+            card_text.addEventListener("input", debounce(async () => { await rulingSave(card) }))
+            // card_text.addEventListener("blur", (ev) => {
+            //     console.log(ev)
+            //     console.log(window.getSelection())
+            //     const sel = window.getSelection()
+            //     if (!sel.anchorNode) { return }
+            //     CARET = new Range()
+            //     console.log(sel.anchorNode)
+            //     CARET.setStart(sel.anchorNode, sel.anchorOffset)
+            //     CARET.setEnd(sel.anchorNode, sel.anchorOffset)
+            // })
         }
         body.append(card_text)
         let links_div = document.createElement("div")
@@ -140,22 +188,7 @@ class EditMode {
         card.append(links_div)
         for (const reference of ruling.references) {
             text = text.replace(reference.text, "")
-            let link_div = document.createElement("div")
-            link_div.classList.add("card-link", "badge", "text-bg-secondary")
-            let link = document.createElement("a")
-            link.classList.add("text-decoration-none", "text-reset")
-            link.href = reference.url
-            link.innerText = reference.uid
-            link.target = "blank"
-            link_div.append(link)
-            if (this.proposal) {
-                let remove_button = document.createElement("button")
-                remove_button.classList.add("badge", "btn", "ms-2", "text-bg-danger")
-                remove_button.type = "button"
-                remove_button.innerHTML = '<i class="bi-trash3"></i>'
-                link_div.append(remove_button)
-            }
-            links_div.append(link_div)
+            addRulingReference(card, links_div, reference, Boolean(this.proposal), false)
         }
         if (this.proposal) {
             let plus_button = document.createElement("button")
@@ -163,50 +196,239 @@ class EditMode {
             plus_button.type = "button"
             plus_button.innerHTML = '<i class="bi-plus-lg"></i>'
             links_div.append(plus_button)
+            plus_button.addEventListener("click", () => {
+                this.referencelModal.show(card)
+                this.referenceNewButton.addEventListener(
+                    "click",
+                    async (ev) => { await createAndAddLink(ev, card); this.referencelModal.hide() },
+                    { once: true }
+                )
+            })
         }
         card_text.innerHTML = text
         addCardEvents(card_text)
+        document.addEventListener("selectionchange", memorizePosition)
     }
 
-    displayEditTools(event: FocusEvent) {
-        let disc_dropdown = document.createElement("div")
-        disc_dropdown.classList.add("btn-group")
-        const target = event.target as HTMLParagraphElement
-        target.before(disc_dropdown)
-        if (DISC_DROPDOWN) {
-            DISC_DROPDOWN.remove()
+    displayProposal(proposal: Proposal) {
+        console.log(proposal)
+        const proposalAccBody = document.getElementById("proposalAccBody") as HTMLDivElement
+        proposalAccBody.replaceChildren()
+        if (proposal.description) {
+            const description = document.createElement("p")
+            proposalAccBody.append(description)
+            description.innerText = proposal.description
         }
-        DISC_DROPDOWN = disc_dropdown
-        let button = document.createElement("button")
-        button.classList.add("btn", "btn-secondary", "btn-sm", "dropdown-toggle")
-        button.type = "button"
-        button.dataset.bsToggle = "dropdown"
-        button.ariaExpanded = "false"
-        button.innerText = "Disc"
-        disc_dropdown.append(button)
-        let ul = document.createElement("ul")
-        ul.classList.add("dropdown-menu")
-        disc_dropdown.append(ul)
-        for (const icon of Object.values(ANKHA_SYMBOLS)) {
-            let li = document.createElement("li")
-            ul.append(li)
-            let item = document.createElement("button")
-            item.classList.add("dropdown-item")
-            item.innerHTML = `<span class="krcg-icon">${icon}</span>`
-            li.append(item)
-            item.addEventListener("click", insertDisc)
+        const head = document.createElement("strong")
+        proposalAccBody.append(head)
+        head.innerText = "Modifications: "
+        let length: number = 0
+        for (const mod of proposal.modified) {
+            length++
+            const link = document.createElement("a")
+            link.classList.add("mx-2")
+            proposalAccBody.append(link)
+            let page = undefined
+            if (mod.type === "group") {
+                page = "groups.html"
+            }
+            else {
+                page = "index.html"
+            }
+            link.href = `/${page}?uid=${mod.uid}`
+            link.innerHTML = mod.name
         }
-        new bootstrap.Dropdown(button)
+        if (proposal.modified.length < 1) {
+            const text = document.createElement("p")
+            proposalAccBody.append(text)
+            text.innerText = "No modifications yet"
+        }
+        // const contentContainer = document.getElementById("contentContainer") as HTMLDivElement
+        // const acc = document.createElement("div")
+        // acc.classList.add("accordion")
+        // acc.id = "proposalAcc"
+        // contentContainer.prepend(acc)
+        // const acc_item = document.createElement("div")
+        // acc_item.classList.add("accordion-item")
+        // acc.append(acc_item)
+        // const header = document.createElement("h2")
+        // header.classList.add("accordion-header")
+        // acc_item.append(header)
+        // const button = document.createElement("button")
+        // button.classList.add("accordion-button")
+        // button.type = "button"
+        // button.dataset.bsToggle = "collapse"
+        // button.dataset.bsTarget = "#collapseOne"
+        // button.ariaExpanded = "true"
+        // button.innerText = `Proposal: ${proposal.name}`
+        // header.append(button)
+        // const collapse = document.createElement("div")
+        // collapse.classList.add("accordion-collapse", "collapsed")
+        // collapse.dataset.bsParent = "#proposalAcc"
+        // acc_item.append(collapse)
+        // const body = document.createElement("div")
+        // body.classList.add("accordion-body")
+        // body.innerText = proposal.description
+        // collapse.append(body)
+        // new bootstrap.Collapse(collapse)
+    }
+}
+
+let CURRENT_P: HTMLParagraphElement | undefined = undefined
+let CURRENT_NODE: Node | undefined = undefined
+let OFFSET: number = 0
+
+function displayEditTools(event: FocusEvent) {
+    // runs when focusin on one of the rulings <p> element
+    CURRENT_P = event.target as HTMLParagraphElement
+    CURRENT_P.before(EDIT_CONTROLS)
+}
+
+function memorizePosition() {
+    // save offset inside current <p> element
+    const selection = window.getSelection()
+    console.log(selection)
+    if (selection.anchorNode.parentElement != CURRENT_P) { return }
+    CURRENT_NODE = selection.anchorNode
+    OFFSET = selection.anchorOffset
+    console.log(OFFSET)
+}
+
+async function createAndAddLink(ev: MouseEvent, card: HTMLDivElement) {
+    try {
+        const response = await fetch("http://127.0.0.1:5000/reference", {
+            method: "post",
+            body: new FormData((ev.target as HTMLButtonElement).form)
+        })
+        if (!response.ok) {
+            throw new Error((await response.json())[0])
+        }
+        const data = await response.json() as Reference
+        addRulingReference(card, card.querySelector("div.card-footer"), data, true, true)
+        await rulingSave(card)
+    }
+    catch (error) {
+        console.log("Error posting reference", error.message)
+        displayError(error.message)
+    }
+}
+
+function addRulingReference(
+    card: HTMLDivElement,
+    links_div: HTMLDivElement,
+    data: Reference,
+    edit_mode: boolean,
+    prepend: boolean) {
+    let link_div = document.createElement("div")
+    link_div.classList.add("card-link", "badge", "text-bg-secondary")
+    let link = document.createElement("a")
+    link.classList.add("text-decoration-none", "text-reset", "krcg-reference")
+    link.href = data.url
+    link.innerText = data.uid
+    link.target = "blank"
+    link_div.append(link)
+    if (edit_mode) {
+        let remove_button = document.createElement("button")
+        remove_button.classList.add("badge", "btn", "ms-2", "text-bg-danger")
+        remove_button.type = "button"
+        remove_button.innerHTML = '<i class="bi-trash3"></i>'
+        link_div.append(remove_button)
+        remove_button.addEventListener("click", async () => {
+            link_div.remove()
+            await rulingSave(card)
+        })
+    }
+    if (prepend) {
+        links_div.prepend(link_div)
+    }
+    else {
+        links_div.append(link_div)
     }
 }
 
 function insertDisc(clickEvent: Event) {
-    const selection = window.getSelection();
-    const range = selection.getRangeAt(0);
-    const newElement = document.createElement('span');
+    const selection = window.getSelection()
+    const range = selection.getRangeAt(0)
+    const newElement = document.createElement('span')
     newElement.classList.add("krcg-icon")
-    newElement.innerText = (clickEvent.target as HTMLSpanElement).innerText;
-    range.insertNode(newElement);
+    newElement.contentEditable = "false"
+    newElement.innerText = (clickEvent.target as HTMLSpanElement).innerText
+    range.insertNode(newElement)
+    selection.setPosition(newElement.nextSibling, 0)
+}
+
+function insertCard(item: any) {
+    const newElement = document.createElement('span')
+    newElement.classList.add("krcg-card")
+    newElement.contentEditable = "false"
+    newElement.innerText = item.label
+    const range = new Range()
+    range.setStart(CURRENT_NODE, OFFSET)
+    range.setEnd(CURRENT_NODE, OFFSET)
+    range.insertNode(newElement)
+    addCardEvents(CURRENT_P)
+    // SELECTION.setPosition(newElement.nextSibling, 0)
+}
+
+function debounce(func: Function, timeout = 300) {
+    let timer: number | undefined = undefined;
+    return (...args: any) => {
+        clearTimeout(timer);
+        timer = setTimeout(async () => { await func.apply(this, args); }, timeout);
+    };
+}
+
+async function rulingSave(elem: HTMLDivElement) {
+    console.log("in rulingSave", elem)
+    if (!elem.classList.contains("krcg-ruling")) {
+        console.log("Div is not a krcg-ruling", elem)
+        return
+    }
+    let full_text: string = ""
+    const text = elem.querySelector("p.card-text").childNodes
+    for (const node of text) {
+        if (node.nodeType == Node.TEXT_NODE) {
+            full_text += node.nodeValue
+        }
+        else if (node.nodeType == Node.ELEMENT_NODE && node.nodeName == "SPAN") {
+            let span_elem = node as HTMLSpanElement
+            if (span_elem.classList.contains("krcg-icon")) {
+                full_text += `[${ANKHA_SYMBOLS_REVERSE[span_elem.innerText]}]`
+            }
+            else if (span_elem.classList.contains("krcg-card")) {
+                full_text += `{${span_elem.innerText}}`
+            }
+        }
+    }
+    for (const reference of elem.querySelectorAll("a.krcg-reference")) {
+        full_text += ` [${(reference as HTMLAnchorElement).innerText}]`
+    }
+    if (full_text != elem.dataset.KrcgRulingText) {
+        console.log("Updating ruling", elem.dataset.KrcgRulingUid, elem.dataset.KrcgRulingText, full_text)
+        try {
+            const response = await fetch(
+                `http://127.0.0.1:5000/ruling/${elem.dataset.KrcgRulingTargetUid}/${elem.dataset.KrcgRulingUid}`,
+                {
+                    method: "put",
+                    body: JSON.stringify({ text: full_text })
+                }
+            )
+            if (!response.ok) {
+                throw new Error((await response.json())[0])
+            }
+            // TODO: unsure whether to use respone.text or full_text
+            // might even update the whole card, but might cause concurrency issues
+            const ruling = await response.json() as Ruling
+            elem.dataset.KrcgRulingText = ruling.text
+        }
+        catch (error) {
+            console.log("Error posting reference", error.message)
+            displayError(error.message)
+        }
+    }
+    else {
+        console.log("Ruling unchanged", elem.dataset.KrcgRulingUid)
+    }
 }
 
 class CardSearch extends EditMode {
@@ -237,8 +459,6 @@ class CardSearch extends EditMode {
         this.rulingsList = document.getElementById('rulingsList') as HTMLDivElement
         this.backrefTitle = document.getElementById('backrefTitle') as HTMLDivElement
         this.backrefList = document.getElementById('backrefList') as HTMLDivElement
-
-        Autocomplete.init();
         this.autocomplete = new Autocomplete(
             this.cardSearchInput,
             { "onSelectItem": (item: any) => this.state.reset({ uid: item.value }) }
@@ -246,21 +466,18 @@ class CardSearch extends EditMode {
         this.state = new UrlState(async (data: any) => await this.displayCard(data))
     }
 
-    async displayCard(card) {
+    async displayCard(card: BaseCard) {
         if (!card.uid) { return }
-        fetch('http://127.0.0.1:5000/card/' + card.uid)
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error: ${response.status}`)
-                }
-                return response.json()
-            })
-            .then((data) => {
-                this.processCardData(data)
-            })
-            .catch((error) => {
-                console.log(error)
-            })
+        try {
+            const response = await fetch('http://127.0.0.1:5000/card/' + card.uid)
+            if (!response.ok) {
+                throw new Error(`HTTP error: ${response.status}`)
+            }
+            const data = await response.json() as Card
+            this.processCardData(data)
+        } catch (error) {
+            console.log(error)
+        }
         this.cardSearchInput.value = ""
     }
 
@@ -487,12 +704,17 @@ interface Card extends BaseCard {
     conviction_cost: number | undefined
 }
 
+interface Modification extends NID {
+    type: string // one of: <group, card>
+}
+
 interface Proposal extends UID {
     name: string
     description: string
     rulings: { [key: string]: { [key: string]: Ruling } }
     references: { [key: string]: Reference }
     groups: { [key: string]: Group }
+    modified: Modification[]
 }
 
 const ANKHA_SYMBOLS = {
@@ -580,3 +802,46 @@ const ANKHA_SYMBOLS = {
     "MERGED": "µ",
     "CONVICTION": "¤",
 }
+
+const ANKHA_SYMBOLS_REVERSE = Object.fromEntries(
+    Object.entries(ANKHA_SYMBOLS).map(([k, v]) => [v, k])
+)
+
+let EDIT_CONTROLS = document.createElement("div") as HTMLDivElement
+EDIT_CONTROLS.classList.add("container", "d-flex", "flex-row")
+let DISC_DROPDOWN = document.createElement("div") as HTMLDivElement
+EDIT_CONTROLS.append(DISC_DROPDOWN)
+DISC_DROPDOWN.classList.add("btn-group")
+let button = document.createElement("button")
+button.classList.add("btn", "btn-secondary", "btn-sm", "dropdown-toggle")
+button.type = "button"
+button.dataset.bsToggle = "dropdown"
+button.ariaExpanded = "false"
+button.innerText = "Disc"
+DISC_DROPDOWN.append(button)
+let ul = document.createElement("ul")
+ul.classList.add("dropdown-menu")
+DISC_DROPDOWN.append(ul)
+for (const icon of Object.values(ANKHA_SYMBOLS)) {
+    let li = document.createElement("li")
+    ul.append(li)
+    let item = document.createElement("button")
+    item.classList.add("dropdown-item")
+    item.innerHTML = `<span class="krcg-icon">${icon}</span>`
+    li.append(item)
+    item.addEventListener("click", insertDisc)
+}
+new bootstrap.Dropdown(button)
+
+let CARD_SEARCH = document.createElement("form") as HTMLFormElement
+EDIT_CONTROLS.append(CARD_SEARCH)
+let input = document.createElement("input") as HTMLInputElement
+CARD_SEARCH.append(input)
+input.classList.add("form-control", "autocomplete", "mx-2")
+input.placeholder = "Card name"
+input.dataset.server = "http://127.0.0.1:5000/complete/"
+input.dataset.liveServer = "true"
+input.dataset.suggestionsThreshold = "3"
+new Autocomplete(input,
+    { "onSelectItem": (item: any) => insertCard(item) }
+)

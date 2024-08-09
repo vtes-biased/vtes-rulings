@@ -3,13 +3,14 @@ import flask
 import functools
 import importlib
 import jinja2.exceptions
+import logging
 import urllib
 import markupsafe
 
 
 from . import rulings
 
-
+logger = logging.getLogger()
 version = importlib.metadata.version("vtes-rulings")
 app = flask.Flask(__name__, template_folder="templates")
 app.secret_key = b"FAKE_SECRET_DEBUG"
@@ -57,7 +58,8 @@ def page_not_found(error):
 
 @app.errorhandler(rulings.FormatError)
 @app.errorhandler(rulings.ConsistencyError)
-def data_error(error):
+def data_error(error: Exception):
+    logger.exception(str(error))
     return flask.jsonify([error.args[0]]), 400
 
 
@@ -88,7 +90,20 @@ async def index(page=None):
         return flask.redirect("index.html", 301)
     context = {}
     if "proposal" in flask.session:
-        context["proposal"] = INDEX.proposals.get(flask.session["proposal"], None)
+        proposal = asdict(INDEX.proposals.get(flask.session["proposal"], None))
+        proposal["modified"] = []
+        for target in proposal["rulings"].keys():
+            if target.startswith(("G", "P")):
+                group = INDEX.get_group(target)
+                proposal["modified"].append(
+                    {"type": "group", "uid": target, "name": group.name}
+                )
+            else:
+                card = INDEX.get_card(int(target))
+                proposal["modified"].append(
+                    {"type": "card", "uid": target, "name": card.name}
+                )
+        context["proposal"] = proposal
     if page == "groups.html":
         context["groups"] = list(asdict(g) for g in INDEX.all_groups())
         uid = flask.request.args.get("uid", None)
@@ -145,10 +160,11 @@ async def get_group(group_id: str):
 
 @app.route("/proposal", methods=["POST"])
 async def start_proposal():
+    next = flask.request.args.get("next", None)
     data = flask.request.form or flask.request.get_json(force=True, silent=True) or {}
     ret = INDEX.start_proposal(**data)
     flask.session["proposal"] = ret
-    return flask.redirect("index.html", 302)
+    return flask.redirect(next, 302)
 
 
 @app.route("/proposal", methods=["PUT"])
@@ -163,8 +179,17 @@ async def update_proposal():
 @app.route("/proposal/submit", methods=["POST"])
 @proposal_required
 async def submit_proposal():
+    next = flask.request.args.get("next", None)
     await INDEX.submit_proposal()
-    return INDEX.proposal.channel_id
+    return flask.redirect(next, 302)
+
+
+@app.route("/proposal/approve", methods=["POST"])
+@proposal_required
+async def approve_proposal():
+    next = flask.request.args.get("next", None)
+    INDEX.approve_proposal()
+    return flask.redirect(next, 302)
 
 
 @app.route("/proposal", methods=["GET"])

@@ -75,7 +75,7 @@ The [dump_krcg_rulings.py](scripts/dump_krcg_rulings.py) script dumps the legacy
 
 ```bash
 > cd scripts
-> pip install -3 requirements.txt
+> pip install -r requirements.txt
 > ./dump_krcg_rulings.py
 ```
 

@@ -1,0 +1,3876 @@
+ANK 20170111|LSJ 20071011:
+  cards:
+    100307|Catatonic Fear:
+    - ruling: Is a damage dealing strike and can be modified by effects like {Target Vitals} or {Dam the Heart's River}.
+      symbols:
+      - PRE
+    100489|Dam the Heart's River:
+    - ruling: Applies to damage played in combat that are resolved after combat (eg. {Catatonic Fear}).
+      symbols: []
+ANK 20170111|PIB 20130319:
+  cards:
+    101637|Riposte:
+    - ruling: Is a damage dealing strike and can be modified by other effects like {Target Vitals} or {Dam the Heart's River},
+        even if they are done after combat.
+      symbols:
+      - cel
+      - CEL
+ANK 20170124|LSJ 20090126:
+  cards:
+    102151|Wash:
+    - ruling: The additional Master Phase Action it provides does not count as a Trifle bonus, the target can get yet an additional
+        Master Phase Action if they play a Trifle afterwards.
+      symbols: []
+ANK 20170124|LSJ 20090126|RBK 20200701-5:
+  cards:
+    102151|Wash:
+    - ruling: If used to cancel a Trifle, the target does not get an extra Master Phase Action from the canceled Trifle.
+      symbols: []
+ANK 20170227|LSJ 20020408:
+  cards:
+    102088|Vampiric Disease:
+    - ruling: Unlocking an already unlocked vampire does not trigger the effect.
+      symbols: []
+ANK 20170412|RBK 20200701-6:
+  cards:
+    100105|Ashes to Ashes:
+    - ruling: If played by an ally, the ally is burned instead of going to torpor.
+      symbols:
+      - for
+ANK 20170427|LSJ 20040805:
+  cards:
+    100203|Blood of Acid:
+    - ruling: Proceed with strikes damage prevention (acting player first), then the target can prevent Blood of Acid damage,
+        if any. All the damage is applied (and the blood lost) at once, after all preventions.
+      symbols: []
+ANK 20170430|LSJ 20080610:
+  cards:
+    '102032|Trophy: Hunting Ground':
+    - ruling: Is a non-derivative hunting ground (ie. taken into account by {Poacher's Hunting Ground}), even if not active
+        yet.
+      symbols: []
+ANK 20170605|ANK 20230620:
+  cards:
+    101110|The Line:
+    - ruling: Can be locked to reduce the cost at any point before resolution, from when the action is announced to just before
+        the cost is paid.
+      symbols: []
+ANK 20170716|RTR 20020501:
+  cards:
+    101048|Khobar Towers, Al-Khubar:
+    - ruling: If used on an ally with a cost of X, X pool are gained. The value of X is the one set when the ally was recruited
+        .
+      symbols: []
+ANK 20171017|ANK 20230305:
+  cards:
+    100687|Faceless Night:
+    - ruling: The aspirant blocker is locked at resolution. He can play {Deflection} before that, and even attempt to block
+        again if it is deflected back. He can play {Guard Dogs} before the lock, not after.
+      symbols:
+      - OBF
+ANK 20171023|RTR 19941109:
+  cards:
+    100405|Confusion:
+    - ruling: Can only be used during a bleed action.
+      symbols:
+      - DEM
+    101429|Power of One:
+    - ruling: Can only be used during a bleed action.
+      symbols:
+      - pre
+ANK 20180104|LSJ 19971110:
+  cards:
+    101338|Outside the Hourglass:
+    - ruling: The damage is applied even if the combat ends prematurely (eg. {Illusions of the Kindred})
+      symbols: []
+ANK 20180109|LSJ 20070224:
+  cards:
+    101553|Ravnos Carnival:
+    - ruling: Cannot be used to pay for the cost of a cardless action or of an action provided by a card in play.
+      symbols: []
+ANK 20180307-2|RBK 20200701-4:
+  cards:
+    200417|Ellison Humboldt (G3):
+    - ruling: Can use his ability only once per referendum.
+      symbols: []
+ANK 20180318|ANK 20231229:
+  cards:
+    101192|The Meddling of Semsith:
+    - ruling: Cards that are not replaced count against the hand size (eg. successive combats against {Raptor} stack the non-replaced
+        cards).
+      symbols: []
+    200560|Hagar Stone (G5):
+    - ruling: 'The "do not replace" effect effectively reduces the hand size: additional draws (eg. {Ashur Tablets}) require
+        a discard.'
+      symbols: []
+ANK 20180524|LSJ 20031121-3:
+  cards:
+    201486|Yazid Tamari (G3 ADV):
+    - ruling: Is Anarch Black Hand Seraph. If the base version was the one in play, it changes sect as it is merged.
+      symbols:
+      - MERGED
+ANK 20180612|ANK 20211127:
+  cards:
+    100593|Duma Rafiki:
+    - ruling: The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works
+        against it.
+      symbols: []
+    100626|Elephant Guardian:
+    - ruling: The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works
+        against it.
+      symbols: []
+    100819|Ghoul Retainer:
+    - ruling: The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works
+        against it.
+      symbols: []
+    100891|Hatch the Viper:
+    - ruling: The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works
+        against it.
+      symbols: []
+    101254|Murder of Crows:
+    - ruling: The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works
+        against it.
+      symbols: []
+    101556|Razor Bat:
+    - ruling: The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works
+        against it.
+      symbols: []
+    101734|Shade:
+    - ruling: The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works
+        against it.
+      symbols: []
+    101873|Stone Dog:
+    - ruling: The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works
+        against it.
+      symbols: []
+    102107|Vengeful Spirit:
+    - ruling: The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works
+        against it.
+      symbols: []
+    102191|Wolf Companion:
+    - ruling: The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works
+        against it.
+      symbols: []
+    102210|Zombie:
+    - ruling: The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works
+        against it.
+      symbols: []
+ANK 20180704|LSJ 20050304:
+  cards:
+    100180|Blessed Blade:
+    - ruling: A minion who maneuvers with a weapon (eg. {Blade of Bellona}) may still use Blessed Blade to strike with that
+        weapon as his initial strike that round.
+      symbols: []
+ANK 20180813|LSJ 20041025:
+  cards:
+    101406|Poison Pill:
+    - ruling: Gaining pool does not count as a negative loss. If a vote entails both a gain and a loss (eg. {Ancient Influence}),
+        only the loss is counted, not the difference.
+      symbols: []
+ANK 20180910-1|LSJ 20060903:
+  cards:
+    102199|Yawp Court:
+    - ruling: The effect is applied after cards that are played "at the end of the round (eg. {Disarm}) or "when combat would
+        end". If a combat ends and a new combat would begin, the damage is applied between the two combats and the referendum
+        is conducted after all the combats if the acting vampire is still ready.
+      symbols: []
+ANK 20180910-2|ANK 20191221:
+  cards:
+    100510|Death Seeker:
+    - ruling: 'Can be used to cancel a card play at the end of a round (eg. {Disarm}) or "when combat would end" (eg. {Psyche!}):
+        it then counts as having been played during that ending round.'
+      symbols: []
+ANK 20180925-1|LSJ 20100506:
+  cards:
+    100980|Infernal Pursuit:
+    - ruling: If multiple cards are replaced, replace and discard one by one.
+      symbols:
+      - CEL
+ANK 20181003|LSJ 20010803-2|ANK 20220127:
+  cards:
+    102104|Venenation:
+    - ruling: If the combat is canceled by Venenation, the action is still blocked, the blocking minion locks. {Mask of a
+        Thousand Faces} cannot be used to continue it, but an effect can be used to continue the action as if unblocked (eg.
+        {Crypt's Sons}, {Momentary Delay}).
+      symbols: []
+ANK 20181121|LSJ 20021122-3:
+  cards:
+    101848|Spirit Marionette:
+    - ruling: The action has no effect if the target is not unlocked anymore when it resolves. It is still considered successful
+        and must be paid.
+      symbols:
+      - OBE
+ANK 20190207|RBK 20200701-4:
+  cards:
+    201138|Qawiyya el-Ghaduba (G5):
+    - ruling: Her ability can be used only once per minion phase.
+      symbols: []
+ANK 20190228|LSJ 20101013:
+  cards:
+    200770|Kemintiri (G2 ADV):
+    - ruling: When playing a card requiring Camarilla, Ventrue and/or Justicar, she is treated as a such for all effects of
+        the card, and only them, including duration effects. She is not treated as such for effects the card has from being
+        in play.
+      symbols:
+      - MERGED
+ANK 20190228|PIB 20141006:
+  cards:
+    200840|Lisandro Giovanni (G3):
+    - ruling: When playing a card requiring a Ventrue antitribu or a Samedi, he is treated as a such for all effects of the
+        card, and only them, including duration effects. He is not treated as such for effects the card has from being in
+        play (eg. {Houngan} can be played on him, but he does not get blood and cannot lock to get blood).
+      symbols: []
+ANK 20190425|ANK 20190113:
+  cards:
+    101702|Scrying of Secrets:
+    - ruling: Cards and effects that can be played "after resolution" (and only them) can be played after it.
+      symbols: []
+ANK 20190509|LSJ 20020101:
+  cards:
+    100687|Faceless Night:
+    - ruling: A minion that has attempted to block but failed before it was played is not affected.
+      symbols:
+      - OBF
+ANK 20190524|LSJ 20020126:
+  cards:
+    102104|Venenation:
+    - ruling: Modifiers that are played before block resolution like {Change of Target} can be played after Venenation.
+      symbols: []
+ANK 20191031|ANK 20211019-2:
+  cards:
+    100765|Foreshadowing Destruction:
+    - ruling: If the bleed bonus is lost during the action (eg. {Deflection} to another target), it does not count against
+        the limit anymore and an additional bleed modifier can be used.
+      symbols:
+      - DOM
+ANK 20200123|LSJ 20041027:
+  cards:
+    101966|Theft of Vitae:
+    - ruling: 'If both opponents play Theft of Vitae, they resolve simultaneously: blood amounts are adjusted by the total
+        of gain and loss and no blood wear off.'
+      symbols: []
+ANK 20200129|LSJ 20091208:
+  cards:
+    101420|Port Authority:
+    - ruling: 'The cards are replaced before unlocking cards: other unlock effects cannot be ordered before.'
+      symbols: []
+ANK 20200129|LSJ 20091208|RTR 19951017:
+  cards:
+    100668|Evil Eye:
+    - ruling: 'Is replaced before unlocking cards: other unlock effects cannot be ordered before.'
+      symbols: []
+    100681|Eyes of Blades:
+    - ruling: 'Is replaced before unlocking cards: other unlock effects cannot be ordered before.'
+      symbols: []
+    100834|Glancing Blow:
+    - ruling: 'Is replaced before unlocking cards: other unlock effects cannot be ordered before.'
+      symbols: []
+    101001|Into Thin Air:
+    - ruling: 'Is replaced before unlocking cards: other unlock effects cannot be ordered before.'
+      symbols: []
+    101093|Legwork:
+    - ruling: 'Is replaced before unlocking cards: other unlock effects cannot be ordered before.'
+      symbols: []
+    101150|Malkavian Dementia:
+    - ruling: The loss of control happens at the start of unlock phase, before unlocking. This cannot be ordered among other
+        unlock effects, the Malkavian is not unlocked.
+      symbols: []
+    101265|Narrow Minds:
+    - ruling: 'Is replaced before unlocking cards: other unlock effects cannot be ordered before.'
+      symbols: []
+    101318|Old Friends:
+    - ruling: 'Is replaced before unlocking cards: other unlock effects cannot be ordered before.'
+      symbols: []
+    101349|Pandora's Whisper:
+    - ruling: 'Is replaced before unlocking cards: other unlock effects cannot be ordered before.'
+      symbols: []
+    102137|Wake with Evening's Freshness:
+    - ruling: 'Is replaced before unlocking cards: other unlock effects cannot be ordered before.'
+      symbols: []
+    102151|Wash:
+    - ruling: 'Is replaced before unlocking cards: other unlock effects cannot be ordered before.'
+      symbols: []
+ANK 20200203-2|LSJ 20060515:
+  cards:
+    100011|Absimiliard's Army:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100080|Arcane Appraiser:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100103|Asanbonsam Ghoul:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100160|Bima:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100427|Corpse Balloon:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100429|Corrupt Construction:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100484|D'habi Revenant:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100536|Deviki Prasanta:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100568|Dog Pack:
+    - ruling: Is neither a mortal nor a monster.
+      symbols: []
+    100593|Duma Rafiki:
+    - ruling: Is neither a mortal nor a monster.
+      symbols: []
+    100626|Elephant Guardian:
+    - ruling: Is neither a mortal nor a monster.
+      symbols: []
+    100817|Ghoul Escort:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100818|Ghoul Messenger:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100819|Ghoul Retainer:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100820|Ghouled:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100821|Ghouled Street Thug:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100822|The Ghouls of Plaza Morería:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100855|Gregory Winter:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100858|Grey Thorne:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100867|Guardian Ghoul:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100911|Hellhound:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    100956|Ilomba:
+    - ruling: Is neither a mortal nor a monster.
+      symbols: []
+    101017|Jackal:
+    - ruling: Is neither a mortal nor a monster.
+      symbols: []
+    101164|Marijava Ghoul:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    101165|Marijava Thuggee:
+    - ruling: Ghouls are monsters, not mortal.
+      symbols: []
+    101254|Murder of Crows:
+    - ruling: Are neither mortal nor monster.
+      symbols: []
+    101340|Owl Companion:
+    - ruling: Is neither a mortal nor a monster.
+      symbols: []
+    101545|Raptor:
+    - ruling: Is neither a mortal nor a monster.
+      symbols: []
+    101550|Raven Spy:
+    - ruling: Is neither a mortal nor a monster.
+      symbols: []
+    101914|Swarm:
+    - ruling: Is neither a mortal nor a monster.
+      symbols: []
+    102065|Underbridge Stray:
+    - ruling: Is neither a mortal nor a monster.
+      symbols: []
+    102191|Wolf Companion:
+    - ruling: Is neither a mortal nor a monster.
+      symbols: []
+ANK 20200408-2|ANK 20210630:
+  cards:
+    101075|Lay Low:
+    - ruling: If the vampire is permanently controlled by a Methuselah other than his owner, it goes to that Methuselah uncontrolled
+        region and is still controlled by him. It is removed from the game if that Methuselah is ousted and kept in game if
+        his owner is ousted.
+      symbols: []
+ANK 20200508-2|RBK 20200701-4:
+  cards:
+    201334|T.J. (G4):
+    - ruling: Must be unlocked with at least 2 blood to use his ability.
+      symbols: []
+ANK 20200703|LSJ 20031008:
+  cards:
+    100214|Blood to Water:
+    - ruling: Must be played after range is chosen, can be played before or after strikes are chosen.
+      symbols: []
+ANK 20200729|RBK 20200701-4:
+  cards:
+    100303|Carver's Meat Packing and Storage:
+    - ruling: The effect to burn a hostage counter can be done only once per turn.
+      symbols: []
+ANK 20200813-3|ANK 20200930:
+  cards:
+    101293|Nocturn:
+    - ruling: The "can act the turn it is recruited" text does not let him act during an opponent's turn if it was recruited
+        then (eg. using {Madness Network}).
+      symbols: []
+ANK 20200901|LSJ 20040518-2:
+  cards:
+    100038|Alastor:
+    - ruling: Requirements do not apply. If a discipline is required (eg. {Inscription}) and the Alastor vampire does not
+        have it, the inferior version is used.
+      symbols: []
+ANK 20200909|LSJ 20040130:
+  cards:
+    100418|Contagion:
+    - ruling: Stealing the minion is part of the strike resolution, it does not happen if the strike is not selected and it
+        can be dodged.
+      symbols:
+      - DAI
+ANK 20200925|ANK 20211105:
+  cards:
+    101626|Revelation of Wrath:
+    - ruling: Does not allow to take control of the opponent.
+      symbols: []
+    102100|Velvet Tongue:
+    - ruling: Putting a corruption counter on a minion does not give you an opportunity to steal it.
+      symbols:
+      - ser
+    102232|The Platinum Protocol:
+    - ruling: Putting a corruption counter on a minion does not give you an opportunity to steal it.
+      symbols:
+      - pro
+    201243|Sarrasine (G2 ADV):
+    - ruling: Putting a corruption counter on a minion does not give you an opportunity to steal it.
+      symbols:
+      - MERGED
+ANK 20201028|ANK 20190228|LSJ 20101013:
+  cards:
+    201456|Vlad Tepes (G3):
+    - ruling: When playing a card requiring a title or a sect, he is treated as a such for all effects of the card, including
+        duration effects. (eg. he can {Archon} himself and use its effect later)
+      symbols: []
+ANK 20201029-2|LSJ 20030426:
+  cards:
+    100334|Charming Lobby:
+    - ruling: If {Delaying Tactics} is used, the chosen political action card (if any) goes back into its owner's hand, and
+        other minions are forbidden to perform Charming Lobby.
+      symbols: []
+    100519|Delaying Tactics:
+    - ruling: If played on a referendum called by a {Charming Lobby}, the political action card (if any) is retrieved and
+        other minions are forbidden to perform a {Charming Lobby}.
+      symbols: []
+ANK 20201122|ANK 20200926:
+  cards:
+    101626|Revelation of Wrath:
+    - ruling: Can be played by a vampire going to torpor. Can be played by a vampire who is about to burn.
+      symbols: []
+ANK 20210422|LSJ 20040830:
+  cards:
+    102088|Vampiric Disease:
+    - ruling: The counter is placed after range is determined, before strikes are chosen (defensive strikes like dodge or
+        combat ends do not avoid it).
+      symbols: []
+ANK 20210612|LSJ 20020416-2:
+  cards:
+    100810|Garrote:
+    - ruling: The ability to burn an opponent going to torpor is not part of the strike. It can be used if the opponent dodges
+        the strike but is still going to torpor.
+      symbols: []
+ANK 20210627|ANK 20211207|ANK 20220116:
+  cards:
+    101210|Millicent Smith, Puritan Vampire Hunter:
+    - ruling: If an action is blocked, no other effect can be used (eg. {Crypt's Sons}) before resolving Millicent's delayed
+        effect. However, effects that trigger at the same moment (eg. {Unleash Hell's Fury}) are still applied and ordered
+        by the acting Methuselah.
+      symbols: []
+    101223|Mirror Walk:
+    - ruling: If the action is blocked, no other effect can be used (eg. {Crypt's Sons}, {Promise of 1528}, slave rule, {Sowing
+        Dissension}) before resolving Mirror Walk delayed effect. However, effects that trigger at the same moment (eg. {Banshee
+        Ironwail}) are still applied and ordered by the acting Methuselah.
+      symbols:
+      - THA
+    102076|Unleash Hell's Fury:
+    - ruling: If the action is blocked, no other effect can be used (eg. {Crypt's Sons}, {Change of Target}) before burning
+        Unleash Hell's Fury and inflicting aggravated damage. However, effects that trigger at the same moment (eg. {Banshee
+        Ironwail}) are still applied and ordered by the acting Methuselah. Other effects and modifiers can be played after
+        (eg. {Change of Target}).   ""
+      symbols: []
+ANK 20210913|LSJ 20090116:
+  cards:
+    200844|Little Tailor of Prague (G2):
+    - ruling: His ability works on allies recruited in a non-standard way (eg. {Piper}).
+      symbols: []
+    201257|Sébastien Goulet (G3):
+    - ruling: His ability works on allies recruited in a non-standard way (eg. {Piper}).
+      symbols: []
+    201574|Kuyén (G6):
+    - ruling: His ability works on allies recruited in a non-standard way (eg. {Piper}).
+      symbols: []
+ANK 20211009|LSJ 20040518-2:
+  cards:
+    101078|Leadership Vacuum:
+    - ruling: The votes include bonus votes from cards or ability (eg. {Eze, The Demon Prince}, {Firebrand}) but not conditional
+        votes (eg. {Sundown}, {Aura of Invincibility}).
+      symbols: []
+    101418|Political Struggle:
+    - ruling: The votes include bonus votes from cards or ability (eg. {Eze, The Demon Prince}, {Firebrand}) but not conditional
+        votes (eg. {Sundown}, {Aura of Invincibility}).
+      symbols: []
+ANK 20211009|LSJ 20041025:
+  cards:
+    101078|Leadership Vacuum:
+    - ruling: Priscus ballots are not taken into account.
+      symbols: []
+    101418|Political Struggle:
+    - ruling: Priscus ballots are not taken into account.
+      symbols: []
+ANK 20211015|ANK 20210124|LSJ 20090220|LSJ 20070709:
+  cards:
+    101062|The Kiss of Ra:
+    - ruling: The action has not reached resolution, it is effectively canceled. The same vampire can undertake the same action
+        again, but not if it was blocked then continued before (eg.  {Form of Mist}).
+      symbols:
+      - PRO
+ANK 20211020|PIB 20121031:
+  cards:
+    201267|Sergei Voshkov, The Eye (G5):
+    - ruling: When using his ability, you do not get to see the card drawn as replacement.
+      symbols: []
+ANK 20220218|ANK 20181107:
+  cards:
+    102149|Warsaw Station:
+    - ruling: 'Can be burned after the announcement of a diablerie action to bring the target Nosferatu out of torpor. The
+        action will still be successful if unblocked, but will have no effect: no diablerie happen.'
+      symbols: []
+ANK 20220218|LSJ 20090325-2:
+  cards:
+    102149|Warsaw Station:
+    - ruling: Can be burned during an action to bring back a vampire that was put into torpor during that action, but the
+        action ends and cannot be continued (eg. with {Ambulance}).
+      symbols: []
+ANK 20220331|ANK 20210124|LSJ 20020927|LSJ 20021115|ANK 20221011-2:
+  cards:
+    100492|Daring the Dawn:
+    - ruling: The damage is applied if the action reaches resolution, even if it ends before combat (eg. {Mirror Walk}, {Change
+        of Target}, {Red Herring}) or has no effect (eg. because cost cannot be paid).
+      symbols: []
+    100759|Force of Will:
+    - ruling: The damage is applied if the action reaches resolution, even if it ends before combat (eg. {Mirror Walk}, {Change
+        of Target}, {Red Herring}) or has no effect (eg. because cost cannot be paid).
+      symbols: []
+ANK 20220401|ANK 20211015|ANK 20210124:
+  cards:
+    100492|Daring the Dawn:
+    - ruling: The damage is not applied if the action is canceled before resolution (eg. {Tangle Atropos' Hand}, {The Kiss
+        of Ra}).
+      symbols: []
+    100759|Force of Will:
+    - ruling: The damage is not applied if the action is canceled before resolution (eg. {Tangle Atropos' Hand}, {The Kiss
+        of Ra}).
+      symbols: []
+ANK 20220704|ANK 20180925-2|LSJ 20101210|LSJ 20100130:
+  cards:
+    100334|Charming Lobby:
+    - ruling: 'If used on a political action card in hand, that card must be announced and in hand when Charming Lobby is
+        played, before it is replaced, but need not to be shown: it can be kept apart face down. If the action is canceled
+        or failed, the political action card stays in hand.'
+      symbols: []
+ANK 20220704|LSJ 20070927|LSJ 20050407:
+  cards:
+    100334|Charming Lobby:
+    - ruling: Is a political action but not a "political action card"  (eg. {Luna Giovanni}'s ability cannot target it, it
+        cannot be discarded for a vote).
+      symbols:
+      - POLITICAL ACTION
+ANK 20220704|LSJ 20100819:
+  cards:
+    100334|Charming Lobby:
+    - ruling: The requirements and cost of the political action card (if any) apply. If the cost is X, X is chosen at resolution.
+      symbols: []
+ANK 20220705|LSJ 20100705:
+  cards:
+    201006|Montano (G3):
+    - ruling: His ability to provide stealth can be used while locked or in torpor.
+      symbols: []
+    201102|Paul Forrest, False Prophet (G4):
+    - ruling: His ability can be used while locked or in torpor.
+      symbols: []
+    201376|Toby (G4):
+    - ruling: His ability can be used while locked or in torpor.
+      symbols: []
+ANK 20220705|LSJ 20100705|LSJ 20011022|LSJ 20100902-2|ANK 20180307-2|RBK 20200701-4:
+  cards:
+    200065|Amaravati (G4):
+    - ruling: The ability can be used while locked or in torpor, only once per referendum.
+      symbols: []
+    200136|Arishat (G6):
+    - ruling: The ability can be used while locked or in torpor, only once per referendum.
+      symbols: []
+    200417|Ellison Humboldt (G3):
+    - ruling: The ability can be used while locked or in torpor, only once per referendum.
+      symbols: []
+    200455|Fakir al Sidi (G4):
+    - ruling: The ability can be used while locked or in torpor, only once per referendum.
+      symbols: []
+    200763|Kateline Nadasdy (G4):
+    - ruling: The ability can be used while locked or in torpor, only once per referendum.
+      symbols: []
+    201043|Neferu (G4):
+    - ruling: The ability can be used while locked or in torpor, only once per referendum.
+      symbols: []
+ANK 20220818|ANK 20221102:
+  cards:
+    102238|Enhanced Coagulant:
+    - ruling: Cannot be used against an ally.
+      symbols: []
+ANK 20221028|LSJ 20090428-1:
+  cards:
+    101232|Mokolé Blood:
+    - ruling: If there is another copy in play, the cards are put on it before it enters contest.
+      symbols: []
+    101767|Shilmulo Tarot:
+    - ruling: If there is another copy in play, the cards are put on it before it enters contest.
+      symbols: []
+KOT 20081119|ANK 20180917:
+  cards:
+    100396|Condemn the Sins of the Father:
+    - ruling: Is directed at all Methuselah controlling one of the chosen targets.
+      symbols: []
+LSJ 19970224|ANK 20210226:
+  cards:
+    101714|Selective Silence:
+    - ruling: The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {The Path of Blood}).
+        The card cannot be played if the minion cannot afford to burn the blood.
+      symbols:
+      - QUI
+LSJ 19970224|LSJ 20011214-4:
+  cards:
+    100105|Ashes to Ashes:
+    - ruling: If played on a diablerie attempt (eg. {Amaranth}), the diablerie is unsuccessful. Another {Amaranth} can be
+        played.
+      symbols:
+      - for
+LSJ 19970801|ANK 20221212:
+  cards:
+    100273|Burst of Sunlight:
+    - ruling: Damage done to the striking minion is environmental, it is inflicted regardless of the range.
+      symbols: []
+LSJ 19971110|ANK 20190725:
+  cards:
+    102164|Weather Control:
+    - ruling: The damage is applied even if the combat ends prematurely (eg. by {Mariel, Lady Thunder}, {Alpha Glint}).
+      symbols: []
+LSJ 19980109|RTR 20020501:
+  cards:
+    100321|Chameleon's Colors:
+    - ruling: If the combat continues or a new combat occurs, the "action continues as if unblocked" effect is lost.
+      symbols:
+      - SPI
+    100705|Fast Reaction:
+    - ruling: Effects that end combat and then do something else after combat (include continuing the action as if unblocked)
+        will be lost, except for unlock effects.
+      symbols: []
+    100751|Flow Within the Mountain:
+    - ruling: If the combat continues or a new combat begins, the "action continues as if unblocked" effect is lost.
+      symbols:
+      - VIS
+    100756|Follow the Alpha:
+    - ruling: Effects that end combat and then do something else after combat (include continuing the action as if unblocked)
+        will be lost, except for unlock effects.
+      symbols: []
+    100896|Haven Hunting:
+    - ruling: Effects that end combat and then do something else after combat (include continuing the action as if unblocked)
+        will be lost, except for unlock effects.
+      symbols: []
+    100916|Hidden Lurker:
+    - ruling: Effects that end combat and then do something else after combat (include continuing the action as if unblocked)
+        will be lost, except for unlock effects.
+      symbols: []
+    101222|Mirror Image:
+    - ruling: If the combat continues or a new combat begins, the "action continues as if unblocked" effect is lost.
+      symbols:
+      - CHI
+    101244|Morphean Blow:
+    - ruling: If the combat continues or a new combat begins, the "action continues as if unblocked" effect is lost.
+      symbols:
+      - VAL
+    101507|Psyche!:
+    - ruling: Effects that end combat and then do something else after combat (include continuing the action as if unblocked)
+        will be lost, except for unlock effects.
+      symbols:
+      - CEL
+    101595|Relentless Reaper:
+    - ruling: Effects that end combat and then do something else after combat (include continuing the action as if unblocked)
+        will be lost, except for unlock effects.
+      symbols:
+      - THN
+    101735|Shadow Body:
+    - ruling: If the combat continues or a new combat occurs, the "action continues as if unblocked" effect is lost.
+      symbols:
+      - OBT
+    101950|Telepathic Tracking:
+    - ruling: Effects that end combat and then do something else after combat (include continuing the action as if unblocked)
+        will be lost, except for unlock effects.
+      symbols:
+      - AUS
+    101991|Toreador's Bane:
+    - ruling: If the combat continues or a new combat occurs, the "action continues as if unblocked" effect is lost.
+      symbols:
+      - mel
+      - MEL
+    101995|Torrent:
+    - ruling: If the combat continues or a new combat occurs, the "action continues as if unblocked" effect is lost.
+      symbols:
+      - CEL
+    200033|Akram (G2):
+    - ruling: If his ability is used to start a new combat, effects that end combat and then do something else after combat
+        (include continuing the action as if unblocked) will be lost, except for unlock effects.
+      symbols: []
+    200666|Jalal Sayad (G2):
+    - ruling: If his ability is used to start a new combat, effects that end combat and then do something else after combat
+        (include continuing the action as if unblocked) will be lost, except for unlock effects.
+      symbols: []
+LSJ 19980109|RTR 20020501|ANK 20180928-2:
+  cards:
+    200928|Marie-Pierre (G6):
+    - ruling: When using her ability to enter combat, effects that end combat and then do something else after combat (include
+        continuing the action as if unblocked) will be lost, except for unlock effects.
+      symbols: []
+LSJ 19980109|RTR 20020501|LSJ 20031123:
+  cards:
+    100771|Form of Mist:
+    - ruling: If the combat continues or a new combat begins, the "After combat ends" effect cannot be used.
+      symbols:
+      - PRO
+LSJ 19980206|RBK 20200701-7:
+  cards:
+    200870|Lucian (G1):
+    - ruling: The stolen equipment cannot be used until the next round.
+      symbols: []
+LSJ 19980212|ANK 20190104:
+  cards:
+    100493|Dark Influences:
+    - ruling: The card is still considered played. The same reaction or modifier cannot be played again by the same minion.
+        Another Aim card cannot be played once one has been canceled, nor any other card which text prohibits to be played
+        more than once.
+      symbols: []
+    100545|Direct Intervention:
+    - ruling: The card is still considered played. The same reaction or modifier cannot be played again by the same minion.
+        Another Aim card cannot be played once one has been canceled, nor any other card which text prohibits to be played
+        more than once.
+      symbols: []
+LSJ 19980212|ANK 20190701:
+  cards:
+    200942|Marthe Dizier (G3):
+    - ruling: A card canceled as it is played is still considered played, she can retrieve it.
+      symbols: []
+LSJ 19980212|LSJ 20020801:
+  cards:
+    101633|Rewind Time:
+    - ruling: If used to cancel an action, the action is not performed in respect to section 3 of the rules and the minion
+        is free to attempt the same action again.
+      symbols:
+      - tem
+LSJ 19980212|LSJ 20061207:
+  cards:
+    100078|Approximation of Loyalty:
+    - ruling: The card is still considered played. The same reaction cannot be played again by the same minion.
+      symbols:
+      - PRE
+LSJ 19980219|ANK 20220923:
+  cards:
+    101655|Rowan Ring:
+    - ruling: If the opponent dodges or ends combat, they avoid the effect and the ring stays.  '
+      symbols: []
+LSJ 19980224|RTR 19991206:
+  cards:
+    100323|Change of Target:
+    - ruling: Is played after a minion successfully blocks, before the blocker is locked and combat begins. It cannot be used
+        if the action is ended without being blocked.
+      symbols: []
+LSJ 19980526|RTR 20041202:
+  cards:
+    101334|Oubliette:
+    - ruling: If the strike is dodged, no blood is burned.
+      symbols:
+      - OBT
+    101637|Riposte:
+    - ruling: If the strike is dodged, no damage is done.
+      symbols:
+      - cel
+      - CEL
+LSJ 19980526|RTR 20041202|LSJ 20070124:
+  cards:
+    100307|Catatonic Fear:
+    - ruling: If the strike is dodged, no damage is done.
+      symbols:
+      - PRE
+LSJ 19980526|RTR 20041202|PIB 20130319:
+  cards:
+    101128|Loving Agony:
+    - ruling: If the strike is dodged, no damage is done.
+      symbols:
+      - val
+      - VAL
+LSJ 19980824|RTR 19941109:
+  cards:
+    100236|Bonding:
+    - ruling: Cannot be used to increase the stealth of a non-bleed action.
+      symbols:
+      - DOM
+LSJ 19981005|ANK 20230404:
+  cards:
+    201214|Ruxandra (G5):
+    - ruling: The cards must all be discarded at once, then replaced.
+      symbols: []
+LSJ 19981006|LSJ 20001127-2:
+  cards:
+    100580|Dragon's Breath Rounds:
+    - ruling: 'Does not burn the gun if combat ends before the strike resolves (eg. {Rötschreck} or if the opponent uses a
+        "strike: combat ends").'
+      symbols: []
+LSJ 19981006|LSJ 20001127-2|LSJ 20010806-1:
+  cards:
+    100233|Bomb:
+    - ruling: 'When used as a strike, it does not burn if combat ends before it resolves (eg. if the opponent uses a "strike:
+        combat ends").'
+      symbols: []
+LSJ 19981028|ANK 20190425:
+  cards:
+    100102|As the Crow:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+    100446|CrimethInc.:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+    100571|Domain of Evernight:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols:
+      - TEM
+    100595|Dusk Work:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+    100645|Enkil Cog:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+    100706|Fata Amria:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols:
+      - CHI
+      - REACTION
+    100761|Forced March:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols:
+      - cel
+      - for
+    100788|Freak Drive:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+    100994|Instantaneous Transformation:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+    101290|No Confidence:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+    101724|Seraph's Second:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+    101804|Sleep Unseen:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+    101999|Touch of Pain:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+    102131|Voter Captivation:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+    102205|Zephyr:
+    - ruling: Is played after resolution, but still during the action. Action modifiers and effects that can be played "after
+        resolution" can be played before or after it.
+      symbols: []
+LSJ 19981028|LSJ 20100206-2:
+  cards:
+    100757|Follow the Blood:
+    - ruling: Is played after resolution, but still during the action. Cards and effects that played "after resolution" (eg.
+        {Freak Drive}) can be played before it, but not after.
+      symbols: []
+    101236|Momentary Delay:
+    - ruling: Is played after resolution, but still during the action. Cards and effects that played "after resolution" (eg.
+        {Freak Drive}) can be played before it, but not after.
+      symbols: []
+LSJ 19990217|LSJ 20020715|LSJ 20060803:
+  cards:
+    101654|Rötschreck:
+    - ruling: 'Combat ends immediately, strikes are not resolved (including strike: combat ends), damage prevention cannot
+        be played, and a second Rötschreck cannot be played.'
+      symbols: []
+LSJ 19990217|RTR 20041202|LSJ 20100119:
+  cards:
+    101654|Rötschreck:
+    - ruling: Can only be played after declaration of a strike, before resolution. It can be played before or after the opponent's
+        strike is announced.
+      symbols: []
+LSJ 19990719|RTR 19991001:
+  cards:
+    200705|Jimmy Dunn (G2):
+    - ruling: If a second Jimmy Dunn is brought out during an action, and the first Jimmy (if he has Vicissitude) plays {Reform
+        Body}, the first Jimmy will go to torpor (from Reform Body), but will then be burned anyhow, since he cannot be contested.
+      symbols: []
+    - ruling: If a second Jimmy Dunn is brought out during an action, the acting vampire is not considered to be "burning"
+        the first Jimmy.
+      symbols: []
+LSJ 19991207|ANK 20180925-2:
+  cards:
+    100555|Disguised Weapon:
+    - ruling: The weapon is announced when the card is played, it must be in hand but need not to be shown. You can put the
+        card apart face down when announcing it.
+      symbols: []
+LSJ 19991207|ANK 20180925-2|LSJ 20100130:
+  cards:
+    100392|Concealed Weapon:
+    - ruling: 'The weapon must be announced and in hand when the card is played, before it is replaced, but need not to be
+        shown: it can be kept apart face down.'
+      symbols: []
+LSJ 20000622|LSJ 20100129:
+  cards:
+    101567|Reckless Agitation:
+    - ruling: Cannot allocate 6 points to a single Methuselah, nor any point to yourself. Cannot be played if there is only
+        one opponent left.
+      symbols: []
+LSJ 20001031|PIB 20121220:
+  cards:
+    101877|Storage Annex:
+    - ruling: If it is stolen, the card on it goes with it and the new controller will be able to take it in hand. The card
+        is returned to the owner's ash heap or library if it would be moved to an ash heap or library.
+      symbols: []
+LSJ 20001114|LSJ 20030121:
+  cards:
+    100918|Hidden Strength:
+    - ruling: Cannot be used if there is no damage to prevent (X cannot be negative).
+      symbols: []
+LSJ 20001127-2|LSJ 20010627|LSJ 20070508:
+  cards:
+    100661|Escaped Mental Patient:
+    - ruling: 'Does not burn at the end of combat if his strike does not resolve (eg. if his opponent uses a strike: combat
+        ends or {Rötschreck} is played).'
+      symbols: []
+LSJ 20001127-2|LSJ 20010806-1:
+  cards:
+    100745|Flash Grenade:
+    - ruling: 'Still burns when used if the opponent uses a "strike: combat ends" too. It does not if combat ends before strike
+        resolution (eg. {Rötschreck}).'
+      symbols: []
+    101814|Smoke Grenade:
+    - ruling: 'Still burns when used if the opponent uses a "strike: combat ends" too. It does not burn if combat ends before
+        strike resolution (eg. {Rötschreck}).'
+      symbols: []
+LSJ 20001127-2|LSJ 20010806-1|LSJ 19981006:
+  cards:
+    100627|Elixir of Distillation:
+    - ruling: Does not burn if combat ends before it resolves.
+      symbols: []
+    100857|Grenade:
+    - ruling: Does not burn nor inflict damage if combat ends before it resolves.
+      symbols: []
+    101020|Jar of Skin Eaters:
+    - ruling: 'When used as a strike, it does not burn if combat ends before it resolves (eg. if the opponent uses a "strike:
+        combat ends").'
+      symbols: []
+    102162|Waxen Poetica:
+    - ruling: 'Does not burn if combat ends before it resolves (eg. if the opponent uses a "strike: combat ends").'
+      symbols: []
+    102179|White Phosphorus Grenade:
+    - ruling: 'Does not burn if combat ends before it resolves (eg. if the opponent uses a "strike: combat ends").'
+      symbols: []
+LSJ 20001127-2|RTR 20020501:
+  cards:
+    100661|Escaped Mental Patient:
+    - ruling: Does not burn at the end of combat if another effect let him make a hand strike at +1 damage. "If he does so"
+        only applies if his own effect is used directly.
+      symbols: []
+LSJ 20001206|ANK 20211124:
+  cards:
+    100910|Hell-for-Leather:
+    - ruling: A limited additional strike can be played before or after.
+      symbols:
+      - cel
+    101532|Quickness:
+    - ruling: A limited additional strike can be played before or after.
+      symbols:
+      - CEL
+LSJ 20010110|LSJ 20050111:
+  cards:
+    100908|Heidelberg Castle, Germany:
+    - ruling: 'May not be locked "in response" to an effect: all effects are instantaneous except for actions and certain
+        combat effects.'
+      symbols: []
+LSJ 20010616|LSJ 20030522-1:
+  cards:
+    201352|Tegyrius, Vizier (G2):
+    - ruling: Allegiance counters continue to function even if Tegyrius leaves play.
+      symbols: []
+LSJ 20010621|LSJ 20010830:
+  cards:
+    101386|Perfect Clarity:
+    - ruling: Does prevent bleed redirection (eg. {Deflection}).
+      symbols: []
+LSJ 20010627|ANK 20181129:
+  cards:
+    100486|Daemonic Possession:
+    - ruling: This is not a directed action, even when targeting another Methuselah's ash heap.
+      symbols: []
+    100665|The Eternal Mask:
+    - ruling: is not a directed action, even when targeting another Methuselah's ash heap.
+      symbols:
+      - SER
+    100816|Ghost-Eater:
+    - ruling: This is not a directed action, even when targeting another Methuselah's ash heap.
+      symbols: []
+    101046|Khazar's Diary (Endless Night):
+    - ruling: The action to put a minion from any ash heap into play is not a directed action, even when targeting another
+        Methuselah's ash heap.
+      symbols: []
+    101481|Pressing Flesh:
+    - ruling: This is not a directed action, even when targeting another Methuselah's ash heap.
+      symbols: []
+LSJ 20010627|LSJ 20010629|LSJ 20090304-1:
+  cards:
+    100044|Ambrosius, The Ferryman:
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols: []
+    100219|Bloodform:
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols:
+      - VIC
+    100335|Charnas the Imp:
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols: []
+    100669|Ex Nihilo:
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols: []
+    100949|Ignore the Searing Flames:
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols:
+      - DAI
+    101182|Masquer:
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols: []
+    101419|Ponticulus:
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols: []
+    101763|Shell Break:
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols: []
+    101853|Spiritual Protector:
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols: []
+    102053|Tye Cooper:
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols: []
+    200249|Carolina Vález (G5):
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols: []
+    200587|Helena (G3 ADV):
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols:
+      - MERGED
+    200984|Mictlantecuhtli (G5):
+    - ruling: Immune means damage is not inflicted, even if non-preventable or outside combat.
+      symbols: []
+LSJ 20010716|ANK 20221011:
+  cards:
+    101737|Shadow Court Satyr:
+    - ruling: The card on him cannot be canceled as it is played when he plays it as if from your hand (eg. {Direct Intervention}),
+        except if it is part of the card effect (eg. {Target Vitals}).
+      symbols: []
+LSJ 20010803-1|RTR 20180719:
+  cards:
+    100323|Change of Target:
+    - ruling: 'No other modifier or reaction can be played afterwards: the action has ended.'
+      symbols: []
+LSJ 20010809-2|LSJ 20010809-3:
+  cards:
+    101536|The Rack:
+    - ruling: 'Tracks the target if it leaves the game by contesting or {Banishment}: if the target gets back into play, The
+        Rack gives it blood again.'
+      symbols: []
+LSJ 20010813|LSJ 20010819-2:
+  cards:
+    100146|Beast Meld:
+    - ruling: The damage prevention can only be used if the block is successful, and only in the resulting (block-induced)
+        combat. It does not carry over to a follow-up combat (eg.  {Psyche!}).
+      symbols:
+      - ani
+      - pro
+      - CEL
+    100863|Guard Dogs:
+    - ruling: The maneuver can only be used if the block is successful, and only in the resulting (block-induced) combat.
+        It does not carry over to a follow-up combat (eg.  {Psyche!}).
+      symbols:
+      - ANI
+      - CEL
+    100868|Guardian Vigil:
+    - ruling: The maneuver can only be used if the block is successful, and only in the resulting (block-induced) combat.
+        It does not carry over to a follow-up combat (eg.  {Psyche!}).
+      symbols:
+      - aus
+      - CEL
+    100995|Instinctive Reaction:
+    - ruling: The maneuver can only be used if the block is successful, and only in the resulting (block-induced) combat.
+        It does not carry over to a follow-up combat (eg.  {Psyche!}).
+      symbols:
+      - ANI
+      - CEL
+    101701|Scry the Hearthstone:
+    - ruling: The maneuver can only be used if the block is successful, and only in the resulting (block-induced) combat.
+        It does not carry over to a follow-up combat (eg.  {Psyche!}).
+      symbols:
+      - vis
+      - CEL
+    101813|Smoke and Mirrors:
+    - ruling: The maneuver can only be used if the block is successful, and only in the resulting (block-induced) combat.
+        It does not carry over to a follow-up combat (eg.  {Psyche!}).
+      symbols:
+      - chi
+      - CEL
+    101850|Spirit's Touch:
+    - ruling: The maneuver can only be used if the block is successful, and only in the resulting (block-induced) combat.
+        It does not carry over to a follow-up combat (eg.  {Psyche!}).
+      symbols:
+      - AUS
+      - CEL
+    102223|Form of the Bat:
+    - ruling: The maneuver, and equipment restriction, apply only in the combat resulting from a successful block. They do
+        not carry over to follow-up combats (eg.  {Psyche!}).
+      symbols:
+      - CEL
+    102254|Night Terrors:
+    - ruling: 'The strike: combat ends can only be used in the combat resulting from a successful block. It does not carry
+        over to follow-up combats (eg.  {Psyche!}).'
+      symbols:
+      - OBF
+      - PRE
+      - CEL
+    102256|One With the Land:
+    - ruling: The strike restriction only applies in the combat resulting from a successful block. It does not carry over
+        to follow-up combats (eg.  {Psyche!}).
+      symbols:
+      - PRO
+      - CEL
+LSJ 20010814-2|ANK 20181127:
+  cards:
+    100868|Guardian Vigil:
+    - ruling: All effects apply for the duration of the action. They still apply if the action "continues as if unblocked"
+        (eg.  {Form of Mist}) and, if  was used, the maneuver is provided again.
+      symbols:
+      - PRO
+      - aus
+LSJ 20010814-3|LSJ 20020109:
+  cards:
+    100706|Fata Amria:
+    - ruling: The target can burn it at unlock even if they're already unlocked, but cannot burn it if they do not unlock
+        as normal (eg. {Sensory Deprivation}).
+      symbols: []
+LSJ 20010814-4|LSJ 20070417:
+  cards:
+    101581|Reform Body:
+    - ruling: Cannot be played when burned as a result of a Blood Hunt referendum.
+      symbols: []
+LSJ 20010817|PIB 20131013:
+  cards:
+    100085|Archon Investigation:
+    - ruling: Targets the bleeding vampire (eg. costs one more against {Secure Haven}, cannot be played on {Mimir}).
+      symbols: []
+LSJ 20010819|PIB 20130722:
+  cards:
+    101087|Legacy of Pander:
+    - ruling: Multiple copies in play give only 1 vote in total to non-titled Panders.
+      symbols: []
+LSJ 20010828|ANK 20180917:
+  cards:
+    101954|Temptation:
+    - ruling: If played on one of your own vampires, the action is undirected. Its effect can be used to unlock the vampire.
+      symbols: []
+LSJ 20011005|ANK 20211102:
+  cards:
+    101654|Rötschreck:
+    - ruling: 'Can be played and is effective even if the opponent has announced a Strike: Dodge or Strike: Combat Ends.'
+      symbols: []
+LSJ 20011022|LSJ 20100902-2:
+  cards:
+    200049|Alexandra (G2):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    200091|Angela Preston (G2):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    200247|Carmine Giovanni (G4):
+    - ruling: Her additional life ability applies and her stealth ability can be used when she is in torpor.
+      symbols: []
+    200486|Fustuk (G5):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    200605|The Horde (G6):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    200652|Jack (G2):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    200754|Karif al Numair (G5):
+    - ruling: His ability applies when he is in torpor.
+      symbols: []
+    200856|Lord Tremere (G5):
+    - ruling: His unlocking ability can be used when he is in torpor.
+      symbols: []
+    200962|Matthew Romans (G4):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    200971|Melinda Galbraith (G4 ADV):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    200982|Michael Luther (G3):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    201061|Nitidas (G6):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    201094|Pariah (G2):
+    - ruling: His ability still applies when in torpor.
+      symbols: []
+    201214|Ruxandra (G5):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    201273|Shahid (G4):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    201279|Sheela Na Gig (G5):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    201334|T.J. (G4):
+    - ruling: The ability can be used when in torpor.
+      symbols: []
+    201383|Tori Longwood (G2):
+    - ruling: Her ability still applies when in torpor.
+      symbols: []
+LSJ 20011023|LSJ 20080630:
+  cards:
+    100493|Dark Influences:
+    - ruling: If the canceled card had a "Do Not Replace Until" clause on it (or alternate replacement like {Steely Tenacity}),
+        that clause is canceled as well and the card is replaced normally.
+      symbols: []
+    100510|Death Seeker:
+    - ruling: If the canceled card had a "Do Not Replace Until" clause on it (or alternate replacement like {Steely Tenacity}),
+        that clause is canceled as well and the card is replaced normally.
+      symbols: []
+    100545|Direct Intervention:
+    - ruling: If the canceled card had a "Do Not Replace Until" clause on it (or alternate replacement like {Steely Tenacity}),
+        that clause is canceled as well and the card is replaced normally.
+      symbols: []
+    200145|Asguresh (G5):
+    - ruling: If a canceled card had a "Do Not Replace Until" clause on it (or alternate replacement like {Steely Tenacity}),
+        that clause is canceled as well and the card is replaced normally.
+      symbols: []
+LSJ 20011023|RTR 20020501:
+  cards:
+    101159|Malleable Visage:
+    - ruling: Does not change the acting minion (for purposes of the "No Repeat Actions" rule, among other things) and may
+        be played by a minion who is not capable of taking the action.
+      symbols: []
+LSJ 20011214-3|LSJ 20031212:
+  cards:
+    100190|Blissful Agony:
+    - ruling: In the new combat, the opponent goes first.
+      symbols:
+      - VAL
+LSJ 20011222|ANK 20221028-2:
+  cards:
+    201240|Sargon (G2):
+    - ruling: His controller gets the Edge after the action resolves. If it is a referendum, he gets the Edge after the referendum
+        is concluded.
+      symbols: []
+LSJ 20020211|LSJ 20021122:
+  cards:
+    100105|Ashes to Ashes:
+    - ruling: ',  The end of combat is triggered by the vampire going to torpor - this can be interrupted by cards such as
+        {Undying Tenacity} or {Undead Persistence}, but the vampire would still unlock, gain blood and be wounded.'
+      symbols:
+      - thn
+      - THN
+LSJ 20020211|LSJ 20060221:
+  cards:
+    201173|Reg Driscoll (G2):
+    - ruling: His ability is activated after he equips with the equipment. He cannot use his ability to move the {Eye of Hazimel},
+        or an equipment that is a location while in play.
+      symbols: []
+LSJ 20020304-2|PIB 20110918:
+  cards:
+    200485|Frondator (G4):
+    - ruling: The cost to rescue from torpor is reduced even if paid by the rescuee. This is not optional.
+      symbols: []
+LSJ 20020314|PIB 20130319:
+  cards:
+    100501|Dawn Operation:
+    - ruling: Only applies to damage done in combat, not damage done after combat like {Catatonic Fear}.
+      symbols: []
+    100571|Domain of Evernight:
+    - ruling: Only applies to damage done in combat, not damage done after combat like {Catatonic Fear}.
+      symbols:
+      - tem
+LSJ 20020609|ANK 20211113:
+  cards:
+    200094|Angelo (G3):
+    - ruling: A vampire with no circle designation is in his own unique circle of one.
+      symbols: []
+    201052|New Blood (ANY):
+    - ruling: A vampire with no circle designation is in his own "unique circle of one".
+      symbols: []
+LSJ 20020620|LSJ 20080612:
+  cards:
+    100667|The Eternals of Sirius:
+    - ruling: Pay the cost at the same time you gain pool from it, you do not get ousted in between (ie. can be played when
+        at 4 pool).
+      symbols: []
+LSJ 20020814|ANK 20180307-2:
+  cards:
+    200935|Maris Streck (G3):
+    - ruling: Can use her ability multiple times each action.
+      symbols: []
+LSJ 20020814|ANK 20221229:
+  cards:
+    201085|Osric Vladislav (G5):
+    - ruling: His ability can be used more than once during an action, but only if he is acting and stealth is needed.
+      symbols: []
+LSJ 20020821|LSJ 20020904:
+  cards:
+    100392|Concealed Weapon:
+    - ruling: Strength or other bonus from the minion or other cards in play are not counted for the damage limit.
+      symbols: []
+LSJ 20021113|ANK 20191219|ANK 20180910-1:
+  cards:
+    100549|Disarm:
+    - ruling: Can be played before or after effects that are played at the end of the round or "when the combat would end"
+        (eg.  {Telepathic Tracking}). Can be played before or after  {Psyche!}.
+      symbols:
+      - AUS
+      - CEL
+    101507|Psyche!:
+    - ruling: Can be played before of after effects that are played "at the end of combat".
+      symbols:
+      - CEL
+    101515|Pulled Fangs:
+    - ruling: Can be played before or after effects that are played at the end of the round or "when the combat would end"
+        (eg.  {Telepathic Tracking}). Can be played before or after  {Psyche!}
+      symbols:
+      - AUS
+      - CEL
+    101882|Street Cred:
+    - ruling: Can be played before or after effects that are played at the end of the round or "when the combat would end"
+        (eg.  {Telepathic Tracking}). Can be played after  {Psyche!}
+      symbols:
+      - AUS
+      - CEL
+    101945|Taste of Vitae:
+    - ruling: Can be played before or after effects that are played at the end of the round or "when the combat would end"
+        (eg.  {Telepathic Tracking}). Can be played after  {Psyche!}
+      symbols:
+      - AUS
+      - CEL
+    101950|Telepathic Tracking:
+    - ruling: Can be played before of after effects that are played "at the end of combat".
+      symbols:
+      - AUS
+LSJ 20021113|RTR 20030519|ANK 20180910-1:
+  cards:
+    101595|Relentless Reaper:
+    - ruling: Must be played after presses, can be played if the round ends prematurely and can be played before or after
+        effects that are played "at then of the round" (eg. {Taste of Vitae}).
+      symbols:
+      - THN
+    101950|Telepathic Tracking:
+    - ruling: Must be played after presses, can be played if the round ends prematurely and can be played before or after
+        effects that are played "at then of the round" (eg. {Taste of Vitae}).
+      symbols:
+      - AUS
+LSJ 20021121-3|PIB 20111213:
+  cards:
+    101240|Monocle of Clarity:
+    - ruling: The answer may be inexact when pertaining to an unverifiable element, such as the deck's content. A judge cannot
+        be called to check the deck content.
+      symbols: []
+LSJ 20021122-2|ANK 20211112:
+  cards:
+    100060|Anathema:
+    - ruling: Diablerie does not trigger Anathema.
+      symbols: []
+LSJ 20030103|ANK 20181219|ANK 20180906:
+  cards:
+    100595|Dusk Work:
+    - ruling: Is played after all combats are handled. Can be played from torpor.
+      symbols: []
+    101236|Momentary Delay:
+    - ruling: Is played after all combats are handled. Can be played from torpor.
+      symbols: []
+    101724|Seraph's Second:
+    - ruling: Is played after all combats are handled. Can be played from torpor.
+      symbols: []
+    102205|Zephyr:
+    - ruling: Is played after all combats are handled. Can be played from torpor.
+      symbols: []
+LSJ 20030214|ANK 20190624:
+  cards:
+    102060|Undead Persistence:
+    - ruling: If an effect causes a new combat to occur at the end of combat, then the "go to torpor" effect will be delayed
+        until after that new combat. However, the vampire will no longer benefit from Undead Persistence in the new combat,
+        so it will end immediately with the vampire not ready unless he plays a new Undead Persistence in the new combat.
+      symbols:
+      - for
+LSJ 20030307|LSJ 20100119:
+  cards:
+    101751|Shambling Hordes:
+    - ruling: The damage the strike does is determined when the strike resolution begins, before the Hordes loses life from
+        any opposing "burn life" or "steal life" effect. Damage done before strike resolution, e.g. with First Strike, will
+        reduce the damage done by the Hordes.
+      symbols: []
+LSJ 20030311|LSJ 20090113-2:
+  cards:
+    200798|Kyoko Shinsegawa (G3):
+    - ruling: The action provided by her ability is a hunt action and benefit from hunt bonuses.
+      symbols: []
+LSJ 20030607|ANK 20180801:
+  cards:
+    101703|Seal of Veddartha:
+    - ruling: 'Can be equipped by a vampire with capacity less than 6: he cannot use it to bleed but the disciplines bonus
+        applies.'
+      symbols: []
+LSJ 20030902-2|LSJ 20060808-1:
+  cards:
+    100377|Collapse the Arches:
+    - ruling: ',  Does not prevent the opponent from dodging, the dodge just has no effect.'
+      symbols:
+      - vis
+      - VIS
+    100597|Dust Up:
+    - ruling: Does not prevent the opponent from dodging, the dodge just has no effect.
+      symbols:
+      - ani
+    100604|Earthshock:
+    - ruling: Does not prevent the opponent from dodging, the dodge just has no effect.
+      symbols: []
+    100706|Fata Amria:
+    - ruling: Does not prevent the opponent from dodging, the dodge just has no effect.
+      symbols: []
+    101493|Projectile:
+    - ruling: Does not prevent the opponent from dodging, the dodge just has no effect.
+      symbols: []
+    101693|Scorpion Sting:
+    - ruling: Does not prevent the opponent from dodging, the dodge just has no effect.
+      symbols:
+      - ANI
+    101738|Shadow Feint:
+    - ruling: Does not prevent the opponent from dodging, the dodge just has no effect.
+      symbols:
+      - CEL
+      - OBF
+    102106|Vengeance of Samiel:
+    - ruling: ',  Does not prevent the opponent from dodging, the dodge just has no effect.'
+      symbols:
+      - val
+      - VAL
+LSJ 20030917|LSJ 20090705:
+  cards:
+    101904|Sunset Strip, Hollywood:
+    - ruling: 'Allows to play a card that could otherwise not be afforded: in this case it must be locked when the action
+        is announced.'
+      symbols: []
+LSJ 20031010|LSJ 20090319|ANK 20180907:
+  cards:
+    101711|Secure Haven:
+    - ruling: 'Choosing is targeting: cards that "choose" the vampire like {The Rack}, {Toreador Grand Ball}, {Piper} or {Tend
+        the Flock} are considered to target it, their cost is increased. Actions that choose the vampire cannot be played
+        against him (eg. {Propaganda}, {Spirit Marionette}, {Shattering Crescendo})'
+      symbols: []
+LSJ 20031116|ANK 20230816-2:
+  cards:
+    100989|Inscription:
+    - ruling: The vampire receiving the card must meet all of the requirements of the card other than the Thaumaturgy requirement.
+        The vampire playing the Inscription need not meet any of the requirements (other than the Thaumaturgy needed to play
+        Inscription in the first place).
+      symbols: []
+LSJ 20031219|LSJ 20100527:
+  cards:
+    101920|Sword of Nuln:
+    - ruling: Aggravated damage are not healed by default, so they are not doubled. If the target can heal them (eg. {Repair
+        the Undead Flesh}), he must pay double.
+      symbols: []
+LSJ 20040518|LSJ 20040518-2:
+  cards:
+    100543|The Diamond Thunderbolt:
+    - ruling: The cost of the change of control effect is still paid. Any bids made are paid. Any counters burned are still
+        burned.
+      symbols: []
+    - ruling: Will not extend temporary change of control effects when they expire.
+      symbols: []
+LSJ 20040623|LSJ 20071003:
+  cards:
+    100011|Absimiliard's Army:
+    - ruling: The card used to represent the ally is face up, but the name on that card is ignored if something goes looking
+        for a card by name. They do not contest.
+      symbols: []
+LSJ 20040701|LSJ 20080125|ANK 20181216:
+  cards:
+    100392|Concealed Weapon:
+    - ruling: Cost modifications that are not limited to cards "played" apply before checking for card cost (eg. {Black Cat}
+        can equip with a {Combat Shotgun}, {Centralized Background Check} makes {.44 Magnum} too costly).
+      symbols: []
+LSJ 20040726|ANK 20191031-2:
+  cards:
+    100142|Bauble:
+    - ruling: Still cannot be burned if the target equipment was burned and somehow returned to play.
+      symbols: []
+    100665|The Eternal Mask:
+    - ruling: You still cannot burn it if the vampire that was brought back was burned and later returned to play.
+      symbols: []
+LSJ 20040812-2|PIB 20130327:
+  cards:
+    100749|Flesh of Marble:
+    - ruling: Cannot be used to prevent aggravated damage, even if the minion treats them as normal damage (eg. {Skin of Night}).
+      symbols:
+      - pro
+    101082|Leathery Hide:
+    - ruling: Cannot be used to prevent aggravated damage, even if the minion treats them as normal damage (eg. {Skin of Night}).
+      symbols: []
+    101608|Resilience:
+    - ruling: Cannot be used to prevent aggravated damage, even if the minion treats them as normal damage (eg. {Skin of Night}).
+      symbols:
+      - FOR
+    101817|Soak:
+    - ruling: Cannot be used to prevent aggravated damage, even if the minion treats them as normal damage (eg. {Skin of Night}).
+      symbols: []
+    102172|Well-Marked:
+    - ruling: Cannot be used to prevent aggravated damage, even if the minion treats them as normal damage (eg. {Skin of Night}).
+      symbols: []
+LSJ 20041022|RTR 20180719|ANK 20220118|ANK 20221205:
+  cards:
+    100293|Car Bomb:
+    - ruling: If the action fails, modifiers and reactions that can be used at the end/after an action can still be used afterwards.    .
+      symbols: []
+    101227|Mistaken Identity:
+    - ruling: The action fails, modifiers and reactions that can be used at the end/after an action can still be used afterwards.    .
+      symbols: []
+    101691|Scobax:
+    - ruling: If the action fails, modifiers and reactions that can be used at the end/after an action can still be used afterwards.    .
+      symbols:
+      - STR
+    102081|Unseen Hibernation:
+    - ruling: The action fails, modifiers and reactions that can be used at the end/after an action can still be used afterwards.    .
+      symbols:
+      - abo
+LSJ 20041022|RTR 20180719|ANK 20221205:
+  cards:
+    100322|Champion:
+    - ruling: Modifiers and reactions that can be used at the end/after an action can still be used afterwards.
+      symbols:
+      - REACTION
+    100532|Detect Authority:
+    - ruling: If the action fails, modifiers and reactions that can be used at the end/after an action can still be used afterwards.
+      symbols:
+      - ani
+    100648|Ensconced:
+    - ruling: Modifiers and reactions that can be used at the end/after an action can still be used after combat.
+      symbols:
+      - VIS
+      - REACTION
+    100690|Faerie Wards:
+    - ruling: ',  Modifiers and reactions that can be used at the end/after an action can still be used afterwards.'
+      symbols:
+      - myt
+      - MYT
+    100730|Final Loosening:
+    - ruling: Modifiers and reactions that can be used at the end/after an action can still be used afterwards.
+      symbols:
+      - for
+    100919|Hide:
+    - ruling: Modifiers and reactions that can be used at the end/after an action can still be used afterwards.
+      symbols:
+      - REACTION
+    100920|Hide the Heart:
+    - ruling: If the action fails, modifiers and reactions that can be used at the end/after an action can still be used afterwards.
+      symbols:
+      - val
+    '101151|Malkavian Derangement: Alternate Personality':
+    - ruling: If the action fails, modifiers and reactions that can be used at the end/after an action can still be used afterwards.   "
+      symbols: []
+    101521|Purification:
+    - ruling: Modifiers and reactions that can be used at the end/after an action can still be used afterwards.
+      symbols:
+      - QUI
+LSJ 20041130|LSJ 20100527:
+  cards:
+    100519|Delaying Tactics:
+    - ruling: Will only retrieve a political action card played from the hand (eg. it does not retrieve an in-play {Rumors
+        of Gehenna} in the referendum to burn it or the card chosen by {Bujo}).
+      symbols: []
+LSJ 20050124|ANK 20230503:
+  cards:
+    100695|Fall of the Camarilla:
+    - ruling: An "impersonator" (eg. {Vlad Tepes}) can still play cards requiring Camarilla or a Camarilla title.
+      symbols: []
+    100696|Fall of the Sabbat:
+    - ruling: An "impersonator" (eg. {Vlad Tepes}) can still play cards requiring Sabbat or a Sabbat title.
+      symbols: []
+    200770|Kemintiri (G2 ADV):
+    - ruling: She can play a card requiring Camarilla and/or Justicar even if the sect does not exist anymore (eg. {Fall of
+        the Camarilla}).
+      symbols:
+      - MERGED
+    201446|Vidal Jarbeaux (G5):
+    - ruling: He can meet a title requirement even if the sect does not exist anymore (eg. {Fall of the Camarilla}).
+      symbols: []
+    201456|Vlad Tepes (G3):
+    - ruling: He can meet a title requirement even if the sect does not exist anymore (eg. {Fall of the Camarilla}).
+      symbols: []
+LSJ 20050128-2|ANK 20221011-4|RTR 20070707:
+  cards:
+    200770|Kemintiri (G2 ADV):
+    - ruling: If she plays a political action requiring a Justicar, she is not seen as such by other cards or effects during
+        the referendum (eg. if another vampire plays {Closed Session} and she's not Camarilla she will not be able to vote.
+        If she plays it, she can vote).
+      symbols:
+      - MERGED
+LSJ 20050128|LSJ 20080603:
+  cards:
+    100809|Garibaldi-Meucci Museum:
+    - ruling: A card requiring a Baron (eg. {Open War}) is a card requiring an Anarch.
+      symbols: []
+    '101435|Powerbase: Los Angeles':
+    - ruling: A card requiring a Baron (eg. {Open War}) is a card requiring an Anarch.
+      symbols: []
+    201226|Salvador Garcia (G4):
+    - ruling: A card requiring a Baron (eg. {Open War}) is a card requiring an Anarch.
+      symbols: []
+LSJ 20050128|PIB 20150306|PIB 20150307|ANK 20211019:
+  cards:
+    201446|Vidal Jarbeaux (G5):
+    - ruling: 'Titles: When meeting a title requirement, he is considered a member of the underlying sect. He can meet a given
+        generic title (eg. Prince) only once, but the controller chooses how it is met (any city, even a made-up one). He
+        must choose a title when playing a card required a "titled" vampire (eg. {Rubicon}), but can only choose each title
+        once. He can choose the non-descript "X votes" title, but only once.'
+      symbols: []
+LSJ 20050216|ANK 20190701:
+  cards:
+    100920|Hide the Heart:
+    - ruling: An ally has life, not blood, he cannot pay.
+      symbols:
+      - val
+    101957|Tenebrous Form:
+    - ruling: An ally has life, not blood, he cannot pay.
+      symbols:
+      - OBT
+LSJ 20050217|LSJ 20090622:
+  cards:
+    201173|Reg Driscoll (G2):
+    - ruling: You may move all or none the equipment he gets to just one minion, but you cannot split.
+      symbols: []
+LSJ 20050228-3|ANK 20230111:
+  cards:
+    101636|Rigor Mortis:
+    - ruling: Canceling a maneuver provided by a strike does not cancel the strike (eg. {Aid from Bats}, {.44 Magnum}). The
+        chosen strike cannot be changed.
+      symbols:
+      - THN
+LSJ 20050313|ANK 20230408:
+  cards:
+    100223|Bloodstone:
+    - ruling: It's still an equip action (eg. It can benefit from {The British Museum, London} or {Filchware's Pawn Shop}).
+      symbols: []
+LSJ 20050315|LSJ 20010210:
+  cards:
+    200094|Angelo (G3):
+    - ruling: He cannot attempt an action to employ a retainer, nor strike to steal a retainer.
+      symbols: []
+    200179|Beast, The Leatherface of Detroit (G2):
+    - ruling: He cannot attempt an action to equip or employ, nor strike to steal an equipment or retainer.
+      symbols: []
+    200424|Enkidu, The Noah (G4):
+    - ruling: He cannot attempt an action to equip nor strike to steal an equipment.
+      symbols: []
+    200585|Helen Fairchild (G6):
+    - ruling: She cannot attempt an action to equip nor strike to steal an equipment.
+      symbols: []
+    200607|Howler (G2):
+    - ruling: She cannot attempt an action to equip a weapon nor strike to steal a weapon.
+      symbols: []
+    200859|Lorrie Dunsirn (G4):
+    - ruling: She cannot attempt an action to equip or employ, nor strike to steal an equipment or retainer.
+      symbols: []
+LSJ 20050315|LSJ 20050413-1|LSJ 20050413-2:
+  cards:
+    200179|Beast, The Leatherface of Detroit (G2):
+    - ruling: He can equip with an equipment that is a location when in play, but not by playing the card normally as it is
+        an action card. (eg. Using {Vast Wealth} would work).
+      symbols: []
+LSJ 20050422|LSJ 20090722:
+  cards:
+    101895|Sudario Refraction:
+    - ruling: The chosen cards are named when the action is declared. The current Sudario cannot be part of them.
+      symbols: []
+LSJ 20050607-1|LSJ 20080818:
+  cards:
+    201422|Valerius Maior, Hell's Fool (G4 ADV):
+    - ruling: The prohibition to play certain cards applies from the moment he attempts to block until the end of the action,
+        even if he fails to block.
+      symbols: []
+LSJ 20050607|LSJ 20050608:
+  cards:
+    101857|Spying Mission:
+    - ruling: If it is cancelled (eg. {Direct Intervention}), it is too late for the target to play reactions. If the cost
+        of the cancellation ousts a player, handle the oust before resolving the bleed.
+      symbols: []
+LSJ 20050927|ANK 20211113:
+  cards:
+    102082|Unwholesome Bond:
+    - ruling: Can be used by {Angelo} or {New Blood} on a uncontrolled vampire with no circle designation, even another {Angelo}
+        or {New Blood}. Multiple uncontrolled Angelos or New Bloods are in distinct "circle of one" though, so you have to
+        choose one.
+      symbols: []
+LSJ 20051016|LSJ 20051017:
+  cards:
+    200859|Lorrie Dunsirn (G4):
+    - ruling: Her press and additional strike are mandatory.
+      symbols: []
+LSJ 20051116-1|LSJ 20081213-3:
+  cards:
+    200333|Demdemeh (G4):
+    - ruling: The animal retainers turned into allies keep their current life counters and remember their original "starting
+        life", for effects that notice "starting life". The retainers' special abilities are lost, as well as any continuous
+        effect affecting them (eg. bonus from {Tainted Spring}).
+      symbols: []
+LSJ 20051126-2|ANK 20221021:
+  cards:
+    102186|Winged Second:
+    - ruling: The "Second" is not in combat, none of their or their rertainers combat-related abilities apply (eg. {Oliver
+        Thrace}, {Dog Pack}, {White Lily}).
+      symbols: []
+LSJ 20051204|LSJ 20060407|LSJ 20090625-2:
+  cards:
+    101331|Orun:
+    - ruling: The capacity bonus stacks (2 per Orun), the votes do not (1 per 3 Oruns altogether).
+      symbols: []
+LSJ 20060421|RTR 20111202:
+  cards:
+    101886|Strike with Conviction:
+    - ruling: If the action to bleed is blocked or canceled, Strike with Conviction is not burned.
+      symbols: []
+LSJ 20060522|LSJ 20060824|LSJ 20080725|LSJ 20090617:
+  cards:
+    100323|Change of Target:
+    - ruling: Actions without card (provided by the rulebook) are not "the same" as actions provided by cards (played or in
+        play).
+      symbols: []
+    101309|Obedience:
+    - ruling: Actions without card (provided by the rulebook) are not "the same" as actions provided by cards (played or in
+        play).
+      symbols: []
+    101573|Red Herring:
+    - ruling: Actions without card (provided by the rulebook) are not "the same" as actions provided by cards (played or in
+        play).
+      symbols: []
+LSJ 20060815|LSJ 20011212:
+  cards:
+    100280|Call the Great Beast:
+    - ruling: The action to put the 11th counter on it is an action to put a vampire into play, a sterile vampire cannot do
+        it (eg. {Blood Cult Awareness Network} gives it -1 stealth).
+      symbols: []
+LSJ 20070322|ANK 20180807:
+  cards:
+    '102027|Trophy: Chosen':
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200038|Al-Muntathir, God's Witness (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200124|Appius Claudius Corvus (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200129|Aredhel (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200146|Ash Harrison (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200165|Banjoko (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200204|Blackhorse Tanner (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200246|Carmen (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200277|Claudia (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200287|The Colonel (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200325|Darvag, The Butcher of Rus (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200348|Djuhah, The Bronze Bow (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200359|Dominique Santo Paulo (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200371|Dovey Ebfwe (G6):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200381|Dr. Morrow, The Skindoctor (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200410|Elimelech the Twice-Damned (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200435|Ermenegildo, The Rake (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200449|Ezekiel, Lord of Montreal (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200488|Gabriel de Cambrai (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200496|Gatjil Munyarryun (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200507|Gerald FitzGerald (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200560|Hagar Stone (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200589|Henri Lavenant (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200633|Ingram Frizer (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200650|Izhim abd Azrael (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200667|Jalan-Aajav (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200710|Joe "Boot" Hill (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200754|Karif al Numair (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200764|Katherine Stoddard (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200766|Kazimir Savostin (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200775|Kestrelle Hayes (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200852|Lord Aaron Wesley Wilkshire (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200865|Lubomira Hradok (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200919|Marge Khan (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200926|Mariano Pomposo (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200942|Marthe Dizier (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    200959|Mateusz Kazimirski, Biker of Blood (G6):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201011|Morlock (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201013|Mosfair (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201032|Nails (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201057|Nicomedes (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201062|Nizzam al-Latif (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201066|Nostoket (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201075|Olga Triminov (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201083|Ondine "Boudicca" Sinclair (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201123|Phillipe Rigaud (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201126|Piotr Andreikov (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201166|Rashid Stockton (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201185|Reza Fatir, The Dark Angel (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201189|Rico Loco (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201198|Roger Farnsworth (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201247|Saul Meira (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201261|Selena (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201263|Sennadurek (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201271|Shaggydog (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201296|Skryta Zyleta (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201304|Soldat (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201343|Tarbaby Jack (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201345|Tariq, The Silent (G2 ADV):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201354|Teresita, The Godmother (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201461|Wah Chun-Yuen (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201467|White Lily (G4):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201483|Yasmin the Black (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201485|Yazid Tamari (G3):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201486|Yazid Tamari (G3 ADV):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+    201510|Zubeida (G5):
+    - ruling: Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes
+        sect.
+      symbols: []
+LSJ 20070403|LSJ 20070413:
+  cards:
+    100322|Champion:
+    - ruling: Can be used only when reactions can be used (unlocked or with a wake effect). It does not count as playing a
+        reaction card.
+      symbols:
+      - REACTION
+    100551|Discern:
+    - ruling: Can be used only when reactions can be used (unlocked or with a wake effect). It does not count as playing a
+        reaction card.
+      symbols:
+      - REACTION
+    100575|Donate:
+    - ruling: Can be used only when reactions can be used (unlocked or with a wake effect). It does not count as playing a
+        reaction card.
+      symbols:
+      - REACTION
+    100919|Hide:
+    - ruling: Can be used only when reactions can be used (unlocked or with a wake effect). It does not count as playing a
+        reaction card.
+      symbols:
+      - REACTION
+    101908|Surge:
+    - ruling: Can be used only when reactions can be used (unlocked or with a wake effect). It does not count as playing a
+        reaction card.
+      symbols:
+      - REACTION
+    102120|Vigilance:
+    - ruling: Can be used only when reactions can be used (during an action). It does not count as playing a reaction card.
+      symbols:
+      - REACTION
+      - 1 CONVICTION
+LSJ 20070411|LSJ 20090514:
+  cards:
+    100046|Ambush:
+    - ruling: If the target unlocks and the action is not blocked, it is successful but has no effect.
+      symbols: []
+    100330|Charge of the Buffalo:
+    - ruling: If the target unlocks and the action is not blocked, it is successful but has no effect.
+      symbols:
+      - for
+    100747|Fleetness:
+    - ruling: If the target unlocks and the action is not blocked, it is successful but has no effect.
+      symbols:
+      - CEL
+    100886|Harass:
+    - ruling: If the action is not blocked and the target does not meet the requirements anymore, it is successful but has
+        no effect.
+      symbols: []
+    101147|Make the Misere:
+    - ruling: If the target unlocks and the action is not blocked, it is successful but has no effect.
+      symbols: []
+    101296|Nose of the Hound:
+    - ruling: ',  If the target unlocks and the action is not blocked, it is successful but has no effect.'
+      symbols:
+      - aus
+      - spi
+    101486|Principia Discordia:
+    - ruling: If the target unlocks and the action is not blocked, it is successful but has no effect.
+      symbols:
+      - ser
+    102202|Young Bloods:
+    - ruling: If the target of their ability unlocks and the action is not blocked, it is successful but has no effect.
+      symbols: []
+LSJ 20070507|LSJ 20021205:
+  cards:
+    100661|Escaped Mental Patient:
+    - ruling: If his strike resolves, he cannot be saved from burning (with eg. {Heaven's Gate} of {Left for Dead}).
+      symbols: []
+LSJ 20070708|LSJ 20071109:
+  cards:
+    200955|Mata Hari (G4):
+    - ruling: If a contract chooses her when played (eg. {Dirty Contract}), she is "chosen for the contract" for other cards
+        (eg. {Open Dossier}). If the contract choice is an effect of the card in play (eg. {Clandestine Contract}), she's
+        not chosen.
+      symbols: []
+    201446|Vidal Jarbeaux (G5):
+    - ruling: If a contract chooses him when played (eg. {Dirty Contract}), he is "chosen for the contract" for other cards
+        (eg. {Open Dossier}). If the contract choice is an effect of the card in play (eg. {Clandestine Contract}), he's not
+        chosen.
+      symbols: []
+LSJ 20070709|ANK 20221011-2:
+  cards:
+    101573|Red Herring:
+    - ruling: The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules.
+      symbols: []
+LSJ 20070709|LSJ 20090220|ANK 20210124:
+  cards:
+    101935|Tangle Atropos' Hand:
+    - ruling: The action has not reached resolution. The same vampire can undertake the same action again, but not if it was
+        blocked then continued before (eg.  {Form of Mist}).
+      symbols:
+      - PRO
+LSJ 20070928-2|LSJ 20071001-2:
+  cards:
+    101845|Spell of Life:
+    - ruling: The mummies put into play are unique by card name. The name is "in play" for anything that cares. They contest
+        unique minions of the same name, vampire or allies. If one is {Nefertiti}, then {Aabbt Kindred} will be able to take
+        directed actions.
+      symbols: []
+LSJ 20071001-1|LSJ 20100422:
+  cards:
+    100025|Agent of Power:
+    - ruling: Is unique and provides a discipline even when it was not played in the normal fashion (eg. diablerie, {Deviki
+        Prasanta}, {Bima}).
+      symbols: []
+LSJ 20071003-2|ANK 20230816:
+  cards:
+    100331|Charigger, The Axe:
+    - ruling: His replacement effect triggers before effects depending on the minion burning (eg. {Soul Gem of Etrius}), but
+        other replacements effect can be played before (eg. {Heaven's Gate}), depending on sequencing.
+      symbols: []
+LSJ 20071014|LSJ 20020115|LSJ 20030128:
+  cards:
+    101019|Jake Washington:
+    - ruling: Is not an ally in the ash heap (eg. {Compel the Spirit} cannot be played on him).
+      symbols: []
+LSJ 20071015|LSJ 20100302-1:
+  cards:
+    100388|Compel the Spirit:
+    - ruling: Requirements need not to be met. If the ally requires a discipline, the inferior version is used. If the cost
+        is X (eg. {Reanimated Corpse}), X is zero.
+      symbols: []
+    101481|Pressing Flesh:
+    - ruling: Requirements need not to be met. If the ally requires a discipline, the inferior version is used. If the cost
+        is X (eg. {Reanimated Corpse}), X is zero.
+      symbols: []
+LSJ 20071206|LSJ 20090725:
+  cards:
+    100665|The Eternal Mask:
+    - ruling: If The Eternal Mask is burned by something else than its own effect (including when the vampire it is on is
+        burned), the vampire that has been brought back is unaffected.
+      symbols: []
+LSJ 20080107|LSJ 20080114:
+  cards:
+    201648|Regina Blake (G6):
+    - ruling: She can use her ability to pay for equipments that are locations while in play (eg. {Palatial Estate}).
+      symbols: []
+LSJ 20080114|ANK 20221210:
+  cards:
+    200319|Danylo (G5):
+    - ruling: Cannot fetch equipments that are locations while in play (locquipments).
+      symbols: []
+LSJ 20080510|LSJ 20100811|ANK 20190619:
+  cards:
+    100695|Fall of the Camarilla:
+    - ruling: Is a temporary effect that overrides the underlying sect. The most recent override takes precedence, but if
+        a more recent would set the sect to Camarilla, it sets it to Independent instead while the Fall is in play. If the
+        Fall leaves play, the vampire retrieves his underlying sect.
+      symbols: []
+    100696|Fall of the Sabbat:
+    - ruling: Is a temporary effect that overrides the underlying sect. The most recent override takes precedence, but if
+        a more recent would set the sect to Sabbat, it sets it to Independent instead while the Fall is in play. If the Fall
+        leaves play, the vampire retrieves his underlying sect.
+      symbols: []
+LSJ 20080526|LSJ 20100902:
+  cards:
+    201440|Victor Pelletier (G4):
+    - ruling: His "as he enters play" ability can be used before he enters contest (not after) if there is another one in
+        play.
+      symbols: []
+LSJ 20080526|LSJ 20100902|ANK 20180626-1:
+  cards:
+    200434|Erlik (G3):
+    - ruling: His "as he enters play" ability can be used before he enters contest (not after) if there is another one in
+        play.
+      symbols: []
+LSJ 20080526|RTR 20180303|ANK 20211214:
+  cards:
+    200076|Anarch Convert (ANY):
+    - ruling: His "as he enters play" ability can be used before he enters contest if there is another one in play. This is
+        not self-contesting.
+      symbols: []
+LSJ 20080602|RBK 20200701-3:
+  cards:
+    101290|No Confidence:
+    - ruling: '"loses the benefit" means he gets no vote, is not considered titled, and yields the title immediately if it
+        would contest.'
+      symbols: []
+LSJ 20080603|LSJ 20050128:
+  cards:
+    100320|Chameleon:
+    - ruling: 'Counts as requiring an Anarch (for eg. {Powerbase: Los Angeles}).'
+      symbols: []
+    100446|CrimethInc.:
+    - ruling: An action requiring a Baron (eg. {Open War}) is an action requiring an Anarch.
+      symbols: []
+    101324|Open War:
+    - ruling: 'Counts as requiring an Anarch (for eg. {Powerbase: Los Angeles}).'
+      symbols: []
+    101377|Patsy:
+    - ruling: 'Counts as requiring an Anarch (for eg. {Powerbase: Los Angeles}).'
+      symbols: []
+    101631|Revolutionary Council:
+    - ruling: 'Counts as requiring an Anarch (for eg. {Powerbase: Los Angeles}).'
+      symbols: []
+    101915|Sweeper:
+    - ruling: 'Counts as requiring an Anarch (for eg. {Powerbase: Los Angeles}).'
+      symbols: []
+    102218|Bait and Switch:
+    - ruling: 'Counts as requiring an Anarch (for eg. {Powerbase: Los Angeles}).'
+      symbols: []
+    102230|Organized Resistance:
+    - ruling: 'Counts as requiring an Anarch (for eg. {Powerbase: Los Angeles}).'
+      symbols: []
+LSJ 20080611|ANK 20210131:
+  cards:
+    100476|Crypt's Sons:
+    - ruling: If used to cancel combat, the blocking minion is still locked.
+      symbols: []
+LSJ 20080630|ANK 20170111:
+  cards:
+    101272|Nephandus:
+    - ruling: Damage reduction applies to damage done outside of or after combat if it comes from a strike (eg. {Catatonic
+        Fear}).
+      symbols: []
+LSJ 20080630|RTR 20180303:
+  cards:
+    101401|Piper:
+    - ruling: When used to recruit an ally, the ally cannot act this turn.
+      symbols: []
+    101902|The Summoning:
+    - ruling: When used to recruit an ally, the ally cannot act this turn.
+      symbols:
+      - PRE
+LSJ 20080702-1|LSJ 20090114:
+  cards:
+    100267|Bundi:
+    - ruling: 'Cannot be used with a strike card that reads: "Strike: make a hand strike." but can be use it with a strike
+        card that reads "strike: make a weapon strike" (eg. {Brute Force}). In that case, the strike is still considered a
+        hand strike (ie. can be chosen if {Immortal Grapple} has been played)'
+      symbols: []
+LSJ 20080717|RTR 19970630:
+  cards:
+    101737|Shadow Court Satyr:
+    - ruling: He cannot use a card to commit diablerie (eg. {Amaranth})
+      symbols: []
+LSJ 20080803-2|LSJ 19981102:
+  cards:
+    101765|Shepherd's Innocence:
+    - ruling: Retainers and Equipments you control can also be rearranged.
+      symbols:
+      - ANI
+LSJ 20080809-1|KOT 20081119:
+  cards:
+    101765|Shepherd's Innocence:
+    - ruling: Is directed at all Methuselah controlling a card that require Animalism .
+      symbols:
+      - ANI
+      - ani
+    102160|Wave of Insanity:
+    - ruling: Is directed at all Methuselah controlling an ally.
+      symbols:
+      - DEM
+LSJ 20080809-2|KOT 20081119:
+  cards:
+    100326|Chanjelin Ward:
+    - ruling: Applies to an action if any one of its targets would be enough to enable his effect.
+      symbols: []
+    101118|Lock:
+    - ruling: Once in play, applies to an action if any one of its targets would be enough to enable his effect.
+      symbols: []
+LSJ 20081120-1|LSJ 20091016|LSJ 20100226:
+  cards:
+    201446|Vidal Jarbeaux (G5):
+    - ruling: 'Vampire traits: titles, "Red List", "Flight", non-requirements (eg. non-Red List) are vampire traits. Mortal,
+        unlocked, ready, older, Striga, Maleficia, etc. are not.'
+      symbols: []
+LSJ 20081213-1|ANK 20210124:
+  cards:
+    100645|Enkil Cog:
+    - ruling: If locked to take an action and the action is canceled as it is played (not if it is canceled after, eg. with
+        {Tangle Atropos' Hand}), it stays locked and the minion can choose to take an action again or let the Cog effect be
+        lost.
+      symbols: []
+LSJ 20090107|LSJ 20070829-3:
+  cards:
+    200386|Dragos (G2):
+    - ruling: A "burn blood" effect on a combat card is not a cost (eg. {Chiropteran Marauder}), it is unaffected by his ability.
+      symbols: []
+LSJ 20090115-1|ANK 20170309:
+  cards:
+    101401|Piper:
+    - ruling: This is not an action, so cost reductions refering to an action like {Charisma} or {Erichtho} do not apply.
+      symbols: []
+    201506|Zhenga (G4):
+    - ruling: Her ability does not work with {Piper} (not an action).
+      symbols: []
+LSJ 20090126|RBK 20200701-5:
+  cards:
+    101896|Sudden Reversal:
+    - ruling: If used to cancel a Trifle, the target does not get an extra Master Phase Action from the canceled Trifle.
+      symbols: []
+LSJ 20090216|ANK 20180922:
+  cards:
+    102149|Warsaw Station:
+    - ruling: The unlock effect is applied after the action is resolved and the referendum (if any) concluded. If the acting
+        vampire is not a Nosferatu anymore at that point, he does not unlock.
+      symbols: []
+LSJ 20090226|ANK 20200227:
+  cards:
+    101132|Lunatic Eruption:
+    - ruling: If the minion it is on has entered combat and unlocks, he is free to take any other action.
+      symbols: []
+LSJ 20090226|ANK 20211009-2:
+  cards:
+    201585|Elen Kamjian (G6):
+    - ruling: If she unlocks after having performed her mandatory bleed, she is free to take any action.
+      symbols: []
+LSJ 20090304-1|LSJ 20100514:
+  cards:
+    101931|Talbot's Chainsaw:
+    - ruling: The damage inflicted during the unlock phase is weapon damage, it is neither inflicted by the wearer nor environmental.
+        {Mictlantecuhtli} can be chosen and would take no damage.
+      symbols: []
+LSJ 20090322|ANK 20181003|LSJ 20010803-2:
+  cards:
+    100144|Bear-Baiting:
+    - ruling: If the combat is canceled, the action is still blocked, {Mask of a Thousand Faces} cannot be used to continue
+        it, but an effect can be used to continue the action as if unblocked (eg. {Crypt's Sons}, {Momentary Delay}).
+      symbols: []
+LSJ 20090415|LSJ 20100119:
+  cards:
+    100909|Helicopter:
+    - ruling: If directly put (and not equipped) on the vampire, it is not locked (eg. using {Alastor}).
+      symbols: []
+LSJ 20090425|LSJ 19990425:
+  cards:
+    101998|Touch of Clarity:
+    - ruling: Can be used as an action modifier by a non-acting ready unlocked minion controlled by the controller of the
+        acting minion.
+      symbols: []
+LSJ 20090430|ANK 20180628:
+  cards:
+    200427|Epikasta Rigatos (G4):
+    - ruling: Can only retrieve cards played the normal way, ie. not put into play as a result of another card (eg. {Concealed
+        Weapon} or {Charming Lobby}).
+      symbols: []
+LSJ 20090528-2|LSJ 20031118:
+  cards:
+    200871|Lucian, the Perfect (G4):
+    - ruling: Strikes that do not target him (dodge, combat ends) do not cost more. They do if they plan to damage him after
+        combat (eg.  {Catatonic Fear}). They do not if they target a card on him (eg. {Target Retainer}, {Canine Horde}).
+      symbols:
+      - PRE
+LSJ 20090606|ANK 20190707:
+  cards:
+    101086|Legacy of Caine:
+    - ruling: Cannot choose to target a vampire when using another non-standard hunt action (eg. {Abactor}).
+      symbols: []
+    102166|Week of Nightmares:
+    - ruling: Cannot choose to target a vampire when using another non-standard hunt action (eg. {Abactor}).
+      symbols: []
+LSJ 20090705|ANK 20170605:
+  cards:
+    100607|Eccentric Billionaire:
+    - ruling: The "lock to reduce the cost" effect can be used when the action is announced or when the cost is paid.
+      symbols: []
+LSJ 20090722-2|LSJ 20030618:
+  cards:
+    100908|Heidelberg Castle, Germany:
+    - ruling: 'Cannot be used after a diablerie or an {Abactor} resolution and before the Blood Hunt: the Blood Hunt is part
+        of the action although it is independent from it.'
+      symbols: []
+LSJ 20090722|ANK 20230105:
+  cards:
+    101895|Sudario Refraction:
+    - ruling: Any copy of the named card can be fetched upon resolution, except the current Sudario Refraction.
+      symbols: []
+LSJ 20090724|ANK 20180129-1:
+  cards:
+    100004|Abactor:
+    - ruling: This is not a diablerie. Neither {Rebirth} nor {Carlton Van Wyk}'s ability can be used.
+      symbols: []
+LSJ 20090810|LSJ 20100305:
+  cards:
+    101291|No Secrets From the Magaji:
+    - ruling: It still burns if a block is attempted and then an effect prevents the block (eg. {Daring the Dawn}, {Psalm
+        of the Damned}).
+      symbols: []
+LSJ 20090824|LSJ 20051121:
+  cards:
+    100956|Ilomba:
+    - ruling: If grabbed by a "this vampire employs" effect (not the normal employ action), the vampire receiving Ilomba does
+        not get to move Ilomba on to a new target.
+      symbols: []
+LSJ 20090901|LSJ 20030522-2:
+  cards:
+    101920|Sword of Nuln:
+    - ruling: If the target has only one blood left, he pays what he can, still fails to heal the damage and goes to torpor
+        empty.
+      symbols: []
+LSJ 20090920-2|RTR 20070707:
+  cards:
+    200116|Antonio d'Erlette (G4):
+    - ruling: 'Cost reductions apply (eg. {Powerbase: Tshwane}), except if they require an action (eg. {Charisma}).'
+      symbols: []
+LSJ 20090922|ANK 20220916:
+  cards:
+    100195|Blood Brother Ambush:
+    - ruling: 'The vampire playing it is not considered having burned a minion (eg. for {Taking the Skin: Minion}), but the
+        opponent is.'
+      symbols: []
+    100412|Conscripted Statue:
+    - ruling: 'The vampire playing it is not considered having burned a minion (eg. for {Taking the Skin: Minion}, but the
+        opponent is.'
+      symbols:
+      - VIS
+LSJ 20091012|LSJ 20020609:
+  cards:
+    200592|Hermana Hambrienta Mayor (G4):
+    - ruling: If she creates a vampire (eg. {The Embrace}), they are not Mexico Circle, they are each in their own individual
+        circle of one.
+      symbols: []
+    200593|Hermana Hambrienta Menor (G4):
+    - ruling: If she creates a vampire (eg. {The Embrace}), they are not Mexico Circle, they are each in their own individual
+        circle of one.
+      symbols: []
+LSJ 20091015|PIB 20130128:
+  cards:
+    201446|Vidal Jarbeaux (G5):
+    - ruling: He can meet the requirements for his controller to play any card, including Master cards.
+      symbols: []
+LSJ 20091026|LSJ 20100112:
+  cards:
+    100004|Abactor:
+    - ruling: 'The Blood Hunt referendum is still a Blood Hunt: {Lay Low} can be used, {Trophy: Diablerie} would prevent the
+        referendum.'
+      symbols: []
+LSJ 20091217|LSJ 20091217-2:
+  cards:
+    200229|Byzar (G6):
+    - ruling: 'His ability is a replacement effect. It prevents any effect triggering after the vampire burns (eg. {Sacrificial
+        Lamb}), but still allows burn conditions to be met (eg. {Judgment: Camarilla Segregation}).'
+      symbols: []
+LSJ 20100112|PIB 20121028:
+  cards:
+    100004|Abactor:
+    - ruling: The Blood Hunt referendum is part of the action resolution. Cards that are played "after a successful action"
+        or "after resolution" must be played after the referendum. {Heidelberg Castle, Germany} cannot be used before the
+        referendum.
+      symbols: []
+LSJ 20100119|PIB 20121031:
+  cards:
+    101627|Revelations:
+    - ruling: You do not get to see the card drawn as replacement.
+      symbols:
+      - aus
+LSJ 20100205-2|ANK 20221007:
+  cards:
+    100542|Diabolic Lure:
+    - ruling: The opponent burns pool whether or not the pact counters reach capacity.
+      symbols:
+      - DAI
+LSJ 20100206|LSJ 20030224:
+  cards:
+    100510|Death Seeker:
+    - ruling: If used to cancel a limited effect (additional strike), then the limit is not triggered and another limited
+        effect can be used.
+      symbols: []
+    200145|Asguresh (G5):
+    - ruling: If his ability is used to cancel a limited effect (additional strike), then the limit is not triggered and another
+        limited effect can be used.
+      symbols: []
+LSJ 20100208-2|LSJ 20100823:
+  cards:
+    101761|Shattering Crescendo:
+    - ruling: ',  Requires to have the second in hand to play it.'
+      symbols:
+      - mel
+      - MEL
+LSJ 20100213|LSJ 19991110:
+  cards:
+    100954|Illusions of the Kindred:
+    - ruling: Even if he has the same name as a vampire in play, the illusonary vampire is considered another vampire for
+        all purposes (eg. {Jimmy Dunn}'s ability does not trigger).
+      symbols: []
+LSJ 20100216|ANK 20180512-2:
+  cards:
+    102121|Villein:
+    - ruling: If the target has less blood at resolution than the amount announced, you take what you can.
+      symbols: []
+LSJ 20100218|RTR 20180511-2:
+  cards:
+    100381|Command of the Beast:
+    - ruling: A limited bleed modifier can be played before or after.
+      symbols:
+      - DOM
+    100565|Divine Image:
+    - ruling: A limited bleed modifier can be played before or after.
+      symbols:
+      - SER
+    101098|Leverage:
+    - ruling: A limited bleed modifier can be played before or after.
+      symbols: []
+    101429|Power of One:
+    - ruling: A limited bleed modifier can be played before or after.
+      symbols:
+      - pot
+    101533|Quicksilver Contemplation:
+    - ruling: A limited bleed modifier can be played before or after.
+      symbols:
+      - AUS
+      - TEM
+LSJ 20100301|ANK 20220116:
+  cards:
+    102076|Unleash Hell's Fury:
+    - ruling: If the block is successful, the aggravated damage is inflicted and the card burned even if the action is ended
+        (eg. {Mirror Walk}) before block resolution.
+      symbols: []
+LSJ 20100303|ANK 20180817:
+  cards:
+    101016|Jack of Both Sides:
+    - ruling: Requirements must be met but this does not count as an action "requiring" anything.
+      symbols: []
+LSJ 20100423|LSJ 20100127:
+  cards:
+    200229|Byzar (G6):
+    - ruling: His ability does not apply if he's not controlled (ie. uncontrolled or yielded in a contest).
+      symbols: []
+LSJ 20100426|LSJ 20091128|LSJ 20011205:
+  cards:
+    100608|Echo of Harmonies:
+    - ruling: When the retained political action is played, requirements must be met, it provides 1 vote and can be canceled
+        as it is played.
+      symbols:
+      - MEL
+LSJ 20100507|ANK 20210131-1:
+  cards:
+    101275|Netwar:
+    - ruling: If another Methuselah is the target, he must declare whether he attempts or declines to block before Netwar
+        can be played.
+      symbols:
+      - aus
+LSJ 20100507|PIB 20150820|RBK 20200701-2:
+  cards:
+    100920|Hide the Heart:
+    - ruling: ',  Sequencing applies. For example, if another Methuselah is targeted by the action, they must declare if they
+        attempt or decline to block before you can play Hide the Heart.'
+      symbols:
+      - val
+      - VAL
+LSJ 20100604-2|LSJ 20100611:
+  cards:
+    200913|Marciana Giovanni, Investigator (G2):
+    - ruling: The beneficiary of her ability can choose to burn a blood for intercept for the duration of the action.
+      symbols: []
+LSJ 20100723|PIB 20111002:
+  cards:
+    100435|The Coven:
+    - ruling: The predator must take control of it when he gets the opportunity to play effects. If the controller declares
+        his turn ends, he does not get the opportunity to use The Coven before it is moved to his predator, even retroactively
+        if the mandatory effect was forgotten.
+      symbols: []
+LSJ 20100728|LSJ 20090213:
+  cards:
+    102095|Veil of Darkness:
+    - ruling: The effect needs to be applied before anyone has an opportunity to play another cancellation effect (eg. {Direct
+        Intervention}).
+      symbols: []
+    200086|Andrew Stuart (G4):
+    - ruling: His ability needs to be applied before anyone has an opportunity to play another cancellation effect (eg. {Direct
+        Intervention}).
+      symbols: []
+LSJ 20100811|ANK 20190619:
+  cards:
+    102196|Writ of Acceptance:
+    - ruling: Is a temporary effect that overrides the underlying sect. The most recent override takes precedence. It stays
+        active if another effect changes the underlying sect, like using the default action to become Anarch.
+      symbols: []
+PIB 20110712-1|LSJ 20040518-2:
+  cards:
+    100347|Church of the Order of St. Blaise:
+    - ruling: Can put counters on locations that use "blood" or "pool" counters.
+      symbols: []
+PIB 20110817|ANK 20191031:
+  cards:
+    100765|Foreshadowing Destruction:
+    - ruling: 'Can be played against a target with 10 or more pool and does not count against the limit in this case: it will
+        only have a lingering effect (+3 bleed if the target happens to have 9 or less).'
+      symbols:
+      - DOM
+PIB 20111017|LSJ 20010626:
+  cards:
+    101272|Nephandus:
+    - ruling: Damage reduction does not apply to environmental damage (eg. {Carrion Crows}).
+      symbols: []
+PIB 20120225|LSJ 20011215:
+  cards:
+    100190|Blissful Agony:
+    - ruling: If both vampires play it, the acting Methuselah decides which resolves first. The other is lost.
+      symbols:
+      - VAL
+PIB 20130128-2|LSJ 20100325-2:
+  cards:
+    101046|Khazar's Diary (Endless Night):
+    - ruling: Minions put into play by the Diary go back to their owner's ash heap when burned. They do not count has allies
+        burned from play (eg. for {Pressing Flesh}).
+      symbols: []
+PIB 20140107|LSJ 20010807-2:
+  cards:
+    101721|Sensory Deprivation:
+    - ruling: Once the vampire who played it leaves play, the effect stops. It does not kick back in if the vampire comes
+        back (eg. after a {Banishment}).
+      symbols: []
+PIB 20150105|LSJ 19980107:
+  cards:
+    100034|Akunanse Kholo:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100069|Animal Magnetism:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100092|Army of Apparitions:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols:
+      - chi
+    100112|Aura of Invincibility:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100119|Awe:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100251|Bribes:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100274|Business Pressure:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100337|Cheval de Bataille:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100364|Closed Session:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100404|Conflict of Interests:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100437|Covincraft:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100478|Cryptic Rider:
+    - ruling: Can be used after a referendum that is automatically passing.
+      symbols: []
+    100550|Disarming Presence:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100559|Distant Friend:
+    - ruling: Cannot be burned during a referendum that is automatically passing.
+      symbols: []
+    100586|Dread Gaze:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100608|Echo of Harmonies:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100619|Elder Kindred Network:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100622|The Eldest Are Kholo:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100638|Emissary:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100874|Guruhi Kholo:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100878|Hall of Hades' Court:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    100950|Igoli's Loyalty:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101008|Iron Glare:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols:
+      - pot
+      - pre
+    101010|Irregular Protocol:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101011|Ishtarri Kholo:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101049|Kindred Coercion:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101051|Kindred Manipulation:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101058|King's Favor:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101064|Knotted Cord:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101130|Loyalist:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101141|Madrigal:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101156|Malkavian Rider Clause:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101230|Mob Rule:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101332|Osebo Kholo:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101406|Poison Pill:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101490|Private Audience:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101516|Pulling Strings:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101533|Quicksilver Contemplation:
+    - ruling: Cannot be burned during a referendum that is automatically passing.
+      symbols:
+      - aus
+      - tem
+      - ACTION MODIFIER
+      - REACTION
+    101541|Rant!:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101719|Sense Vibrations:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    101951|Telepathic Vote Counting:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    102014|Treachery:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    102064|Under the Skin:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    102070|Unexpected Coalition:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    102073|Unholy Radiance:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols: []
+    102131|Voter Captivation:
+    - ruling: Can be used after a referendum that is automatically passing, but X is zero in this case.
+      symbols: []
+    102143|Wanderer's Counsel:
+    - ruling: Cannot be used during a referendum that is automatically passing.
+      symbols:
+      - ACTION MODIFIER
+      - REACTION
+PIB 20150306|PIB 20150307:
+  cards:
+    201456|Vlad Tepes (G3):
+    - ruling: When meeting a requirement, the controller can choose how he meets it (eg. he can play {Anarch Secession} as
+        a Prince of any city, even a made-up one).
+      symbols: []
+PIB 20150428|LSJ 20100206-2:
+  cards:
+    100184|Blessing of the Beast:
+    - ruling: The number of cards to put on it is announced when the card is played, they must be in hand before drawing the
+        replacement for this card.
+      symbols: []
+PIB 20150522|LSJ 20010623:
+  cards:
+    101536|The Rack:
+    - ruling: Can provide blood if the target is in torpor, not if it is not controlled (eg. after a {Banishment}).
+      symbols: []
+PIB 20150526|RTR 20080808:
+  cards:
+    200775|Kestrelle Hayes (G5):
+    - ruling: Gets +1 stealth on actions directed at multiple Methuselahs if one or more of the targets control no ready Sabbat
+        vampire.
+      symbols: []
+PIB 20150720|RTR 19941109:
+  cards:
+    101146|Make an Example:
+    - ruling: Can be used by a locked vampire.
+      symbols: []
+PIB 20150720|RTR 19970306:
+  cards:
+    101146|Make an Example:
+    - ruling: Cannot be used by a vampire in torpor.
+      symbols: []
+PIB 20150725|LSJ 20100429:
+  cards:
+    100310|Cavalier:
+    - ruling: Takes the modified cost into account if it has been modified (eg. by {The Slow Withering} or {The Ankara Citadel,
+        Turkey}).
+      symbols: []
+PIB 20150821|RTR 20080808:
+  cards:
+    101838|Sowing Dissension:
+    - ruling: Is an action directed at all other Methuselahs
+      symbols: []
+PIB 20150917|RTR 20070707:
+  cards:
+    101971|Thin-Blooded Seer:
+    - ruling: When computing the cost of a card, multiplications and divisions are applied first, followed by additions and
+        subtractions.
+      symbols: []
+PIB 20150924-1|PIB 20150930:
+  cards:
+    101179|Mask of a Thousand Faces:
+    - ruling: Can be used after blocks are declined if the masked minion was benefiting from an effect that made him unblockable,
+        even if the masking minion does not benefit from the same effect (eg. {Toreador Grand Ball}, {Nakhthorheb}).
+      symbols: []
+PIB 20151009|RBK 20200701-1:
+  cards:
+    100127|Baleful Doll:
+    - ruling: The bearer (if he unlocks normally) unlocks at the beginning of the unlock phase, before this effect can be
+        used.
+      symbols: []
+RBK 20200701-10|LSJ 20000110:
+  cards:
+    100378|Coma:
+    - ruling: Only effective at close range.
+      symbols: []
+    100651|Entombment:
+    - ruling: Only effective at close range.
+      symbols: []
+RBK 20200701-4|ANK 20230116:
+  cards:
+    101398|Phased Motion Detector:
+    - ruling: Can provide intercept only once during each action.
+      symbols: []
+RBK 20200701-4|ANK 20230122:
+  cards:
+    201633|Maila (G6):
+    - ruling: Her ability can only be used once during each of your turns.
+      symbols: []
+RBK 20200701-4|ANK 20230817:
+  cards:
+    100920|Hide the Heart:
+    - ruling: To reduce a bleed against another Methuselah, you need to be unlocked.
+      symbols:
+      - VAL
+RBK 20200701-4|RBK 20200701-9|LSJ 20010111:
+  cards:
+    200092|Angelica, The Canonicus (G2):
+    - ruling: Can only use her ability once per action if she needs intercept, but she can get more than she needs.
+      symbols: []
+RBK 20200701-6|ANK 20230417:
+  cards:
+    100858|Grey Thorne:
+    - ruling: Is not Anarch (eg. does not benefit from {Anarch Manifesto, An}).
+      symbols: []
+    102128|Vivienne Géroux:
+    - ruling: Is not Anarch (eg. does not benefit from {Anarch Manifesto, An}).
+      symbols: []
+RBK 20200701-8|LSJ 20051113-2:
+  cards:
+    200501|Genevieve (G2):
+    - ruling: Her votes and ballots must be cast on the same side (for or against).
+      symbols: []
+    200534|Gratiano (G2):
+    - ruling: His votes (if any) and ballots must be cast on the same side (for or against).
+      symbols: []
+RBK 20200701-9|LSJ 20090324:
+  cards:
+    100094|Arson:
+    - ruling: An action directed at a card controlled by another Methuselah is directed at that Methuselah.
+      symbols: []
+    100233|Bomb:
+    - ruling: An action directed at a card controlled by another Methuselah is directed at that Methuselah.
+      symbols: []
+    100259|The Bruisers:
+    - ruling: An action directed at a card controlled by another Methuselah is directed at that Methuselah.
+      symbols: []
+    100391|Conceal:
+    - ruling: An action directed at a card controlled by another Methuselah is directed at that Methuselah.
+      symbols: []
+    100719|Felix "Fix" Hessian:
+    - ruling: An action directed at a card controlled by another Methuselah is directed at that Methuselah.
+      symbols: []
+    100841|Goblinism:
+    - ruling: The action is directed at the Methuselah controlling the location, undirected if you control it.
+      symbols:
+      - pot
+    100893|Haunt:
+    - ruling: The action is directed at the Methuselah controlling the location, undirected if you control it.
+      symbols:
+      - NEC
+    101301|Nosferatu Performance Art:
+    - ruling: An action directed at a card controlled by another Methuselah is directed at that Methuselah.
+      symbols: []
+    101324|Open War:
+    - ruling: An action directed at a card controlled by another Methuselah is directed at that Methuselah.
+      symbols: []
+    101632|Rewilding:
+    - ruling: An action directed at a card controlled by another Methuselah is directed at that Methuselah.
+      symbols: []
+    101809|Smash and Grab:
+    - ruling: An action directed at a card controlled by another Methuselah is directed at that Methuselah.
+      symbols: []
+    102193|The World's a Canvas:
+    - ruling: An action directed at a card controlled by another Methuselah is directed at that Methuselah.
+      symbols: []
+RTR 19941109|ANK 20180612:
+  cards:
+    100427|Corpse Balloon:
+    - ruling: The discipline level used to recruit it decides which version it is (inferior or superior). This does not change
+        once it is in play.
+      symbols: []
+    100891|Hatch the Viper:
+    - ruling: The discipline level used to recruit it decides which version it is (inferior or superior). This does not change
+        once it is in play.
+      symbols: []
+    100932|Homunculus:
+    - ruling: The discipline level used to recruit it decides which version it is (inferior or superior). This does not change
+        once it is in play.
+      symbols: []
+    101017|Jackal:
+    - ruling: The discipline level used to recruit it decides which version it is (inferior or superior). This does not change
+        once it is in play.
+      symbols: []
+    101182|Masquer:
+    - ruling: The discipline level used to recruit it decides which version it is (inferior or superior). This does not change
+        once it is in play.
+      symbols: []
+    101254|Murder of Crows:
+    - ruling: The discipline level used to recruit it decides which version it is (inferior or superior). This does not change
+        once it is in play.
+      symbols: []
+    101340|Owl Companion:
+    - ruling: The discipline level used to recruit it decides which version it is (inferior or superior). This does not change
+        once it is in play.
+      symbols: []
+    101545|Raptor:
+    - ruling: The discipline level used to recruit it decides which version it is (inferior or superior). This does not change
+        once it is in play.
+      symbols: []
+    101550|Raven Spy:
+    - ruling: The discipline level used to recruit it decides which version it is (inferior or superior). This does not change
+        once it is in play.
+      symbols: []
+    101734|Shade:
+    - ruling: The discipline level used to recruit it decides which version it is (inferior or superior). This does not change
+        once it is in play.
+      symbols: []
+    102191|Wolf Companion:
+    - ruling: The discipline level used to recruit it decides which version it is (inferior or superior). This does not change
+        once it is in play.
+      symbols: []
+RTR 19941109|ANK 20190116:
+  cards:
+    100045|Ambulance:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols: []
+    100321|Chameleon's Colors:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols:
+      - SPI
+    100751|Flow Within the Mountain:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols:
+      - VIS
+    100764|Foresee:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols: []
+    100771|Form of Mist:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols:
+      - PRO
+    101222|Mirror Image:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols:
+      - CHI
+    101236|Momentary Delay:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols: []
+    101244|Morphean Blow:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols:
+      - VAL
+    101381|Peacemaker:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols: []
+    101735|Shadow Body:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols:
+      - OBT
+    101736|Shadow Boxing:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols:
+      - OBF
+      - POT
+      - ACTION MODIFIER
+    101975|Those Who Endure Judge:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols: []
+    101991|Toreador's Bane:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols:
+      - mel
+      - MEL
+    101995|Torrent:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols:
+      - CEL
+    201463|Wamukota (G4):
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols: []
+RTR 19941109|LSJ 19980210:
+  cards:
+    100362|Cloak the Gathering:
+    - ruling: Can be played by a locked vampire.
+      symbols:
+      - OBF
+RTR 19941109|LSJ 20080611|ANK 20190116:
+  cards:
+    100476|Crypt's Sons:
+    - ruling: If the action continues "as if unblocked", all action modifiers and reaction cards are still in effect, even
+        those pertaining to a successful block.
+      symbols: []
+RTR 19941109|RTR 20010710:
+  cards:
+    101605|Repo Man:
+    - ruling: Paying for the equipment found is not optional if a ready minion meet the requirements. If paying the cost will
+        oust the controlling Methuselah, then she is ousted.
+      symbols: []
+    102092|Vast Wealth:
+    - ruling: Paying for the equipment found is not optional. If paying the cost will oust the controlling Methuselah, then
+        she is ousted.
+      symbols: []
+RTR 19941109|TOM 19951216|PIB 20140324|ANK 20200422:
+  cards:
+    100153|Bestial Vengeance:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    100190|Blissful Agony:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combatant going to torpor during first strike.'
+      symbols:
+      - val
+    100301|Carrion Crows:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    100412|Conscripted Statue:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combatant going to torpor during first strike.'
+      symbols:
+      - vis
+    100476|Crypt's Sons:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    100495|Dark Steel:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    100496|Darkling Trickery:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combatant going to torpor during first strike.'
+      symbols:
+      - MYT
+    100593|Duma Rafiki:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    100626|Elephant Guardian:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    100819|Ghoul Retainer:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    100859|Groaning Corpse:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    100891|Hatch the Viper:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    101254|Murder of Crows:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    101556|Razor Bat:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    101734|Shade:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    101873|Stone Dog:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    101976|Thoughts Betrayed:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combatant going to torpor during first strike.'
+      symbols:
+      - dom
+    102107|Vengeful Spirit:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    102191|Wolf Companion:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    102210|Zombie:
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    200017|Aeron (G3):
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+    200908|Mambo Jeanne (G6):
+    - ruling: 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as
+        will a combattant going to torpor during first strike.'
+      symbols: []
+RTR 19950413|LSJ 20020112|RTR 20020501:
+  cards:
+    100694|Falcon's Eye:
+    - ruling: Only affects the rule restricting who gets to block an action. The vampire must still meet all other requirements
+        to block. In particular, {Blood Bond}, {Day Operation}, {Seduction} and prior decision not to block are not circumvented.
+      symbols:
+      - SPI
+RTR 19950413|RTR 20020501:
+  cards:
+    100598|Eagle's Sight:
+    - ruling: Only affects the rule restricting who gets to block an action. The vampire must still meet all other requirements
+        to block. In particular, {Blood Bond}, {Day Operation}, {Seduction} and prior decision not to block are not circumvented.
+      symbols:
+      - AUS
+RTR 19950509|LSJ 20080710|ANK 20200502:
+  cards:
+    100323|Change of Target:
+    - ruling: 'Actions without card (provided by the rulebook) can be repeated if they have different targets. Equipping from
+        a minion targets the equipments: if one equipment is the same, the action is the same.'
+      symbols: []
+    101309|Obedience:
+    - ruling: 'Actions without card (provided by the rulebook) can be repeated if they have different targets. Equipping from
+        a minion targets the equipments: if one equipment is the same, the action is the same.'
+      symbols: []
+    101573|Red Herring:
+    - ruling: 'Actions without card (provided by the rulebook) can be repeated if they have different targets. Equipping from
+        a minion targets the equipments: if one equipment is the same, the action is the same.'
+      symbols: []
+RTR 19951110|LSJ 19971201|RTR 20030519|LSJ 20030521|ANK 20210309:
+  cards:
+    101179|Mask of a Thousand Faces:
+    - ruling: The action remains the same. All action modifiers remain in effect, but inherent modifiers (a minion's inherent
+        +1 bleed for example) do not. All other effects carry over to the new masking vampire.
+      symbols: []
+RTR 19960124|LSJ 20090922|ANK 20181022:
+  cards:
+    100584|Draught of the Soul:
+    - ruling: If the minion is burned because of a referendum or as a side-effect of the action, this does not count as the
+        acting minion burning him. (eg. {War Ghoul} when recruited, {Brigitte Gebauer} using her last life, {Kamiri wa Itherero}'s
+        ability).
+      symbols:
+      - ACTION MODIFIER
+    101836|Soul Stealing:
+    - ruling: If the minion is burned because of a referendum or as a side-effect of the action, this does not count as the
+        acting minion burning him. (eg. {War Ghoul} when recruited, {Brigitte Gebauer} using her last life, {Kamiri wa Itherero}'s
+        ability).
+      symbols:
+      - ACTION MODIFIER
+RTR 19960124|LSJ 20090922|ANK 20181022|ANK 20220916:
+  cards:
+    '101928|Taking the Skin: Minion':
+    - ruling: If the minion is burned because of a referendum or as a side-effect of the action, this does not count as the
+        acting minion burning him. (eg. {War Ghoul} when recruited, {Brigitte Gebauer} using her last life, {Kamiri wa Itherero}'s
+        ability, {Blood Brother Ambush}).
+      symbols:
+      - abo
+      - ACTION MODIFIER
+RTR 19960221|LSJ 20020926:
+  cards:
+    100233|Bomb:
+    - ruling: The provided action ends with no effect if the acting minion does not possess the equipment when the action
+        resolves. It is still considered successful if not blocked.
+      symbols: []
+RTR 19960221|PIB 20130319:
+  cards:
+    101939|Target Head:
+    - ruling: Can be played on a strike that does no damage, even a dodge or a combat ends, but has no effect in that case.
+      symbols: []
+    101942|Target Vitals:
+    - ruling: Can be played on a strike that does no damage, even a dodge or a combat ends, but has no effect in that case.
+      symbols: []
+RTR 19970425|LSJ 20060921:
+  cards:
+    200019|Agaitas, The Scholar of Antiquities (G2):
+    - ruling: Cards from his ability that go into an ash heap, hand, or library always go into their owner's ash heap, hand,
+        or library (eg. using {Heart of Nizchetus}).
+      symbols: []
+RTR 19970630|ANK 20180420-1|ANK 20200705:
+  cards:
+    101727|Serpent's Numbing Kiss:
+    - ruling: The additional effect takes place after the end of combat, including the blood burn.
+      symbols:
+      - PRE
+      - SER
+RTR 19970630|ANK 20180720:
+  cards:
+    100051|Ananasi Vampirephile:
+    - ruling: When setting the range for the round, no other effect can be used to reset the range. Skip the determine range
+        step on that round, but other pre-range effects can be played afterwards.
+      symbols: []
+    100252|Brick by Brick:
+    - ruling: No other effect can be used to reset the range, but other pre-range effects can be played afterwards.
+      symbols:
+      - VIS
+    100330|Charge of the Buffalo:
+    - ruling: No other effect can be used to reset the range. Skip the determine range step on that round, but other pre-range
+        effects can be played afterwards.
+      symbols: []
+    100376|Cold Aura:
+    - ruling: No other effect can be used to reset the range. Skip the determine range step on that round, but other pre-range
+        effects can be played afterwards.
+      symbols: []
+    100802|Gang Tactics:
+    - ruling: If blocked, no other effect can be used to reset the range, but other pre-range effects can be played.
+      symbols: []
+    100832|Giulia Giovanni Abruzzina:
+    - ruling: When setting the range for the round, no other effect can be used to reset the range. Skip the determine range
+        step this round, but other pre-range effects can be played afterwards.
+      symbols: []
+    100850|Grasp of the Python:
+    - ruling: No other effect can be used to reset next round's range, but other pre-range effects can be played.
+      symbols:
+      - SER
+    100925|High Ground:
+    - ruling: When setting the range for the round, no other effect can be used to reset the range. Skip the determine range
+        step this round, but other pre-range effects can be played afterwards.
+      symbols: []
+    100959|Immortal Grapple:
+    - ruling: No other effect can be used to reset next round's range, but other pre-range effects can be played.
+      symbols:
+      - POT
+    100998|Internal Recursion:
+    - ruling: No other effect can be used to reset the range, but other pre-range effects can be played afterwards.
+      symbols:
+      - tem
+    101071|Lam Into:
+    - ruling: No other effect can be used to reset next round's range, but other pre-range effects can be played.
+      symbols:
+      - vic
+    101269|Neebi:
+    - ruling: No other effect can be used to reset the range, but other pre-range effects can be played afterwards.
+      symbols: []
+    101276|Neutral Guard:
+    - ruling: No other effect can be used to reset the range, but other pre-range effects can be played.
+      symbols: []
+    101320|Omael Kuman:
+    - ruling: When setting the range for the round, no other effect can be used to reset the range. Skip the determine range
+        step this round, but other pre-range effects can be played afterwards.
+      symbols: []
+    101714|Selective Silence:
+    - ruling: No other effect can be used to reset the range, but other pre-range effects can be played afterwards.
+      symbols:
+      - QUI
+    101744|Shadow Step:
+    - ruling: No other effect can be used to reset the range afterwards, but other pre-range effects can be played afterwards.
+      symbols:
+      - OBT
+    101816|Sniper Rifle:
+    - ruling: When setting the range for the round, no other effect can be used to reset the range, but other pre-range effects
+        can be played afterwards.
+      symbols: []
+    101858|Squirrel Balance:
+    - ruling: If blocked, no other effect can be used to reset the range, but other pre-range effects can be played.
+      symbols:
+      - cel
+    101939|Target Head:
+    - ruling: When setting the range for the round, no other effect can be used to reset the range. Skip the determine range
+        step on that round, but other pre-range effects can be played afterwards.
+      symbols: []
+    102239|Michael Harris, the Incinerator:
+    - ruling: If used to set the range, no other effect can be used to reset the range. Skip the determine range step on that
+        round, but other pre-range effects can be played afterwards.
+      symbols: []
+    200232|Cailean (G2):
+    - ruling: When setting the range for the round, no other effect can be used to reset the range, but other pre-range effects
+        can be played afterwards.
+      symbols: []
+    200981|Michael diCarlo (G4):
+    - ruling: When setting the range for the round, no other effect can be used to reset the range, but other pre-range effects
+        can be played afterwards.
+      symbols: []
+RTR 19970630|ANK 20200422:
+  cards:
+    101976|Thoughts Betrayed:
+    - ruling: Damage is environmental.
+      symbols:
+      - dom
+RTR 19970630|ANK 20230817-2:
+  cards:
+    101103|Life Boon:
+    - ruling: If a player has gone to negative pool, or has to pay more than he has, the Life Boon player must give her enough
+        pool to compensate for that.
+      symbols: []
+RTR 19970630|LSJ 19970801:
+  cards:
+    101057|King of the Mountain:
+    - ruling: Damage dealt to the opponent is environmental.
+      symbols:
+      - FOR
+RTR 19970630|LSJ 19990723:
+  cards:
+    100307|Catatonic Fear:
+    - ruling: Damage is done by the vampire (not environmental).
+      symbols:
+      - PRE
+    101128|Loving Agony:
+    - ruling: Damage is done by the vampire (not environmental).
+      symbols:
+      - val
+      - VAL
+RTR 19970630|LSJ 20020708:
+  cards:
+    100203|Blood of Acid:
+    - ruling: Damage from Blood of Acid is environmental.
+      symbols: []
+RTR 19970630|LSJ 20070328:
+  cards:
+    200017|Aeron (G3):
+    - ruling: The damage inflicted by his ability is environmental.
+      symbols: []
+RTR 19970630|RTR 20020501:
+  cards:
+    101196|Meld with the Land:
+    - ruling: The unlock effect occurs when the strike resolves, before the combat ends.
+      symbols:
+      - vic
+RTR 19980623|LSJ 20030103|ANK 20180906:
+  cards:
+    100788|Freak Drive:
+    - ruling: Is played after all combats are handled. Can be played from torpor.
+      symbols:
+      - FOR
+RTR 19980623|LSJ 20040219|ANK 20221130:
+  cards:
+    100308|Cats' Guidance:
+    - ruling: Is played after all combats are handled.
+      symbols:
+      - ani
+RTR 19980623|RTR 20030519|LSJ 20030520|RTR 20041202:
+  cards:
+    101179|Mask of a Thousand Faces:
+    - ruling: Cannot be used to mask an action if the masking vampire is not capable of taking that action, nor if any effect
+        (modifier, reaction, {Aching Beauty}, inherent stealth), has been played on this action that could not have been played
+        if the masking minion were the acting minion (not counting blood spent).
+      symbols: []
+RTR 19980707|LSJ 19980722:
+  cards:
+    100003|Aaron's Feeding Razor:
+    - ruling: The effect is not optional.
+      symbols: []
+    100063|The Ancestor's Talisman:
+    - ruling: The effect is not optional.
+      symbols: []
+    100325|Changeling Skin Mask:
+    - ruling: The superior Obfuscate is not optional.
+      symbols: []
+    100641|Enchanted Marionette:
+    - ruling: The effect is not optional.
+      symbols: []
+RTR 19980928|ANK 20211102:
+  cards:
+    101654|Rötschreck:
+    - ruling: Cannot be played if the damage is not effective at the current range
+      symbols: []
+RTR 19980928|LSJ 19980929:
+  cards:
+    100388|Compel the Spirit:
+    - ruling: Can only be played if the ally or retainer is in the ash heap, not if he was moved elsewhere.
+      symbols: []
+RTR 19990712|LSJ 20090625:
+  cards:
+    100147|The Becoming:
+    - ruling: If moved to the uncontrolled region (eg. by {Banishment}), it continues to be a vampire and can be influenced
+        as a 1 capacity vampire.
+      symbols: []
+RTR 19991001|LSJ 20030828:
+  cards:
+    101049|Kindred Coercion:
+    - ruling: 'Playable on an abstaining vampire: it does not force them to vote, but restricts their choice if they do.'
+      symbols:
+      - DOM
+    101051|Kindred Manipulation:
+    - ruling: 'Playable on an abstaining vampire: it does not force them to vote, but restricts their choice if they do.'
+      symbols: []
+RTR 19991001|LSJ 20101210:
+  cards:
+    100334|Charming Lobby:
+    - ruling: The target Political Action card is announced when announcing the action. It must be in hand before replacing
+        the Charming Lobby.
+      symbols: []
+    101016|Jack of Both Sides:
+    - ruling: The target card is announced when announcing the action. It must be in hand before replacing the Jack.
+      symbols: []
+RTR 19991206|LSJ 20091125:
+  cards:
+    100018|Aching Beauty:
+    - ruling: The pool loss occurs if the block would be successful, even if the action is ended (eg. {Change of Target} or
+        {Obedience}) or made unblockable ({Horrific Countenance}) at this point.
+      symbols: []
+RTR 20000501|ANK 20210630:
+  cards:
+    101075|Lay Low:
+    - ruling: The anarch will remember all effects that had been applied to him, just as contested vampires do. This includes
+        gained or lost titles.
+      symbols: []
+    - ruling: '"breaking any temporary control effects" means the anarch is placed in his last permanent controller''s uncontrolled
+        region.'
+      symbols: []
+RTR 20000501|LSJ 20060908:
+  cards:
+    100528|Descent into Darkness:
+    - ruling: The vampire will remember all effects that had been applied to him, just as contested vampires do. This includes
+        gained or lost titles.
+      symbols: []
+RTR 20001020|LSJ 20001024:
+  cards:
+    100040|Alpha Glint:
+    - ruling: Cards that are played at the end of round/combat can still be played (eg. {Taste of Vitae}, {Disarm}).
+      symbols: []
+    '100631|Elysium: The Arboretum':
+    - ruling: When ending combat, cards that are played at the end of round/combat can still be played (eg. {Taste of Vitae},
+        {Disarm}).
+      symbols: []
+    100809|Garibaldi-Meucci Museum:
+    - ruling: When ending combat, cards that are played at the end of round/combat can still be played (eg. {Taste of Vitae},
+        {Disarm}).
+      symbols: []
+RTR 20001020|LSJ 20001024|RTR 20030519:
+  cards:
+    101945|Taste of Vitae:
+    - ruling: Must be played after the presses are handled and can be played if the round ends prematurely.
+      symbols: []
+RTR 20010710|LSJ 20030918:
+  cards:
+    101832|Soul Gem of Etrius:
+    - ruling: If the drawn vampire (B) is younger and would be put into play with Gem but is burned instead (self-contesting,
+        for example), then the Gem activates again, drawing a new vampire (C) and comparing his capacity to B's capacity.
+      symbols: []
+RTR 20010711|PIB 20110725:
+  cards:
+    101784|Siphon:
+    - ruling: Vampires with no blood can be chosen
+      symbols: []
+RTR 20020501|ANK 20200705:
+  cards:
+    101727|Serpent's Numbing Kiss:
+    - ruling: If the combat continues or a new combat begins, no blood is burned, the card cannot be put on the opposing minion
+        and he is not locked.
+      symbols:
+      - PRE
+      - SER
+RTR 20020501|LSJ 20020505:
+  cards:
+    101251|Mummify:
+    - ruling: If combat continues or a new combat begins, the vampire unlocks but does not go to torpor.
+      symbols: []
+RTR 20020501|LSJ 20021126:
+  cards:
+    101088|Legacy of Power:
+    - ruling: If the combat continues or a new combat begins (eg. {Psyche!}), the vampires do not go into torpor.
+      symbols: []
+RTR 20020501|LSJ 20030717:
+  cards:
+    100235|Bond with the Mountain:
+    - ruling: The vampires still unlock if an effect continues the combat or begins a new combat.
+      symbols:
+      - vis
+      - VIS
+    101196|Meld with the Land:
+    - ruling: The opponent still unlocks if an effect continues the combat or begins a new combat.
+      symbols:
+      - vic
+RTR 20020501|LSJ 20040602:
+  cards:
+    100745|Flash Grenade:
+    - ruling: If the combat continues or a new combat begins, the "is locked and does not unlock as normal" effect do not
+        apply, but it still burns.  ,
+      symbols: []
+    101814|Smoke Grenade:
+    - ruling: Still burns if the combat continues or a new combat begins.
+      symbols: []
+RTR 20020501|LSJ 20041203:
+  cards:
+    200106|Anneke (G1):
+    - ruling: Her ability only affects the rule restricting who gets to block an action. She must still meet all other requirements
+        to block. In particular, {Blood Bond}, {Day Operation}, {Seduction} and prior decision not to block are not circumvented.
+      symbols: []
+RTR 20020501|LSJ 20070709:
+  cards:
+    101511|Psychomachia:
+    - ruling: ': The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules.'
+      symbols:
+      - pre
+RTR 20020501|LSJ 20071009:
+  cards:
+    101654|Rötschreck:
+    - ruling: If the combat continues or a new combat begins, the card is put on the vampire, he is not locked and does not
+        go to torpor. He still does not unlock as normal.
+      symbols: []
+RTR 20020501|LSJ 20100517:
+  cards:
+    100978|Infernal Familiar:
+    - ruling: No counter is added if the vampire uses another game effect (eg. {Ian Forestal}, another {Infernal Familiar})
+        to play a card that requires a Discipline they do not have.
+      symbols: []
+RTR 20030519|PIB 20111202:
+  cards:
+    101507|Psyche!:
+    - ruling: Is played during combat, when combat is about to end. It must be played after the presses are handled and can
+        be played if the round ends prematurely. ,
+      symbols:
+      - CEL
+RTR 20030519|RTR 20180511:
+  cards:
+    100003|Aaron's Feeding Razor:
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols: []
+    100670|Excellent Thirst:
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols: []
+    100873|The Guruhi Are the Land:
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols: []
+    100889|Harvest Rites:
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols: []
+    100938|Hospital Food:
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols: []
+    100945|The Hungry Coyote:
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols: []
+    101643|Ritual Scalpel:
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols: []
+    101894|Succulent Vitae:
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols:
+      - QUI
+    101926|Tainted Vitae:
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols: []
+    102143|Wanderer's Counsel:
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols:
+      - ACTION MODIFIER
+    200064|Amadeo (G2):
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols: []
+    200131|Ariadne (G5):
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols: []
+    200594|Hesha Ruhadze (G2):
+    - ruling: The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt.
+      symbols: []
+RTR 20041202|LSJ 20060808:
+  cards:
+    100745|Flash Grenade:
+    - ruling: If the opponent dodges, the "is locked and does not unlock as normal" effect do not apply, but it still burns.
+      symbols: []
+RTR 20041202|PIB 20121202:
+  cards:
+    100918|Hidden Strength:
+    - ruling: Prevents up to X+1 damage, it can prevent less (X can be higher than strictly needed).
+      symbols: []
+RTR 20070707|ANK 20230824:
+  cards:
+    101110|The Line:
+    - ruling: Can reduce the cost of an action card even if it is not played as an action (ie. a retainer played with {Pack
+        Alpha}).
+      symbols: []
+    101342|Pack Alpha:
+    - ruling: Cost reductions apply.
+      symbols: []
+RTR 20070707|LSJ 20070708|ANK 20190228:
+  cards:
+    200955|Mata Hari (G4):
+    - ruling: When playing a card requiring a sect and/or a clan, she is treated as a such for all effects of the card, and
+        only them, including duration effects. She is not treated as such for effects the card has from being in play.
+      symbols: []
+RTR 20070707|LSJ 20070708|ANK 20200703-3|ANK 20190228|LSJ 20101013:
+  cards:
+    201446|Vidal Jarbeaux (G5):
+    - ruling: When meeting a requirement to play a card, he is treated as such for all the effects of the card, and only them,
+        including duration effects. He is not treated as meeting the requirements for effects the card has from being in play.
+      symbols: []
+RTR 20080808|KOT 20081119:
+  cards:
+    201337|Talley, The Hound (G2):
+    - ruling: Gets his +1 intercept if an action has any one target that would be enough to enable his effect.
+      symbols: []
+RTR 20180719|ANK 20170105|ANK 20200207:
+  cards:
+    101309|Obedience:
+    - ruling: The action ends unsuccessfully immediately, combat does not happen, no other action modifier or reaction can
+        be played afterwards.
+      symbols: []
+RTR 20180719|ANK 20200207:
+  cards:
+    100224|Bloodstorm of Chorazin:
+    - ruling: The action ends unsuccessfully immediately, no other action modifier or reaction can be played afterwards.
+      symbols: []
+    100352|Claiming the Body:
+    - ruling: The action ends unsuccessfully immediately, no other action modifier or reaction can be played afterwards.
+      symbols: []
+    100828|Gift of Sleep:
+    - ruling: The action ends unsuccessfully immediately, no other action modifier or reaction can be played afterwards.
+      symbols:
+      - obe
+      - ACTION MODIFIER
+      - REACTION
+    101146|Make an Example:
+    - ruling: The action ends unsuccessfully immediately, no other action modifier or reaction can be played afterwards.
+      symbols: []
+    101201|Mental Maze:
+    - ruling: The action ends unsuccessfully immediately, no other action modifier or reaction can be played afterwards.
+      symbols: []
+    101224|Mirror's Visage:
+    - ruling: The action ends unsuccessfully immediately, no other action modifier or reaction can be played afterwards.
+      symbols:
+      - chi
+    101494|Promise of 1528:
+    - ruling: The action ends unsuccessfully immediately, no other action modifier or reaction can be played afterwards.
+      symbols: []
+    101758|Shattered Mirror:
+    - ruling: The action ends unsuccessfully immediately, no other action modifier or reaction can be played afterwards.
+      symbols: []
+RTR 20180719|ANK 20200207|ANK 20210627:
+  cards:
+    101223|Mirror Walk:
+    - ruling: If the action is blocked, it ends unsuccessfully immediately, no other action modifier or reaction can be played
+        afterwards (eg. {Freak Drive}, slave rule, {Sowing Dissension}).
+      symbols:
+      - THA
+RTR 20180719|ANK 20211015:
+  cards:
+    100293|Car Bomb:
+    - ruling: The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules.
+      symbols: []
+    100322|Champion:
+    - ruling: 'The action fails, so has reached resolution: it is subject to NRA (Non Repeatable Action) rules.'
+      symbols:
+      - REACTION
+    100532|Detect Authority:
+    - ruling: If the action fails, it has reached resolution, so is subject to NRA (Non Repeatable Action) rules.
+      symbols:
+      - ani
+    100648|Ensconced:
+    - ruling: The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules.
+      symbols:
+      - VIS
+      - REACTION
+    100690|Faerie Wards:
+    - ruling: ',  The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules.'
+      symbols:
+      - myt
+      - MYT
+    100730|Final Loosening:
+    - ruling: The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules.
+      symbols:
+      - for
+    100919|Hide:
+    - ruling: The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules.
+      symbols:
+      - REACTION
+    100920|Hide the Heart:
+    - ruling: If the action fails, it has reached resolution, so is subject to NRA (Non Repeatable Action) rules.
+      symbols:
+      - val
+    '101151|Malkavian Derangement: Alternate Personality':
+    - ruling: If the action fails, it has reached resolution, so is subject to NRA (Non Repeatable Action) rules.  "
+      symbols: []
+    101521|Purification:
+    - ruling: The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules.
+      symbols:
+      - QUI
+RTR 20201130|ANK 20200415:
+  cards:
+    100353|Clan Impersonation:
+    - ruling: When removed, the vampire goes back to its underlying clan.
+      symbols: []
+    100527|Derange:
+    - ruling: When removed, the vampire goes back to its underlying clan.
+      symbols: []
+RTR 20201130|LSJ 20060904:
+  cards:
+    100353|Clan Impersonation:
+    - ruling: If the vampire changes clan to a clan inappropriate for his title, he loses its benefit until his clan is appropriate.
+        He immediately yields the title if it is contested or he receives a new one.
+      symbols: []
+    100527|Derange:
+    - ruling: If the target changes clan to a clan inappropriate for his title, he loses its benefit until his clan is appropriate.
+        He immediately yields the title if it is contested or he receives a new one.
+      symbols: []
+TOM 19950304|LSJ 20010812:
+  cards:
+    101515|Pulled Fangs:
+    - ruling: Counts up damage successfully inflicted during the round by the minions, retainers and environmental damage
+        do not count.
+      symbols: []
+TOM 19951007|LSJ 19991025:
+  cards:
+    200049|Alexandra (G2):
+    - ruling: If she locks a Toreador who was attempting to block, then that block will fail.
+      symbols: []
+TOM 19951114|LSJ 20080210:
+  cards:
+    100819|Ghoul Retainer:
+    - ruling: The Ghoul is not the bearer of the weapon, the employer is (eg. using {Garrote} does not allow the bearer to
+        burn the opponent, {Zip Gun}'s damage go to the employer).
+      symbols: []
+TOM 19951208-1|LSJ 19980302-1:
+  cards:
+    101711|Secure Haven:
+    - ruling: Actions that target retainers, equipment, or other cards on the minion are allowed, as are actions that target
+        cards not on the minion, even if such cards have "named" or "chosen" that minion.
+      symbols: []
+TOM 19951209|ANK 20210630:
+  cards:
+    101075|Lay Low:
+    - ruling: The anarch can return to play when it again has blood >= capacity on it at the end of its Methuselah's influence
+        phase.
+      symbols: []
+TOM 19960114|LSJ 20020514:
+  cards:
+    100972|Incriminating Videotape:
+    - ruling: The target is chosen when the card is played, and does not change. If stolen, the chosen minion is unable to
+        block the new possessor (and can now block whoever used to have it).
+      symbols: []
+TOM 19960130|LSJ 20091110:
+  cards:
+    101016|Jack of Both Sides:
+    - ruling: Is an "equip action" when equipping an equipment, an "employ action" when employing an retainer.
+      symbols: []
+TOM 19960130|RTR 19960124:
+  cards:
+    102092|Vast Wealth:
+    - ruling: The provided action is an "equip action"
+      symbols: []
+TOM 19960210|ANK 20210630:
+  cards:
+    101075|Lay Low:
+    - ruling: '"for the rest of the game" effects pointing at the anarch from other sources will resume if and when the vampire
+        comes back into play.'
+      symbols: []
+TOM 19960210|LSJ 20010809-2|LSJ 20010809-3:
+  cards:
+    100131|Banishment:
+    - ruling: Continuous effects targeting the banished vampire (eg. {The Rack}) resume if and when the vampire comes back
+        into play.
+      symbols: []
+TOM 19960211|LSJ 20010809-2|LSJ 20010809-3|LSJ 20060908:
+  cards:
+    100528|Descent into Darkness:
+    - ruling: Cards and effects targeting the vampire (eg. {The Rack}) will resume if and when the vampire comes back into
+        play.
+      symbols: []
+TOM 19960225|LSJ 20071020:
+  cards:
+    100267|Bundi:
+    - ruling: Inherits all of the properties of the base hand strike.
+      symbols: []
+TOM 19960225|RTR 19970630:
+  cards:
+    101885|Strike at the True Flesh:
+    - ruling: The additional damage is the same type as the strike's damage.
+      symbols:
+      - QUI
+TOM 19960303|LSJ 20061212:
+  cards:
+    101948|Telepathic Counter:
+    - ruling: Must be played before the bleed can be considered successful (eg. before  {Spying Mission}), but can be played
+        before or after block attempts.
+      symbols:
+      - OBF
+TOM 19960303|TOM 19960226-2:
+  cards:
+    101857|Spying Mission:
+    - ruling: No reaction can be played afterwards to make the bleed unsuccessful and "beat" the Spying Mission.
+      symbols: []

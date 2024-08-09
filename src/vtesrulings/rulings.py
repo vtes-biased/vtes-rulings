@@ -5,24 +5,32 @@ import dataclasses
 import datetime
 import enum
 import functools
+import git
 import hashlib
 import importlib
 import itertools
+import logging
 import os
 import random
 import re
+import tempfile
 import typing
 import urllib.parse
 import yaml
+import yamlfix
+import yamlfix.config
+import yamlfix.model
 
 import krcg.cards
 import krcg.utils
-import krcg.vtes
 
-
+logger = logging.getLogger()
+RULINGS_GIT = "git@github.com:vtes-biased/vtes-rulings.git"
+RULINGS_FILES_PATH = "src/vtesrulings/data/"
 WEBHOOK_ID = os.getenv("WEBHOOK_ID")
 WEBHOOK_TOKEN = os.getenv("WEBHOOK_TOKEN")
 GUILD_ID = os.getenv("GUILD_ID")
+GIT_SSH_COMMAND = os.getenv("GIT_SSH_COMMAND", "ssh -i ~/.ssh/id_rsa")
 WEBHOOK_URL = f"https://discord.com/api/webhooks/{WEBHOOK_ID}/{WEBHOOK_TOKEN}"
 ANKHA_SYMBOLS = {
     "abo": "w",
@@ -109,6 +117,8 @@ ANKHA_SYMBOLS = {
     "MERGED": "µ",
     "CONVICTION": "¤",
 }
+
+YAML_PARAMS = {"width": 120, "allow_unicode": True, "indent": 2}
 
 RULING_SOURCES = {
     "TOM": ("Thomas R Wylie", None, datetime.date.fromisoformat("1998-06-22")),
@@ -338,25 +348,25 @@ class Proposal(UID):
     channel_id: str = ""
 
 
+repo_dir = tempfile.TemporaryDirectory()
+logger.warn("Using tmp repo: %s", repo_dir.name)
+# TODO: use a separated repo with just the rulings YAML files
+REPO = git.Repo.clone_from(
+    RULINGS_GIT, repo_dir.name, env={"GIT_SSH_COMMAND": GIT_SSH_COMMAND}
+)
 YAML_REFERENCES = yaml.safe_load(
-    importlib.resources.files("vtesrulings.data")
-    .joinpath("references.yaml")
-    .read_text("utf-8")
+    open(os.path.join(repo_dir.name, RULINGS_FILES_PATH, "references.yaml"))
 )
 YAML_GROUPS = {
     NID.from_str(k): {NID.from_str(kk): vv for kk, vv in v.items()}
     for k, v in yaml.safe_load(
-        importlib.resources.files("vtesrulings.data")
-        .joinpath("groups.yaml")
-        .read_text("utf-8")
+        open(os.path.join(repo_dir.name, RULINGS_FILES_PATH, "groups.yaml"))
     ).items()
 }
 YAML_RULINGS = {
     NID.from_str(k): v
     for k, v in yaml.safe_load(
-        importlib.resources.files("vtesrulings.data")
-        .joinpath("rulings.yaml")
-        .read_text("utf-8")
+        open(os.path.join(repo_dir.name, RULINGS_FILES_PATH, "rulings.yaml"))
     ).items()
 }
 
@@ -513,9 +523,53 @@ class Index:
                 data = await resp.json()
                 self.proposal.channel_id = data["channel_id"]
 
-    def approve_proposal(self, prop: str) -> None:
+    def approve_proposal(self) -> None:
         # TODO YAML generation and github commit
-        pass
+        if not self.proposal.channel_id:
+            raise ConsistencyError("Proposal has not been submitted yet")
+        ref_file = os.path.join(repo_dir.name, RULINGS_FILES_PATH, "references.yaml")
+        groups_file = os.path.join(repo_dir.name, RULINGS_FILES_PATH, "groups.yaml")
+        rulings_file = os.path.join(repo_dir.name, RULINGS_FILES_PATH, "rulings.yaml")
+        all_groups = sorted(self.all_groups(), key=lambda x: x.uid)
+        with open(ref_file, "w", encoding="utf-8") as f:
+            data = {
+                ref.uid: ref.url
+                for ref in sorted(self.all_references(), key=lambda x: x.uid)
+            }
+            yaml.dump(data, f, **YAML_PARAMS)
+        with open(groups_file, "w", encoding="utf-8") as f:
+            data = {}
+            for group in all_groups:
+                data[group.uid] = []
+                for card in group.cards:
+                    krcg_card = KRCG_CARDS[int(card.uid)]
+                    data[group.uid].append(
+                        {f"{krcg_card.id}|{krcg_card._name}": card.prefix}
+                    )
+            yaml.dump(data, f, **YAML_PARAMS)
+        with open(rulings_file, "w", encoding="utf-8") as f:
+            data = {}
+            for card in sorted(KRCG_CARDS, key=lambda x: x.id):
+                for ruling in self.get_rulings(str(card.id)):
+                    key = f"{card.id}|{card._name}"
+                    data.setdefault(key, [])
+                    data[key].append(ruling.text)
+            for group in all_groups:
+                for ruling in self.get_rulings(group.uid):
+                    key = str(group)
+                    data.setdefault(key, [])
+                    data[key].append(ruling.text)
+            yaml.dump(data, f, **YAML_PARAMS)
+        yamlfix.config.configure_yamlfix(yamlfix.model.YamlfixConfig(line_length=256))
+        yamlfix.fix_files([ref_file, groups_file, rulings_file])
+
+    def all_references(self) -> typing.Generator[None, None, Reference]:
+        if self.proposal:
+            yield from self.proposal.references.values()
+        for ref in self.base_references.values():
+            if self.proposal and ref.uid in self.proposal.references:
+                continue
+            yield ref
 
     def get_reference(self, uid: str) -> Reference:
         """Return the ruling Reference object if it exists. Raise KeyError otherwise."""
@@ -753,9 +807,9 @@ class Index:
         return ret
 
     def update_ruling(self, target_uid: str, uid: str, text: str) -> Ruling:
-        """To avoid concurrency issues, update is really just a delete and insert."""
-        # TODO find a way to indicate the ruling is replacing an existing one
-        # and take that into account if the original ID gets replaced by something else.
+        """Not in this case the ruling uid matches the old text, not the new text.
+        If the text is switched back to the old text, drop the update from proposal.
+        """
         target = self.get_nid(target_uid)
         if not text:
             raise FormatError("Cannot update a ruling to empty, use delete_ruling()")
@@ -763,8 +817,9 @@ class Index:
             raise FormatError("Cannot update a ruling without its UID")
         ruling = self.build_ruling(text, target=target)
         if ruling.uid == uid:
-            raise ConsistencyError(f"No change for ruling {target_uid}:{uid}")
-        self.delete_ruling(target_uid, uid)
+            self.proposal.rulings[target_uid].pop(ruling.uid, None)
+            return self.base_rulings[target_uid][uid]
+        ruling.uid = uid
         self.proposal.rulings[target_uid][ruling.uid] = ruling
         return ruling
 

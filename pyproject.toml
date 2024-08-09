@@ -25,8 +25,11 @@ dependencies = [
     "aiohttp>=3",
     "flask[async]>=3",
     "flask-babel>=4",
+    "gitpython>=3",
     "unidecode>=1",
     "Jinja2>=3",
+    "pyyaml>=6",
+    "yamlfix>=1",
     "krcg>=3.11",
 ]
 
