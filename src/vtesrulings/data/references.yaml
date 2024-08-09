@@ -1,4 +1,17 @@
 ---
+# Rulings always have a reference, they come from somewhere.
+# Each reference should be a valid URL, with a key indicating the source and date.
+# The only valid sources are the successive Rules Director, the Ruling Team and the rulebook:
+#
+# - TOM: Thomas R Wylie, from 1994
+# - SFC: Shawn F. Carnes, occasionnaly before 1998
+# - LSJ: L. Scott Johnson, from 1998-06-22 onward
+# - PIB: Pascal Bertrand, from 2011-07-06 onward
+# - ANK: Vincent Ripoll aka. "Ankha", from 2016-12-04 onward
+# - RTR: Rules Team Ruling
+# - RBK: Rulebook
+#
+# The date must follow ISO order YYYYMMDD, with a facultative suffix after a dash `-` to avoid collisions
 ANK 20170105: http://www.vekn.net/forum/rules-questions/75512-raptor-obedience#80020
 ANK 20170111: http://www.vekn.net/forum/rules-questions/72635-dam-the-heart-s-river-and-catatonic-fear?start=6#80117
 ANK 20170124: http://www.vekn.net/forum/rules-questions/75556-vessel-wash-and-mpa#80362
