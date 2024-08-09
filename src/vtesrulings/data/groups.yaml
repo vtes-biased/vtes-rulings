@@ -32,7 +32,7 @@ G00003|Unit Role Church:
   101979|Three's a Crowd: ''
   102082|Unwholesome Bond: ''
   102138|Walk of Caine: ''
-G00004|Interesting International Capital:
+G00004|Hunt bonus:
   100003|Aaron's Feeding Razor: ''
   100670|Excellent Thirst: ''
   100873|Guruhi Are the Land, The: ''
@@ -44,7 +44,7 @@ G00004|Interesting International Capital:
   200064|Amadeo: ''
   200131|Ariadne: ''
   200594|Hesha Ruhadze: ''
-G00005|Fund Fact Upon:
+G00005|Prevent normal unlock:
   100339|Children of Osiris: ''
   100527|Derange: ''
   100533|Detection: ''
@@ -78,12 +78,12 @@ G00006|Modifier after resolution:
   101999|Touch of Pain: ''
   102131|Voter Captivation: ''
   102205|Zephyr: ''
-G00007|Goal Perhaps Country:
+G00007|Modifier after combat:
   100595|Dusk Work: ''
   101236|Momentary Delay: ''
   101724|Seraph's Second: ''
   102205|Zephyr: ''
-G00008|Scene Chair Old:
+G00008|Permanent not replaced:
   100011|Absimiliard's Army: ''
   100217|Blood Weakens: ''
   100796|Fueled by Heart's Blood: ''
@@ -93,7 +93,7 @@ G00008|Scene Chair Old:
   101640|Rising, The: ''
   101807|Slow Withering, The: ''
   101994|Torpid Blood: ''
-G00009|Much Opportunity Table:
+G00009|Require Gehenna:
   100011|Absimiliard's Army: ''
   100148|Becoming of Ennoia: ''
   100409|Conquest of Humanity: ''
@@ -105,7 +105,7 @@ G00009|Much Opportunity Table:
   101639|Rise of the Nephtali: ''
   101807|Slow Withering, The: ''
   102194|Wormwood: ''
-G00010|Only Sense World:
+G00010|Since your last turn:
   100298|Carlton Van Wyk: ''
   100387|Community Justice: ''
   100388|Compel the Spirit: ''
@@ -123,7 +123,7 @@ G00010|Only Sense World:
   102002|Toy Chest Test: ''
   102017|Treatment, The: ''
   102022|Tribunal Judgment: ''
-G00011|Manage Available Deep:
+G00011|Allies who can play as a vampire:
   100033|Akhenaten, The Sun Pharaoh: ''
   100039|Alia, God's Messenger: ''
   100051|Ananasi Vampirephile: ''
@@ -143,7 +143,7 @@ G00011|Manage Available Deep:
   101930|Talaq, The Immortal: ''
   102047|Tunnel Runner: ''
   102128|Vivienne Géroux: ''
-G00012|Really Compare Mother:
+G00012|Black Hand:
   '102027|Trophy: Chosen': ''
   200038|Al-Muntathir, God's Witness: ''
   200124|Appius Claudius Corvus: ''
@@ -210,7 +210,7 @@ G00012|Really Compare Mother:
   201485|Yazid Tamari: ''
   201486|Yazid Tamari: ''
   201510|Zubeida: ''
-G00013|Produce Movie Often:
+G00013|Clan equipment:
   100063|Ancestor's Talisman, The: ''
   100175|Blade of Bellona: ''
   100209|Blood Shield: ''
@@ -236,7 +236,7 @@ G00013|Produce Movie Often:
   101932|Talith: ''
   102015|Treasured Samadji: ''
   102170|Weirding Stone: ''
-G00014|Involve Front Enter:
+G00014|Once each turn:
   100048|Amulet of Temporal Perception: ''
   100051|Ananasi Vampirephile: ''
   100165|Black Forest Base: ''
@@ -271,7 +271,7 @@ G00014|Involve Front Enter:
   201310|Spiridonas: ''
   201460|Vulture: ''
   201502|Zayyat, The Sandstorm: ''
-G00015|Either Political Page:
+G00015|Vote damaging multiple players:
   100059|Anarchist Uprising: ''
   100064|Ancient Influence: ''
   100065|Ancilla Empowerment: ''
@@ -282,7 +282,7 @@ G00015|Either Political Page:
   101271|Neonate Breach: ''
   101567|Reckless Agitation: ''
   101591|Reins of Power: ''
-G00016|Often Between To:
+G00016|Retainer doing damage:
   100593|Duma Rafiki: ''
   100626|Elephant Guardian: ''
   100819|Ghoul Retainer: ''
@@ -344,7 +344,7 @@ G00020|Shake Discuss Source:
   100266|Bum's Rush: ''
   100846|Gramle: ''
   101280|New Management: ''
-G00021|Opportunity Expert Small:
+G00021|Reduce votes:
   '100712|Fee Stake: Boston': ''
   '100713|Fee Stake: Corte': ''
   '100714|Fee Stake: Los Angeles': ''
@@ -353,7 +353,7 @@ G00021|Opportunity Expert Small:
   '100717|Fee Stake: Seattle': ''
   100790|Free States Rant: ''
   101546|Rastacourere: ''
-G00022|Late Big Laugh:
+G00022|Vote change:
   100034|Akunanse Kholo: ''
   100069|Animal Magnetism: ''
   100112|Aura of Invincibility: ''
@@ -394,12 +394,12 @@ G00022|Late Big Laugh:
   102064|Under the Skin: ''
   102070|Unexpected Coalition: ''
   102073|Unholy Radiance: ''
-G00023|Interview Month Speak:
+G00023|Can draw during action:
   100135|Barrens, The: ''
   100588|Dreams of the Sphinx: ''
   100656|Erciyes Fragments, The: ''
   100785|Fragment of the Book of Nod: ''
-G00024|Official Maybe Buy:
+G00024|Weapons with optional maneuver:
   100001|.44 Magnum: ''
   100032|AK-47: ''
   100107|Assault Rifle: ''
@@ -431,7 +431,7 @@ G00026|Immune to damage:
   102053|Tye Cooper: ''
   200249|Carolina Vález: ''
   200984|Mictlantecuhtli: ''
-G00027|Mission Purpose End:
+G00027|Vampires with ability usable in torpor:
   200049|Alexandra: ''
   200091|Angela Preston: ''
   200486|Fustuk: ''
@@ -460,7 +460,7 @@ G00028|Thank Bad Keep:
   101584|Regarhagan's Hold: ''
   101767|Shilmulo Tarot: ''
   101877|Storage Annex: ''
-G00029|Quality Economic Occur:
+G00029|Retainer that strike:
   100476|Crypt's Sons: ''
   100593|Duma Rafiki: ''
   100626|Elephant Guardian: ''
@@ -470,11 +470,11 @@ G00029|Quality Economic Occur:
   102107|Vengeful Spirit: ''
   102191|Wolf Companion: ''
   102210|Zombie: ''
-G00030|Institution Building Short:
+G00030|Vote playable once per game:
   100064|Ancient Influence: ''
   101417|Political Stranglehold: ''
   101591|Reins of Power: ''
-G00031|Necessary Culture Agency:
+G00031|Master on vampire who can use it:
   100425|Corporal Reservoir: ''
   101388|Perfectionist: ''
 G00032|Cost X:
@@ -538,7 +538,7 @@ G00037|Require a Baron:
   101915|Sweeper: ''
   102218|Bait and Switch: ''
   102230|Organized Resistance: ''
-G00038|Rule Figure Pattern:
+G00038|Title providing capacity:
   '101448|Praxis Seizure: Athens': ''
   '101450|Praxis Seizure: Barcelona': ''
   '101451|Praxis Seizure: Berlin': ''
@@ -557,7 +557,7 @@ G00039|Sort Suggest Country:
   200455|Fakir al Sidi: ''
   200763|Kateline Nadasdy: ''
   201043|Neferu: ''
-G00040|Scientist Parent Late:
+G00040|Non-locking referendum ability:
   200030|Aisha az-Zahra: ''
   200187|Bela Kardoza: ''
   200317|Danielle Diron: ''
@@ -581,7 +581,7 @@ G00041|True Brujah:
   201067|Nu, The Pillar: ''
   201274|Shalmath: ''
   201331|Synesios: ''
-G00042|Miss Especially Rate:
+G00042|Title providing action:
   '100712|Fee Stake: Boston': ''
   '100713|Fee Stake: Corte': ''
   '100714|Fee Stake: Los Angeles': ''
@@ -589,7 +589,7 @@ G00042|Miss Especially Rate:
   '100716|Fee Stake: Perth': ''
   '100717|Fee Stake: Seattle': ''
   101587|Regent: ''
-G00043|Paper Until Speech:
+G00043|Scarce:
   200037|Al-Muntaquim, The Avenger: ''
   200038|Al-Muntathir, God's Witness: ''
   200057|Allonzo Montoya: ''
@@ -624,7 +624,7 @@ G00043|Paper Until Speech:
   201433|Veejay Vinod: ''
   201484|Yavu Matebo: ''
   201510|Zubeida: ''
-G00044|Everybody Amount Responsibility:
+G00044|Ghoul:
   100011|Absimiliard's Army: ''
   100080|Arcane Appraiser: ''
   100103|Asanbonsam Ghoul: ''
@@ -658,7 +658,7 @@ G00046|Teacher Support Know:
   101191|Meat Hook: ''
   101287|Nightstick: ''
   101846|Spike-Thrower: ''
-G00047|Past Health Responsibility:
+G00047|Locquipments:
   100071|Ankara Citadel, Turkey, The: ''
   100306|Catacombs: ''
   100499|Dartmoor, England: ''
@@ -771,7 +771,7 @@ G00058|Wind Election Yet:
   101998|Touch of Clarity: ''
   102008|Tranquility: ''
   102151|Wash: ''
-G00060|Despite Successful As:
+G00060|Reflex:
   '100537|Devil-Channel: Back': ''
   '100538|Devil-Channel: Feet': ''
   '100539|Devil-Channel: Hands': ''

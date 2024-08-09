@@ -5163,38 +5163,38 @@ G00002|From ash heap to deck:
 G00003|Unit Role Church:
   - A vampire with no circle designation is in his own unique circle. Vampires with the same name (eg. {The Embrace}, non-unique
     vampires) do not share a circle by default, each has his own circle of one by default. [LSJ 20020609]
-G00004|Interesting International Capital:
+G00004|Hunt bonus:
   - The hunt bonus applies to non-standard hunt actions, blood comes from the target of the hunt. [RTR 20030519] [RTR 20180511]
-G00005|Fund Fact Upon:
+G00005|Prevent normal unlock:
   - The "does not unlock as normal" effect is redundant with being infernal. If the minion is infernal, his controller can
     still pay a pool to unlock him. [LSJ 20050114]
 G00006|Modifier after resolution:
   - Is played after resolution, but still during the action. Action modifiers and effects that can be played "after resolution"
     can be played before or after it. [LSJ 19981028] [ANK 20190425]
-G00007|Goal Perhaps Country:
+G00007|Modifier after combat:
   - Is played after all combats are handled. Can be played from torpor. [LSJ 20030103] [ANK 20181219] [ANK 20180906]
-G00008|Scene Chair Old:
+G00008|Permanent not replaced:
   - Is not replaced until the condition is met, even if it is burned. [LSJ 20080805]
-G00009|Much Opportunity Table:
+G00009|Require Gehenna:
   - The "other Gehenna cards in play" requirement is only checked when playing the card. [PIB 20121031]
-G00010|Only Sense World:
+G00010|Since your last turn:
   - '"Since your last turn" means between the end of your last turn and now. Your last turn does not qualify, your current
     turn does. [LSJ 20020429]'
-G00011|Manage Available Deep:
+G00011|Allies who can play as a vampire:
   - If it uses its last life to play an action modifier, the action fails. If it uses its last life to play a strike, combat
     ends before strike resolution. [ANK 20180928-1]
-G00012|Really Compare Mother:
+G00012|Black Hand:
   - Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes sect. [LSJ
     20070322] [ANK 20180807]
-G00013|Produce Movie Often:
+G00013|Clan equipment:
   - Once in play, can be equipped from the minion it's on (rulebook action) by another minion that does not meet the requirements.
     [ANK 20180719-3]
-G00014|Involve Front Enter:
+G00014|Once each turn:
   - "\"Once each turn\" means once during each player's turn. [ANK 20180719-4]"
-G00015|Either Political Page:
+G00015|Vote damaging multiple players:
   - If multiple ousts happen, players whose prey gets ousted get a victory point, even if they are being ousted themselves.
     Only the surviving ones get 6 pool from the oust of their prey (not of their grand-prey). [LSJ 20000309]
-G00016|Often Between To:
+G00016|Retainer doing damage:
   - The damage is environmental, the retainer is the damage source. Immunity to retainer or retainer type works against it.
     [ANK 20180612] [ANK 20211127]
 G00017|Environmental damage:
@@ -5207,28 +5207,28 @@ G00019|Animal:
   - Is neither a mortal nor a monster. [ANK 20200203-2] [LSJ 20060515]
 G00020|Shake Discuss Source:
   - 'Is not replaced if the action is blocked: it is replaced when the action ends, after all combats. [LSJ 20001120]'
-G00021|Opportunity Expert Small:
+G00021|Reduce votes:
   - The votes provided by the Priscii sub-referendum are not affected. [ANK 20180307-1]
-G00022|Late Big Laugh:
+G00022|Vote change:
   - Cannot be used during a referendum that is automatically passing. [PIB 20150105] [LSJ 19980107]
-G00023|Interview Month Speak:
+G00023|Can draw during action:
   - Can be used during an action, when the controller has the opportunity to play an effect. [ANK 20200616]
-G00024|Official Maybe Buy:
+G00024|Weapons with optional maneuver:
   - The optional maneuver cannot be used if the strike cannot be used (eg. {Hidden Lurker}). [LSJ 20021028]
 G00025|Replace next turn:
   - 'Is replaced before unlocking cards: other unlock effects cannot be ordered before. [ANK 20200129] [LSJ 20091208] [RTR
     19951017]'
 G00026|Immune to damage:
   - Immune means damage is not inflicted, even if non-preventable or outside combat. [LSJ 20010627] [LSJ 20010629] [LSJ 20090304-1]
-G00027|Mission Purpose End:
+G00027|Vampires with ability usable in torpor:
   - The ability can be used when in torpor. [LSJ 20011022] [LSJ 20100902-2]
 G00028|Thank Bad Keep:
   - If it leaves play, the card on it is burned. [LSJ 20021128]
-G00029|Quality Economic Occur:
+G00029|Retainer that strike:
   - Does not gain additional strikes from its owner. [RTR 19941109]
-G00030|Institution Building Short:
+G00030|Vote playable once per game:
   - Burning the card for a vote is not considered playing it. [ANK 20210309-2]
-G00031|Necessary Culture Agency:
+G00031|Master on vampire who can use it:
   - The vampire's controller chooses to use the effect of the card or not. [ANK 20210309-3]
 G00032|Cost X:
   - X can be zero. [LSJ 20030502]
@@ -5244,27 +5244,27 @@ G00036|Directed at a card:
   - An action directed at a card controlled by another Methuselah is directed at that Methuselah. [RBK 20200701-9] [LSJ 20090324]
 G00037|Require a Baron:
   - 'Counts as requiring an Anarch (for eg. {Powerbase: Los Angeles}). [LSJ 20080603] [LSJ 20050128]'
-G00038|Rule Figure Pattern:
+G00038|Title providing capacity:
   - The additional capacity is lost if the title is lost. [TOM 19960210]
 G00039|Sort Suggest Country:
   - The ability can be used while locked or in torpor, only once per referendum. [ANK 20220705] [LSJ 20100705] [LSJ 20011022]
     [LSJ 20100902-2] [ANK 20180307-2] [RBK 20200701-4]
-G00040|Scientist Parent Late:
+G00040|Non-locking referendum ability:
   - The ability can be used while locked, only once per referendum. [ANK 20220705]
 G00041|True Brujah:
   - Can use a multi-discipline card with a potential (unused) Celerity [cel] effect. [LSJ 20050322-2]
-G00042|Miss Especially Rate:
+G00042|Title providing action:
   - If the title is contested, the card is turned face down out of play and the provided action cannot be used. [LSJ 20070808-2]
-G00043|Paper Until Speech:
+G00043|Scarce:
   - The scarce penalty considers the apparent clan while controlled (in case of {Clan Impersonation} and {Banishment}). [LSJ
     20011015]
-G00044|Everybody Amount Responsibility:
+G00044|Ghoul:
   - Ghouls are monsters, not mortal. [ANK 20200203-2] [LSJ 20060515]
 G00045|Weapon once per combat:
   - A second copy allows a second use in the same combat. [ANK 20230316]
 G00046|Teacher Support Know:
   - A second copy allows a second use in the same round. [ANK 20230316]
-G00047|Past Health Responsibility:
+G00047|Locquipments:
   - May be put on any minion if the controller changes. If the new controller has no minions, it is burned. [RTR 19960112]
   - An action targeting it (eg. {Conceal}) is directed at the Methuselah controlling it, not the minion it is on. [LSJ 20090324]"
   - Is an equipment while in hand, library or ash heap, both equipment and location when played (eg. for cost-related effects),
@@ -5288,7 +5288,7 @@ G00058|Wind Election Yet:
   - Cards are not replaced during the "as played" window. [LSJ 20061013]
   - If the canceled card had a "Do Not Replace Until" clause on it, that clause is canceled as well and the card is replaced
     normally. [LSJ 20011023]
-G00060|Despite Successful As:
+G00060|Reflex:
   - '[abo] [REFLEX] Cards are not replaced during the "as played" window. [LSJ 20061013]'
   - '[abo] [REFLEX] If the canceled card had a "Do Not Replace Until" clause on it, that clause is canceled as well and the
     card is replaced normally. [LSJ 20011023]'
