@@ -1,17 +1,17 @@
 ---
-G00001|Up Bed Two:
+G00001:
   100096|Art of Love, The: ''
   101150|Malkavian Dementia: ''
   101215|Mind Rape: ''
   101519|Puppeteer: ''
   101848|Spirit Marionette: ''
   101954|Temptation: ''
-G00002|Chance Speech Up:
+G00002:
   100316|Chain of Command: ''
   101036|Kaymakli Nightmares: ''
   101200|Memory's Fading Glimpse: ''
   102153|Waste Management Operation: ''
-G00003|Unit Role Church:
+G00003:
   100017|Achilles' Heel: ''
   100257|Brother's Blood: ''
   100283|Camaraderie: ''
@@ -32,7 +32,7 @@ G00003|Unit Role Church:
   101979|Three's a Crowd: ''
   102082|Unwholesome Bond: ''
   102138|Walk of Caine: ''
-G00004|Interesting International Capital:
+G00004:
   100003|Aaron's Feeding Razor: ''
   100670|Excellent Thirst: ''
   100873|Guruhi Are the Land, The: ''
@@ -44,7 +44,7 @@ G00004|Interesting International Capital:
   200064|Amadeo: ''
   200131|Ariadne: ''
   200594|Hesha Ruhadze: ''
-G00005|Fund Fact Upon:
+G00005:
   100339|Children of Osiris: ''
   100527|Derange: ''
   100533|Detection: ''
@@ -65,7 +65,7 @@ G00005|Fund Fact Upon:
   101989|Toreador Grand Ball: ''
   102125|Visionquest: ''
   102192|Wooden Stake: ''
-G00006|Accept Write Difficult:
+G00006:
   100102|As the Crow: ''
   100446|CrimethInc.: ''
   100595|Dusk Work: ''
@@ -78,12 +78,12 @@ G00006|Accept Write Difficult:
   101999|Touch of Pain: ''
   102131|Voter Captivation: ''
   102205|Zephyr: ''
-G00007|Goal Perhaps Country:
+G00007:
   100595|Dusk Work: ''
   101236|Momentary Delay: ''
   101724|Seraph's Second: ''
   102205|Zephyr: ''
-G00008|Scene Chair Old:
+G00008:
   100011|Absimiliard's Army: ''
   100217|Blood Weakens: ''
   100796|Fueled by Heart's Blood: ''
@@ -93,7 +93,7 @@ G00008|Scene Chair Old:
   101640|Rising, The: ''
   101807|Slow Withering, The: ''
   101994|Torpid Blood: ''
-G00009|Much Opportunity Table:
+G00009:
   100011|Absimiliard's Army: ''
   100148|Becoming of Ennoia: ''
   100409|Conquest of Humanity: ''
@@ -105,7 +105,7 @@ G00009|Much Opportunity Table:
   101639|Rise of the Nephtali: ''
   101807|Slow Withering, The: ''
   102194|Wormwood: ''
-G00010|Only Sense World:
+G00010:
   100298|Carlton Van Wyk: ''
   100387|Community Justice: ''
   100388|Compel the Spirit: ''
@@ -123,7 +123,7 @@ G00010|Only Sense World:
   102002|Toy Chest Test: ''
   102017|Treatment, The: ''
   102022|Tribunal Judgment: ''
-G00011|Manage Available Deep:
+G00011:
   100033|Akhenaten, The Sun Pharaoh: ''
   100039|Alia, God's Messenger: ''
   100051|Ananasi Vampirephile: ''
@@ -143,7 +143,7 @@ G00011|Manage Available Deep:
   101930|Talaq, The Immortal: ''
   102047|Tunnel Runner: ''
   102128|Vivienne Géroux: ''
-G00012|Really Compare Mother:
+G00012:
   '102027|Trophy: Chosen': ''
   200038|Al-Muntathir, God's Witness: ''
   200124|Appius Claudius Corvus: ''
@@ -210,7 +210,7 @@ G00012|Really Compare Mother:
   201485|Yazid Tamari: ''
   201486|Yazid Tamari: ''
   201510|Zubeida: ''
-G00013|Produce Movie Often:
+G00013:
   100063|Ancestor's Talisman, The: ''
   100175|Blade of Bellona: ''
   100209|Blood Shield: ''
@@ -236,7 +236,7 @@ G00013|Produce Movie Often:
   101932|Talith: ''
   102015|Treasured Samadji: ''
   102170|Weirding Stone: ''
-G00014|Involve Front Enter:
+G00014:
   100048|Amulet of Temporal Perception: ''
   100051|Ananasi Vampirephile: ''
   100165|Black Forest Base: ''
@@ -271,7 +271,7 @@ G00014|Involve Front Enter:
   201310|Spiridonas: ''
   201460|Vulture: ''
   201502|Zayyat, The Sandstorm: ''
-G00015|Either Political Page:
+G00015:
   100059|Anarchist Uprising: ''
   100064|Ancient Influence: ''
   100065|Ancilla Empowerment: ''
@@ -282,7 +282,7 @@ G00015|Either Political Page:
   101271|Neonate Breach: ''
   101567|Reckless Agitation: ''
   101591|Reins of Power: ''
-G00016|Often Between To:
+G00016:
   100593|Duma Rafiki: ''
   100626|Elephant Guardian: ''
   100819|Ghoul Retainer: ''
@@ -294,7 +294,7 @@ G00016|Often Between To:
   102107|Vengeful Spirit: ''
   102191|Wolf Companion: ''
   102210|Zombie: ''
-G00017|Close Follow Suddenly:
+G00017:
   100153|Bestial Vengeance: ''
   100301|Carrion Crows: ''
   100476|Crypt's Sons: ''
@@ -313,7 +313,7 @@ G00017|Close Follow Suddenly:
   102210|Zombie: ''
   200017|Aeron: ''
   200908|Mambo Jeanne: ''
-G00018|Billion Produce Scientist:
+G00018:
   100427|Corpse Balloon: ''
   100891|Hatch the Viper: ''
   100932|Homunculus: ''
@@ -325,7 +325,7 @@ G00018|Billion Produce Scientist:
   101550|Raven Spy: ''
   101734|Shade: ''
   102191|Wolf Companion: ''
-G00019|Child Mention Plan:
+G00019:
   100568|Dog Pack: ''
   100593|Duma Rafiki: ''
   100626|Elephant Guardian: ''
@@ -337,14 +337,14 @@ G00019|Child Mention Plan:
   101914|Swarm: ''
   102065|Underbridge Stray: ''
   102191|Wolf Companion: ''
-G00020|Shake Discuss Source:
+G00020:
   100094|Arson: ''
   100137|Baseball Bat: ''
   100159|Big Game: ''
   100266|Bum's Rush: ''
   100846|Gramle: ''
   101280|New Management: ''
-G00021|Opportunity Expert Small:
+G00021:
   '100712|Fee Stake: Boston': ''
   '100713|Fee Stake: Corte': ''
   '100714|Fee Stake: Los Angeles': ''
@@ -353,7 +353,7 @@ G00021|Opportunity Expert Small:
   '100717|Fee Stake: Seattle': ''
   100790|Free States Rant: ''
   101546|Rastacourere: ''
-G00022|Late Big Laugh:
+G00022:
   100034|Akunanse Kholo: ''
   100069|Animal Magnetism: ''
   100112|Aura of Invincibility: ''
@@ -394,12 +394,12 @@ G00022|Late Big Laugh:
   102064|Under the Skin: ''
   102070|Unexpected Coalition: ''
   102073|Unholy Radiance: ''
-G00023|Interview Month Speak:
+G00023:
   100135|Barrens, The: ''
   100588|Dreams of the Sphinx: ''
   100656|Erciyes Fragments, The: ''
   100785|Fragment of the Book of Nod: ''
-G00024|Official Maybe Buy:
+G00024:
   100001|.44 Magnum: ''
   100032|AK-47: ''
   100107|Assault Rifle: ''
@@ -409,7 +409,7 @@ G00024|Official Maybe Buy:
   101065|Kpist m/45: ''
   101682|Saturday-Night Special: ''
   101891|Submachine Gun: ''
-G00025|All Stand Last:
+G00025:
   100668|Evil Eye: ''
   100681|Eyes of Blades: ''
   100834|Glancing Blow: ''
@@ -420,7 +420,7 @@ G00025|All Stand Last:
   101349|Pandora's Whisper: ''
   102137|Wake with Evening's Freshness: ''
   102151|Wash: ''
-G00026|Away Paper Data:
+G00026:
   100044|Ambrosius, The Ferryman: ''
   100335|Charnas the Imp: ''
   100669|Ex Nihilo: ''
@@ -431,7 +431,7 @@ G00026|Away Paper Data:
   102053|Tye Cooper: ''
   200249|Carolina Vález: ''
   200984|Mictlantecuhtli: ''
-G00027|Mission Purpose End:
+G00027:
   200049|Alexandra: ''
   200091|Angela Preston: ''
   200486|Fustuk: ''
@@ -445,7 +445,7 @@ G00027|Mission Purpose End:
   201273|Shahid: ''
   201279|Sheela Na Gig: ''
   201334|T.J.: ''
-G00028|Thank Bad Keep:
+G00028:
   100343|Chiram's Hold: ''
   100375|Cold Amber's Hold: ''
   100621|Elder Michaelis's Hold: ''
@@ -460,7 +460,7 @@ G00028|Thank Bad Keep:
   101584|Regarhagan's Hold: ''
   101767|Shilmulo Tarot: ''
   101877|Storage Annex: ''
-G00029|Quality Economic Occur:
+G00029:
   100476|Crypt's Sons: ''
   100593|Duma Rafiki: ''
   100626|Elephant Guardian: ''
@@ -470,14 +470,14 @@ G00029|Quality Economic Occur:
   102107|Vengeful Spirit: ''
   102191|Wolf Companion: ''
   102210|Zombie: ''
-G00030|Institution Building Short:
+G00030:
   100064|Ancient Influence: ''
   101417|Political Stranglehold: ''
   101591|Reins of Power: ''
-G00031|Necessary Culture Agency:
+G00031:
   100425|Corporal Reservoir: ''
   101388|Perfectionist: ''
-G00032|A Wear Stand:
+G00032:
   100119|Awe: ''
   100242|Bounty: ''
   100918|Hidden Strength: ''
@@ -488,18 +488,18 @@ G00032|A Wear Stand:
   101897|Summon History: ''
   101899|Summon Spirit Beast: ''
   102183|Will-o'-the-Wisp: ''
-G00033|Away At Four:
+G00033:
   101082|Leathery Hide: ''
   101817|Soak: ''
   102172|Well-Marked: ''
-G00034|Chair Traditional Cell:
+G00034:
   100262|Brujah Justicar: ''
   101154|Malkavian Justicar: ''
   101299|Nosferatu Justicar: ''
   101990|Toreador Justicar: ''
   102021|Tremere Justicar: ''
   102111|Ventrue Justicar: ''
-G00035|Will Structure Operation:
+G00035:
   100042|Amam the Devourer: ''
   100084|Archon: ''
   100436|Covenant of Blood: ''
@@ -519,7 +519,7 @@ G00035|Will Structure Operation:
   200166|Barbaro Lucchese: ''
   201451|Virgil: ''
   201454|Virstania, The Great Mother: ''
-G00036|Brother Leader Individual:
+G00036:
   100094|Arson: ''
   100233|Bomb: ''
   100259|Bruisers, The: ''
@@ -530,7 +530,7 @@ G00036|Brother Leader Individual:
   101632|Rewilding: ''
   101809|Smash and Grab: ''
   102193|World's a Canvas, The: ''
-G00037|Card Message Responsibility:
+G00037:
   100320|Chameleon: ''
   101324|Open War: ''
   101377|Patsy: ''
@@ -538,7 +538,7 @@ G00037|Card Message Responsibility:
   101915|Sweeper: ''
   102218|Bait and Switch: ''
   102230|Organized Resistance: ''
-G00038|Rule Figure Pattern:
+G00038:
   '101448|Praxis Seizure: Athens': ''
   '101450|Praxis Seizure: Barcelona': ''
   '101451|Praxis Seizure: Berlin': ''
@@ -550,14 +550,14 @@ G00038|Rule Figure Pattern:
   '101467|Praxis Seizure: Paris': ''
   '101468|Praxis Seizure: Rome': ''
   '101470|Praxis Seizure: Stockholm': ''
-G00039|Sort Suggest Country:
+G00039:
   200065|Amaravati: ''
   200136|Arishat: ''
   200417|Ellison Humboldt: ''
   200455|Fakir al Sidi: ''
   200763|Kateline Nadasdy: ''
   201043|Neferu: ''
-G00040|Scientist Parent Late:
+G00040:
   200030|Aisha az-Zahra: ''
   200187|Bela Kardoza: ''
   200317|Danielle Diron: ''
@@ -570,7 +570,7 @@ G00040|Scientist Parent Late:
   201314|Stefano Giovanni: ''
   201325|Sundown: ''
   201529|Alexa Draper: ''
-G00041|Anything Deep Fast:
+G00041:
   200037|Al-Muntaquim, The Avenger: ''
   200038|Al-Muntathir, God's Witness: ''
   200618|Ibn Khaldun, Scholar: ''
@@ -581,7 +581,7 @@ G00041|Anything Deep Fast:
   201067|Nu, The Pillar: ''
   201274|Shalmath: ''
   201331|Synesios: ''
-G00042|Miss Especially Rate:
+G00042:
   '100712|Fee Stake: Boston': ''
   '100713|Fee Stake: Corte': ''
   '100714|Fee Stake: Los Angeles': ''
@@ -589,7 +589,7 @@ G00042|Miss Especially Rate:
   '100716|Fee Stake: Perth': ''
   '100717|Fee Stake: Seattle': ''
   101587|Regent: ''
-G00043|Paper Until Speech:
+G00043:
   200037|Al-Muntaquim, The Avenger: ''
   200038|Al-Muntathir, God's Witness: ''
   200057|Allonzo Montoya: ''
@@ -624,7 +624,7 @@ G00043|Paper Until Speech:
   201433|Veejay Vinod: ''
   201484|Yavu Matebo: ''
   201510|Zubeida: ''
-G00044|Everybody Amount Responsibility:
+G00044:
   100011|Absimiliard's Army: ''
   100080|Arcane Appraiser: ''
   100103|Asanbonsam Ghoul: ''
@@ -645,20 +645,20 @@ G00044|Everybody Amount Responsibility:
   100911|Hellhound: ''
   101164|Marijava Ghoul: ''
   101165|Marijava Thuggee: ''
-G00045|Back Involve Pm:
+G00045:
   100246|Brass Knuckles: ''
   100317|Chainsaw: ''
   100811|Gas-Powered Chainsaw: ''
   100964|Improvised Flamethrower: ''
   101685|Sawed-Off Shotgun: ''
   101860|Starshell Grenade Launcher: ''
-G00046|Teacher Support Know:
+G00046:
   100379|Combat Shotgun: ''
   101168|Mark V: ''
   101191|Meat Hook: ''
   101287|Nightstick: ''
   101846|Spike-Thrower: ''
-G00047|Past Health Responsibility:
+G00047:
   100071|Ankara Citadel, Turkey, The: ''
   100306|Catacombs: ''
   100499|Dartmoor, England: ''
@@ -676,7 +676,7 @@ G00047|Past Health Responsibility:
   101677|San Nicolás de los Servitas: ''
   102184|Winchester Mansion: ''
   102203|Zaire River Ferry: ''
-G00050|Both May Who:
+G00050:
   100121|Baal's Bloody Talons: ''
   100304|Caseless Rounds: ''
   100580|Dragon's Breath Rounds: ''
@@ -684,7 +684,7 @@ G00050|Both May Who:
   101160|Manstopper Rounds: ''
   101689|Scattershot: ''
   101885|Strike at the True Flesh: ''
-G00052|Edge Watch Which:
+G00052:
   100097|Art of Memory, The: ''
   100502|Day Operation: ''
   100513|Deed the Heart's Desire: ''
@@ -714,7 +714,7 @@ G00052|Edge Watch Which:
   101975|Those Who Endure Judge: ''
   102058|Uncontrollable Rage: ''
   102138|Walk of Caine: ''
-G00054|Add International Chair:
+G00054:
   100010|Abomination: ''
   100129|Bamba: ''
   100147|Becoming, The: ''
@@ -727,7 +727,7 @@ G00054|Add International Chair:
   '102035|Trophy: Progeny': ''
   102046|Tumnimos: ''
   102159|Waters of Duat: ''
-G00055|Continue Nothing Back:
+G00055:
   100010|Abomination: ''
   100129|Bamba: ''
   100256|Brother in Arms: ''
@@ -739,7 +739,7 @@ G00055|Continue Nothing Back:
   '102035|Trophy: Progeny': ''
   102046|Tumnimos: ''
   102159|Waters of Duat: ''
-G00056|Thought Call Order:
+G00056:
   100033|Akhenaten, The Sun Pharaoh: ''
   100042|Amam the Devourer: ''
   101047|Kherebutu: ''
@@ -747,7 +747,7 @@ G00056|Thought Call Order:
   101527|Qetu the Evil Doer: ''
   101665|Saatet-ta: ''
   102048|Tutu the Doubly Evil One: ''
-G00058|Wind Election Yet:
+G00058:
   100419|Contingency Planning: ''
   100493|Dark Influences: ''
   100510|Death Seeker: ''
@@ -771,7 +771,7 @@ G00058|Wind Election Yet:
   101998|Touch of Clarity: ''
   102008|Tranquility: ''
   102151|Wash: ''
-G00060|Despite Successful As:
+G00060:
   '100537|Devil-Channel: Back': ''
   '100538|Devil-Channel: Feet': ''
   '100539|Devil-Channel: Hands': ''
