@@ -1,16 +1,3 @@
-# Rulings always have a reference, they come from soemwhere.
-# Each reference should be a valid URL, with a key indicating the source and date.
-# The only valid sources are the successive Rules Director, the Ruling Team and the rulebook:
-#
-# - TOM: Thomas R Wylie, from 1994
-# - SFC: Shawn F. Carnes, occasionnaly before 1998
-# - LSJ: L. Scott Johnson, from 1998-06-22 onward
-# - PIB: Pascal Bertrand, from 2011-07-06 onward
-# - ANK: Vincent Ripoll aka. "Ankha", from 2016-12-04 onward
-# - RTR: Rules Team Ruling
-# - RBK: Rulebook
-#
-# The date must follow ISO order YYYYMMDD, with a facultative suffix after a dash `-` to avoid collisions
 ---
 ANK 20170105: http://www.vekn.net/forum/rules-questions/75512-raptor-obedience#80020
 ANK 20170111: http://www.vekn.net/forum/rules-questions/72635-dam-the-heart-s-river-and-catatonic-fear?start=6#80117
@@ -402,6 +389,7 @@ ANK 20231124: https://www.vekn.net/forum/rules-questions/80984-haqim-s-law-retri
 ANK 20231221: https://www.vekn.net/forum/rules-questions/81065-faking-title-and-votes#110148
 ANK 20231229: https://www.vekn.net/forum/rules-questions/81077-do-not-replace-rule-question#110227
 ANK 20240118: https://www.vekn.net/forum/rules-questions/81155-gather#110398
+KOT 20081119: http://www.vekn.net/card-lists/140-keepers-of-tradition
 LSJ 19970224: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/80KRDjVFkyg/TBJso9Ra_9QJ
 LSJ 19970225: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/xcp3faFaHZ8/_3NVdFJ3Tv4J
 LSJ 19970303: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/CiDrKyoNEBA/Tx55C65lJqgJ
@@ -1109,6 +1097,7 @@ LSJ 20091217-2: http://groups.google.com/group/rec.games.trading-cards.jyhad/msg
 LSJ 20091224: https://groups.google.com/g/rec.games.trading-cards.jyhad/c/AV34Lb49JlE/m/WoKnfq6qCuwJ
 LSJ 20100112: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/SJu0kgw_2tE/p5cshF90vkEJ
 LSJ 20100119: https://groups.google.com/g/rec.games.trading-cards.jyhad/c/1eULCGaVcO0/m/eefMWzjoK0IJ
+LSJ 20100127: https://groups.google.com/g/rec.games.trading-cards.jyhad/c/YnQCu0GeMhc/m/ET__SGvjD7QJ
 LSJ 20100129: https://groups.google.com/g/rec.games.trading-cards.jyhad/c/X8Uu7Sk56P4/m/fgP7NfnDpCkJ
 LSJ 20100130: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/X8Uu7Sk56P4/twUvR4ZnBBkJ
 LSJ 20100203: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/HQD-UNP7Y0s/cHxAnD8Z9dwJ
@@ -1325,13 +1314,13 @@ RTR 19991206: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/N7iE
 RTR 20000501: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/MKrA0hBXuaU/1M5LOLftKWAJ
 RTR 20001020: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/GvxNYsYsWJ4/EY7NOjdsGCsJ
 RTR 20010710: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/GsI1UyH54jU/x9LfDZX1vR4J
+RTR 20010711: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/GsI1UyH54jU/x9LfDZX1vR4J
 RTR 20020501: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/M1snoR2msbQ/RFwCmX3anDkJ
 RTR 20030519: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/NOBWXWrd-vA/iEOpQp1uhvAJ
 RTR 20040501: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/7-mp3Ada86I/yenQ7FZ-VMIJ
 RTR 20041202: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/WUWh7AdooDU/vojisZMCSnsJ
 RTR 20070707: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/vSOt2c1uRzQ/MsRAv47Cd4YJ
 RTR 20080808: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/1jW6GXrIRSU/8QTYL98kB0gJ
-RTR 20081119: http://www.vekn.net/card-lists/140-keepers-of-tradition
 RTR 20111202: http://www.vekn.net/forum/rules-questions/16769-rules-team-rulings-02-dec-11#16769
 RTR 20180303: http://www.vekn.net/forum/rules-questions/76447-rules-team-rulings-rtr-03-03-2018#85536
 RTR 20180511: http://www.vekn.net/forum/rules-questions/76595-rules-team-rulings-rtr-11-05-2018#86780
@@ -1346,6 +1335,7 @@ TOM 19950620: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/XfsJ
 TOM 19950829: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/iVm2VboVp6Q/fbsieL8XHQwJ
 TOM 19950921: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/--zrAV3UcGI/Ywq8gud9r6cJ
 TOM 19950924: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/yejj-744_zc/g3t6CooUzVIJ
+TOM 19951007: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/HUipqz0LFSw/pY6uEa3f8-gJ
 TOM 19951107: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/lb3GhBTmgpM/x6qb8MwfFnAJ
 TOM 19951109: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/WhJj5K1Fa-0/m673ruvTozEJ
 TOM 19951114: https://groups.google.com/d/msg/rec.games.trading-cards.jyhad/LOEFFpprXKs/3iG4c1loOqgJ
