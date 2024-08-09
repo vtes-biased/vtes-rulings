@@ -5168,7 +5168,7 @@ G00004|Interesting International Capital:
 G00005|Fund Fact Upon:
   - The "does not unlock as normal" effect is redundant with being infernal. If the minion is infernal, his controller can
     still pay a pool to unlock him. [LSJ 20050114]
-G00006|Accept Write Difficult:
+G00006|Modifier after resolution:
   - Is played after resolution, but still during the action. Action modifiers and effects that can be played "after resolution"
     can be played before or after it. [LSJ 19981028] [ANK 20190425]
 G00007|Goal Perhaps Country:
@@ -5276,7 +5276,7 @@ G00052|Edge Watch Which:
   - Must be played (as well as other "as the action is announced" action modifiers) before action modifiers that are not explicitly
     played "as the action is announced" (e.g., {Conditioning}). [ANK 20190425]
   - Replace the action card (if any) before playing it. [ANK 20181208]
-G00054|Add International Chair:
+G00054|Action creating vampire:
   - Is not a vampire in the ash heap (eg. {Possession} cannot be played on it). [LSJ 20020115]
 G00055|Continue Nothing Back:
   - If moved to the uncontrolled region (eg. by {Banishment}), it continues to be a vampire and can be influenced. [RTR 19990712]
