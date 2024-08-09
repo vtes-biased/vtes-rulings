@@ -42,7 +42,11 @@
                 </ul>
                 <button type="button" class="btn btn-primary" id="proposalButton">
                     {% if proposal %}
+                    {% if proposal.channel_id %}
+                    Approve proposal
+                    {% else %}
                     Submit proposal
+                    {% endif %}
                     {% else %}
                     Start proposal
                     {% endif %}
@@ -71,9 +75,8 @@
                     <input type="text" class="form-control my-2" placeholder="Name" id="proposalName" name="name"
                         value="{{ proposal.name if proposal else ''}}">
                     {% if proposal %}
-                    <textarea class="form-control my-2" id="proposalDescription" name="description">
-                    {{ proposal.description }}
-                    </textarea>
+                    <textarea class="form-control my-2" id="proposalDescription"
+                        name="description">{{ proposal.description }}</textarea>
                     {% else %}
                     <textarea class="form-control" id="proposalDescription" placeholder="Description"
                         name="description"></textarea>

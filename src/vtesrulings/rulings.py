@@ -614,11 +614,12 @@ class Index:
         with open(groups_file, "w", encoding="utf-8") as f:
             data = {}
             for group in all_groups:
-                data[group.uid] = {}
+                group_nid = f"{group.uid}|{group.name}"
+                data[group_nid] = {}
                 for card in group.cards:
                     krcg_card = KRCG_CARDS[int(card.uid)]
                     card_nid = f"{krcg_card.id}|{krcg_card._name}"
-                    data[group.uid][card_nid] = card.prefix
+                    data[group_nid][card_nid] = card.prefix
             yaml.dump(data, f, **YAML_PARAMS)
         with open(rulings_file, "w", encoding="utf-8") as f:
             f.write(RULINGS_COMMENT)
