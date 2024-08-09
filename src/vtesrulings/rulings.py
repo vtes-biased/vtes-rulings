@@ -118,6 +118,79 @@ ANKHA_SYMBOLS = {
     "CONVICTION": "¤",
 }
 
+REFERENCES_COMMENT = """# Rulings always have a reference, they come from somewhere.
+# Each reference should be a valid URL, with a key indicating the source and date.
+# The only valid sources are the successive Rules Director, the Ruling Team and the rulebook:
+#
+# - TOM: Thomas R Wylie, from 1994
+# - SFC: Shawn F. Carnes, occasionnaly before 1998
+# - LSJ: L. Scott Johnson, from 1998-06-22 onward
+# - PIB: Pascal Bertrand, from 2011-07-06 onward
+# - ANK: Vincent Ripoll aka. "Ankha", from 2016-12-04 onward
+# - RTR: Rules Team Ruling
+# - RBK: Rulebook
+#
+# The date must follow ISO order YYYYMMDD, with a facultative suffix after a dash `-` to avoid collisions
+"""
+
+RULINGS_COMMENT = """# ## Design notes
+#
+# The core principle of this project is to provide a curated list of rulings
+# **in a format that can withstand the passing of time**.
+#
+# We have lost countless ressources to the passing decades because they were hosted in unmaintained databases
+# or in other impracticle formats.
+# With hindsight, the most resilient formats are the simplest time-tested text-based standards.
+# For example, the cards database, maintained in CSV format, or the TWD archive in plain HTML.
+#
+# Here, we have opted for YAML, because it offers a more flexible structure than CSV (multiple rulings per card),
+# and is more readable than JSON, if anyone has to pick the project up without context in the future.
+#
+# ### Design principle
+#
+# **The rulings reference is a single self-sufficient YAML file. It is usable with a text editor, without processing.**
+#
+# ### Design details
+#
+# 1. The rulings can contain disciplines and card types symbols in brackets (eg. `[pot]`), see the list below
+# 2. The rulings can contain card names in braces (eg. `{Abbot}`)
+# 3. Each ruling ends with one or more rulings reference IDs in brackets.
+#    References URLs are listed in the [references.yaml](rulings/references.yaml) file
+# 4. Rulings are attached to a card, the format of the key is `<card_id>|<card_name>`, using the VEKN CSV cards IDs,
+#    or to group of cards, using the `<id>|<name>` format, with an ID beginning with `G`. Cards groups are listed in
+#    the [groups.yaml](rulings/groups.yaml) file.
+#
+# #### List of symbols
+#
+# - Inferior disciplines: abo, ani, aus, cel, chi, dai, dem, dom, for, mal, mel, myt, nec, obe, obf, obt, pot, pre, pro,
+#   qui, san, ser, spi, str, tem, thn, tha, val, vic, vis
+# - Superior disciplines: ABO, ANI, AUS, CEL, CHI, DAI, DEM, DOM, FOR, MAL, MEL, MYT, NEC, OBE, OBF, OBT, POT, PRE, PRO,
+#   QUI, SAN, SER, SPI, STR, TEM, THN, THA, VAL, VIC, VIS
+# - Virtues: vin, def, jus, inn, mar, ven, red
+# - Card types: ACTION, POLITICAL, ALLY, RETAINER, EQUIPMENT, MODIFIER, REACTION, COMBAT, REFLEX, POWER
+# - Other: FLIGHT, MERGED, CONVICTION
+#
+#  Note the "Vision" virtue uses the `[vsn]` trigram, to avoid confusion with the "Visceratika" discipline `[vis]`.
+#  Some versions of the VEKN CSV do use `[vis]` for both indistinctively.
+#
+# ### Discarded options
+#
+# We discarded some options after careful consideration:
+#
+# 1. We could have used some **fields for the rulings** (separating symbol prefix, text, and references).
+#    Although a proper API _should_ present the rulings structure this way, the reference file must be kept as simple
+#    and readable as possible. The current structure _stays usable_ with very little post-treatment, which is better.
+#    Producing an alternative, more structured version, of the rulings, could be done by automated parsing.
+#
+# 2. We could have used **cards IDs only** and not bother with the cards name, but this would make this reference file
+#    unusable out of the box without the proper tooling. Such as it is, the file can be opened and a card searched for
+#    by name with just a text editor.
+#
+# 3. The **cards names** are the ones used in the VEKN CSV reference file. We could have opted for other alternatives,
+#    but we believe consistency with the existing reference is the stronger argument.
+#    Note different versions of the same vampires share the same name with different IDs (advanced, higher group).
+"""
+
 YAML_PARAMS = {"width": 120, "allow_unicode": True, "indent": 2}
 
 RULING_SOURCES = {
@@ -524,7 +597,7 @@ class Index:
                 self.proposal.channel_id = data["channel_id"]
 
     def approve_proposal(self) -> None:
-        # TODO YAML generation and github commit
+        """YAML generation and github commit"""
         if not self.proposal.channel_id:
             raise ConsistencyError("Proposal has not been submitted yet")
         ref_file = os.path.join(repo_dir.name, RULINGS_FILES_PATH, "references.yaml")
@@ -532,6 +605,7 @@ class Index:
         rulings_file = os.path.join(repo_dir.name, RULINGS_FILES_PATH, "rulings.yaml")
         all_groups = sorted(self.all_groups(), key=lambda x: x.uid)
         with open(ref_file, "w", encoding="utf-8") as f:
+            f.write(REFERENCES_COMMENT)
             data = {
                 ref.uid: ref.url
                 for ref in sorted(self.all_references(), key=lambda x: x.uid)
@@ -540,28 +614,45 @@ class Index:
         with open(groups_file, "w", encoding="utf-8") as f:
             data = {}
             for group in all_groups:
-                data[group.uid] = []
+                data[group.uid] = {}
                 for card in group.cards:
                     krcg_card = KRCG_CARDS[int(card.uid)]
-                    data[group.uid].append(
-                        {f"{krcg_card.id}|{krcg_card._name}": card.prefix}
-                    )
+                    card_nid = f"{krcg_card.id}|{krcg_card._name}"
+                    data[group.uid][card_nid] = card.prefix
             yaml.dump(data, f, **YAML_PARAMS)
         with open(rulings_file, "w", encoding="utf-8") as f:
+            f.write(RULINGS_COMMENT)
             data = {}
             for card in sorted(KRCG_CARDS, key=lambda x: x.id):
                 for ruling in self.get_rulings(str(card.id)):
+                    # skip group rulings
+                    if ruling.target.uid != str(card.id):
+                        continue
                     key = f"{card.id}|{card._name}"
                     data.setdefault(key, [])
                     data[key].append(ruling.text)
             for group in all_groups:
                 for ruling in self.get_rulings(group.uid):
-                    key = str(group)
+                    key = f"{group.uid}|{group.name}"
                     data.setdefault(key, [])
                     data[key].append(ruling.text)
             yaml.dump(data, f, **YAML_PARAMS)
-        yamlfix.config.configure_yamlfix(yamlfix.model.YamlfixConfig(line_length=256))
-        yamlfix.fix_files([ref_file, groups_file, rulings_file])
+        yamlfix.fix_files(
+            [ref_file, groups_file, rulings_file],
+            config=yamlfix.model.YamlfixConfig(
+                line_length=120,
+                sequence_style="block_style",
+            ),
+        )
+        REPO.index.add(
+            [
+                os.path.join(RULINGS_FILES_PATH, "references.yaml"),
+                os.path.join(RULINGS_FILES_PATH, "groups.yaml"),
+                os.path.join(RULINGS_FILES_PATH, "rulings.yaml"),
+            ]
+        )
+        REPO.index.commit(self.proposal.name)
+        REPO.git.push()
 
     def all_references(self) -> typing.Generator[None, None, Reference]:
         if self.proposal:
