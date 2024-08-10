@@ -36,11 +36,13 @@ def proposal_required(f):
 def proposal_facultative(f):
     @functools.wraps(f)
     async def decorated_function(*args, **kwargs):
-        if "proposal" in flask.session:
+        proposal = flask.request.args.get("prop", None) or flask.session.get("proposal")
+        if proposal:
             try:
-                rulings.INDEX.use_proposal(flask.session["proposal"])
+                rulings.INDEX.use_proposal(proposal)
+                flask.session["proposal"] = proposal
             except KeyError:
-                del flask.session["proposal"]
+                flask.session.pop("proposal", None)
                 rulings.INDEX.off_proposals()
         else:
             rulings.INDEX.off_proposals()
@@ -169,7 +171,7 @@ async def get_group(group_id: str):
 
 @app.route("/proposal", methods=["POST"])
 async def start_proposal():
-    next = flask.request.args.get("next", None)
+    next = flask.request.args.get("next", "index.html")
     data = flask.request.form or flask.request.get_json(force=True, silent=True) or {}
     ret = INDEX.start_proposal(**data)
     flask.session["proposal"] = ret
@@ -188,7 +190,7 @@ async def update_proposal():
 @app.route("/proposal/submit", methods=["POST"])
 @proposal_required
 async def submit_proposal():
-    next = flask.request.args.get("next", None)
+    next = flask.request.args.get("next", "index.html")
     await INDEX.submit_proposal()
     return flask.redirect(next, 302)
 
@@ -196,8 +198,9 @@ async def submit_proposal():
 @app.route("/proposal/approve", methods=["POST"])
 @proposal_required
 async def approve_proposal():
-    next = flask.request.args.get("next", None)
+    next = flask.request.args.get("next", "index.html")
     INDEX.approve_proposal()
+    del flask.session["proposal"]
     return flask.redirect(next, 302)
 
 

@@ -116,7 +116,6 @@ class EditMode {
         this.proposalModal = new bootstrap.Modal('#proposalModal')
         this.referencelModal = new bootstrap.Modal('#referenceModal')
         this.proposalButton.addEventListener("click", (event) => this.proposalModal.show())
-        console.log(window.location)
         const next = encodeURIComponent(window.location.pathname + window.location.search)
         if (this.proposalStart) {
             this.proposalForm.action = `http://127.0.0.1:5000/proposal?next=${next}`
@@ -150,6 +149,7 @@ class EditMode {
             group.innerText = ruling.target.name
             body.append(group)
         }
+        const edit_mode = Boolean(this.proposal && ruling.target.uid === mainUid)
         // rework ruling text
         let text = ruling.text
         for (const symbol of ruling.symbols) {
@@ -167,20 +167,10 @@ class EditMode {
         }
         let card_text = document.createElement("p")
         card_text.classList.add("card-text", "my-2")
-        if (this.proposal && ruling.target.uid === mainUid) {
+        if (edit_mode) {
             card_text.contentEditable = "true"
             card_text.addEventListener("focusin", displayEditTools)
             card_text.addEventListener("input", debounce(async () => { await rulingSave(card) }))
-            // card_text.addEventListener("blur", (ev) => {
-            //     console.log(ev)
-            //     console.log(window.getSelection())
-            //     const sel = window.getSelection()
-            //     if (!sel.anchorNode) { return }
-            //     CARET = new Range()
-            //     console.log(sel.anchorNode)
-            //     CARET.setStart(sel.anchorNode, sel.anchorOffset)
-            //     CARET.setEnd(sel.anchorNode, sel.anchorOffset)
-            // })
         }
         body.append(card_text)
         let links_div = document.createElement("div")
@@ -188,9 +178,9 @@ class EditMode {
         card.append(links_div)
         for (const reference of ruling.references) {
             text = text.replace(reference.text, "")
-            addRulingReference(card, links_div, reference, Boolean(this.proposal), false)
+            addRulingReference(card, links_div, reference, edit_mode, false)
         }
-        if (this.proposal) {
+        if (edit_mode) {
             let plus_button = document.createElement("button")
             plus_button.classList.add("badge", "btn", "mx-2", "text-bg-primary")
             plus_button.type = "button"
@@ -287,11 +277,9 @@ function displayEditTools(event: FocusEvent) {
 function memorizePosition() {
     // save offset inside current <p> element
     const selection = window.getSelection()
-    console.log(selection)
     if (selection.anchorNode.parentElement != CURRENT_P) { return }
     CURRENT_NODE = selection.anchorNode
     OFFSET = selection.anchorOffset
-    console.log(OFFSET)
 }
 
 async function createAndAddLink(ev: MouseEvent, card: HTMLDivElement) {
@@ -422,7 +410,7 @@ async function rulingSave(elem: HTMLDivElement) {
             elem.dataset.KrcgRulingText = ruling.text
         }
         catch (error) {
-            console.log("Error posting reference", error.message)
+            console.log("Error updating ruling", error.message)
             displayError(error.message)
         }
     }
@@ -582,14 +570,12 @@ class GroupPage extends EditMode {
 }
 
 async function groupSave(groupDisplay: HTMLDivElement) {
-    console.log("in groupSave", groupDisplay)
     const name = groupDisplay.querySelector("h2").innerText
     const cards = groupDisplay.querySelectorAll("a.list-group-item")
     let body = {
         name: name,
         cards: {}
     }
-    console.log(body)
     for (const card of cards) {
         const card_a = card as HTMLAnchorElement
         let prefix = ""
@@ -610,6 +596,14 @@ async function groupSave(groupDisplay: HTMLDivElement) {
         )
         if (!response.ok) {
             throw new Error((await response.json())[0])
+        }
+        const groupsList = document.getElementById("groupsList") as HTMLDivElement
+        const current = groupsList.querySelector("a.active") as HTMLAnchorElement
+        // we're async, make sure it's the right one
+        if (current.dataset.uid === groupDisplay.dataset.uid) {
+            current.firstChild.textContent = name
+            const counter = current.querySelector("span.badge") as HTMLSpanElement
+            counter.innerText = cards.length.toString()
         }
     }
     catch (error) {
@@ -642,8 +636,24 @@ function navActivateCurrent() {
     }
 }
 
+// function addButtonToKrcgModal() {
+//     const click_modal = document.getElementById("krcg-click-modal") as HTMLDivElement
+//     const button = document.createElement("a")
+//     button.id = "krcgModalButton"
+//     button.classList.add("button", "text-bg-primary")
+//     button.innerText = "Go"
+//     button.href = "#"
+//     click_modal.append(button)
+// }
+
+// function setKrcgModalButtonLink(uid) {
+//     const anchor = document.getElementById("krcgModalButton") as HTMLAnchorElement
+//     anchor.href = `/index.html?uid=${uid}`
+// }
+
 async function load() {
     navActivateCurrent()
+    // addButtonToKrcgModal()
     if (window.location.pathname === "/index.html") {
         let cardSearch = new CardSearch()
         await cardSearch.state.setup()
@@ -882,10 +892,15 @@ EDIT_CONTROLS.append(CARD_SEARCH)
 let input = document.createElement("input") as HTMLInputElement
 CARD_SEARCH.append(input)
 input.classList.add("form-control", "autocomplete", "mx-2")
+input.type = "search"
 input.placeholder = "Card name"
 input.dataset.server = "http://127.0.0.1:5000/complete/"
 input.dataset.liveServer = "true"
 input.dataset.suggestionsThreshold = "3"
+input.autocomplete = "off"
+input.autocapitalize = "off"
+input.spellcheck = false
+
 new Autocomplete(input,
     { "onSelectItem": (item: any) => insertCard(item) }
 )

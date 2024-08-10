@@ -9,7 +9,6 @@
     <meta name="keywords" content="Vampire, the Eternal Struggle, VtES, CCG">
     {% block meta %}{% endblock %}
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
-    <link rel="stylesheet" href="https://static.krcg.org/web/krcg.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/base.css', v=version) }}">
     <script async src="https://static.krcg.org/web/krcg.js"></script>
     <script async src="{{ url_for('static', filename='dist/js/display.js') }}" type="module"></script>
@@ -86,19 +85,16 @@
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                     {% if proposal %}
                     {% if proposal.channel_id %}
-                    <button type="button" class="btn btn-success" id="proposalApprove" form="proposalForm"
-                        formaction="http://127.0.0.1:5000/proposal/approve">
+                    <button type="button" class="btn btn-success" id="proposalApprove" form="proposalForm">
                         Approve
                     </button>
                     {% else %}
-                    <button type="button" class="btn btn-primary" id="proposalSubmit" form="proposalForm"
-                        formaction="http://127.0.0.1:5000/proposal/submit">
+                    <button type="button" class="btn btn-primary" id="proposalSubmit" form="proposalForm">
                         Submit
                     </button>
                     {% endif %}
                     {% else %}
-                    <button type="button" class="btn btn-primary" id="proposalStart" form="proposalForm"
-                        formaction="http://127.0.0.1:5000/proposal">
+                    <button type="button" class="btn btn-primary" id="proposalStart" form="proposalForm">
                         Start
                     </button>
                     {% endif %}

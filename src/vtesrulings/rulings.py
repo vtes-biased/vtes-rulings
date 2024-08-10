@@ -557,6 +557,7 @@ class Index:
                         {
                             "title": self.proposal.name,
                             "description": self.proposal.description,
+                            "url": f"http://127.0.0.1:5000/index.html?prop={self.proposal.uid}",
                             "fields": [
                                 {
                                     "name": "Groups",
@@ -653,6 +654,8 @@ class Index:
         )
         REPO.index.commit(self.proposal.name)
         REPO.git.push()
+        del self.proposals[self.proposal.uid]
+        self.off_proposals()
 
     def all_references(self) -> typing.Generator[None, None, Reference]:
         if self.proposal:

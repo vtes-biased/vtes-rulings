@@ -10,7 +10,7 @@
         <a href="index.html?uid={{ card.uid }}"
             class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
             data-uid="{{ card.uid }}">
-            {{ card.name }}
+            <div class="krcg-card">{{ card.name }}</div>
             <span class="krcg-icon">
                 {% for symbol in card.symbols %}
                 {{ symbol["symbol"] }}
@@ -28,13 +28,15 @@
         {% for group in groups %}
         {% if current and group.uid == current.uid %}
         <a href="?uid={{ group.uid }}"
-            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active">
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active"
+            data-uid="{{ group.uid }}">
             {{ group.name }}
             <span class="badge text-bg-primary rounded-pill">{{ group.cards | length}}</span>
         </a>
         {% else %}
         <a href="?uid={{ group.uid }}"
-            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+            data-uid="{{ group.uid }}">
             {{ group.name }}
             <span class="badge text-bg-primary rounded-pill">{{ group.cards | length}}</span>
         </a>
