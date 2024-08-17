@@ -119,7 +119,7 @@
 100030|Ailing Spirit, The:
   - '[OBE] If one is ousted while having temporary control of a minion, the minion is removed from the game. [LSJ 20081105]'
 100038|Alastor:
-  - If the weapon retrieved costs blood, that cost is paid by the vampire chosen by the  vote.   [LSJ 20040518]
+  - If the weapon retrieved costs blood, that cost is paid by the vampire chosen by the terms.    [LSJ 20040518]
   - Requirements do not apply. If a discipline is required (eg. {Inscription}) and the Alastor vampire does not have it, the
     inferior version is used. [ANK 20200901] [LSJ 20040518-2]
 100040|Alpha Glint:
@@ -5205,7 +5205,7 @@ G00018|Ally with discipline level:
     it is in play. [RTR 19941109] [ANK 20180612]
 G00019|Animal:
   - Is neither a mortal nor a monster. [ANK 20200203-2] [LSJ 20060515]
-G00020|Shake Discuss Source:
+G00020|Action not replaced:
   - 'Is not replaced if the action is blocked: it is replaced when the action ends, after all combats. [LSJ 20001120]'
 G00021|Reduce votes:
   - The votes provided by the Priscii sub-referendum are not affected. [ANK 20180307-1]
