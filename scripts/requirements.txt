@@ -1,3 +1,5 @@
+arrow
+aiohttp
 krcg
 pyyaml
 yamlfix
