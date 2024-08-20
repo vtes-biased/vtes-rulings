@@ -260,7 +260,7 @@
     ends. [LSJ 20011214-4]'
   - '[for] If played on a diablerie attempt (eg. {Amaranth}), the diablerie is unsuccessful. Another {Amaranth} can be played.
     [LSJ 19970224] [LSJ 20011214-4]'
-  - '[for] If played by an ally, the ally is burned instead of going to torpor. [ANK 20170412] [RBK 20200701-6]'
+  - '[for] If played by an ally, the ally is burned instead of going to torpor. [ANK 20170412] [RBK-allies]'
   - '[for] Cannot be played when burned as a result of a Blood Hunt referendum. [LSJ 20070417]'
 100106|Ashur Tablets:
   - Can be played with no card in the ash heap. [PIB 20130119]
@@ -292,7 +292,7 @@
   - The press can only be used during the current round. [TOM 19960521]
 100127|Baleful Doll:
   - The bearer (if he unlocks normally) unlocks at the beginning of the unlock phase, before this effect can be used. [PIB
-    20151009] [RBK 20200701-1]
+    20151009] [RBK-unlock-phase]
 100128|Baltimore Purge:
   - There is no time to use other effects between the choosing of the vampires and those vampires going to torpor. [LSJ 20050111]
   - The effect during the unlock phase is not an action, you can choose a vampire with a {Secure Haven} on them. [PIB 20121028]
@@ -660,7 +660,7 @@
   - He can use his ability to burn a vampire who has committed diablerie the turn she is recruited. [ANK 20180517]
 100301|Carrion Crows: []
 100303|Carver's Meat Packing and Storage:
-  - The effect to burn a hostage counter can be done only once per turn. [ANK 20200729] [RBK 20200701-4]
+  - The effect to burn a hostage counter can be done only once per turn. [ANK 20200729] [RBK-wording-templates]
 100304|Caseless Rounds: []
 100306|Catacombs: []
 100307|Catatonic Fear:
@@ -837,7 +837,7 @@
   - '[tha] The press can only be used during the current round. [TOM 19960521]'
   - '[vis], [VIS] Does not prevent the opponent from dodging, the dodge just has no effect. [LSJ 20030902-2] [LSJ 20060808-1]'
 100378|Coma:
-  - Only effective at close range. [RBK 20200701-10] [LSJ 20000110]
+  - Only effective at close range. [RBK-resolve-strike] [LSJ 20000110]
   - The opponent is wounded (if they play {Undying Tenacity}, they go to torpor after combat). [LSJ 20090622-2]
   - '[DEM] The "does not unlock as normal" effect is redundant with being infernal. If the minion is infernal, its controller
     can still pay a pool to unlock them. [LSJ 20050114]'
@@ -1355,7 +1355,7 @@
   - If the edge is lost during the action (eg. {High Priest Angra Mainyu}), the prey takes no damage but you still cannot
     bleed anymore this turn. [LSJ 20100527]
 100651|Entombment:
-  - Only effective at close range. [RBK 20200701-10] [LSJ 20000110]
+  - Only effective at close range. [RBK-resolve-strike] [LSJ 20000110]
   - '[OBT] The opponent is wounded (if they play {Undying Tenacity}, they go to torpor after combat). [LSJ 20090622-2]'
 100656|Erciyes Fragments, The:
   - Cannot be used when a card is played to draw a card that would cancel it "as it is played". [RTR 20040501]
@@ -1764,7 +1764,7 @@
   - If the target changes sect to a sect inappropriate for his title, he loses its benefit until his sect is appropriate.
     He immediately yields the title if it is contested or he receives a new one. [LSJ 20060904]
 100841|Goblinism:
-  - '[pot] The action is directed at the Methuselah controlling the location, undirected if you control it. [RBK 20200701-9]
+  - '[pot] The action is directed at the Methuselah controlling the location, undirected if you control it. [RBK-who-may-attempt-to-block]
     [LSJ 20090324]'
 100843|Goodnight, Sweet Prince:
   - Can be used on your own crypt. [TOM 19960419]
@@ -1804,7 +1804,7 @@
   - Does not burn nor inflict damage if combat ends before it resolves. [LSJ 20001127-2] [LSJ 20010806-1] [LSJ 19981006]
 100858|Grey Thorne:
   - Can play cards requiring [cel] or [pot] but not both. [ANK 20180731-1]
-  - Is not Anarch (eg. does not benefit from {Anarch Manifesto, An}). [RBK 20200701-6] [ANK 20230417]
+  - Is not Anarch (eg. does not benefit from {Anarch Manifesto, An}). [RBK-allies] [ANK 20230417]
 100859|Groaning Corpse: []
 100861|Groundfighting:
   - The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {Salvador Garcia}). The card cannot
@@ -1871,7 +1871,7 @@
 100892|Hatchling:
   - The created vampire is not unique. [LSJ 20100221]
 100893|Haunt:
-  - '[NEC] The action is directed at the Methuselah controlling the location, undirected if you control it. [RBK 20200701-9]
+  - '[NEC] The action is directed at the Methuselah controlling the location, undirected if you control it. [RBK-who-may-attempt-to-block]
     [LSJ 20090324]'
 100896|Haven Hunting:
   - Effects that end combat and then do something else after combat (include continuing the action as if unblocked) will be
@@ -1942,8 +1942,8 @@
     [ANK 20211015]'
   - '[val] An ally has life, not blood, he cannot pay. [LSJ 20050216] [ANK 20190701]'
   - '[val], [VAL] Sequencing applies. For example, if another Methuselah is targeted by the action, they must declare if they
-    attempt or decline to block before you can play Hide the Heart. [LSJ 20100507] [PIB 20150820] [RBK 20200701-2]'
-  - '[VAL] To reduce a bleed against another Methuselah, you need to be unlocked. [RBK 20200701-4] [ANK 20230817]'
+    attempt or decline to block before you can play Hide the Heart. [LSJ 20100507] [PIB 20150820] [RBK-sequencing]'
+  - '[VAL] To reduce a bleed against another Methuselah, you need to be unlocked. [RBK-wording-templates] [ANK 20230817]'
 100921|Hide the Mind:
   - Cannot be used to cancel a card that could be played with [aus] but has not been (eg. {Anesthetic Touch} play with [obe]).
     [PIB 20130704]
@@ -2730,7 +2730,7 @@
 101290|No Confidence:
   - Is not a card requiring an Anarch. [LSJ 20080812]
   - '"loses the benefit" means he gets no vote, is not considered titled, and yields the title immediately if it would contest.
-    [LSJ 20080602] [RBK 20200701-3]'
+    [LSJ 20080602] [RBK-6-vampire-sects]'
 101291|No Secrets From the Magaji:
   - It still burns if a block is attempted and then an effect prevents the block (eg. {Daring the Dawn}, {Psalm of the Damned}).
     [LSJ 20090810] [LSJ 20100305]
@@ -2876,7 +2876,7 @@
   - Does not protect the target from self-inflicted damage from a weapon. [LSJ 19980216]
   - '[DEM] The press can only be used during the current round. [TOM 19960521]'
 101398|Phased Motion Detector:
-  - Can provide intercept only once during each action. [RBK 20200701-4] [ANK 20230116]
+  - Can provide intercept only once during each action. [RBK-wording-templates] [ANK 20230116]
   - Grants intercept even if the bearer is not blocking yet. [LSJ 20100329]
 101400|Pier 13, Port of Baltimore: []
 101401|Piper:
@@ -3828,7 +3828,7 @@
 101896|Sudden Reversal:
   - Can only cancel master cards that are played from the hand in the normal fashion. [RTR 20001020]
   - If used to cancel a Trifle, the target does not get an extra Master Phase Action from the canceled Trifle. [LSJ 20090126]
-    [RBK 20200701-5]
+    [RBK-trifle]
 101897|Summon History:
   - Requirements do not apply. If the card is an ally, it can act this turn. [LSJ 20100204]
   - You must decide the value of X (blood cost) when playing the card. [LSJ 20100314]
@@ -4289,7 +4289,7 @@
     20200905]
 102128|Vivienne Géroux:
   - Can play cards requiring both [for] and [cel]. [ANK 20210719]
-  - Is not Anarch (eg. does not benefit from {Anarch Manifesto, An}). [RBK 20200701-6] [ANK 20230417]
+  - Is not Anarch (eg. does not benefit from {Anarch Manifesto, An}). [RBK-allies] [ANK 20230417]
 102130|Voices of the Castle:
   - '[tha] The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {Uta Kovacs}). The card cannot
     be played if the minion cannot afford to burn the blood. [ANK 20210226]'
@@ -4334,7 +4334,7 @@
     is not a Nosferatu anymore at that point, he does not unlock. [LSJ 20090216] [ANK 20180922]
 102151|Wash:
   - If used to cancel a Trifle, the target does not get an extra Master Phase Action from the canceled Trifle. [ANK 20170124]
-    [LSJ 20090126] [RBK 20200701-5]
+    [LSJ 20090126] [RBK-trifle]
   - The additional Master Phase Action it provides does not count as a Trifle bonus, the target can get yet an additional
     Master Phase Action if they play a Trifle afterwards. [ANK 20170124] [LSJ 20090126]
   - If used to cancel an out-of-turn master, that Methuselah still cannot play another out-of-turn master against the same
@@ -4575,8 +4575,8 @@
 200091|Angela Preston:
   - When she is influenced out, her ability to unlock a vampire can be used during the ongoing influence phase. [RTR 20180303]
 200092|Angelica, The Canonicus:
-  - Can only use her ability once per action if she needs intercept, but she can get more than she needs. [RBK 20200701-4]
-    [RBK 20200701-9] [LSJ 20010111]
+  - Can only use her ability once per action if she needs intercept, but she can get more than she needs. [RBK-wording-templates]
+    [RBK-who-may-attempt-to-block] [LSJ 20010111]
   - The cards must all be burned at once. No further burning can be done once they're replaced. [LSJ 19981005]
 200094|Angelo:
   - A vampire with no circle designation is in his own unique circle of one. [LSJ 20020609] [ANK 20211113]
@@ -4748,7 +4748,7 @@
   - His ability cannot be used if the action is blocked. [LSJ 20041022]
 200410|Elimelech the Twice-Damned: []
 200417|Ellison Humboldt:
-  - Can use his ability only once per referendum. [ANK 20180307-2] [RBK 20200701-4]
+  - Can use his ability only once per referendum. [ANK 20180307-2] [RBK-wording-templates]
 200424|Enkidu, The Noah:
   - He cannot attempt an action to equip nor strike to steal an equipment. [LSJ 20050315] [LSJ 20010210]
   - He can equip with an equipment that is a location when in play. [LSJ 20050315]
@@ -4791,7 +4791,7 @@
 200500|General Perfidio Díos:
   - Can use his ability multiple times during the same action. [LSJ 20030605]
 200501|Genevieve:
-  - Her votes and ballots must be cast on the same side (for or against). [RBK 20200701-8] [LSJ 20051113-2]
+  - Her votes and ballots must be cast on the same side (for or against). [RBK-gaining-votes] [LSJ 20051113-2]
 200503|Gengis:
   - '[MERGED] Is Anarch. If the base version was the one in play, it changes sect as it is merged. [ANK 20180524]'
 200504|Genina, The Red Poet:
@@ -4808,7 +4808,7 @@
 200534|Gratiano:
   - If {Fall of the Sabbat} is in play, Priscii do not benefit from their title and have no ballot. The Priscii subreferendum
     still happens and Gratiano benefits from his bonus ballot. [LSJ 20040519]
-  - His votes (if any) and ballots must be cast on the same side (for or against). [RBK 20200701-8] [LSJ 20051113-2]
+  - His votes (if any) and ballots must be cast on the same side (for or against). [RBK-gaining-votes] [LSJ 20051113-2]
 200535|Gravitnir: []
 200542|Gualtiero Ghiberti: []
 200545|Guillaume Giovanni:
@@ -5002,7 +5002,7 @@
 200868|Lucas Halton: []
 200870|Lucian:
   - Cannot attempt to steal a piece of equipment that he is prohibited from having (eg. a second {Leather Jacket}). [LSJ 19980206]
-  - The stolen equipment cannot be used until the next round. [LSJ 19980206] [RBK 20200701-7]
+  - The stolen equipment cannot be used until the next round. [LSJ 19980206] [RBK-steal-equipment]
 200871|Lucian, the Perfect:
   - Strikes that do not target him (dodge, combat ends) do not cost more. They do if they plan to damage him after combat
     (eg. [PRE] {Catatonic Fear}). They do not if they target a card on him (eg. {Target Retainer}, {Canine Horde}). [LSJ 20090528-2]
@@ -5212,7 +5212,7 @@
 201136|Pugfar:
   - His ability to give a press can only be used during the press step. [PIB 20150121]
 201138|Qawiyya el-Ghaduba:
-  - Her ability can be used only once per minion phase. [ANK 20190207] [RBK 20200701-4]
+  - Her ability can be used only once per minion phase. [ANK 20190207] [RBK-wording-templates]
 201144|Quincy, The Trapper:
   - His ability means he must perform the same action twice in two different turns. Tokens can be used to keep track of it
     if players agree. [ANK 20170202]
@@ -5319,7 +5319,7 @@
 201332|Synner-G:
   - His ability applies when equipping in a non-normal way (eg. {Pier 13, Port of Baltimore}). [PIB 20150105-2]
 201334|T.J.:
-  - Must be unlocked with at least 2 blood to use his ability. [ANK 20200508-2] [RBK 20200701-4]
+  - Must be unlocked with at least 2 blood to use his ability. [ANK 20200508-2] [RBK-wording-templates]
 201337|Talley, The Hound:
   - Gets his +1 intercept if an action has any one target that would be enough to enable his effect. [RTR 20080808] [KOT 20081119]
 201343|Tarbaby Jack: []
@@ -5509,7 +5509,7 @@
   - Actions from minions of the same controller targeting him are undirected, so they are not affected by his ability. [LSJ
     20030214-2]
 201633|Maila:
-  - Her ability can only be used once during each of your turns. [RBK 20200701-4] [ANK 20230122]
+  - Her ability can only be used once during each of your turns. [RBK-wording-templates] [ANK 20230122]
 201634|Abraham Mellon:
   - His ability does not let him fulfill card requirements if they are not played normally, like when using {Piper} to recruit
     an ally. [LSJ 20050119]
@@ -5608,14 +5608,15 @@ G00035|Will Structure Operation:
   - The two actions provided are not cross-restrictive. Each can be performed once during the same turn by the same minion.
     [LSJ 20100909]
 G00036|Brother Leader Individual:
-  - An action directed at a card controlled by another Methuselah is directed at that Methuselah. [RBK 20200701-9] [LSJ 20090324]
+  - An action directed at a card controlled by another Methuselah is directed at that Methuselah. [RBK-who-may-attempt-to-block]
+    [LSJ 20090324]
 G00037|Card Message Responsibility:
   - 'Counts as requiring an Anarch (for eg. {Powerbase: Los Angeles}). [LSJ 20080603] [LSJ 20050128]'
 G00038|Rule Figure Pattern:
   - The additional capacity is lost if the title is lost. [TOM 19960210]
 G00039|Sort Suggest Country:
   - The ability can be used while locked or in torpor, only once per referendum. [ANK 20220705] [LSJ 20100705] [LSJ 20011022]
-    [LSJ 20100902-2] [ANK 20180307-2] [RBK 20200701-4]
+    [LSJ 20100902-2] [ANK 20180307-2] [RBK-wording-templates]
 G00040|Scientist Parent Late:
   - The ability can be used while locked, only once per referendum. [ANK 20220705]
 G00041|Anything Deep Fast:
