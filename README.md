@@ -32,16 +32,16 @@ and is more readable than JSON, if anyone has to pick the project up without con
 
 #### List of symbols
 
-- Inferior disciplines: abo, ani, aus, cel, chi, dai, dem, dom, for, mal, mel, myt, nec, obe, obf, obt, pot, pre, pro,
-  qui, san, ser, spi, str, tem, thn, tha, val, vic, vis
-- Superior disciplines: ABO, ANI, AUS, CEL, CHI, DAI, DEM, DOM, FOR, MAL, MEL, MYT, NEC, OBE, OBF, OBT, POT, PRE, PRO,
-  QUI, SAN, SER, SPI, STR, TEM, THN, THA, VAL, VIC, VIS
+- Inferior disciplines: abo, ani, aus, cel, chi, dai, dem, dom, for, mal, mel, myt, nec, obe, obf, obl, obt, pot, pre,
+  pro, qui, san, ser, spi, str, tem, thn, tha, val, vic, vis
+- Superior disciplines: ABO, ANI, AUS, CEL, CHI, DAI, DEM, DOM, FOR, MAL, MEL, MYT, NEC, OBE, OBF, OBL, OBT, POT, PRE,
+  PRO, QUI, SAN, SER, SPI, STR, TEM, THN, THA, VAL, VIC, VIS
 - Virtues: vin, def, jus, inn, mar, ven, red
 - Card types: ACTION, POLITICAL, ALLY, RETAINER, EQUIPMENT, MODIFIER, REACTION, COMBAT, REFLEX, POWER
 - Other: FLIGHT, MERGED, CONVICTION
 
- Note the "Vision" virtue uses the `[vsn]` trigram, to avoid confusion with the "Visceratika" discipline `[vis]`.
- Some versions of the VEKN CSV do use `[vis]` for both indistinctively.
+Note the "Vision" virtue uses the `[vsn]` trigram, to avoid confusion with the "Visceratika" discipline `[vis]`.
+Some versions of the VEKN CSV do use `[vis]` for both indistinctively.
 
 ### Discarded options
 
