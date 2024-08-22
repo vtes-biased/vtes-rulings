@@ -6,8 +6,8 @@ check-porcelain:
 	git diff --exit-code --quiet
 
 clean:
-	rm -rf "src.egg-info"
-	rm -rf dist
+	rm -rf ".ruff_cache"
+	rm -rf "rulings/vtes_rulings.egg-info"
 
 release-local: check-porcelain clean
 	check-manifestmak
@@ -20,15 +20,10 @@ release: release-local
 	twine upload dist/*
 
 test:
-	black --check src
-	ruff check src
+	black --check scripts
+	ruff check scripts
 	yamllint rulings
-	pytest -vvs
+	python scripts/check_rulings.py
 
 update:
-	pip install --upgrade --upgrade-strategy eager -e ".[dev]"
-	npm install --include=dev
-
-serve:
-	tsc
-	source .env && rulings-web
+	pip install --upgrade --upgrade-strategy eager -e "."

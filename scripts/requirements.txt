@@ -1,4 +1,0 @@
-krcg
-pyyaml
-yamllint
-unidecode

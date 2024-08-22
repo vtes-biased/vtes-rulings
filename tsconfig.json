@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    //"module": "commonjs",
-    "target": "ESNext",
-    "outDir": "src/vtesrulings/static/js/ts-built",
-    "rootDir": "src/vtesrulings/static/js"
-  },
-  //"include": ["src"]
-}

@@ -4,64 +4,32 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "vtes-rulings"
-dynamic = ["version"]
+version = "0.0"
 authors = [{ name = "VEKN" }]
-description = "Website for VTES cards rulings"
+description = "VTES cards rulings"
 keywords = ["vtes", "Vampire: The Eternal Struggle", "CCG"]
 readme = "README.md"
 requires-python = ">=3.11"
-classifiers = [
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
-    "License :: OSI Approved :: MIT License",
-    "Development Status :: 0 - Production/Stable",
-    "Natural Language :: English",
-    "Operating System :: OS Independent",
-    "Framework :: Flask",
-    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
-]
 dependencies = [
     "aiohttp>=3",
-    "flask[async]>=3",
-    "flask-babel>=4",
-    "unidecode>=1",
-    "Jinja2>=3",
     "krcg>=3.11",
-]
-
-[project.optional-dependencies]
-dev = [
     "black>=24",
-    "build>=1",
-    "check-manifest>=0",
-    "ipython>=8",
-    "pytest>=8",
-    "requests>=2",
     "ruff>=0",
-    "setuptools_scm>=8",
-    "twine>=5",
+    "ruyaml",
+    "yamlfix",
     "yamllint",
 ]
-
-[project.scripts]
-rulings-web = "vtesrulings:main"
 
 [project.urls]
 Repository = "https://github.com/vtes-biased/vtes-rulings"
 
 [tool.setuptools.packages.find]
-where = ["src"]
-include = ["vtesrulings*"]
+where = ["rulings"]
 
 [tool.setuptools.package-data]
 "*" = ["*.yaml"]
 
 [tool.setuptools_scm]
-
-[tool.pytest.ini_options]
-addopts = "-vvs --strict-markers -m 'not discord'"
-markers = ["discord: marks tests as running against Discord Test Server"]
 
 [tool.yamlfix]
 line_length = 120

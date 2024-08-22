@@ -65,63 +65,34 @@ We discarded some options after careful consideration:
 To run the scripts, use a [Python3 virtual environment](https://docs.python.org/3/library/venv.html):
 
 ```bash
-> python3 -m venv venv
-> source venv/bin/activate
+> python3 -m venv .venv
+> source .venv/bin/activate
+> pip install -e "."
 ```
 
-### Dump KRCG rulings
+### Rulings format and consistency
 
-The [dump_krcg_rulings.py](scripts/dump_krcg_rulings.py) script dumps the legacy rulings from the krcg Python library.
+Run
 
 ```bash
-> cd scripts
-> pip install -3 requirements.txt
-> ./dump_krcg_rulings.py
+> yamlfix rulings/*.yaml
 ```
 
-## Website
-
-### Develop / Run locally
-
-Use a [Python3 virtual environment](https://docs.python.org/3/library/venv.html):
+to format the `YAML` files cleanly, and
 
 ```bash
-> python3 -m venv venv
-> source venv/bin/activate
+> yamllint rulings
 ```
 
-```windows
-> python3 -m venv venv
-> . .\venv\Scripts\activate
-```
-
-Install all the requirements:
+to check the formatting. Additionally, you can use
 
 ```bash
-> make update
+> python scripts/check_rulings.py
 ```
 
-```windows
-pip install --upgrade --upgrade-strategy eager -e ".[dev]"
-npm install --include=dev
-```
+to check the rulings files consistency in more depth.
+If you have `make`, you can run all checks easily with
 
-Compile Typescript:
-
-Make sure `node_modules/.bin` is in your `PATH` and run:
-
-```
-tsc
-```
-
-You can use the `-w` option to enable typescript live compiler while developing:
-
-```
-tsc -w
-```
-
-Run the website:
-
-```
-rulings-web
+```bash
+> make test
 ```
