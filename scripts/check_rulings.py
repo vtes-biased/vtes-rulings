@@ -191,10 +191,11 @@ class VEKNParser(SmartParser):
     def handle_data(self, data: str) -> None:
         if "DATE" not in self.state:
             return
-        try:
-            self.date = arrow.get(data, "D MMM YYYY").date()
-        except arrow.ParserError:
-            pass
+        if not self.date:
+            try:
+                self.date = arrow.get(data, "D MMM YYYY").date()
+            except arrow.ParserError:
+                pass
 
 
 LEGAL_DOMAINS = {
