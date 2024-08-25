@@ -28,10 +28,10 @@
 #
 # #### List of symbols
 #
-# - Inferior disciplines: abo, ani, aus, cel, chi, dai, dem, dom, for, mal, mel, myt, nec, obe, obf, obt, pot, pre, pro,
-#   qui, san, ser, spi, str, tem, thn, tha, val, vic, vis
-# - Superior disciplines: ABO, ANI, AUS, CEL, CHI, DAI, DEM, DOM, FOR, MAL, MEL, MYT, NEC, OBE, OBF, OBT, POT, PRE, PRO,
-#   QUI, SAN, SER, SPI, STR, TEM, THN, THA, VAL, VIC, VIS
+# - Inferior disciplines: abo, ani, aus, cel, chi, dai, dem, dom, for, mal, mel, myt, nec, obe, obf, obl, obt, pot, pre,
+#   pro, qui, san, ser, spi, str, tem, thn, tha, val, vic, vis
+# - Superior disciplines: ABO, ANI, AUS, CEL, CHI, DAI, DEM, DOM, FOR, MAL, MEL, MYT, NEC, OBE, OBF, OBL, OBT, POT, PRE,
+#   PRO, QUI, SAN, SER, SPI, STR, TEM, THN, THA, VAL, VIC, VIS
 # - Virtues: vin, def, jus, inn, mar, ven, red
 # - Card types: ACTION, POLITICAL, ALLY, RETAINER, EQUIPMENT, MODIFIER, REACTION, COMBAT, REFLEX, POWER
 # - Other: FLIGHT, MERGED, CONVICTION
@@ -5279,8 +5279,8 @@ G00052|Modifier as announced:
   - Replace the action card (if any) before playing it. [ANK 20181208]
 G00054|Action creating vampire:
   - Is not a vampire in the ash heap (eg. {Possession} cannot be played on it). [LSJ 20020115]
-G00055|Continue Nothing Back:
-  - If moved to the uncontrolled region (eg. by {Banishment}), it continues to be a vampire and can be influenced. [RTR 19990712]
+  - If moved to the uncontrolled region (eg. by {Banishment}), it continues to be a vampire and can be influenced. [LSJ 20090625]
+    [RTR 19990712]
 G00056|Thought Call Order:
   - If burned and shuffled into the library, other effects that apply when it is burned still apply (eg. {Set's Curse} puts
     an ally into play). [ANK 20200813]
