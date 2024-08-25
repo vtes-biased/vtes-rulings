@@ -334,8 +334,7 @@
     modifier or reaction cards. [ANK 20190425]'
   - '[ANI][PRO] Replace the action card (if any) before playing it. [ANK 20181208]'
 100147|Becoming, The:
-  - If moved to the uncontrolled region (eg. by {Banishment}), it continues to be a vampire and can be influenced as a 1 capacity
-    vampire. [RTR 19990712] [LSJ 20090625]
+  - Is a capacity 1 vampire while uncontrolled (eg. {Banishment}). [LSJ 20090625]
 100153|Bestial Vengeance:
   - Damage is environmental. [RTR 19970630]
   - Bestial Vengeance's damage is inflicted whether or not the opposing minion's strike burns the retainer. [LSJ 20090616]
@@ -5279,8 +5278,8 @@ G00052|Modifier as announced:
   - Replace the action card (if any) before playing it. [ANK 20181208]
 G00054|Action creating vampire:
   - Is not a vampire in the ash heap (eg. {Possession} cannot be played on it). [LSJ 20020115]
-  - If moved to the uncontrolled region (eg. by {Banishment}), it continues to be a vampire and can be influenced. [LSJ 20090625]
-    [RTR 19990712]
+  - If moved to the uncontrolled region (eg. by {Banishment}), it continues to be a vampire and can be influenced.   [RTR
+    19990712]
 G00056|Thought Call Order:
   - If burned and shuffled into the library, other effects that apply when it is burned still apply (eg. {Set's Curse} puts
     an ally into play). [ANK 20200813]
