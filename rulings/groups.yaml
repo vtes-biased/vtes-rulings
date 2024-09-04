@@ -1,5 +1,5 @@
 ---
-G00001|Up Bed Two:
+G00001|Temporary control:
   100096|Art of Love, The: ''
   101150|Malkavian Dementia: ''
   101215|Mind Rape: ''
@@ -11,7 +11,7 @@ G00002|From ash heap to deck:
   101036|Kaymakli Nightmares: ''
   101200|Memory's Fading Glimpse: ''
   102153|Waste Management Operation: ''
-G00003|Unit Role Church:
+G00003|Circle:
   100017|Achilles' Heel: ''
   100257|Brother's Blood: ''
   100283|Camaraderie: ''
@@ -399,7 +399,7 @@ G00023|Can draw during action:
   100588|Dreams of the Sphinx: ''
   100656|Erciyes Fragments, The: ''
   100785|Fragment of the Book of Nod: ''
-G00024|Weapons with optional maneuver:
+G00024|Weapon with optional maneuver:
   100001|.44 Magnum: ''
   100032|AK-47: ''
   100107|Assault Rifle: ''
@@ -431,7 +431,7 @@ G00026|Immune to damage:
   102053|Tye Cooper: ''
   200249|Carolina Vález: ''
   200984|Mictlantecuhtli: ''
-G00027|Vampires with ability usable in torpor:
+G00027|Ability usable in torpor:
   200049|Alexandra: ''
   200091|Angela Preston: ''
   200486|Fustuk: ''
@@ -492,14 +492,14 @@ G00033|Prevent non-aggravated:
   101082|Leathery Hide: ''
   101817|Soak: ''
   102172|Well-Marked: ''
-G00034|Justicar title vote:
+G00034|Justicar title vote without Camarilla:
   100262|Brujah Justicar: ''
   101154|Malkavian Justicar: ''
   101299|Nosferatu Justicar: ''
   101990|Toreador Justicar: ''
   102021|Tremere Justicar: ''
   102111|Ventrue Justicar: ''
-G00035|Will Structure Operation:
+G00035|Provide multiple actions:
   100042|Amam the Devourer: ''
   100084|Archon: ''
   100436|Covenant of Blood: ''
@@ -550,7 +550,7 @@ G00038|Title providing capacity:
   '101467|Praxis Seizure: Paris': ''
   '101468|Praxis Seizure: Rome': ''
   '101470|Praxis Seizure: Stockholm': ''
-G00039|Sort Suggest Country:
+G00039|Unconditional referendum ability:
   200065|Amaravati: ''
   200136|Arishat: ''
   200417|Ellison Humboldt: ''
@@ -652,7 +652,7 @@ G00045|Weapon once per combat:
   100964|Improvised Flamethrower: ''
   101685|Sawed-Off Shotgun: ''
   101860|Starshell Grenade Launcher: ''
-G00046|Teacher Support Know:
+G00046|Weapon once per round:
   100379|Combat Shotgun: ''
   101168|Mark V: ''
   101191|Meat Hook: ''
@@ -727,7 +727,7 @@ G00054|Action creating vampire:
   '102035|Trophy: Progeny': ''
   102046|Tumnimos: ''
   102159|Waters of Duat: ''
-G00056|Thought Call Order:
+G00056|Shuffle when burned:
   100033|Akhenaten, The Sun Pharaoh: ''
   100042|Amam the Devourer: ''
   101047|Kherebutu: ''
@@ -735,7 +735,7 @@ G00056|Thought Call Order:
   101527|Qetu the Evil Doer: ''
   101665|Saatet-ta: ''
   102048|Tutu the Doubly Evil One: ''
-G00058|Wind Election Yet:
+G00058|Cancel:
   100419|Contingency Planning: ''
   100493|Dark Influences: ''
   100510|Death Seeker: ''

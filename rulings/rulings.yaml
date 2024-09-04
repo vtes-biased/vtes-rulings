@@ -5155,11 +5155,11 @@
 201648|Regina Blake:
   - She can use her ability to pay for equipments that are locations while in play (eg. {Palatial Estate}). [LSJ 20080107]
     [LSJ 20080114]
-G00001|Up Bed Two:
+G00001|Temporary control:
   - If one is ousted while having temporary control of a minion, the minion is removed from the game. [LSJ 20081105]
 G00002|From ash heap to deck:
   - Crypt cards cannot be put in the library and library cards cannot be put in the crypt. [LSJ 20041201]
-G00003|Unit Role Church:
+G00003|Circle:
   - A vampire with no circle designation is in his own unique circle. Vampires with the same name (eg. {The Embrace}, non-unique
     vampires) do not share a circle by default, each has his own circle of one by default. [LSJ 20020609]
 G00004|Hunt bonus:
@@ -5212,14 +5212,14 @@ G00022|Vote change:
   - Cannot be used during a referendum that is automatically passing. [PIB 20150105] [LSJ 19980107]
 G00023|Can draw during action:
   - Can be used during an action, when the controller has the opportunity to play an effect. [ANK 20200616]
-G00024|Weapons with optional maneuver:
+G00024|Weapon with optional maneuver:
   - The optional maneuver cannot be used if the strike cannot be used (eg. {Hidden Lurker}). [LSJ 20021028]
 G00025|Replace next turn:
   - 'Is replaced before unlocking cards: other unlock effects cannot be ordered before. [ANK 20200129] [LSJ 20091208] [RTR
     19951017]'
 G00026|Immune to damage:
   - Immune means damage is not inflicted, even if non-preventable or outside combat. [LSJ 20010627] [LSJ 20010629] [LSJ 20090304-1]
-G00027|Vampires with ability usable in torpor:
+G00027|Ability usable in torpor:
   - The ability can be used when in torpor. [LSJ 20011022] [LSJ 20100902-2]
 G00028|Cards holding cards:
   - If it leaves play, the card on it is burned. [LSJ 20021128]
@@ -5234,9 +5234,9 @@ G00032|Cost X:
 G00033|Prevent non-aggravated:
   - Cannot be used to prevent aggravated damage, even if the minion treats them as normal damage (eg. {Skin of Night}). [LSJ
     20040812-2] [PIB 20130327]
-G00034|Justicar title vote:
+G00034|Justicar title vote without Camarilla:
   - Only a Camarilla vampire can be chosen, it cannot be played without a valid target. [LSJ 20041026]
-G00035|Will Structure Operation:
+G00035|Provide multiple actions:
   - The two actions provided are not cross-restrictive. Each can be performed once during the same turn by the same minion.
     [LSJ 20100909]
 G00036|Directed at a card:
@@ -5246,7 +5246,7 @@ G00037|Require a Baron:
   - 'Counts as requiring an Anarch (for eg. {Powerbase: Los Angeles}). [LSJ 20080603] [LSJ 20050128]'
 G00038|Title providing capacity:
   - The additional capacity is lost if the title is lost. [TOM 19960210]
-G00039|Sort Suggest Country:
+G00039|Unconditional referendum ability:
   - The ability can be used while locked or in torpor, only once per referendum. [ANK 20220705] [LSJ 20100705] [LSJ 20011022]
     [LSJ 20100902-2] [ANK 20180307-2] [RBK wording-templates]
 G00040|Non-locking referendum ability:
@@ -5262,7 +5262,7 @@ G00044|Ghoul:
   - Ghouls are monsters, not mortal. [ANK 20200203-2] [LSJ 20060515]
 G00045|Weapon once per combat:
   - A second copy allows a second use in the same combat. [ANK 20230316]
-G00046|Teacher Support Know:
+G00046|Weapon once per round:
   - A second copy allows a second use in the same round. [ANK 20230316]
 G00047|Locquipments:
   - May be put on any minion if the controller changes. If the new controller has no minions, it is burned. [RTR 19960112]
@@ -5279,11 +5279,11 @@ G00052|Modifier as announced:
 G00054|Action creating vampire:
   - Is not a vampire in the ash heap (eg. {Possession} cannot target it). [LSJ 20020115]
   - If moved to the uncontrolled region (eg. by {Banishment}), it stays a vampire and can be influenced. [RTR 19990712]
-G00056|Thought Call Order:
+G00056|Shuffle when burned:
   - If burned and shuffled into the library, other effects that apply when it is burned still apply (eg. {Set's Curse} puts
     an ally into play). [ANK 20200813]
   - Is not shuffled into the library when it is discarded. [LSJ 20010710]
-G00058|Wind Election Yet:
+G00058|Cancel:
   - Cards are not replaced during the "as played" window. [LSJ 20061013]
   - If the canceled card had a "Do Not Replace Until" clause on it, that clause is canceled as well and the card is replaced
     normally. [LSJ 20011023]
