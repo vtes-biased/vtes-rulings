@@ -796,8 +796,6 @@
 100378|Coma:
   - Only effective at close range. [RBK resolve-strike] [LSJ 20000110]
   - The opponent is wounded (if they play {Undying Tenacity}, they go to torpor after combat). [LSJ 20090622-2]
-  - '[DEM] The "does not unlock as normal" effect is redundant with being infernal. If the minion is infernal, its controller
-    can still pay a pool to unlock them. [LSJ 20050114]'
 100381|Command of the Beast:
   - '[DOM] A limited bleed modifier can be played before or after. [LSJ 20100218] [RTR 20180511-2]'
 100388|Compel the Spirit:
@@ -1349,8 +1347,6 @@
   - '[myt] [REFLEX] If the canceled card had a "Do Not Replace Until" clause on it, that clause is canceled as well and the
     card is replaced normally. [LSJ 20011023]'
 100690|Faerie Wards:
-  - '[MYT] The "does not unlock as normal" effect is redundant with being infernal. If the minion is infernal, its controller
-    can still pay a pool to unlock them. [LSJ 20050114]'
   - '[myt], [MYT] Modifiers and reactions that can be used at the end/after an action can still be used afterwards. [LSJ 20041022]
     [RTR 20180719] [ANK 20221205]'
   - '[myt], [MYT] The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules. [RTR 20180719] [ANK
@@ -3236,8 +3232,6 @@
 101727|Serpent's Numbing Kiss:
   - '[PRE][SER] The additional effect takes place after the end of combat, including the blood burn. [RTR 19970630] [ANK 20180420-1]
     [ANK 20200705]'
-  - '[PRE][SER] The "does not unlock as normal" effect is redundant with being infernal. If the minion is infernal, its controller
-    can still pay a pool to unlock them. [LSJ 20050114]'
   - '[PRE][SER] If the combat continues or a new combat begins, no blood is burned, the card cannot be put on the opposing
     minion and he is not locked. [RTR 20020501] [ANK 20200705]'
   - '[PRE][SER] If the strike is dodged, the card is not put on the opposing minion and he is not locked. [RTR 20041202]'
