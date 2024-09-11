@@ -286,20 +286,15 @@
   - You only fetch one discipline card in total, not one in each of hand, library and ash heap. [LSJ 20090528-1]
 100131|Banishment:
   - Is not directed (eg. {Secure Haven} offers no protection). [ANK 20221019-3]
-  - A banished vampire can return to play when it again has blood >= capacity on it at the end of its Methuselah's influence
-    phase. [TOM 19951209]
-  - A banished vampire will remember all effects that had been applied to them, just as contested vampires do. This includes
-    gained or lost titles. [RTR 20000501]
-  - Cards on the banished vampire that change their capacity do not apply while uncontrolled, but additional blood for increased
-    capacity does not drain off when they get controlled as these effects resume. [PIB 20140122]
-  - All cards on the vampire come back unlocked. [LSJ 20060908]
-  - Continuous effects targeting the banished vampire (eg. {The Rack}) resume if and when the vampire comes back into play.
-    [TOM 19960210] [LSJ 20010809-2] [LSJ 20010809-3]
-  - "\"breaking any temporary control effects\" means the vampire is placed in his last permanent controller's uncontrolled\
-    \ region. [RTR 20000501]"
-  - If the vampire is permanently controlled by a Methuselah other than his owner, it goes to that Methuselah uncontrolled
-    region and is still controlled by them. It is removed from the game if that Methuselah is ousted and kept in game if his
-    owner is ousted. [ANK 20200408-2]
+  - A banished vampire can be re-influenced normally. Cards on the banished vampire that change their capacity do not apply
+    while uncontrolled, but additional blood for increased capacity does not drain off when they get controlled as these effects
+    resume. [PIB 20140122] [TOM 19951209]
+  - A banished vampire will remember all effects applied to them if they are influenced back. This includes gained or lost
+    titles and continuous effects (eg. {The Rack}). [LSJ 20010809-3] [LSJ 20010809-2] [TOM 19960210] [RTR 20000501]
+  - The vampire and all cards on them come back unlocked. This is not unlocking (ie. for {Anima Gathering}, {Vampiric Disease})
+    [LSJ 20060213] [LSJ 20060908]
+  - "The vampire is placed in his last permanent controller's uncontrolled region: it might not be the card owner. It is removed\
+    \ from the game when the controller is ousted. [ANK 20200408-2] [RTR 20000501]"
   - Cannot be played if there is no legal target. [ANK 20191228]
 100133|Banshee Ironwail:
   - Triggering the burn blood effect does not force the minion to strike with the weapon. [LSJ 19971215]
