@@ -2001,12 +2001,12 @@
   - Provides no additional strength to a Priscus for his ballots. [RTR 19970630]
 101016|Jack of Both Sides:
   - Is an "equip action" when equipping an equipment, an "employ action" when employing an retainer. [TOM 19960130] [LSJ 20091110]
-  - The target card is announced when announcing the action. It must be in hand before replacing the Jack. [RTR 19991001]
-    [LSJ 20101210]
-  - Requirements must be met but this does not count as an action "requiring" anything. [LSJ 20100303] [ANK 20180817]
-  - Does not prevent the acting vampire to play the equipment or retainer directly this turn if he unlocks (not the same action).
-    [ANK 20180817]
-  - The target must be announced but is not discarded if the action fails. [LSJ 20040519-2]
+  - The target card is announced when announcing the action, but is not discarded if the action fails. It must be in hand
+    before replacing the Jack. [LSJ 20040519-2] [RTR 19991001] [LSJ 20101210]
+  - Requirements apply but do not count as requirements for the action (eg. you cannot use {CrimethInc.} if the card requires
+    an Anarch). [LSJ 20100725] [LSJ 20100303] [ANK 20180817]
+  - Does not prevent the acting vampire from playing the equipment or retainer directly this turn if he unlocks (not the same
+    action). [ANK 20180817]
 101019|Jake Washington:
   - Is not an ally in the ash heap (eg. {Compel the Spirit} cannot be played on him). [LSJ 20071014] [LSJ 20020115] [LSJ 20030128]
   - His "starting life amount" is 1 ({Vagabond Mystic} cannot give hime more life). [LSJ 20030520-2]
@@ -2518,8 +2518,10 @@
   - Are neither mortal nor monster. [ANK 20200203-2] [LSJ 20060515]
 101255|Muricia's Call:
   - Requirements must be met to employ the retainer. [LSJ 20100303]
-  - Does not prevent the acting vampire to play the equipment directly this turn if he unlocks (not the same action). [ANK
-    20180817]
+  - Does not prevent the acting vampire from playing the retainer directly this turn if he unlocks (not the same action).
+    [ANK 20180817]
+  - The requirements and cost of the retainer do not count as requirements nor cost for the action (eg. you cannot use {CrimethInc.} if
+    the retainer requires an Anarch). [LSJ 20100725]
 101258|Mustajib:
   - The target vampire is not Black Hand if he is not Sabbat. [LSJ 20070322]
 101259|My Enemy's Enemy:
@@ -3602,12 +3604,13 @@
 101898|Summon Soul:
   - '[NEC] Is removed from play as part of the resolution, it cannot be retrieved by {Shroudsight}. [ANK 20170331]'
 101902|Summoning, The:
-  - '[PRE] Is not the same action as the recruitment of the ally. You could perform both actions in the same turn with the
-    same vampire. [PIB 20110915-2]'
+  - '[PRE] Does not prevent the acting vampire from playing the ally directly this turn if he unlocks (not the same action).
+    [ANK 20180817] [PIB 20110915-2]'
   - '[PRE] The requirements and cost of the ally do not count as requirements nor cost for the action (eg. you cannot use
-    {CrimethInc.} even if the ally requires an Anarch). [LSJ 20100725]'
-  - '[PRE] When used to recruit an ally, the ally cannot act this turn. [LSJ 20080630] [RTR 20180303]'
-  - "[PRE] The ally card is not \"played\" by the vampire (eg. {Louhi}'s ability cannot cancel it). [ANK 20201229]"
+    {CrimethInc.} if the ally requires an Anarch). [ANK 20180817] [LSJ 20100303] [LSJ 20100725]'
+  - '[PRE] The ally cannot act this turn. [LSJ 20080630] [RTR 20180303]'
+  - "[PRE] The ally card itself cannot be cancelled (eg. {Louhi (G4)}'s ability cannot cancel it). [ANK 20201229]"
+  - '[PRE] Is a recruit action. [TOM 19960130]'
 101904|Sunset Strip, Hollywood:
   - The "lock to reduce the cost" effect can be used when the action is announced or when the cost is paid. [LSJ 20090705]
   - 'Allows to play a card that could otherwise not be afforded: in this case it must be locked when the action is announced.
