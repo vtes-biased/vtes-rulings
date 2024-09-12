@@ -840,7 +840,7 @@ G00061|Cancel an action:
   102252|Meditative Grove: ''
   200086|Andrew Stuart: ''
   200860|Louhi: ''
-G00061|Cancel as a reaction:
+G00062|Cancel as a reaction:
   100534|Determine: ''
   100668|Evil Eye: '[MAL][REACTION]'
   101009|Iron Heart: ''
@@ -851,7 +851,7 @@ G00061|Cancel as a reaction:
   101754|Shape Mastery: '[PRO][REACTION]'
   101959|Terra Incognita: ''
   102016|Treat the Sick Mind: '[OBE][REACTION]'
-G00061|Cancel with no action:
+G00063|Cancel with no action:
   101428|Power of All: ''
   101633|Rewind Time: '[TEM]'
   102016|Treat the Sick Mind: '[OBE][REACTION]'
