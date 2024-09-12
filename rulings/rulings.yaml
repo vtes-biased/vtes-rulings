@@ -4203,6 +4203,8 @@
 102232|Platinum Protocol, The:
   - '[pro] The minion getting the corruption counter is chosen at action resolution (not declaration). [LSJ 20080608]'
   - '[pro] Putting a corruption counter on a minion does not give you an opportunity to steal it. [ANK 20200925] [ANK 20211105]'
+102233|Revelation of the Serpent:
+  - '[PRE][PRO] Cannot be used to unlock if the target is ousted by the bleed. [ANK 20220210]'
 102236|British Museum, London, The:
   - Checks the card type in hand, reduction and unlock apply to equipments that are locations when in play. [ANK 20220824]
   - The reduction applies to all valid equipments, even without using the unlock or not equipping from hand. [ANK 20221026]
