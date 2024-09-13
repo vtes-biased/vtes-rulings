@@ -5213,9 +5213,3 @@ G00062|Cancel as a reaction:
 G00063|Cancel with no action:
   - Can be used if there is no action, but that allowance does not extend to other reactions (eg. wake effects). [PIB 20120808]
   - Cannot be played during combat. [LSJ 20080618]
-G00064|Test group 2:
-  - Test group ruling 2 [RBK action-cards]
-G00065|Test group 1:
-  - Test add ruling [RBK 5-ending-the-game]
-G00066|Test group again:
-  - Test ruling again [RBK 4-detailed-turn-sequence]
