@@ -5196,7 +5196,7 @@ G00058|Cancel:
   - The canceled card has still been played. The same reaction or modifier cannot be played again by the same minion. Any
     card which text prohibits to play more than once cannot be played again (eg. {Immortal Grapple}). [ANK 20190104] [RBK
     cancel-a-card] [LSJ 19980212]
-  - If used to cancel a limited effect (bleed, additional strike), then the limit is not triggered and another limited effect
+  - If a limited effect is canceled (bleed, additional strike), then the limit is not triggered and another limited effect
     can be used. [LSJ 20030224]
 G00060|Reflex:
   - '[abo] [REFLEX] Any frenzy card that targets/selects/chooses/affects the minion when played, is considered being played
