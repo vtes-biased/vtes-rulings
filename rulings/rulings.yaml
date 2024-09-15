@@ -2771,7 +2771,7 @@
   - '[CEL] Cannot be played if there is already a combat queued. [RTR 20020501]'
   - '[CEL] Is played during combat, when combat is about to end. It must be played after the presses are handled and can be
     played if the round ends prematurely. [RTR 20030519], [PIB 20111202]'
-  - '[CEL] Replacements effects that are played when a combat "would end" (eg. Telepathic Tracking) cannot be play afterwards.
+  - '[CEL] Replacements effects that are played when a combat "would end" (eg. {Telepathic Tracking}) cannot be play afterwards.
     [ANK 20191219]'
   - '[CEL] Can be played before of after effects that are played "at the end of combat". [LSJ 20021113] [ANK 20191219] [ANK
     20180910-1]'
