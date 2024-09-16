@@ -831,6 +831,9 @@
 100416|Constant Revolution:
   - The cards are all discarded at once (no replace). One cannot discard more cards than they have in hand, the rest must
     be pool. [LSJ 20090618]
+100417|Consume the Dead:
+  - The burn option can only be used if you do not control a ready Nagaraja (no matter the presence or absence of a valid
+    target). [ANK 20240610]
 100418|Contagion:
   - '[DAI] Stealing the minion is part of the strike resolution, it does not happen if the strike is not selected and it can
     be dodged. [ANK 20200909] [LSJ 20040130]'
@@ -952,7 +955,9 @@
 100513|Deed the Heart's Desire:
   - '[QUI] An opponent can play a reaction to wake as the card is played, before its effects apply. [ANK 20231028]'
 100514|Deep Cover Agent:
-  - The burn option can be used if all your Seraph are in torpor. [LSJ 20091203]
+  - The burn option can be used if all your Seraphs are in torpor. [LSJ 20091203]
+  - The burn option can only be used if you do not control a ready Seraph (no matter the presence or absence of a valid target).
+    [ANK 20240610]
 100515|Deep Song:
   - '[ANI] The lock and enter combat effects are simultaneous. Both are lost if the action ends before that (eg. {Obedience}).
     [ANK 20200702]'
@@ -1787,6 +1792,7 @@
     round, but other pre-range effects can be played afterwards. [RTR 19970630] [ANK 20180720]
 100927|High Orun:
   - Applies to the current action card, if any. [LSJ 20091002]
+  - The burn option cannot be used if control a Laibon with three Orun, even if they are in torpor. [ANK 20240610]
 100935|Horrid Reality:
   - If no weapon can be found, the cost is still paid. [TOM 19951212-1]
   - If the weapon retrieved has requirements that the vampire does not meet, then it is burned. [RTR 20010710]
@@ -2964,6 +2970,8 @@
   - Unlocked Anarchs are chosen when choosing terms. They still count if they get locked during the vote. [LSJ 20081203]
 101634|Riddle Phantastique:
   - If put into play with no counters, it burns immediately. [LSJ 20070307]
+  - The burn option can only be used if you do not control a ready Kiasyd (no matter the presence or absence of a valid target).
+    [ANK 20240610]
 101635|Righteous Aura:
   - The card is burned before the vampire leaves the ready region (eg. it is burned if {Banishment} is used on the vampire
     it is on) [ANK 20180511-1]
