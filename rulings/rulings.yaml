@@ -978,6 +978,8 @@
   - It retrieves the political action card before it is burned (eg. if it was played from {The Erciyes Fragments}, it is still
     returned into its owner's hand). [LSJ 20050324]
   - The results are not tallied (eg. {Scorn of Adonis} or {Bribes} have no effect). [LSJ 20010209]
+  - If played on a referendum provided by a card in play (eg. {Anarch Revolt}), does not prevent referendums provided by another
+    copy of the same card in play. [LSJ 20020201]
 100527|Derange:
   - Cannot be moved to a Malkavian nor to a Malkavian antitribu vampire. [LSJ 19970224]
   - The clan is set when the card is played, it does not depend on the clan of the vampire that has the card on them. [LSJ
