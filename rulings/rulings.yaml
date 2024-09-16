@@ -1988,7 +1988,7 @@
   - Prevents up to 2 damage from gun strikes, it can be used to prevent less. [RTR 20041202]
   - Can be used to prevent the damage from two separated gun strikes doing one damage each. [LSJ 20081210]
 101041|Keystone Kine:
-  - '[obf] The ally is chosen at action resolution (not declaration). [LSJ 20080608]'
+  - '[obf] The ally is chosen at action resolution (not declaration). [ANK 20240706] [LSJ 20080608]'
   - '[obf] This counts as a Ⓓ action burning the ally (eg. for trophies). [LSJ 20080608]'
   - '[obf] The cost of an imbued is their starting life (cost to influence). Note this is not a cost to recruit (see {Kindred
     Segregation}). [ANK 20220528]'
@@ -2784,6 +2784,8 @@
 101511|Psychomachia:
   - The blocker is not locked. [LSJ 20030902-1]
   - '[pre]: The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules. [RTR 20020501] [LSJ 20070709]'
+101513|Public Trust:
+  - '[PRE] The target uncontrolled vampire is chosen upon declaration. [ANK 20240706]'
 101515|Pulled Fangs:
   - Counts up damage successfully inflicted during the round by the minions, retainers and environmental damage do not count.
     [TOM 19950304] [LSJ 20010812]
@@ -4138,6 +4140,9 @@
     (eg. clan or discipline). [ANK 20230621]
   - Can reduce the cost of an action card even if it is not played as an action (ie. a retainer played with {Pack Alpha}).
     [RTR 20070707] [ANK 20230824]
+102247|Break the Bonds:
+  - '[pre] There must be an uncontrolled vampire, and it is chosen upon declaration. [ANK 20240706]'
+  - '[obf] The prey need not control a minion, the target is chosen upon resolution. [ANK 20240706]'
 102254|Night Terrors:
   - Effectively gives a -X stealth modifier to the action, where X is the amount of stealth reduced by Night Terrors at the
     time it was played. [RTR 20030519]"
