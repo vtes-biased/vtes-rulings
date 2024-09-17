@@ -2713,6 +2713,13 @@
   - The action to steal the blood from your powerbase cannot be attempted by your own vampires. [RTR 19980928]
 '101442|Powerbase: Savannah':
   - Takes into account effects that change who is considered the acting vampire in combat (eg.{Deep Song}). [ANK 20230814]
+'101443|Powerbase: Tshwane':
+  - The cost reduction applies to minion cards, they are also played by the Methuselah. [ANK 20221102]
+  - Can be locked to reduce the cost at any point before resolution, from when the action is announced to just before the
+    cost is paid. [ANK 20230620]
+  - Can be used to allow to play cards which cost could not be paid otherwise. [ANK 20230621]
+  - Can reduce the cost of an action card even if it is not played as an action (ie. a retainer played with Pack Alpha). [ANK
+    20230824] [RTR 20070707]
 101475|Precognition:
   - '[AUS] The damage prevention can only be used if the block is successful, and only in the resulting (block-induced) combat.
     [LSJ 20010813]'
