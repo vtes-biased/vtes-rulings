@@ -5231,3 +5231,5 @@ G00062|Cancel as a reaction:
 G00063|Cancel with no action:
   - Can be used if there is no action, but that allowance does not extend to other reactions (eg. wake effects). [PIB 20120808]
   - Cannot be played during combat. [LSJ 20080618]
+G00064|Special Hunt Action:
+  - Is affected by increases to Hunt value. Blood comes from the target of the hunt. [RTR 20030519] [RTR 20180511]
