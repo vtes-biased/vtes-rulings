@@ -5188,3 +5188,6 @@ G00064|Special Hunt Action:
 G00065|Burn blood for effect:
   - The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {Adana de Sforza}). The card cannot
     be played if the minion cannot afford to burn the blood. [ANK 20210226]
+G00066|Changes controller of location:
+  - 'Changing the controller of a location has no other effect, unless specified by card text. Exception: A location "on"
+    another controlled card is moved onto an appropriate card controlled by the new controller of the location. [RTR 19980623]'
