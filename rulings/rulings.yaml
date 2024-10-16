@@ -4881,6 +4881,10 @@
   - The additional blood cost is not paid if the action does not succeed. [PIB 20121031]
 201393|Tupdog:
   - Card with disciplines choices (eg. [vis]/[tha]) are considered of the discipline they are played as. [PIB 20150924-2]
+201409|Undele:
+  - Undele's ability returns cards by name (i.e. if there is more than 1 copy of the same card in your ash heap, it will return
+    one of them even if another is removed during polling). It will return one of the two named cards if the other is removed
+    during polling. [LSJ 20100917]
 201413|Ur-Shulgi, The Shepherd:
   - Keeps his title and votes if he changes sects. [LSJ 20010714]
 201415|Uriah Winter:
