@@ -5164,8 +5164,7 @@ G00058|Cancel:
   - If the canceled card had a "do not replace until" clause (or alternate replacement like {Steely Tenacity}), that clause
     is canceled as well and the card is replaced normally. [LSJ 20080630] [LSJ 20011023]
   - The canceled card has still been played. The same reaction or modifier cannot be played again by the same minion. Any
-    card which text prohibits to play more than once cannot be played again (eg. {Immortal Grapple}). [ANK 20190104] [RBK
-    cancel-a-card] [LSJ 19980212]
+    card which text prohibits to play more than once cannot be played again. [ANK 20190104] [RBK cancel-a-card] [LSJ 19980212]
   - If a limited effect is canceled (bleed, additional strike), then the limit is not triggered and another limited effect
     can be used. [LSJ 20030224]
 G00060|Reflex:
