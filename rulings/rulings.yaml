@@ -2771,6 +2771,9 @@
   - '[pre]: The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules. [RTR 20020501] [LSJ 20070709]'
 101513|Public Trust:
   - '[PRE] The target uncontrolled vampire is chosen upon declaration. [ANK 20240706]'
+101514|Public Vilification:
+  - If the target has less than 3 blood when referendum passes, the Methuselah calling the referendum chooses how to distribute
+    within the bounds of the terms. [LSJ 20010606]
 101515|Pulled Fangs:
   - Counts up damage successfully inflicted during the round by the minions, retainers and environmental damage do not count.
     [TOM 19950304] [LSJ 20010812]
