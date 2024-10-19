@@ -1495,10 +1495,11 @@
 100785|Fragment of the Book of Nod:
   - Cannot be used when a card is played to draw a card that would cancel it "as it is played". [RTR 20040501]
 100788|Freak Drive:
-  - '[FOR] Is played after all combats are handled. Can be played from torpor. [RTR 19980623] [LSJ 20030103] [ANK 20180906]'
+  - '[FOR] Is played after all combats are handled. [RTR 19980623]'
   - '[for] Can be played if the action is unblocked even if it has no effect due to lack of a suitable target. [LSJ 20070411]'
   - '[for] Is played after the action resolves. (eg. if played after equipping {Learjet}, you draw an additional card). [PIB
     20150915]'
+  - Can be played from torpor [ANK 20180906]
 100790|Free States Rant:
   - If there are insuffient targets to which to allocate all of the points allowed, then the card cannot be played. [LSJ 20010810]
 100791|Frenzy:
@@ -4572,7 +4573,7 @@
   - Keeps her title and votes if she changes sects. [LSJ 20010714]
   - Her ability does not apply to the political action card played for a current action (it is in limbo). [LSJ 20070927]
 200890|Lutz von Hohenzollern:
-  - His ability is applied after the referendum effects are applied, including any oust and pool gained from it. [LSJ 20090115-2]
+  - His ability is applied after the referendum effects are applied, including any oust and pool gained from it. [ANK 20220808]
   - His ability is not applied if his controller is ousted by the referendum effects (reversal of previous rulings). [ANK
     20220808]
 200891|Lydia, Grand Praetor:
