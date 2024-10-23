@@ -554,6 +554,7 @@
     \ 20221208]"
 100264|Brute Force:
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
+  - The "make a melee strike" option can be used with {Bundi} while {Immortal Grapple} is in effect. [LSJ 20090114]
 100267|Bundi:
   - Preventing damage with it does not force the minion to strike with it. [LSJ 19971215]
   - Inherits all of the properties of the base hand strike. [TOM 19960225] [LSJ 20071020]
