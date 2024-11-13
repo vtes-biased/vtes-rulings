@@ -1881,8 +1881,11 @@
   - '[CEL] If canceled as it is played, its effect is not applied and only one card is drawn as a replacement. [LSJ 20021022]'
   - '[CEL] Once successfully played, if a subsequent combat card played by this minion gets canceled as it is played, an additional
     card is drawn for replacement. [ANK 20191211]'
-  - '[CEL] If multiple cards are replaced, replace and discard one by one. [ANK 20180925-1] [LSJ 20100506]'
+  - '[CEL] If multiple cards need replacement (eg. {Nicomedes}, {Blood Weakens}), replace and discard down to hand size one
+    by one. [ANK 20180925-1] [LSJ 20100506]'
   - '[CEL] Effects that make you discard (eg. {Nicomedes}) are subject to Infernal Pursuit. [ANK 20180925-1]'
+  - '[CEL] When played multiple times, each time you replace a card, draw all additional cards at once then discard down to
+    hand size. [TOM 19950921-2]'
 100981|Infernal Servitor:
   - The "can act the turn it is recruited" text does not let him act during an opponent turn if it was recruited then (eg.
     using {Madness Network}). [ANK 20200813-3]
