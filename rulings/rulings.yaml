@@ -5203,3 +5203,6 @@ G00065|Burn blood for effect:
 G00066|Changes controller of location:
   - 'Changing the controller of a location has no other effect, unless specified by card text. Exception: A location "on"
     another controlled card is moved onto an appropriate card controlled by the new controller of the location. [RTR 19980623]'
+G00067|Stealth from random event:
+  - Can be used when stealth is not yet needed. Any stealth that would be gained is not gained (as no stealth is needed).
+    [ANK 20231031]
