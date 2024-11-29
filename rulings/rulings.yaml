@@ -498,6 +498,9 @@
     It is still considered successful if not blocked. [RTR 19960221] [LSJ 20020926]
   - 'When used as a strike, it does not burn if combat ends before it resolves (eg. if the opponent uses a "strike: combat
     ends"). [LSJ 19981006] [LSJ 20001127-2] [LSJ 20010806-1]'
+100234|Bond:
+  - The gain life effect is reminder text, it does not add to the life normally gained by an Imbued leaving the incapacited
+    region. [LSJ 20091118]
 100235|Bond with the Mountain:
   - '[tha] The press can only be used during the current round. [TOM 19960521]'
   - '[vis] [VIS] The unlock effect takes place before the end of combat. [RTR 19970630]'
