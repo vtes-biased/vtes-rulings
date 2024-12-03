@@ -124,6 +124,7 @@
   - If the weapon retrieved costs blood, that cost is paid by the vampire chosen by the terms. [LSJ 20040518]
   - Requirements do not apply. If a discipline is required (eg. {Inscription}) and the Alastor vampire does not have it, the
     inferior version is used. [ANK 20200901] [LSJ 20040518-2]
+  - Finding equipment is optional. When no equipment is found, alastor is still attached. [LSJ 20050331-2]
 100040|Alpha Glint:
   - Cards that are played at the end of round/combat can still be played (eg. {Taste of Vitae}, {Disarm}). [RTR 20001020]
     [LSJ 20001024]
