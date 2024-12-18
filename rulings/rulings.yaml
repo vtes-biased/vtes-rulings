@@ -4238,7 +4238,6 @@
 200157|Baba Yaga, the Iron Hag:
   - Her ability applies when she recruits or employs a retainer or ally in a non-normal way (eg. {Pack Alpha}). [PIB 20150105-2]
 200167|Baron, The:
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
   - Cannot play cards requiring a Baron. [PIB 20151116]
 200168|Baron Dieudonne:
   - Cannot play cards requiring a Baron. [PIB 20151116]
@@ -4278,7 +4277,6 @@
 200245|Carlotta Giovanni:
   - The card being retrieved is announced when the action is declared. [LSJ 19970922]
 200247|Carmine Giovanni:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
   - Her additional life ability applies and her stealth ability can be used when she is in torpor. [LSJ 20011022] [LSJ 20100902-2]
 200249|Carolina Vález:
   - She is immune to unlock damage from allies like {Abyssal Hunter} and {Wendell Delburton} [ANK 20210228]
@@ -4291,8 +4289,6 @@
   - His ability can be used more than once each turn. [RTR 20180511]
 200314|Dancin' Dana:
   - '[MERGED] Is Anarch. If the base version was the one in play, it changes sect as it is merged. [ANK 20180524]'
-200316|Danielle Diron:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
 200319|Danylo:
   - Cannot fetch equipments that are locations while in play (locquipments). [LSJ 20080114] [ANK 20221210]
 200327|De Sade:
@@ -4308,8 +4304,6 @@
   - If a location costs X blood, it would take X vandal counters to burn it. [LSJ 20001118]
 200360|Don Caravelli:
   - His ability to give a press can only be used during the press step. [PIB 20150121]
-200363|Don Michael Antonio Giovanni:
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
 200364|Dónal O'Connor:
   - An empty blocking vampire may still block and will try and fail to burn a blood if the block is successful. [TOM 19951215-1]
   - The blocking vampire burns 1 blood immediately upon successfully blocking Donal, regardless of whether combat begins.
@@ -4356,8 +4350,6 @@
   - Her ability is undirect if you control the target, directed to the controller of the target otherwise. [PIB 20121210]
 200448|Eze, The Demon Prince:
   - His unlock ability is mandatory, it is applied even if the action unlocks him already. [LSJ 20051211]
-200450|Ezmerelda:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
 200452|Fabrizia Contreraz:
   - She only gets her votes if your prey controls a ready Camarilla vampire. [PIB 20150713]
 200459|Fatima al-Faqadi:
@@ -4398,8 +4390,6 @@
     wins out. [LSJ 20070320-1]
   - 'The "do not replace" effect effectively reduces the hand size: additional draws (eg. {Ashur Tablets}) require a discard.
     [ANK 20180318] [ANK 20231229]'
-200578|Hazimel:
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
 200582|Hector Trelane:
   - The opponent gains pool if he's burned because of a bloodhunt during combat (eg. after {Amaranth}). [LSJ 20091210]
 200585|Helen Fairchild:
@@ -4436,8 +4426,6 @@
     20011217]
 200625|Igo the Hungry:
   - His ability only applies to the default rulebook hunt action (eg. he gets {Loki's Gift} +1 stealth). [PIB 20150820-2]
-200630|Imanna:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
 200632|Inez "Nurse216" Villagrande:
   - Her "as she enters play" ability can be used before she enters contest if there is another one in play. [LSJ 20080526]
 200634|Ingrid Rossler:
@@ -4450,8 +4438,6 @@
   - If his ability is used to start a new combat, effects that end combat and then do something else after combat (include
     continuing the action as if unblocked) will be lost, except for unlock effects. [LSJ 19980109] [RTR 20020501]
   - His ability cannot be used to start a new combat if there is already a pending combat queued. [RTR 20020501]
-200668|Jamal:
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
 200670|Jan Pieterzoon:
   - '[MERGED] Is Independent. If the base version was the one in play, it changes sect as it is merged. If it had an anarch
     token, it is burned. [ANK 20180524]'
@@ -4478,7 +4464,6 @@
   - His ability can be used multiple times if one has multiple discard phase actions. [ANK 20190725]
 200742|Kahina the Sorceress:
   - Her ability inflicts a total of one damage to a minion with one or more corruption counters. [LSJ 20030820]
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
 200753|Karen Suadela:
   - She keeps her title if {Fall of the Camarilla} is played. She can be chosen for {Recalled to the Founder}, but does not
     burn. Allies still benefit from {The Unmasking} intercept when trying to block her. [LSJ 20081120-2]
@@ -4487,13 +4472,10 @@
 200758|Karsh:
   - '[MERGED] Imperator is a unique Camarilla title worth 3 votes, it is the same as the one granted by {Imperator}. [ANK
     20190407]'
-200759|Kashan:
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
 200763|Kateline Nadasdy:
   - Her ability applies to Priscus votes and ballots. [LSJ 19971001]
   - Her ability to force a vampire to abstain can cancel the votes and ballots of the vampire. [LSJ 20100311]
 200770|Kemintiri:
-  - '[MERGED] Keeps her title and votes if she changes sects. [LSJ 20010714]'
   - '[MERGED] When playing a card requiring Camarilla, Ventrue and/or Justicar, she is treated as a such for all effects of
     the card, and only them, including duration effects. She is not treated as such for effects the card has from being in
     play. [ANK 20190228] [LSJ 20101013]'
@@ -4504,8 +4486,6 @@
     \ If she plays it, she can vote). [LSJ 20050128-2] [ANK 20221011-4] [RTR 20070707]"
   - '[MERGED] Does not enable you to play master cards, it only enables her to play certain minion cards. [LSJ 20050721]'
   - '[MERGED] When considered a Justicar, she is also implicitly considered Camarilla. [LSJ 20050128]'
-200773|Kephamos, High Priest of Marrakech:
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
 200775|Kestrelle Hayes:
   - Gets +1 stealth on actions directed at multiple Methuselahs if one or more of the targets control no ready Sabbat vampire.
     [PIB 20150526] [RTR 20080808]
@@ -4520,11 +4500,8 @@
   - If other hunt actions are granted, she may choose from among those options. [LSJ 20060306]
   - She cannot steal more blood than the target has when using a special hunt ability. [LSJ 20100915]
   - Cannot choose to target a vampire when using another non-standard hunt action (eg. {Abactor}). [LSJ 20090606]
-200804|Lady Constancia:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
 200811|Lambach:
   - The provided action is an "equip action" [TOM 19960130]
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
   - '[MERGED] Is Independent. If the base version was the one in play, it changes sect as it is merged. If it had an anarch
     token, it is burned. [ANK 20180524]'
 200819|Lázár Dobrescu:
@@ -4575,16 +4552,11 @@
     itself does not (eg. {Jann Berger} pays 1 blood for a {Thrown Gate} played for the maneuver, but zero if he plays it when
     choosing his strike). [LSJ 20090529]
 200885|Luna Giovanni:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
   - Her ability does not apply to the political action card played for a current action (it is in limbo). [LSJ 20070927]
 200890|Lutz von Hohenzollern:
   - His ability is applied after the referendum effects are applied, including any oust and pool gained from it. [ANK 20220808]
   - His ability is not applied if his controller is ousted by the referendum effects (reversal of previous rulings). [ANK
     20220808]
-200891|Lydia, Grand Praetor:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
-200912|Marcia Felicia Licinia:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
 200913|Marciana Giovanni, Investigator:
   - She can lock to grant herself the ability to burn blood for intercept. She would need a wake or unlock effect to attempt
     to block. [LSJ 20100527]
@@ -4619,7 +4591,6 @@
 200945|Marty Lechtansi:
   - His ability to get a press can only be used during the press step. [PIB 20150121]
 200955|Mata Hari:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
   - When playing a card requiring a sect and/or a clan, she is treated as a such for all effects of the card, and only them,
     including duration effects. She is not treated as such for effects the card has from being in play. [RTR 20070707] [LSJ
     20070708] [ANK 20190228]
@@ -4638,8 +4609,6 @@
     for an equipment or {Piper} or {The Summoning} for an ally. [LSJ 20050119]
 200960|Matteus, Flesh Sculptor:
   - Can use his ability to get intercept multiple times during the same action. [ANK 20180307-2]
-200964|Maureen, Dark Priestess:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
 200966|Maxwell:
   - Cannot use his ability to become a Prince if he has changed sect and is no longer Camarilla. [LSJ 20030202]
 200976|Menele:
@@ -4659,7 +4628,6 @@
 200995|Miriam Benyona:
   - The cost to rescue from torpor is reduced even if paid by the rescuee. This is not optional. [LSJ 20020304-2]
 201006|Montano:
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
   - His ability to provide stealth can be used while locked or in torpor. [ANK 20220705] [LSJ 20100705]
 201017|Muaziz, Archon of Ulugh Beg:
   - Her ability does not apply to the {Blood Hunt} card. [TOM 19960604]
@@ -4675,12 +4643,7 @@
   - If the block succeeds and the blocking minion gets a corruption counter (eg. {Venenation}), Nakhthorheb is still blocked.
     [LSJ 20071021]
 201043|Neferu:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
   - Cannot use her ability to force an abstaining vampire to vote. [ANK 20190731]
-201044|Nehemiah:
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
-201045|Nehsi:
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
 201048|Nergal:
   - If he plays a action he can only pay for with his ability, he has to use his ability when the action resolves (even if
     a {Deflection} was played on a bleed). [LSJ 20091021-2]
@@ -4762,8 +4725,6 @@
     after combat). [LSJ 20090622-2]
 201148|Rachel Brandywine:
   - When using her ability, make all discards and redraws first, then shuffle the discards back into the library. [RTR 20030519]
-201160|Randall:
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
 201164|Raphael Catarari:
   - 'Unlocking is the first thing to do in the unlock phase: if he is odd, gaining one blood later in the unlock phase will
     not let him "unlock as normal" this turn. [LSJ 20060911]'
@@ -4771,8 +4732,6 @@
   - His ability is activated after he equips with the equipment. He cannot use his ability to move the {Eye of Hazimel}, or
     an equipment that is a location while in play. [LSJ 20020211] [LSJ 20060221]
   - You may move all or none the equipment he gets to just one minion, but you cannot split. [LSJ 20050217] [LSJ 20090622]
-201175|Regina Giovanni, The Right Hand of Augustus:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
 201181|Reverend Adams:
   - '[MERGED] Is Camarilla. If the base version was the one in play, it changes sect as it is merged. If it had an anarch
     token, it is burned. [ANK 20180524]'
@@ -4797,7 +4756,6 @@
 201245|Sascha Vykos, The Angel of Caine:
   - When using his ability to draw, discard afterwards. [ANK 20190707]
 201253|Scout Youngwood:
-  - Keeps her title and votes if she changes sects. [LSJ 20010714]
   - Card with multiple types (eg. Reaction/Action Modifier) are considered of the type they are played as, not both. [PIB
     20150924-2]
 201257|Sébastien Goulet:
