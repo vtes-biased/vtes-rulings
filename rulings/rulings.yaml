@@ -5212,3 +5212,5 @@ G00066|Changes controller of location:
 G00067|Stealth from random event:
   - Can be used when stealth is not yet needed. Any stealth that would be gained is not gained (as no stealth is needed).
     [ANK 20231031]
+G00068|Personal titles:
+  - Keeps their title and votes if they changes sects. [LSJ 20010714]
