@@ -4894,8 +4894,6 @@
   - Undele's ability returns cards by name (i.e. if there is more than 1 copy of the same card in your ash heap, it will return
     one of them even if another is removed during polling). It will return one of the two named cards if the other is removed
     during polling. [LSJ 20100917]
-201413|Ur-Shulgi, The Shepherd:
-  - Keeps his title and votes if he changes sects. [LSJ 20010714]
 201415|Uriah Winter:
   - Can still defect if in torpor, and will remain in torpor if he does so. [RTR 19941109]
 201422|Valerius Maior, Hell's Fool:
