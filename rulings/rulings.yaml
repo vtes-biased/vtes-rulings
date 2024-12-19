@@ -619,8 +619,6 @@
   - The effect to burn a hostage counter can be done only once per turn. [ANK 20200729] [RBK wording-templates]
 100307|Catatonic Fear:
   - '[PRE] Damage is done by the vampire (not environmental). [RTR 19970630] [LSJ 19990723]'
-  - '[PRE] The damage is inflicted after the end of combat. [RTR 19970630]'
-  - '[PRE] If the combat continues or a new combat begins, no damage is done. [RTR 20020501]'
   - '[PRE] If the strike is dodged, no damage is done. [LSJ 19980526] [RTR 20041202] [LSJ 20070124]'
   - "[PRE] Is a damage dealing strike and can be modified by effects like {Target Vitals} or {Dam the Heart's River}.  [ANK\
     \ 20170111] [LSJ 20071011]"
@@ -1490,8 +1488,6 @@
   - '[PRO] "continue as if unblocked" moves the action card from the ash heap (where it went when the action was blocked)
     to limbo (where it should be if the action is not blocked). If the action card is not in the ash heap, then the action
     cannot be continued. [LSJ 20070808-1]'
-  - '[PRO] If the combat continues or a new combat begins, the "After combat ends" effect cannot be used. [LSJ 19980109] [RTR
-    20020501] [LSJ 20031123]'
 100778|Foul Blood:
   - A hunt is not successful if no blood is gained, even if the hunt action is still successful. [LSJ 20050720-2]
 100784|Fractured Armament:
@@ -5154,3 +5150,8 @@ G00069|Impersonating a title for political action:
 G00070|Impersonating title for non-existent sect:
   - Can meet a sect-specific title (e.g. Justicar) requirement even if the sect does not exist anymore (eg. {Fall of the Camarilla}).
     [ANK 20230503] [LSJ 20050124]
+G00071|After Combat Ends:
+  - The effect happens after combat is concluded. Any blood lost is not lost during combat. (e.g. {Anathema}, {Taste of Vitae})
+    [LSJ 20031123]
+  - "If the combat continues or a new combat begins, the after combat effect does not happen/is not usable. (eg. {Psyche!},\
+    \ {Telepathic Tracking})\n(Partial reversal of RTR 20010711) [RTR 20020501] [LSJ 19980109]"
