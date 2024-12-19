@@ -4871,8 +4871,6 @@
     title (eg. Prince) only once, but the controller chooses how it is met (any city, even a made-up one). He must choose
     a title when playing a card required a "titled" vampire (eg. {Rubicon}), but can only choose each title once. He can choose
     the non-descript "X votes" title, but only once. [LSJ 20050128] [PIB 20150306] [PIB 20150307] [ANK 20211019]'
-  - When meeting a title requirement for a political action, he does not get the title's votes for the subsequent referendum.
-    [ANK 20231221]
   - He can meet a title requirement even if the sect does not exist anymore (eg. {Fall of the Camarilla}). [LSJ 20050124]
     [ANK 20230503]
   - If a contract chooses him when played (eg. {Dirty Contract}), he is "chosen for the contract" for other cards (eg. {Open
@@ -4896,8 +4894,6 @@
   - When meeting a title requirement, he is considered as a vampire of the underlying sect. [LSJ 20050128]
   - When meeting a requirement, the controller can choose how he meets it (eg. he can play {Anarch Secession} as a Prince
     of any city, even a made-up one). [PIB 20150306] [PIB 20150307]
-  - When meeting a title requirement for a political action, he does not get the title's votes for the subsequent referendum.
-    [ANK 20231221]
   - He can meet a title requirement even if the sect does not exist anymore (eg. {Fall of the Camarilla}). [LSJ 20050124]
     [ANK 20230503]
   - He can use a card requiring a sect or titled to be played (eg. use {Abbot} intercept bonus as a Sabbat vampire, perform
@@ -5148,3 +5144,6 @@ G00067|Stealth from random event:
     [ANK 20231031]
 G00068|Personal titles:
   - Keeps their title and votes if they changes sects. [LSJ 20010714]
+G00069|Impersonating a title for political action:
+  - When meeting a title requirement for a political action, the vampire does not get the title's votes for the subsequent
+    referendum. [ANK 20231221]
