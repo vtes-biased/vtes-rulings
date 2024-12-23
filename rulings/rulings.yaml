@@ -4357,8 +4357,6 @@
   - She only gets her votes if your prey controls a ready Camarilla vampire. [PIB 20150713]
 200459|Fatima al-Faqadi:
   - Can only use her ability when she is in combat herself. [ANK 20221021]
-200485|Frondator:
-  - The cost to rescue from torpor is reduced even if paid by the rescuee. This is not optional. [LSJ 20020304-2] [PIB 20110918]
 200500|General Perfidio Díos:
   - Can use his ability multiple times during the same action. [LSJ 20030605]
 200501|Genevieve:
@@ -4614,8 +4612,6 @@
   - His ability is only usable once each referendum, even if he unlocks somehow during the referendum. [LSJ 20041207]
 200983|Michaela:
   - Can only use her ability when she is in combat herself. [ANK 20221021]
-200995|Miriam Benyona:
-  - The cost to rescue from torpor is reduced even if paid by the rescuee. This is not optional. [LSJ 20020304-2]
 201006|Montano:
   - His ability to provide stealth can be used while locked or in torpor. [ANK 20220705] [LSJ 20100705]
 201017|Muaziz, Archon of Ulugh Beg:
@@ -5124,3 +5120,5 @@ G00074|Adding costs to a strike:
     {Dam the Heart's River}), you may choose not to strike. [LSJ 20071017]
   - If an effect granting a strike (e.g. {.44 Magnum}) is played/used after another effect that adds a cost to strike, you
     must pay the additional cost to use that first effect. [LSJ 20090529]
+G00075|Discounts for rescue:
+  - The discount applies to the action, regardless of who pays. [PIB 20110918] [LSJ 20020304-2]
