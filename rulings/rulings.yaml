@@ -4357,11 +4357,6 @@
   - Can only use her ability when she is in combat herself. [ANK 20221021]
 200485|Frondator:
   - The cost to rescue from torpor is reduced even if paid by the rescuee. This is not optional. [LSJ 20020304-2] [PIB 20110918]
-200498|Gem Ghastly:
-  - When playing a card requiring a Ventrue, she is treated as a such for all effects of the card, and only them, including
-    duration effects. She is not treated as such for effects the card has from being in play. [ANK 20190228]
-  - Her ability does not let her fulfill card requirements if they are not played normally, like when using {Piper} to recruit
-    an ally. [LSJ 20050119]
 200500|General Perfidio Díos:
   - Can use his ability multiple times during the same action. [LSJ 20030605]
 200501|Genevieve:
@@ -4481,9 +4476,6 @@
   - Her ability applies to Priscus votes and ballots. [LSJ 19971001]
   - Her ability to force a vampire to abstain can cancel the votes and ballots of the vampire. [LSJ 20100311]
 200770|Kemintiri:
-  - '[MERGED] When playing a card requiring Camarilla, Ventrue and/or Justicar, she is treated as a such for all effects of
-    the card, and only them, including duration effects. She is not treated as such for effects the card has from being in
-    play. [ANK 20190228] [LSJ 20101013]'
   - "[MERGED] If she plays a political action requiring a Justicar, she is not seen as such by other cards or effects during\
     \ the referendum (eg. if another vampire plays {Closed Session} and she's not Camarilla she will not be able to vote.\
     \ If she plays it, she can vote). [LSJ 20050128-2] [ANK 20221011-4] [RTR 20070707]"
@@ -4519,13 +4511,8 @@
   - 'When a Methuselah decides to get no transfer, he can still use other effects that put blood on his uncontrolled vampires
     (eg. [DOM] {Govern the Unaligned}, {Powerbase: Montreal}). [LSJ 20100527]'
 200840|Lisandro Giovanni:
-  - When playing a card requiring a Ventrue antitribu or a Samedi, he is treated as a such for all effects of the card, and
-    only them, including duration effects. He is not treated as such for effects the card has from being in play (eg. {Houngan}
-    can be played on him, but he does not get blood and cannot lock to get blood). [ANK 20190228] [PIB 20141006]
   - You can still use the burn options of cards with a requirement he could meet when you play them, but does not meet while
     in play. [LSJ 20050225]
-  - His ability does not let him fulfill card requirements if they are not played normally, like when using {Piper} to recruit
-    an ally. [LSJ 20050119]
   - Cannot be treated as a Ventrue antitribu nor a Samedi while uncontrolled or in the crypt (eg. {Coroner's Contact} cannot
     fetch him). [PIB 20150530]
 200844|Little Tailor of Prague:
@@ -4595,9 +4582,6 @@
 200945|Marty Lechtansi:
   - His ability to get a press can only be used during the press step. [PIB 20150121]
 200955|Mata Hari:
-  - When playing a card requiring a sect and/or a clan, she is treated as a such for all effects of the card, and only them,
-    including duration effects. She is not treated as such for effects the card has from being in play. [RTR 20070707] [LSJ
-    20070708] [ANK 20190228]
   - If a contract chooses her when played (eg. {Dirty Contract}), she is "chosen for the contract" for other cards (eg. {Open
     Dossier}). If the contract choice is an effect of the card in play (eg. {Clandestine Contract}), she's not chosen. [LSJ
     20070708] [LSJ 20071109]
@@ -4609,8 +4593,6 @@
     [ANK 20180723]
   - You can still use the burn options of cards with a requirement she could meet when you play them, but does not meet while
     in play. [LSJ 20050225]
-  - Her ability do not let her fulfill card requirements if they are not played normally, like when using {Concealed Weapon}
-    for an equipment or {Piper} or {The Summoning} for an ally. [LSJ 20050119]
 200960|Matteus, Flesh Sculptor:
   - Can use his ability to get intercept multiple times during the same action. [ANK 20180307-2]
 200966|Maxwell:
@@ -4690,20 +4672,11 @@
 201112|Petaniqua:
   - Additional damage done before range by her ability is environmental. [RTR 19970630]
 201113|Petaniqua:
-  - When recruit a werewolf ally, she is treated as a meeting the requirements for all effects of the card, and only them,
-    including duration effects. She is not treated as meeting the requirements for effects the card has from being in play.
-    [ANK 20190228]
   - You can still use the burn options of cards with a requirement she could meet when you play them, but does not meet while
     in play. [LSJ 20050225]
-  - Her ability do not let her fulfill card requirements if they are not played normally, like when using {Piper}. [LSJ 20050119]
   - Her ability to get a press can only be used during the press step. [PIB 20150121]
   - '[MERGED] Is Independent. If the base version was the one in play, it changes sect as it is merged. If it had an anarch
     token, it is burned. [ANK 20180524]'
-201121|Philip van Vermeer IV:
-  - When playing a card requiring a Ventrue, he is treated as a such for all effects of the card, and only them, including
-    duration effects. He is not treated as such for effects the card has from being in play. [ANK 20190228]
-  - His ability do not let him fulfill card requirements if they are not played normally, like when using {Piper} to recruit
-    an ally. [LSJ 20050119]
 201123|Phillipe Rigaud:
   - 'If he cannot commit diablerie, then his card text does not force him to: he is not "stuck", he is free to take any other
     legal action. [LSJ 20050514]'
@@ -4806,11 +4779,6 @@
 201345|Tariq, The Silent:
   - His capacity is reduced immediately when he get controlled, before it can be merged with the base version. [ANK 20190522]
   - '[MERGED] When he merges (in whatever way), he becomes independent and any Anarch token is burned. [ANK 20180523]'
-201348|Tatiana Stepanova, Alastor:
-  - When playing a card requiring Brujah or Gangrel, she is treated as a such for all effects of the card, and only them,
-    including duration effects. She is not treated as such for effects the card has from being in play. [ANK 20190228]
-  - Her ability do not let her fulfill card requirements if they are not played normally, like when using {Piper} or {The
-    Summoning} to recruit an ally. [LSJ 20050119]
 201352|Tegyrius, Vizier:
   - Allegiance counters continue to function even if Tegyrius leaves play. [LSJ 20010616] [LSJ 20030522-1]
   - 'The allegiance counter is a continuous effect: an Assamite with it stays Camarilla even if he changes his underlying
@@ -4857,9 +4825,6 @@
   - His ability to get a press can only be used during the press step. [PIB 20150121]
 201436|Verbruch:
   - His "as he enters play" ability can be used before he enters contest if there is another one in play. [LSJ 20080526]
-201439|Victor Gerard:
-  - When playing a card requiring a Camarilla vampire or a Prince, he is treated as a such for all effects of the card, and
-    only them, including duration effects. He is not treated as such for effects the card has from being in play. [ANK 20190228]
 201440|Victor Pelletier:
   - His "as he enters play" ability can be used before he enters contest (not after) if there is another one in play. [LSJ
     20080526] [LSJ 20100902]
@@ -4891,8 +4856,6 @@
     effects. (eg. he can {Archon} himself and use its effect later) [ANK 20201028] [ANK 20190228] [LSJ 20101013]
   - He can use {No Secrets From the Magaji} to attempt to block a vampire acting with no stealth. REVERSAL from previous rulings.
     [ANK 20210903]
-  - His ability do not let him fulfill card requirements if they are not played normally, like when using {Piper} to recruit
-    an ally. [LSJ 20050119]
   - When meeting a title requirement, he is considered as a vampire of the underlying sect. [LSJ 20050128]
   - When meeting a requirement, the controller can choose how he meets it (eg. he can play {Anarch Secession} as a Prince
     of any city, even a made-up one). [PIB 20150306] [PIB 20150307]
@@ -4924,12 +4887,8 @@
   - Requirements need to be met. [LSJ 20080702-3]
   - Can only use her ability when she is in combat herself. [ANK 20221021]
 201471|Winterlich:
-  - When recruit a changeling ally, he is treated as a meeting the requirements for all effects of the card, and only them,
-    including duration effects. He is not treated as meeting the requirements for effects the card has from being in play.
-    [ANK 20190228]
   - You can still use the burn options of cards with a requirement he could meet when you play them, but does not meet while
     in play. [LSJ 20050225]
-  - His ability do not let him fulfill card requirements if they are not played normally, like when using {Piper}. [LSJ 20050119]
 201478|Xaviar:
   - '[MERGED] Is Camarilla. If the base version was the one in play, it changes sect as it is merged. If it had an anarch
     token, it is burned. [ANK 20180524]'
@@ -4965,16 +4924,11 @@
     20030214-2]
 201633|Maila:
   - Her ability can only be used once during each of your turns. [RBK wording-templates] [ANK 20230122]
-201634|Abraham Mellon:
-  - His ability does not let him fulfill card requirements if they are not played normally, like when using {Piper} to recruit
-    an ally. [LSJ 20050119]
 201641|Guardian, The:
   - When using his ability, the opponent is the acting minion and play their combat effects first. [ANK 20221102]
 201643|Lady Scarlett Churchill:
   - Can be chosen as a target for {Toreador Grand Ball} to be locked, but unlocks normally in subsequent unlock phases. [ANK
     20220816-2]
-  - Her ability does not let her fulfill card requirements if they are not played normally, like when using {Piper} to recruit
-    an ally. [LSJ 20050119]
 201648|Regina Blake:
   - She can use her ability to pay for equipments that are locations while in play (eg. {Palatial Estate}). [LSJ 20080107]
     [LSJ 20080114]
@@ -5155,3 +5109,10 @@ G00071|After Combat Ends:
     [LSJ 20031123]
   - "If the combat continues or a new combat begins, the after combat effect does not happen/is not usable. (eg. {Psyche!},\
     \ {Telepathic Tracking})\n(Partial reversal of RTR 20010711) [RTR 20020501] [LSJ 19980109]"
+G00072|Impersonating requirements for cards not played normally:
+  - The ability ability cannot be used to fulfill card requirements if they are not played normally, like when using {Concealed
+    Weapon} for an equipment or {Piper} or {The Summoning} for an ally. [LSJ 20050119]
+G00073|Impersonating requirements to play cards:
+  - When meeting a requirement to play a card, the vampire is treated as such for all the effects of the card, and only them,
+    including duration effects. The vampire is not treated as meeting the requirements for effects the card has from being
+    in play. [LSJ 20101013] [ANK 20190228] [ANK 20200703-3] [LSJ 20070708] [RTR 20070707]
