@@ -1499,8 +1499,6 @@
 100788|Freak Drive:
   - '[FOR] Is played after all combats are handled. Can be played from torpor [LSJ 20030103] [ANK 20180906] [RTR 19980623]'
   - '[for] Can be played if the action is unblocked even if it has no effect due to lack of a suitable target. [LSJ 20070411]'
-  - '[for] Is played after the action resolves. (eg. if played after equipping {Learjet}, you draw an additional card). [PIB
-    20150915]'
 100790|Free States Rant:
   - If there are insuffient targets to which to allocate all of the points allowed, then the card cannot be played. [LSJ 20010810]
 100791|Frenzy:
@@ -4945,7 +4943,7 @@ G00005|Prevent normal unlock:
     still pay a pool to unlock him. [LSJ 20050114]
 G00006|Modifier after resolution:
   - Is played after resolution, but still during the action. Action modifiers and effects that can be played "after resolution"
-    can be played before or after it. [LSJ 19981028] [ANK 20190425]
+    can be played before or after it. [PIB 20150915] [LSJ 19981028] [ANK 20190425]
 G00007|Modifier after combat:
   - Is played after all combats are handled. Can be played from torpor. [LSJ 20030103] [ANK 20181219] [ANK 20180906]
 G00008|Permanent not replaced:
