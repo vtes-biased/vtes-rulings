@@ -422,6 +422,9 @@
   - No other modifier can be played afterwards, combat begins immediately. [LSJ 20010806-2]
   - 'The vampire playing it is not considered having burned a minion (eg. for {Taking the Skin: Minion}), but the opponent
     is. [LSJ 20090922] [ANK 20220916]'
+100198|Blood Cult Awareness Network:
+  - Affects actions that add counters to vampires in the uncontroled region conditionally (eg {Undue Influence}, {Feast of
+    the Soul's Secrets}) [LSJ 20060414] [ANK 20240118-2]
 100199|Blood Doll:
   - Can be used when the vampire is in torpor. [PIB 20150522]
 100201|Blood Fury:
@@ -2833,6 +2836,8 @@
 101554|Raw Recruit:
   - The created vampire is not unique. [LSJ 20100221]
   - Blood, equipments and other cards on the initial target are burned. [LSJ 20100302-2]
+  - The action "to remove that vampire from the game" is an action to put a vampire into play, a sterile vampire cannot do
+    it (eg. {Blood Cult Awareness Network} gives it -1 stealth). [LSJ 20011212] [LSJ 20060815]
 101555|Rayzeel's Song:
   - '[ani] The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {Dragos}). The card cannot
     be played if the minion cannot afford to burn the blood. [ANK 20210226]'
@@ -3807,7 +3812,6 @@
   - He can burn 1 life to give a minion you control a press the turn he is recruited. [ANK 20180517]
 102067|Undue Influence:
   - Cannot be played with no vampire in the uncontrolled region. [LSJ 20060623]
-  - All variants are affected by {Blood Cult Awareness Network}. [LSJ 20060414]
 102068|Undying Tenacity:
   - '[for] The vampire can play cards which are not usable by vampires going to torpor. [LSJ 19970303]'
 102069|Undying Thirst:
@@ -4113,6 +4117,10 @@
 102247|Break the Bonds:
   - '[pre] There must be an uncontrolled vampire, and it is chosen upon declaration. [ANK 20240706]'
   - '[obf] The prey need not control a minion, the target is chosen upon resolution. [ANK 20240706]'
+102248|Feast of the Soul's Secrets:
+  - '[DOM] The target vampire is chosen when the card is played. [ANK 20240724-2]'
+  - '[DOM] Is affected by {Blood Cult Awareness Network}, when choosing a younger vampire in your uncontrolled region. [LSJ
+    20060414] [ANK 20240118-2]'
 102254|Night Terrors:
   - Effectively gives a -X stealth modifier to the action, where X is the amount of stealth reduced by Night Terrors at the
     time it was played. [RTR 20030519]"
@@ -5119,3 +5127,5 @@ G00074|Adding costs to a strike:
     must pay the additional cost to use that first effect. [LSJ 20090529]
 G00075|Discounts for rescue:
   - The discount applies to the action, regardless of who pays. [PIB 20110918] [LSJ 20020304-2]
+G00076|Is affected by BCAN:
+  - Is affected by {Blood Cult Awareness Network} [ANK 20240118-2] [LSJ 20060414]
