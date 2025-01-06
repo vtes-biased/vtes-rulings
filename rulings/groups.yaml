@@ -994,11 +994,11 @@ G00070|Impersonating title for non-existent sect:
   201456|Vlad Tepes: ''
   201621|Karl Schrekt: ''
 G00071|After Combat Ends:
-  100307|Catatonic Fear: ''
-  100771|Form of Mist: ''
-  101128|Loving Agony: ''
-  101334|Oubliette: ''
-  101991|Toreador's Bane: ''
+  100307|Catatonic Fear: '[PRE]'
+  100771|Form of Mist: '[PRO]'
+  101128|Loving Agony: '[val]/[VAL]'
+  101334|Oubliette: '[OBT]'
+  101991|Toreador's Bane: '[mel]'
 G00072|Impersonating requirements for cards not played normally:
   200094|Angelo: ''
   200498|Gem Ghastly: ''
