@@ -5078,8 +5078,8 @@ G00060|Reflex:
     on the minion. [LSJ 20051113]'
 G00061|Cancel an action:
   - If an action is canceled, it is not performed and the minion is free to attempt the same action again. [RBK cancel-a-card]
-  - Can only cancel minion cards played from the hand in the normal fashion (eg. not weapons played via {Disguised Weapon} or
-    allies via {Piper}). [RTR 20001020]
+  - Can only cancel minion cards played from the hand in the normal fashion (eg. can't cancel allies played via {Piper}).
+    [RTR 20001020]
   - Can be used to cancel all action cards, including employ retainer, recruit ally and political action. [ANK 20200813-2]
 G00062|Cancel as a reaction:
   - 'Cancelation must be immediate: a wake can be used in the "as played" window, but a reaction to "unlock and attempt to
