@@ -141,8 +141,6 @@
   - '"continue as if unblocked" moves the action card from the ash heap (where it went when the action was blocked) to limbo
     (where it should be if the action is not blocked). If the action card is not in the ash heap, then the action cannot be
     continued. [LSJ 20070808-1]'
-100046|Ambush:
-  - If the target unlocks and the action is not blocked, it is successful but has no effect. [LSJ 20070411] [LSJ 20090514]
 100047|Amria:
   - The press can only be used during the current round. [TOM 19960521]
 100048|Amulet of Temporal Perception:
@@ -227,9 +225,6 @@
 100097|Art of Memory, The:
   - The effect is applied after resolving the action, including after all combats. [LSJ 20031112]
   - Can be used to retrieve the action card itself (if any). [LSJ 20041115]
-100100|Art's Traumatic Essence:
-  - The action has no effect if the target is not unlocked anymore when it resolves. It is still considered successful and
-    must be paid. [ANK 20181121]
 100103|Asanbonsam Ghoul:
   - If another effect also sets the range, the first to resolve has priority (eg. {Squirrel Balance} resolves before, {Neutral
     Guard} resolves after). [PIB 20120214]
@@ -692,7 +687,6 @@
 100328|Channeling the Beast:
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
 100330|Charge of the Buffalo:
-  - '[for] If the target unlocks and the action is not blocked, it is successful but has no effect. [LSJ 20070411] [LSJ 20090514]'
   - No other effect can be used to reset the range. Skip the determine range step on that round, but other pre-range effects
     can be played afterwards. [RTR 19970630] [ANK 20180720]
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
@@ -1396,8 +1390,6 @@
   - If the opponent unlocks before combat ends (eg. {Majesty}), the Grenade locks them again after it ends. [LSJ 20040601]
   - 'Still burns when used if the opponent uses a "strike: combat ends" too. It does not if combat ends before strike resolution
     (eg. {Rötschreck}). [LSJ 20001127-2] [LSJ 20010806-1]'
-100747|Fleetness:
-  - '[CEL] If the target unlocks and the action is not blocked, it is successful but has no effect. [LSJ 20070411] [LSJ 20090514]'
 100749|Flesh of Marble:
   - '[pro] Cannot be used to prevent aggravated damage, even if the minion treats them as normal damage (eg. {Skin of Night}).
     [LSJ 20040812-2] [PIB 20130327]'
@@ -1500,7 +1492,8 @@
 100785|Fragment of the Book of Nod:
   - Cannot be used when a card is played to draw a card that would cancel it "as it is played". [RTR 20040501]
 100788|Freak Drive:
-  - '[for] Can be played if the action is unblocked even if it has no effect due to lack of a suitable target. [LSJ 20070411]'
+  - '[FOR] Cannot be played if the action "failed" unless there was a successful block attempt. [RTR 20180719]'
+  - '[FOR] Cannot be played if the action was "ended." [RTR 20180719]'
 100790|Free States Rant:
   - If there are insuffient targets to which to allocate all of the points allowed, then the card cannot be played. [LSJ 20010810]
 100791|Frenzy:
@@ -1686,8 +1679,8 @@
   - The provided action is considered as an action that requires an Anarch or an Independent. (eg {CrimethInc.} can be used).
     [ANK 20180529]
 100886|Harass:
-  - If the action is not blocked and the target does not meet the requirements anymore, it is successful but has no effect.
-    [LSJ 20070411] [LSJ 20090514]
+  - If the action is not blocked and the target has now more then 3 blood and is unlocked, the action "fizzles" (cost, if
+    any, is paid, and it is considered successful, but has no effect). [LSJ 20070411] [LSJ 20090514]
 100887|Hard Case:
   - The block needs to be successful, so the blocking minion is locked. [ANK 20190708]
 100892|Hatchling:
@@ -2206,8 +2199,6 @@
     [ANK 20200207]
   - Can be used by a locked vampire. [PIB 20150720] [RTR 19941109]
   - Cannot be used by a vampire in torpor. [PIB 20150720] [RTR 19970306]
-101147|Make the Misere:
-  - If the target unlocks and the action is not blocked, it is successful but has no effect. [LSJ 20070411] [LSJ 20090514]
 101150|Malkavian Dementia:
   - Does not require control of a ready Malkavian. [RTR 19951124]
   - The loss of control happens at the start of unlock phase, before unlocking. This cannot be ordered among other unlock
@@ -2319,9 +2310,6 @@
   - If an action is blocked, no other effect can be used (eg. {Crypt's Sons}) before resolving Millicent's delayed effect.
     However, effects that trigger at the same moment (eg. {Unleash Hell's Fury}) are still applied and ordered by the acting
     Methuselah. [ANK 20210627] [ANK 20211207] [ANK 20220116]
-101211|Mind Numb:
-  - The action has no effect if the target is not unlocked anymore when it resolves. It is still considered successful and
-    must be paid. [ANK 20181121]
 101214|Mind of the Wilds:
   - 'The blocking minion is prohibited to strike: combat ends for the duration of the action (during any round of any combat).
     [LSJ 20100308]'
@@ -2512,9 +2500,6 @@
     using {Madness Network}). [ANK 20200813-3] [ANK 20200930]
 101295|Nod:
   - Choose for each equipment which minion will receive it, then transfer all the equipment accordingly. [ANK 20190717-1]
-101296|Nose of the Hound:
-  - '[aus], [spi] If the target unlocks and the action is not blocked, it is successful but has no effect. [LSJ 20070411]
-    [LSJ 20090514]'
 101302|Nosferatu Putrescence:
   - Can be used by a vampire in torpor. [LSJ 20020416]
   - Can be played by a minion of a Methuselah not involved in the current combat. [ANK 20181101]
@@ -2726,7 +2711,6 @@
 101486|Principia Discordia:
   - '[qui] can target a vampire with no blood. [RTR 20010711]'
   - '[ser] can target a vampire with no blood.[RTR 20010711]'
-  - '[ser] If the target unlocks and the action is not blocked, it is successful but has no effect. [LSJ 20070411] [LSJ 20090514]'
   - "[aus] is directed against the Methuselah controlling the equipment, not the minion it's on. [LSJ 20090324]"
 101487|Priority Contract:
   - Can be burned to get 3 pool when a minion leaves the ready region because his controller is ousted. [ANK 20180129-2]
@@ -3282,6 +3266,9 @@
     [LSJ 20100325]
 101798|Slam:
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
+101803|Sleep of Reason:
+  - If the action is not blocked and the target has 2 or more blood, the action "fizzles" (cost, if any, is paid, and it is
+    considered successful, but has no effect). [LSJ 20090514] [LSJ 20070411]
 101805|Sleeping Mind, The:
   - "[DOM] Does not prevent wake effects to be played (eg. {Wake with Evening's Freshness}), but does prevent unlock after\
     \ action resolution (eg. {Freak Drive} or [ani] {Cats' Guidance}). [PIB 20150703]"
@@ -3382,8 +3369,6 @@
   - '[OBE] If the bleed is canceled, the vampire still returns to its original controller. [RTR 20020501]'
   - '[OBE] "After resolution" effects are applied before the target vampire is returned to his or her previous controller.
     [LSJ 20030219]'
-  - '[OBE] The action has no effect if the target is not unlocked anymore when it resolves. It is still considered successful
-    and must be paid. [ANK 20181121] [LSJ 20021122-3]'
   - '[OBE] The minion is removed from the game when he should return to a Methuselah who has been ousted. [ANK 20181110]'
 101850|Spirit's Touch:
   - '[AUS] The maneuver can only be used if the block is successful, and only in the resulting (block-induced) combat. It
@@ -4057,13 +4042,15 @@
 102202|Young Bloods:
   - They may use their built-in action against a vampire with only 1 blood. If successful, that vampire burns his 1 blood.
     [LSJ 20070213]
-  - If the target of their ability unlocks and the action is not blocked, it is successful but has no effect. [LSJ 20070411]
-    [LSJ 20090514]
   - If they are burned by a strike, the blood gained from burning them is awarded after strike resolution (it cannot normally
     not be used to heal from their strike). [LSJ 20080212]
 102204|Zapaderin:
   - Can only be played by the controller of the acting minion. [LSJ 19990425]
   - Multiple copies can be played by different minions on the same action. [ANK 20200515]
+102205|Zephyr:
+  - Can be played if the action "failed" [RTR 20180719]
+  - Cannot be played if the action "fizzles" (is unblocked at resolution, but has no effect because some requirement cannot
+    be met or cost cannot be paid in full). [ANK 20220218]
 102208|Zip Gun:
   - Damage done to the bearer is environmental. [LSJ 19970801]
   - No damage is done to the bearer if he does not strike with the gun (eg. if it is destroyed with first strike). [LSJ 20100310]
@@ -5124,3 +5111,18 @@ G00075|Discounts for rescue:
   - The discount applies to the action, regardless of who pays. [PIB 20110918] [LSJ 20020304-2]
 G00076|Is affected by BCAN:
   - Is affected by {Blood Cult Awareness Network} [ANK 20240118-2] [LSJ 20060414]
+G00077|Requires successful action:
+  - The after action resolution effect can be used if the action "fizzles" (is unblocked at resolution, but has no effect
+    because some requirement cannot be met or cost can't be paid in full). [ANK 20220218]
+G00078|Action targeting locked minion:
+  - If the action is unblocked when it resolves and the target is unlocked, the action "fizzles" (cost, if any, is paid, and
+    it is considered successful, but has no effect). [ANK 20210124] [LSJ 20070411] [LSJ 20090514]
+G00079|Action only usable by vampire in torpor:
+  - When the acting vampire leaves torpor before the action resolves (e.g. {Warsaw Station}) the action immediately "fizzles"
+    (cost, if any, is paid, and it is considered successful, but has no effect). [ANK 20220218]
+G00080|Action targeting vampire in torpor:
+  - If the action is unblocked when it resolves and the target is no longer in torpor, the action "fizzles" (cost, if any,
+    is paid, and it is considered successful, but has no effect). [ANK 20210124] [LSJ 20070411] [LSJ 20090514]
+G00081|Action targeting unlocked minion:
+  - If the action is unblocked when it resolves and the target is locked, the action "fizzles" (cost, if any, is paid, and
+    it is considered successful, but has no effect). [ANK 20210124] [LSJ 20070411] [LSJ 20090514]
