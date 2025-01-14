@@ -5126,3 +5126,5 @@ G00080|Action targeting vampire in torpor:
 G00081|Action targeting unlocked minion:
   - If the action is unblocked when it resolves and the target is locked, the action "fizzles" (cost, if any, is paid, and
     it is considered successful, but has no effect). [ANK 20210124] [LSJ 20070411] [LSJ 20090514]
+G00082|Trifle plus contest:
+  - You still gain the trifle master phase action, even if this card contests when played. [RBK contested-cards]
