@@ -2063,7 +2063,6 @@
     card. [LSJ 20050224-4]
 101083|Leech:
   - Can target a vampire with no blood [RTR 20010711]
-  - Does not stack with similar effects to provide superior [POT] (eg. {Putrescent Servitude}). [ANK 20180111]
 101084|Left for Dead:
   - Effects to begin a new combat cannot be used on the Left for Dead ally as he is not ready. [LSJ 20020509]
 101085|Legacy:
@@ -2782,7 +2781,6 @@
     \ [LSJ 20090528-2-2]"
 101526|Putrescent Servitude:
   - Requirements do not apply when taking control of a card already in play. [TOM 19960226-1]
-  - Does not stack with similar effects to provide superior [POT] (eg. {Leech}). [ANK 20180111]
 101532|Quickness:
   - '[CEL] A limited additional strike can be played before or after. [LSJ 20001206] [ANK 20211124]'
 101533|Quicksilver Contemplation:
@@ -5128,3 +5126,6 @@ G00081|Action targeting unlocked minion:
     it is considered successful, but has no effect). [ANK 20210124] [LSJ 20070411] [LSJ 20090514]
 G00082|Unique Trifle:
   - You still gain the trifle master phase action, even if this card contests when played. [RBK contested-cards]
+G00083|Meets inferior discipline:
+  - Does not stack with similar effects (or another copy of itself) to provide superior version of the discipline(s) (e.g.
+    {Pressing Flesh} and {Putrescent Servitude} together does not provide superior [POT]) [ANK 20180111]
