@@ -318,7 +318,7 @@ G00017|Environmental damage:
   102210|Zombie: ''
   200017|Aeron: ''
   200908|Mambo Jeanne: ''
-G00018|Ally with discipline level:
+G00018|Retainer with discipline level:
   100427|Corpse Balloon: ''
   100891|Hatch the Viper: ''
   100932|Homunculus: ''
@@ -899,7 +899,7 @@ G00063|Cancel with no action:
   101428|Power of All: ''
   101633|Rewind Time: '[TEM]'
   102016|Treat the Sick Mind: '[OBE][REACTION]'
-G00064|Special Hunt Action:
+G00064|Special Hunt action:
   100004|Abactor: ''
   100603|Earth-Feeder: ''
   100816|Ghost-Eater: ''
@@ -935,7 +935,7 @@ G00065|Burn blood for effect:
 G00066|Changes controller of location:
   100557|Disputed Territory: ''
   100573|Dominate Kine: ''
-G00067|Stealth from random event:
+G00067|Stealth from random effect:
   201528|Bolesław Gutowski: ''
   201672|Gathii: ''
 G00068|Personal titles:
@@ -1102,7 +1102,7 @@ G00081|Action targeting unlocked minion:
   101486|Principia Discordia: '[qui]'
   101848|Spirit Marionette: '[OBE]'
   200557|Haakon Mortensen: ''
-G00082|Unique Trifle.:
+G00082|Unique Trifle:
   100025|Agent of Power: ''
   100435|Coven, The: ''
   100662|Esgrima: ''

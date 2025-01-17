@@ -4963,7 +4963,7 @@ G00016|Retainer doing damage:
 G00017|Environmental damage:
   - 'Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as will a combattant
     going to torpor during first strike. [RTR 19941109] [TOM 19951216] [PIB 20140324] [ANK 20200422]'
-G00018|Ally with discipline level:
+G00018|Retainer with discipline level:
   - The discipline level used to recruit it decides which version it is (inferior or superior). This does not change once
     it is in play. [RTR 19941109] [ANK 20180612]
 G00019|Animal:
@@ -5071,7 +5071,7 @@ G00062|Cancel as a reaction:
 G00063|Cancel with no action:
   - Can be used if there is no action, but that allowance does not extend to other reactions (eg. wake effects). [PIB 20120808]
   - Cannot be played during combat. [LSJ 20080618]
-G00064|Special Hunt Action:
+G00064|Special Hunt action:
   - Is affected by increases to Hunt value. Blood comes from the target of the hunt. [RTR 20030519] [RTR 20180511]
 G00065|Burn blood for effect:
   - The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {Adana de Sforza}). The card cannot
@@ -5079,7 +5079,7 @@ G00065|Burn blood for effect:
 G00066|Changes controller of location:
   - 'Changing the controller of a location has no other effect, unless specified by card text. Exception: A location "on"
     another controlled card is moved onto an appropriate card controlled by the new controller of the location. [RTR 19980623]'
-G00067|Stealth from random event:
+G00067|Stealth from random effect:
   - Can be used when stealth is not yet needed. Any stealth that would be gained is not gained (as no stealth is needed).
     [ANK 20231031]
 G00068|Personal titles:
@@ -5126,5 +5126,5 @@ G00080|Action targeting vampire in torpor:
 G00081|Action targeting unlocked minion:
   - If the action is unblocked when it resolves and the target is locked, the action "fizzles" (cost, if any, is paid, and
     it is considered successful, but has no effect). [ANK 20210124] [LSJ 20070411] [LSJ 20090514]
-G00082|Unique Trifle.:
+G00082|Unique Trifle:
   - You still gain the trifle master phase action, even if this card contests when played. [RBK contested-cards]
