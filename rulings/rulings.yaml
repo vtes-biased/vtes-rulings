@@ -342,8 +342,6 @@
   - The discipline needs not be announced when Bima is played. The replacement card can be used if it is a discipline. [PIB
     20150418]
   - '"that Discipline" refers to the card on Bima. If the card is no longer there, then the effect cannot be used. [LSJ 20071006]'
-  - If it uses its last life to pay for an action, the action still resolves fully. If that leads to an oust, the oust is
-    resolved before resolving effects triggered by the fact that the Bima burns. [LSJ 20080512]
 100161|Bind the Night-Walker:
   - The action ends immediately, no other action modifier or reaction can be played afterwards. [RTR 20180719]
   - The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules. [ANK 20211015]
@@ -1722,8 +1720,6 @@
   - '[cel] A limited additional strike can be played before or after. [LSJ 20001206] [ANK 20211124]'
 100912|Herald of Topheth:
   - Can use {Charming Lobby} to call a referendum "as a vampire". [RTR 20020501]
-  - If it uses its last life to pay for an action, the action still resolves fully. If that leads to an oust, the oust is
-    resolved before resolving effects triggered by the fact that the Herald burns. [LSJ 20080512]
   - Cannot play Anarch cards. [ANK 20230810]
 100913|Heroic Might:
   - The strikes it provides are Potence [pot] strikes (eg. they benefit from {Increased Strength}). [LSJ 20081120-2]
@@ -3170,13 +3166,9 @@
   - The card on him cannot be canceled as it is played when he plays it as if from your hand (eg. {Direct Intervention}),
     except if it is part of the card effect (eg. {Target Vitals}). [LSJ 20010716] [ANK 20221011]
   - The card put on him is not into play. [ANK 20190629]
-  - He can play any card "as a vampire" even if it does not require a discipline (eg. {Taste of Vitae}). REVERSAL of previous
-    rulings. [LSJ 20080717]
-  - He cannot use a card to commit diablerie (eg. {Amaranth}) [LSJ 20080717] [RTR 19970630]
-  - If a card he plays as a vampire sends him to torpor (eg. by using {Reform Body}), he burns. REVERSAL of previous rulings.
-    [LSJ 20060409]
-  - If he takes aggravated damage from a card he plays as a vampire (eg. {Burst of Sunlight}), he loses one life but does
-    not go to torpor. [LSJ 20060409]
+  - 'He can play any card "as a vampire" even if it does not require a discipline (eg. {Taste of Vitae}). REVERSAL of previous
+    rulings. Note this is specific to the Satyr and his card text: this does not apply to other allies playing cards as a
+    vampire. [LSJ 20080717]'
 101738|Shadow Feint:
   - '[CEL][OBF] Does not prevent the opponent from dodging, the dodge just has no effect. [LSJ 20030902-2] [LSJ 20060808-1]'
 101741|Shadow of the Wolf:
@@ -3901,7 +3893,6 @@
   - If another effect offers an alternative for card replacement (eg. {Steely Tenacity}), you choose which to apply. [ANK
     20200905]
 102128|Vivienne Géroux:
-  - Can play cards requiring both [for] and [cel]. [ANK 20210719]
   - Is not Anarch (eg. does not benefit from {Anarch Manifesto, An}). [RBK allies] [ANK 20230417]
 102131|Voter Captivation:
   - Is played after the referendum is resolved. If the effect of the referendum ousts the acting Methuselah, there is no time
@@ -4942,8 +4933,15 @@ G00010|Since your last turn:
   - '"Since your last turn" means between the end of your last turn and now. Your last turn does not qualify, your current
     turn does. [LSJ 20020429]'
 G00011|Allies who can play as a vampire:
-  - If it uses its last life to play an action modifier, the action fails. If it uses its last life to play a strike, combat
-    ends before strike resolution. [ANK 20180928-1]
+  - If they use their last life to play an action modifier, the action fails. If they use their last life to play a strike,
+    combat ends before strike resolution. [ANK 20180928-1]
+  - If they takes aggravated damage from a card they plays as a vampire (eg. {Burst of Sunlight}), they lose one life but
+    do not go to torpor. [LSJ 20060409]
+  - If they use their last life to pay for an action, the action still resolves fully. If that leads to an oust, the oust
+    is resolved before resolving effects triggered by the fact that they burn. [LSJ 20080512]
+  - If a card they play as a vampire sends them to torpor (eg. {Reform Body}), they burn. REVERSAL of previous rulings. [LSJ
+    20060409]
+  - They cannot use a card to commit diablerie (eg. {Amaranth}) [RTR 19970630] [LSJ 20080717]
 G00012|Black Hand:
   - Black Hand is not a title, it is a trait unrelated to any sect. The trait is not lost if the vampire changes sect. [LSJ
     20070322] [ANK 20180807]
