@@ -5130,3 +5130,6 @@ G00085|Meets missing disciplines:
     Discipline(s). [LSJ 19980303]
   - Multiple similar effects (e.g. two {Infernal Familiar}, or {Ian Forestal} with an {Infernal Familiar}) cannot be used
     to meet the requirements of a multi-Discipline card that the minion is missing one or more Disciplines to play. [LSJ 20020218]
+G00086|Multi-discipline:
+  - When played, a multi-Disciplines card counts as requiring the Discipline(s) being used. In the hand, library, 
+    or ash heap, the card is considered to require any and/or all Disciplines listed on it. [LSJ 20011204-3] [PIB 20130704]
