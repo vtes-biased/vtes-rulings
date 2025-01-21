@@ -3930,6 +3930,7 @@
     and cannot be continued (eg. with {Ambulance}). [ANK 20220218] [LSJ 20090325-2]
   - The unlock effect is applied after the action is resolved and the referendum (if any) concluded. If the acting vampire
     is not a Nosferatu anymore at that point, he does not unlock. [LSJ 20090216] [ANK 20180922]
+  - The unlock applies on a successful action even if Warsaw Station is not in play when the action resolves [ANK 20250120]
 102151|Wash:
   - If used to cancel a Trifle, the target does not get an extra Master Phase Action from the canceled Trifle. [ANK 20170124]
     [LSJ 20090126] [RBK trifle]
