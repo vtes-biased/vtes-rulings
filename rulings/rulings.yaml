@@ -1879,13 +1879,18 @@
   - The "can act the turn it is recruited" text does not let him act during an opponent turn if it was recruited then (eg.
     using {Madness Network}). [ANK 20200813-3]
 100989|Inscription:
-  - The vampire receiving the card must meet all of the requirements of the card other than the Thaumaturgy requirement. The
-    vampire playing the Inscription need not meet any of the requirements (other than the Thaumaturgy needed to play Inscription
-    in the first place). [LSJ 20031116] [ANK 20230816-2]
+  - The vampire receiving the card need not meet any of the requirements of the card to receive the Inscription, but must
+    meet all of the requirements, other than the [tha]Blood Sorcery requirement to use its effects. [ANK 20230822] [LSJ 20031116]
+    [ANK 20230816-2]
   - If the card put on it has any "Do not replace" effect, it is ignored both when Inscription is played and when it is burned
     to use the card. [ANK 20180627-1]
-  - 'When burned, the card put on it is not considered to be played normally: if it is a modifier the minion can still use
-    the same modifier himself. [ANK 20180627-1]'
+  - When burned, the card put on it is not considered to be played normally (if it is an action modifier or reaction the vampire
+    can still play the same card themselves, if it is an action the same action card can still be played normally if they
+    unlock). [ANK 20180627-1]
+  - The card inscribed with Inscription can only be used when the card could be played (an inscribed {Rutor's Hand} requires
+    an action, a {Mirror Walk} must be used by an acting vampire, etc). [PIB 20121014]
+  - The vampire playing Inscription need not meet any of the requirements, other than the [tha]Blood Sorcery needed to play
+    Inscription in the first place. [LSJ 20031116]
 100992|Inspire Greatness:
   - Can only be played by the controller of the acting minion. [LSJ 19990425]
   - Can be played by a locked vampire. [LSJ 19980210]
@@ -5131,5 +5136,5 @@ G00085|Meets missing disciplines:
   - Multiple similar effects (e.g. two {Infernal Familiar}, or {Ian Forestal} with an {Infernal Familiar}) cannot be used
     to meet the requirements of a multi-Discipline card that the minion is missing one or more Disciplines to play. [LSJ 20020218]
 G00086|Multi-discipline:
-  - When played, a multi-Disciplines card counts as requiring the Discipline(s) being used. In the hand, library, 
-    or ash heap, the card is considered to require any and/or all Disciplines listed on it. [LSJ 20011204-3] [PIB 20130704]
+  - When played, a multi-Disciplines card counts as requiring the Discipline(s) being used. In the hand, library, or ash heap,
+    the card is considered to require any and/or all Disciplines listed on it. [LSJ 20011204-3] [PIB 20130704]
