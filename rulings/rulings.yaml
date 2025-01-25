@@ -720,6 +720,9 @@
   - Does nothing to an empty vampire which unlocks in torpor. [RTR 19941109]
   - Cannot be damaged by host, but does not stop host from using effects which would normally damage it. [RTR 19941109]
   - 'Is not burn if the controller of the vampire it is on id ousted: it is removed from the game. [ANK 20180408]'
+100337|Cheval de Bataille:
+  - May be played at any time during the voting process and, when votes are tallied, will cause the loss of blood to vampires
+    voting 'no' before it is played, as well as to vampores voting 'no' after it is played. [RTR 19951110]
 100340|Children of Stone:
   - This is an "equip action" [TOM 19960130]
 100344|Chiropteran Marauder:
@@ -3040,8 +3043,8 @@
   - If another Methuselah is the target, he must declare whether he attempts or declines to block before Scobax can be played.
     [ANK 20200607]
 101692|Scorn of Adonis:
-  - May be played at any time during the voting process, and will retroactively cause the loss of pool to Methuselahs voting
-    'no' before it is played, as well as to Methuselahs voting 'no' after it is played. [RTR 19951110]
+  - May be played at any time during the voting process and, when votes are tallied, will cause the loss of pool to Methuselahs
+    voting 'no' before it is played, as well as to Methuselahs voting 'no' after it is played. [RTR 19951110]
   - Each Scorn played may only cause the loss of one pool to a given Methuselah, regardless of how may 'no' votes that Methuselah
     casts. [RTR 19951110]
 101693|Scorpion Sting:
