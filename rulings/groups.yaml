@@ -83,6 +83,7 @@ G00006|Modifier after resolution:
   101999|Touch of Pain: ''
   102131|Voter Captivation: ''
   102205|Zephyr: ''
+  102274|Amici Noctis: ''
 G00007|Modifier after combat:
   100595|Dusk Work: ''
   101236|Momentary Delay: ''
@@ -1381,3 +1382,6 @@ G00086|Multi-discipline:
   102232|Platinum Protocol, The: ''
   102247|Break the Bonds: ''
   102251|Invigorate: ''
+G00087|Pool gain after referendum:
+  102131|Voter Captivation: ''
+  102274|Amici Noctis: ''
