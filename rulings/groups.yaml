@@ -84,6 +84,8 @@ G00006|Modifier after resolution:
   102131|Voter Captivation: ''
   102205|Zephyr: ''
   102274|Amici Noctis: ''
+  102280|Shadow Cast: '[OBL]'
+  102281|Shadow Cloak: '[OBL]'
 G00007|Modifier after combat:
   100595|Dusk Work: ''
   101236|Momentary Delay: ''
@@ -953,6 +955,7 @@ G00065|Burn blood for effect:
   101786|Siren's Lure: '[cel]'
   101875|Stone Travel: '[obt]'
   102130|Voices of the Castle: '[tha]'
+  102282|Stygian Shroud: '[OBL]'
 G00066|Changes controller of location:
   100557|Disputed Territory: ''
   100573|Dominate Kine: ''
@@ -1385,3 +1388,6 @@ G00086|Multi-discipline:
 G00087|Pool gain after referendum:
   102131|Voter Captivation: ''
   102274|Amici Noctis: ''
+G00088|Burn blood to attempt to block:
+  101957|Tenebrous Form: '[OBT]'
+  102285|Where the Veil Thins: '[OBL]'

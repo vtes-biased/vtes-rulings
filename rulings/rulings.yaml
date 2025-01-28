@@ -3623,9 +3623,6 @@
     has declined to block. [PIB 20150501]
 101956|Tend the Flock:
   - The blood comes from the blood bank. [ANK 20190511]
-101957|Tenebrous Form:
-  - '[OBT] A minion previously attempting to block can resign his attempt and pay no blood. [LSJ 20031121-2]'
-  - '[OBT] An ally has life, not blood, he cannot pay. [LSJ 20050216] [ANK 20190701]'
 101958|Tension in the Ranks:
   - Pool is not paid when an imbued is incapacitated. [LSJ 20060409-2]
 101960|Terror Frenzy:
@@ -5140,3 +5137,5 @@ G00087|Pool gain after referendum:
     to play it to prevent the ousting. [RTR 19951110]
   - Can be used after a referendum that is automatically passing, but the vote is considered to have passed by 0 votes. [LSJ
     19980107] [PIB 20150105]
+G00088|Burn blood to attempt to block:
+  - A minion previously attempting to block can resign his attempt and pay no blood. [LSJ 20031121-2]
