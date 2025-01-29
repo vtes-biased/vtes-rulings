@@ -3392,8 +3392,6 @@
 101869|Steely Tenacity:
   - '[ani] [COMBAT] Additional damage inherits all of the properties of the base damage. [TOM 19960225]'
   - '[ani] [COMBAT] The press can only be used during the current round. [TOM 19960521]'
-  - '[dom], [qui] [ACTION] Is not replaced if the action is blocked: it is replaced when the action ends, after all combats.
-    [LSJ 20001120]'
 101872|Stolen Police Cruiser:
   - Can be equipped by a non-Anarch and would count as a vehicle, although the rest of his effect does not apply. [LSJ 20030607]
   - Equipping it does not count as an action requiring an Anarch (eg. for {CrimethInc.}). [ANK 20170918]
@@ -4942,7 +4940,9 @@ G00018|Retainer with discipline level:
 G00019|Animal:
   - Is neither a mortal nor a monster. [ANK 20200203-2] [LSJ 20060515]
 G00020|Action not replaced:
-  - 'Is not replaced if the action is blocked: it is replaced when the action ends, after all combats. [LSJ 20001120]'
+  - Is not replaced if the action is blocked; it is replaced when the action ends, after all combats. [LSJ 20001120]
+  - The card is replaced after all "after resolution" cards and effects (e.g. {Freak Drive}). No more cards can be played
+    on that action; the action has ended. [LSJ 20101021]
 G00021|Reduce votes:
   - The votes provided by the Priscii sub-referendum are not affected. [ANK 20180307-1]
 G00022|Usable during the polling step:
