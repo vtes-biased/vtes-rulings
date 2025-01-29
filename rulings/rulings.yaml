@@ -1666,9 +1666,6 @@
 100876|Hackerspace:
   - A counter is added when {Anarch Convert} enters play, before using his ability. If he uses his ability to make a non-anarch
     vampire anarch, a second counter is added. [ANK 20210410]
-100879|Hall of Mirrors:
-  - '[CHI] The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {The Path of Paradox}). The
-    card cannot be played if the minion cannot afford to burn the blood. [ANK 20210226]'
 100882|Hand of Conrad:
   - The minion cannot use the discipline provided if some effect prevents him to use the equipment (eg. {Drawing Out the Beast}).
     [RTR 20010710]
@@ -2232,9 +2229,6 @@
   - '[AUS][FOR] Unused prevention does not carry over. [LSJ 20001114]'
   - '[AUS][FOR] The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {Una}). The card cannot
     be played if the minion cannot afford to burn the blood. [ANK 20210226]'
-101178|Mask Empathy:
-  - '[PRE] The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {Adana de Sforza}). The card
-    cannot be played if the minion cannot afford to burn the blood. [ANK 20210226]'
 101179|Mask of a Thousand Faces:
   - Can only be played by the controller of the acting minion. [LSJ 19990425]
   - Cannot be used to take over an action granted by an equipment the masked minion has, even if the masking vampire also
@@ -2701,8 +2695,6 @@
     target. [LSJ 20100325-2]
 101482|Preternatural Evasion:
   - '[CEL] The blood is burned when playing the card. [ANK 20200703-2]'
-  - '[CEL] The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {Mitru the Hunter}). The
-    card cannot be played if the minion cannot afford to burn the blood. [ANK 20210226]'
 101485|Primal Instincts:
   - If the strike is canceled, the rest of the effect is also canceled. [RTR 20040501]
 101486|Principia Discordia:
@@ -3112,8 +3104,6 @@
     minion and he is not locked. [RTR 20020501] [ANK 20200705]'
   - '[PRE][SER] If the strike is dodged, the card is not put on the opposing minion and he is not locked. [RTR 20041202]'
   - '[PRE][SER] Burning 1 blood is mandatory, not a choice. [ANK 20180420-2]'
-  - '[PRE][SER] The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {The Path of Typhon}).
-    The card cannot be played if the minion cannot afford to burn the blood. [ANK 20210226]'
 101730|Set's Call:
   - Requirements do not apply when taking control of a card already in play. [TOM 19960226-1]
   - The acting vampire's controller is the one who makes the choices pertaining to the ally or retainer entry in play. [LSJ
@@ -3155,8 +3145,6 @@
     action was blocked) to limbo (where it should be if the action is not blocked). If the action card is not in the ash heap,
     then the action cannot be continued. [LSJ 20070808-1]'
   - '[OBF][POT][ACTION MODIFIER] Cannot be used by a Slave that entered combat instead of the acting minion. [ANK 20200114]'
-  - '[OBF][POT][ACTION MODIFIER] The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {Adana
-    de Sforza}). The card cannot be played if the minion cannot afford to burn the blood. [ANK 20210226]'
   - '[OBF][POT][ACTION MODIFIER] Is used after combat effectively ends and can be order against other cards and effects played
     after combat (eg. {Provision of the Silsila}). [ANK 20230314]'
 101737|Shadow Court Satyr:
