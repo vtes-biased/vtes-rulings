@@ -216,8 +216,6 @@
   - Prevents up to 3 damage, it can be used to prevent less. [RTR 20041202]
   - Cannot be used if there is no damage to prevent. [LSJ 20001114]
   - Unused prevention does not carry over. [LSJ 20001114]
-100092|Army of Apparitions:
-  - '[chi] Cannot be used during a referendum that is automatically passing. [PIB 20150105] [LSJ 19980107]'
 100096|Art of Love, The:
   - Requirements do not apply when taking control of a card already in play. [TOM 19960226-1]
   - Effects applied during the discard phase are applied before you return the ally. If you lose control of the ally before
@@ -334,8 +332,6 @@
     vampire that is the target of the betrayer, that player takes the pool loss. [RTR 19941109]
   - You select an uncontrolled vampire when you play the card. If you have a choice (more than one of your uncontrolled vampires
     is controlled by the other Methuselah), you still have to choose just one of them to be the Betrayer. [LSJ 19990419]
-100157|Bewitching Oration:
-  - Cannot be used during a referendum that is automatically passing. [PIB 20150105] [LSJ 19980107]
 100159|Big Game:
   - '"that minion" refers to the target and "this minion" to the acting minion. [ANK 20180518]'
 100160|Bima:
