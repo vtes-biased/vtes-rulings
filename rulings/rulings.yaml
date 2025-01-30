@@ -5121,3 +5121,10 @@ G00087|Pool gain after referendum:
     19980107] [PIB 20150105]
 G00088|Burn blood to attempt to block:
   - A minion previously attempting to block can resign his attempt and pay no blood. [LSJ 20031121-2]
+G00089|Cards that replace themselves:
+  - The card must be present in the ash heap to be redrawn. [RBK targeting-of-cards]
+  - If the card is cancelled, the self-replacing clause is also cancelled. [LSJ 20080630]
+  - If an effect delays when the redraw occurs (e.g. {The Meddling of Semsith}), you can still redraw this card from the ash
+    heap when the delay effect allows a redraw. [LSJ 20100527]
+  - If an effect prevents replacement ({Visit from the Capuchin}), then there is no opportunity to use the cards replacement
+    text. [LSJ 20080723]
