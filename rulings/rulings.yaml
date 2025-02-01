@@ -3770,8 +3770,6 @@
   - Once it is attempting to block, its intercept can be affected by other cards normally (eg. {KRCG News Radio}). [ANK 20211112-2]
   - Is not a minion when it burns (eg. does not trigger {Tension in the Ranks}). [ANK 20230317]
   - The burn option can be used if all your infernal vampires are in torpor. [LSJ 20091203]
-  - The fact it is Unique has no bearing on the burn option. You cannot use the burn option if you have an infernal vampire
-    ready, even if you already have an Unleash Hell's Fury in play. [LSJ 20100203-2]
 102078|Unlicensed Taxicab:
   - Offers the additional stealth on actions to equip it from another friendly minion as well, even with other equipment in
     the same action. [LSJ 20060222]
@@ -5111,3 +5109,6 @@ G00090|Blood loss after combat ends:
 G00091|Damage after combat ends:
   - Damage is applied after combat, so cannot be prevented by combat cards. [LSJ 20010205]
   - Is a damage dealing effect and can be modified by other effects like {Dam the Heart's River}. [ANK 20170111] [PIB 20130319]
+G00092|Unique cards with burn option:
+  - The fact it is Unique has no bearing on the burn option. You cannot use the burn option if you meet the requirement, even
+    if you already have a copy of the card in play. [LSJ 20100203-2]
