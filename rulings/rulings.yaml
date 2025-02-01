@@ -612,8 +612,6 @@
 100307|Catatonic Fear:
   - '[PRE] Damage is done by the vampire (not environmental). [RTR 19970630] [LSJ 19990723]'
   - '[PRE] If the strike is dodged, no damage is done. [LSJ 19980526] [RTR 20041202] [LSJ 20070124]'
-  - "[PRE] Is a damage dealing strike and can be modified by effects like {Target Vitals} or {Dam the Heart's River}.  [ANK\
-    \ 20170111] [LSJ 20071011]"
 100308|Cats' Guidance:
   - '[ani] Is played after all combats are handled. [RTR 19980623] [LSJ 20040219] [ANK 20221130]'
   - '[ani] Cannot be played if the vampire is in torpor, for example if he went into torpor during the combat resulting from
@@ -646,8 +644,6 @@
   - '[SPI] "continue as if unblocked" moves the action card from the ash heap (where it went when the action was blocked)
     to limbo (where it should be if the action is not blocked). If the action card is not in the ash heap, then the action
     cannot be continued. [LSJ 20070808-1]'
-  - '[SPI] If the combat continues or a new combat occurs, the "action continues as if unblocked" effect is lost. [LSJ 19980109]
-    [RTR 20020501]'
 100322|Champion:
   - '[REACTION] Can be used only when reactions can be used (unlocked or with a wake effect). It does not count as playing
     a reaction card. [LSJ 20070403] [LSJ 20070413]'
@@ -1406,8 +1402,6 @@
   - '[VIS] "continue as if unblocked" moves the action card from the ash heap (where it went when the action was blocked)
     to limbo (where it should be if the action is not blocked). If the action card is not in the ash heap, then the action
     cannot be continued. [LSJ 20070808-1]'
-  - '[VIS] If the combat continues or a new combat begins, the "action continues as if unblocked" effect is lost. [LSJ 19980109]
-    [RTR 20020501]'
 100755|Folderol:
   - '[aus] The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {Helena (ADV)}). The card
     cannot be played if the minion cannot afford to burn the blood. [ANK 20210226]'
@@ -2133,8 +2127,6 @@
   - '[val] [VAL] If the combat continues or a new combat begins, no damage is done. The vampire can still burn 1 blood to
     unlock. [RTR 20020501]'
   - '[val] [VAL] If the strike is dodged, no damage is done. [LSJ 19980526] [RTR 20041202] [PIB 20130319]'
-  - "[val] [VAL] Is a damage dealing strike and can be modified by effects like {Target Vitals} or {Dam the Heart's River}.\
-    \ [PIB 20130319]"
   - '[VAL] The blood to unlock can be paid until the end of combat, including after other effects that are played at the end
     of round. [ANK 20180618]'
 101130|Loyalist:
@@ -2333,8 +2325,6 @@
   - '[CHI] "continue as if unblocked" moves the action card from the ash heap (where it went when the action was blocked)
     to limbo (where it should be if the action is not blocked). If the action card is not in the ash heap, then the action
     cannot be continued. [LSJ 20070808-1]'
-  - '[CHI] If the combat continues or a new combat begins, the "action continues as if unblocked" effect is lost. [LSJ 19980109]
-    [RTR 20020501]'
 101223|Mirror Walk:
   - "[THA] The would be blocker is locked even if he benefits from an effect that prevents him to lock when he blocks. He\
     \ is not locked from the block, but from Mirror Walk's effect. [ANK 20191204]"
@@ -2405,8 +2395,6 @@
   - '[VAL] "continue as if unblocked" moves the action card from the ash heap (where it went when the action was blocked)
     to limbo (where it should be if the action is not blocked). If the action card is not in the ash heap, then the action
     cannot be continued. [LSJ 20070808-1]'
-  - '[VAL] If the combat continues or a new combat begins, the "action continues as if unblocked" effect is lost. [LSJ 19980109]
-    [RTR 20020501]'
 101245|Mouthpiece:
   - '[DOM] Can only be played by the controller of the acting minion. [LSJ 19990425]'
   - '[DOM] Can be played by a locked vampire. [LSJ 19980210]'
@@ -2934,10 +2922,8 @@
   - The opponent cannot play a card that provides an additional strike, even if just to benefit from another effect (eg. {Acrobatics}).
     [LSJ 20011214-5]
 101637|Riposte:
-  - '[cel] [CEL] The damage is dealt just after the combat ends. [RTR 19970630]'
   - '[cel] [CEL] The damage is only dealt if the strike was resolved at close range. [LSJ 19970915]'
   - '[cel] [CEL] If the strike is dodged, no damage is done. [LSJ 19980526] [RTR 20041202]'
-  - '[cel] [CEL] If the combat continues or a new combat begins, no damage is done. [RTR 20020501]'
   - "[cel] [CEL] Is a damage dealing strike and can be modified by other effects like {Target Vitals} or {Dam the Heart's\
     \ River}, even if they are done after combat.  [ANK 20170111] [PIB 20130319]"
 101640|Rising, The:
@@ -3100,8 +3086,6 @@
 101727|Serpent's Numbing Kiss:
   - '[PRE][SER] The additional effect takes place after the end of combat, including the blood burn. [RTR 19970630] [ANK 20180420-1]
     [ANK 20200705]'
-  - '[PRE][SER] If the combat continues or a new combat begins, no blood is burned, the card cannot be put on the opposing
-    minion and he is not locked. [RTR 20020501] [ANK 20200705]'
   - '[PRE][SER] If the strike is dodged, the card is not put on the opposing minion and he is not locked. [RTR 20041202]'
   - '[PRE][SER] Burning 1 blood is mandatory, not a choice. [ANK 20180420-2]'
 101730|Set's Call:
@@ -3132,8 +3116,6 @@
   - '[OBT] "continue as if unblocked" moves the action card from the ash heap (where it went when the action was blocked)
     to limbo (where it should be if the action is not blocked). If the action card is not in the ash heap, then the action
     cannot be continued. [LSJ 20070808-1]'
-  - '[OBT] If the combat continues or a new combat occurs, the "action continues as if unblocked" effect is lost. [LSJ 19980109]
-    [RTR 20020501]'
 101736|Shadow Boxing:
   - '[OBF][POT][ACTION MODIFIER] If the action continues "as if unblocked", all action modifiers and reaction cards are still
     in effect, even those pertaining to a successful block. [RTR 19941109] [ANK 20190116]'
@@ -3680,8 +3662,6 @@
   - '[CEL] "continue as if unblocked" moves the action card from the ash heap (where it went when the action was blocked)
     to limbo (where it should be if the action is not blocked). If the action card is not in the ash heap, then the action
     cannot be continued. [LSJ 20070808-1]'
-  - '[CEL] If the combat continues or a new combat occurs, the "action continues as if unblocked" effect is lost. [LSJ 19980109]
-    [RTR 20020501]'
 101996|Tortured Confession:
   - Not usable by vampires burned in combat, either. [RTR 19950622]
 101998|Touch of Clarity:
@@ -5063,8 +5043,6 @@ G00070|Impersonating title for non-existent sect:
   - Can meet a sect-specific title (e.g. Justicar) requirement even if the sect does not exist anymore (eg. {Fall of the Camarilla}).
     [ANK 20230503] [LSJ 20050124]
 G00071|After Combat Ends:
-  - The effect happens after combat is concluded. Any blood lost is not lost during combat. (e.g. {Anathema}, {Taste of Vitae})
-    [LSJ 20031123]
   - "If the combat continues or a new combat begins, the after combat effect does not happen/is not usable. (eg. {Psyche!},\
     \ {Telepathic Tracking})\n(Partial reversal of RTR 20010711) [RTR 20020501] [LSJ 19980109]"
 G00072|Impersonating requirements for cards not played normally:
@@ -5128,3 +5106,8 @@ G00089|Cards that replace themselves:
     heap when the delay effect allows a redraw. [LSJ 20100527]
   - If an effect prevents replacement ({Visit from the Capuchin}), then there is no opportunity to use the cards replacement
     text. [LSJ 20080723]
+G00090|Blood loss after combat ends:
+  - Any blood loss occurs after combat (and will not trigger {Anathema} or be available for {Taste of Vitae}, etc). [LSJ 20031123]
+G00091|Damage after combat ends:
+  - Damage is applied after combat, so cannot be prevented by combat cards. [LSJ 20010205]
+  - Is a damage dealing effect and can be modified by other effects like {Dam the Heart's River}. [ANK 20170111] [PIB 20130319]
