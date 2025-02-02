@@ -1321,8 +1321,6 @@
   - Effects that end combat and then do something else after combat (include continuing the action as if unblocked) will be
     lost, except for unlock effects. [LSJ 19980109] [RTR 20020501]
   - Cannot be used to start a new combat if there is already a pending combat queued. [RTR 20020501]
-  - The opponent cannot play or use the maneuver from a strike (eg. {.44 Magnum}, {Thrown Gate}), since they cannot strike.
-    [LSJ 20001126]
 100706|Fata Amria:
   - '[CHI] [REACTION] Is played after resolution, but still during the action. Action modifiers and effects that can be played
     "after resolution" can be played before or after it. [LSJ 19981028] [ANK 20190425]'
@@ -1719,8 +1717,6 @@
   - Cannot be used to start a new combat if there is already a pending combat queued. [RTR 20020501]
   - Can only be played by the controller of the acting minion. [LSJ 19990425]
   - Cannot be used to enter combat with a vampire on his way to torpor. [LSJ 20100604-1]
-  - The opponent cannot play or use the maneuver from a strike (eg. {.44 Magnum}, {Thrown Gate}), since they cannot strike.
-    [LSJ 20001126]
 100918|Hidden Strength:
   - The 'X' in card text refers to the cost of the card. [LSJ 19970224]
   - Prevents up to X+1 damage, it can prevent less (X can be higher than strictly needed). [RTR 20041202] [PIB 20121202]
@@ -4062,8 +4058,8 @@
     of Mist}). [LSJ 20010814-2]'
 102256|One With the Land:
   - '[PRO] The strike restriction only applies in the combat resulting from a successful block. It does not carry over to
-    follow-up combats (eg. [CEL] {Psyche!}). [LSJ 20010813] [LSJ 20010819-2]'
-  - '[PRO] The strike restriction applies again if a second block happens on the same action (eg. after [PRO] {Form of Mist}).
+    follow-up combats (e.g. [CEL] {Psyche!}). [LSJ 20010813] [LSJ 20010819-2]'
+  - '[PRO] The strike restriction applies again if a second block happens on the same action (e.g. after [PRO] {Form of Mist}).
     [LSJ 20010814-2]'
 102263|Unleashing the Bestial Soul:
   - An opponent can play a reaction to wake as the card is played, before its effects apply. [ANK 20231028]
@@ -5112,3 +5108,6 @@ G00091|Damage after combat ends:
 G00092|Unique cards with burn option:
   - The fact it is Unique has no bearing on the burn option. You cannot use the burn option if you meet the requirement, even
     if you already have a copy of the card in play. [LSJ 20100203-2]
+G00093|Cannot strike:
+  - Minions that cannot strike, cannot play or use the maneuver from a strike (e.g. {.44 Magnum}, {Thrown Gate}). [LSJ 20001126]
+  - Minions can (uselessly) gain additional strikes even if they cannot strike. [LSJ 19970814-2]
