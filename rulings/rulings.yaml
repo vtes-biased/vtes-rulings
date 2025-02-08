@@ -459,9 +459,6 @@
     [LSJ 20090304-1]'
 100221|Blooding by the Code:
   - Can be played on a vampire with superior Valeren [VAL]. [LSJ 20051012]
-100223|Bloodstone:
-  - It's still an equip action (eg. It can benefit from {The British Museum, London} or {Filchware's Pawn Shop}). [LSJ 20050313]
-    [ANK 20230408]
 100224|Bloodstorm of Chorazin:
   - The action ends unsuccessfully immediately, no other action modifier or reaction can be played afterwards. [RTR 20180719]
     [ANK 20200207]
@@ -698,9 +695,8 @@
   - Is a political action but not a "political action card" [POLITICAL ACTION] (eg. {Luna Giovanni}'s ability cannot target
     it, it cannot be discarded for a vote). [ANK 20220704][LSJ 20070927] [LSJ 20050407]
 100335|Charnas the Imp:
-  - Does nothing to an empty vampire which unlocks in torpor. [RTR 19941109]
   - Cannot be damaged by host, but does not stop host from using effects which would normally damage it. [RTR 19941109]
-  - 'Is not burn if the controller of the vampire it is on id ousted: it is removed from the game. [ANK 20180408]'
+  - 'Is not burned if the controller of the vampire it is on is ousted: it is removed from the game. [ANK 20180408]'
 100337|Cheval de Bataille:
   - May be played at any time during the voting process and, when votes are tallied, will cause the loss of blood to vampires
     voting 'no' before it is played, as well as to vampores voting 'no' after it is played. [RTR 19951110]
@@ -5053,6 +5049,7 @@ G00093|Cannot strike:
 G00094|Retainers and equipment put on different minion:
   - The option to place the card on another minion can only be used when playing the card normally; for any other action or
     put into play effect, the card is placed on the playing minion. [LSJ 20090824] [LSJ 20051121]
+  - The type of the action (equip/employ) does not change regardless of the target. [ANK 20230408] [LSJ 20050313]
 G00095|Play stored card as if from hand:
   - Ignores all "do not replace" clauses and special replacement effects on cards played from it. [LSJ 20081126]
   - The card on it cannot be discarded or burned to satisfy another effect (eg. {Tension in the Ranks} or using political
