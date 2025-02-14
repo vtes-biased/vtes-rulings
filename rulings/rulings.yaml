@@ -1407,6 +1407,8 @@
 100791|Frenzy:
   - Only prevents the use of equipment after it is played - it will not cancel the effects of equipment used before it is
     played. [TOM 19960326]
+  - Can be played on a minion that cannot play or use presses (eg. Mukhtar Bey) and does provide the presses, the minion is
+    not the one pressing. [LSJ 20040521]
 100793|From a Sinking Ship:
   - Requirements do not apply when taking control of a card already in play. [TOM 19960226-1]
 100794|Frontal Assault:
@@ -3310,7 +3312,6 @@
   - While he can play cards that require [qui] or [tha], he does not actually have those Disciplines. He does not benefit
     from {Tremere Convocation}, for example. [LSJ 19980303]
 101931|Talbot's Chainsaw:
-  - The press is mandatory. [LSJ 19980823]
   - Using the Chainsaw action to enter combat or preventing damage with it does not force the minion to strike with it. [LSJ
     19971215]
   - The damage inflicted during the unlock phase is weapon damage, it is neither inflicted by the wearer nor environmental.
@@ -3462,8 +3463,6 @@
   - '[THN] Requirements do not apply when taking control of a card already in play. [TOM 19960226-1]'
   - '[THN] Environmental damage do not qualify, only damage inflicted by the acting vampire. [ANK 20200517]'
 102012|Trap:
-  - The provided press must be handled first. Another press cannot be used to continue (eg. {Boxed In}) if there's already
-    a press to continue. [ANK 20200525-1]
   - A minion that cannot play or use presses (eg. {Mukhtar Bey}) can play it and does provide the presses, the minion is not
     the one pressing. [LSJ 20040521]
 102013|Travelers Obey the Tenets:
@@ -4921,3 +4920,6 @@ G00100|Set range in next round:
   - No other effect can be used to reset next round's range, but other pre-range effects can be played. [ANK 20180720] [RTR
     19970630]
   - If another effect was already setting next round's range (e.g. {Neutral Guard}), that effect has priority. [PIB 20120214]
+G00101|Automatic environmental press:
+  - The provided press is applied before any other press. Another press cannot be used to continue (eg. {Boxed In}, {Talbot's
+    Chainsaw}) if there's already a press to continue. [ANK 20200525-1]
