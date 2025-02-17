@@ -298,7 +298,7 @@
     modifier or reaction cards. [ANK 20190425]'
   - '[ANI][PRO] Replace the action card (if any) before playing it. [ANK 20181208]'
 100147|Becoming, The:
-  - Is a 1-capacity vampire while uncontrolled (eg. {Banishment}). [LSJ 20090625]
+  - Is a 1-capacity vampire if moved to the uncontrolled region (eg. {Banishment}). [LSJ 20090625]
 100153|Bestial Vengeance:
   - Damage is environmental. [RTR 19970630]
   - Bestial Vengeance's damage is inflicted whether or not the opposing minion's strike burns the retainer. [LSJ 20090616]
@@ -817,7 +817,7 @@
 100440|Create Gargoyle:
   - Only requires one clan or the other (Tremere or Tremere antitribu) to be played. [ANK 20190203]
 100441|Creation Rites:
-  - If moved to the uncontrolled region, it continues to be a vampire and can be influenced. [RTR 19990712]
+  - The decision to move blood on the Creation Rites or not is taken upon resolution. [PIB 20150418]
 100446|CrimethInc.:
   - Can be played if the action is unblocked even if it has no effect due to lack of a suitable target. [LSJ 20070411]
   - An action requiring a Baron (eg. {Open War}) is an action requiring an Anarch. [LSJ 20080603] [LSJ 20050128]
@@ -3431,7 +3431,6 @@
     [PIB 20150917] [RTR 20070707]
 '101973|Third Tradition: Progeny':
   - The decision to move blood on the Progeny or not is taken upon resolution. [PIB 20150418]
-  - The Progeny is Camarilla Sect. [RTR 20201130]
 101974|Thirst:
   - The hunt needs to be successful for a vampire to avoid the effect. [LSJ 20050727]
 101976|Thoughts Betrayed:
@@ -4776,6 +4775,7 @@ G00052|Modifier as announced:
 G00054|Action creating vampire:
   - Is not a vampire in the ash heap (eg. {Possession} cannot target it). [LSJ 20020115]
   - If moved to the uncontrolled region (eg. by {Banishment}), it stays a vampire and can be influenced. [RTR 19990712]
+  - If it would be put into the crypt for any reason, it is burned instead [LSJ 20041201-2]
 G00056|Shuffle when burned:
   - If burned and shuffled into the library, other effects that apply when it is burned still apply (eg. {Set's Curse} puts
     an ally into play). [ANK 20200813]
