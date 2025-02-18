@@ -4927,3 +4927,5 @@ G00100|Set range in next round:
 G00101|Automatic environmental press:
   - The provided press is applied before any other press. Another press cannot be used to continue (eg. {Boxed In}, {Talbot's
     Chainsaw}) if there's already a press to continue. [ANK 20200525-1]
+G00102|Minus Intercept:
+  - Can be played any time during the action before resolution; a block attempt is not required. [LSJ 20020612]
