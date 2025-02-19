@@ -1025,8 +1025,6 @@
     time it was played. [RTR 20030519]'
   - '[CHI] Can be played by a minion who is not attempting to block the action. [ANK 20190628]'
   - '[CHI] Can be played on a minion with no or negative stealth, in which case it has no effect. [LSJ 20021211]'
-  - If another Methuselah is the target, he must declare whether he attempts or declines to block before Draba can be used
-    ([chi]) or played ([CHI]). [ANK 20200607]
 100579|Draeven Softfoot:
   - He can lock to use his ability the turn he is recruited. [ANK 20180517]
 100580|Dragon's Breath Rounds:
@@ -1334,9 +1332,6 @@
   - The action to burn Fleshcraft suffers the -1 stealth penalty as well, so is usually at zero stealth to start (or -1 stealth
     if superior [VIC]). [LSJ 19970224]
   - The rest of the effect applies if the damage is prevented, it does not if it is dodged. [LSJ 19990106-2]
-100755|Folderol:
-  - '[MYT] If another Methuselah is the target, he must declare whether he attempts or declines to block before Folderol can
-    be played. [ANK 20200607]'
 100756|Follow the Alpha:
   - Effects that end combat and then do something else after combat (include continuing the action as if unblocked) will be
     lost, except for unlock effects. [LSJ 19980109] [RTR 20020501]
@@ -1645,8 +1640,6 @@
   - '[val] If the action fails, it has reached resolution, so is subject to NRA (Non Repeatable Action) rules. [RTR 20180719]
     [ANK 20211015]'
   - '[val] An ally has life, not blood, he cannot pay. [LSJ 20050216] [ANK 20190701]'
-  - '[val], [VAL] Sequencing applies. For example, if another Methuselah is targeted by the action, they must declare if they
-    attempt or decline to block before you can play Hide the Heart. [LSJ 20100507] [PIB 20150820] [RBK sequencing]'
   - '[VAL] To reduce a bleed against another Methuselah, you need to be unlocked. [RBK wording-templates] [ANK 20230817]'
 100921|Hide the Mind:
   - Cannot be used to cancel a card that could be played with [aus] but has not been (eg. {Anesthetic Touch} played with [obe]).
@@ -1676,9 +1669,6 @@
   - If the vampire gains no blood from their hunt, it's not successful, so Hunger Moon's effect does not apply. [LSJ 20050720-2]
 100947|I am Legion:
   - '[DAI][OBF] Can be used to gain a pool after a successful action, without cancelling an [aus] card. [LSJ 20100902-2]'
-100948|Ignis Fatuus:
-  - If another Methuselah is the target, he must declare whether he attempts or declines to block before Ignis Fatuus can
-    be played. [ANK 20200607]
 100949|Ignore the Searing Flames:
   - '[DAI] Immune means damage is not inflicted, even if non-preventable or outside combat. [LSJ 20010627] [LSJ 20010629]
     [LSJ 20090304-1]'
@@ -2858,8 +2848,6 @@
   - '[STR] If the action fails, modifiers and reactions that can be used at the end/after an action can still be used afterwards.
     [LSJ 20041022] [RTR 20180719] [ANK 20220118] [ANK 20221205].'
   - '[STR] If the action fails, it has reached resolution, so is subject to NRA (Non Repeatable Action) rules. [ANK 20211015]'
-  - If another Methuselah is the target, he must declare whether he attempts or declines to block before Scobax can be played.
-    [ANK 20200607]
 101692|Scorn of Adonis:
   - May be played at any time during the voting process and, when votes are tallied, will cause the loss of pool to Methuselahs
     voting 'no' before it is played, as well as to Methuselahs voting 'no' after it is played. [RTR 19951110]
@@ -3829,8 +3817,6 @@
     time it was played. [RTR 20030519]"
   - Can be played by a minion who is not attempting to block the action. [ANK 20190628]
   - Can be played on a minion with no or negative stealth, in which case it has no effect. [LSJ 20021211]
-  - If another Methuselah is the target, he must declare whether he attempts or declines to block before Night Terrors can
-    be played. [ANK 20200607]
   - '[OBF][PRE] The strike: combat ends can only be used in the combat resulting from a successful block. It does not carry
     over to follow-up combats (eg. [CEL] {Psyche!}). [LSJ 20010813] [LSJ 20010819-2]'
   - '[OBF][PRE] The strike: combat ends is provided again if a second block happens on the same action (eg. after [PRO] {Form
@@ -4922,3 +4908,6 @@ G00101|Automatic environmental press:
     Chainsaw}) if there's already a press to continue. [ANK 20200525-1]
 G00102|Minus Intercept:
   - Can be played any time during the action before resolution; a block attempt is not required. [LSJ 20020612]
+G00103|Reactions targeting another player:
+  - Sequencing rules apply. You must gain the impulse to be able to use the reaction, or use the effect (whichever is applicable).  Other
+    Methuselahs must declare block attempts (or not) and pass the impulse to you as normal. [ANK 20200607]
