@@ -1023,7 +1023,6 @@
 100578|Draba:
   - '[CHI] Effectively gives a -X stealth modifier to the action, where X is the amount of stealth reduced by Draba at the
     time it was played. [RTR 20030519]'
-  - '[CHI] Can be played by a minion who is not attempting to block the action. [ANK 20190628]'
   - '[CHI] Can be played on a minion with no or negative stealth, in which case it has no effect. [LSJ 20021211]'
 100579|Draeven Softfoot:
   - He can lock to use his ability the turn he is recruited. [ANK 20180517]
@@ -3815,7 +3814,6 @@
 102254|Night Terrors:
   - Effectively gives a -X stealth modifier to the action, where X is the amount of stealth reduced by Night Terrors at the
     time it was played. [RTR 20030519]"
-  - Can be played by a minion who is not attempting to block the action. [ANK 20190628]
   - Can be played on a minion with no or negative stealth, in which case it has no effect. [LSJ 20021211]
   - '[OBF][PRE] The strike: combat ends can only be used in the combat resulting from a successful block. It does not carry
     over to follow-up combats (eg. [CEL] {Psyche!}). [LSJ 20010813] [LSJ 20010819-2]'
@@ -4911,3 +4909,5 @@ G00102|Minus Intercept:
 G00103|Reactions targeting another player:
   - Sequencing rules apply. You must gain the impulse to be able to use the reaction, or use the effect (whichever is applicable).  Other
     Methuselahs must declare block attempts (or not) and pass the impulse to you as normal. [ANK 20200607]
+G00104|Minus stealth:
+  - Can be played/used any time during the action before resolution; a block attempt is not required. [LSJ 20020612]
