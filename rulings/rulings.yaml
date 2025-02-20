@@ -1199,8 +1199,6 @@
   - If the owner treats aggravated damage as normal, he is immune to them too. [LSJ 20040120]
 100673|Exile:
   - "[PRE] You may lock Orun cards the vampire has even if they're not Laibon. [ANK 20221208]"
-100675|Extortion:
-  - Is usable by a locked vampire [LSJ 20010725]
 100676|Extremis Boon:
   - The pool of the highest bidder goes to the target Methuselah. The loosers do not lose pool. [LSJ 20031121-1]
   - The starting bid must be enough to keep the target into play. [ANK 20190827]
@@ -1263,8 +1261,6 @@
     lost, except for unlock effects. [LSJ 19980109] [RTR 20020501]
   - Cannot be used to start a new combat if there is already a pending combat queued. [RTR 20020501]
 100706|Fata Amria:
-  - '[CHI] [REACTION] Is played after resolution, but still during the action. Action modifiers and effects that can be played
-    "after resolution" can be played before or after it. [LSJ 19981028] [ANK 20190425]'
   - The target can burn it at unlock even if they're already unlocked, but cannot burn it if they do not unlock as normal
     (eg. {Sensory Deprivation}). [LSJ 20010814-3] [LSJ 20020109]
   - Does not prevent the opponent from dodging, the dodge just has no effect. [LSJ 20030902-2] [LSJ 20060808-1]
@@ -1335,11 +1331,6 @@
   - Effects that end combat and then do something else after combat (include continuing the action as if unblocked) will be
     lost, except for unlock effects. [LSJ 19980109] [RTR 20020501]
   - Cannot be used to start a new combat if there is already a pending combat queued. [RTR 20020501]
-100757|Follow the Blood:
-  - If played on a vampire who successfully hunts with a {Perfectionist}, {Perfectionist} grants the blood before combat.
-    [LSJ 20110308]
-  - Is played after resolution, but still during the action. Cards and effects that played "after resolution" (eg. {Freak
-    Drive}) can be played before it, but not after. [LSJ 19981028] [LSJ 20100206-2]
 100758|Force of Personality:
   - '[PRE] [ACTION MODIFIER] Cards and effects that are played "as the action is announced" must be played before playing
     "regular" action modifier or reaction cards. [ANK 20190425]'
@@ -4631,9 +4622,9 @@ G00004|Hunt bonus:
 G00005|Prevent normal unlock:
   - The "does not unlock as normal" effect is redundant with being infernal. If the minion is infernal, his controller can
     still pay a pool to unlock him. [LSJ 20050114]
-G00006|Modifier after resolution:
-  - Is played after resolution, after all combats are handled, but still during the action. Action modifiers and effects that
-    can be played "after resolution" can be played before or after it. [PIB 20150915] [LSJ 19981028] [ANK 20190425]
+G00006|Played after resolution:
+  - Is played after resolution, after all combats (if any) are handled, but still during the action. Action modifiers and
+    effects that can be played "after resolution" can be played before or after it. [PIB 20150915] [LSJ 19981028] [ANK 20190425]
 G00007|Modifier after combat:
   - Is played after all combats are handled. Can be played from torpor. [LSJ 20030103] [ANK 20181219] [ANK 20180906]
 G00008|Permanent not replaced:
