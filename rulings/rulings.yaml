@@ -2154,10 +2154,6 @@
   - Cannot be used if there is no equipment to steal. [RTR 19980928]
 101209|Mighty Grapple:
   - '[POT] Additional damage inherits all of the properties of the base damage. [TOM 19960225]'
-101210|Millicent Smith, Puritan Vampire Hunter:
-  - If an action is blocked, no other effect can be used (eg. {Crypt's Sons}) before resolving Millicent's delayed effect.
-    However, effects that trigger at the same moment (eg. {Unleash Hell's Fury}) are still applied and ordered by the acting
-    Methuselah. [ANK 20210627] [ANK 20211207] [ANK 20220116]
 101214|Mind of the Wilds:
   - 'The blocking minion is prohibited to strike: combat ends for the duration of the action (during any round of any combat).
     [LSJ 20100308]'
@@ -2185,9 +2181,6 @@
     \ is not locked from the block, but from Mirror Walk's effect. [ANK 20191204]"
   - '[THA] If the action is blocked, it ends unsuccessfully immediately, no other action modifier or reaction can be played
     afterwards (eg. {Freak Drive}, slave rule, {Sowing Dissension}). [RTR 20180719] [ANK 20200207] [ANK 20210627]'
-  - "[THA] If the action is blocked, no other effect can be used (eg. {Crypt's Sons}, {Promise of 1528}, slave rule, {Sowing\
-    \ Dissension}) before resolving Mirror Walk delayed effect. However, effects that trigger at the same moment (eg. {Banshee\
-    \ Ironwail}) are still applied and ordered by the acting Methuselah. [ANK 20210627] [ANK 20211207] [ANK 20220116]"
   - '[THA] If the action is blocked and it was leaving torpor, the blocker does not get an opportunity to diablerize. [PIB
     20121216]'
 101224|Mirror's Visage:
@@ -4902,3 +4895,7 @@ G00103|Reactions targeting another player:
     Methuselahs must declare block attempts (or not) and pass the impulse to you as normal. [ANK 20200607]
 G00104|Minus stealth:
   - Can be played/used any time during the action before resolution; a block attempt is not required. [LSJ 20020612]
+G00105|Triggered by block:
+  - If the action is blocked, *all* effects that would be triggered by a successful block (eg. {Banshee Ironwail}) must be
+    applied (ordered by the acting Methuselah).  Other effects and modifiers (eg. {Crypt's Sons}, {Change of Target}) can
+    only be used after all triggered effects have been handled. [ANK 20220116] [ANK 20211207] [ANK 20210627]
