@@ -2963,8 +2963,9 @@
 101761|Shattering Crescendo:
   - '[mel], [MEL] Requires to have the second in hand to play it. [LSJ 20100208-2] [LSJ 20100823]'
 101765|Shepherd's Innocence:
-  - '[ANI] Is directed at all Methuselah controlling a card that require Animalism [ani]. [LSJ 20080809-1] [RTR 20081119]'
-  - '[ANI] Retainers and Equipments you control can also be rearranged. [LSJ 20080803-2] [LSJ 19981102]'
+  - '[ANI] Is directed at all Methuselah controlling a card that requires Animalism [ani]. [LSJ 20080809-1] [RTR 20081119]'
+  - '[ANI] Retainers and Equipments you control can also be moved between your vampires. Those on an ally must move to a vampire
+    you control (eg. {Raven Spy} on a {Tunnel Runner}). [LSJ 20080803-2] [LSJ 19981102]'
 101767|Shilmulo Tarot:
   - There is no limit to the number of cards it can store. [PIB 20110712-2]
   - If there is another copy in play, the cards are put on it before it enters contest. [ANK 20221028] [LSJ 20090428-1]
