@@ -1045,8 +1045,11 @@
   - Cannot move blood to Imbued in the uncontrolled region. [LSJ 20070516]
   - Cannot be used when a card is played to draw a card that would cancel it "as it is played". [RTR 20040501]
   - Cards that are not replaced count against the hand size. [ANK 20180318]
-  - The hand size bonus ends during the discard phase, it can be ordered as the acting Methuselah wishes against other end-of-turn
-    and discard phase effects, following normal sequencing rules. [LSJ 20020904-2]
+  - The hand size bonus (as well as other "at the end of the turn" effects) ends at the end of the discard phase, that is
+    when everyone passes the impulse to lead to the turn ending. Any discard phase actions and other "during the discard phase"
+    effects must be handled first. In both cases,  normal sequencing rules are followed. [LSJ 20100812] [LSJ 20020904-2]
+  - You cannot lock the card "in response to" another copy being played (in order to use it before it becomes contested).
+    [RBK 2-card-types]
 100589|Drink the Blood of Ahriman:
   - During the unlock phase, the controller chooses between burning 1 blood or the card. Reversal of previous rulings. [ANK
     20220503]
