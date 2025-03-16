@@ -2451,6 +2451,7 @@
 101426|Pounce:
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
   - Damage done to the striking minion is environmental. [LSJ 19970801]
+  - Minions can (uselessly) gain additional strikes even if they cannot strike. [LSJ 19970814-2]
 101429|Power of One:
   - '[pre] Can only be used during a bleed action. [ANK 20171023] [RTR 19941109]'
   - '[pot] A limited bleed modifier can be played before or after. [LSJ 20100218] [RTR 20180511-2]'
