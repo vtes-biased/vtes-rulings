@@ -4890,3 +4890,5 @@ G00106|Change the target of a bleed:
   - Must be used before action resolution, ie. before any modifier or reaction played "as the action/bleed would be successful"
     are played. It cannot be played after a {Spying Mission} on the vampire triggers. [LSJ 19980105]
   - Cannot be used to direct a bleed to a Methuselah who would be an invalid target for a bleed. [PIB 20130711]
+G00107|Ability active in torpor:
+  - The passive ability applies even if the vampire is in torpor. [LSJ 20011022]
