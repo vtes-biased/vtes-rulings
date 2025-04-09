@@ -2053,9 +2053,8 @@
   - Can be used by a locked vampire. [PIB 20150720] [RTR 19941109]
   - Cannot be used by a vampire in torpor. [PIB 20150720] [RTR 19970306]
 101150|Malkavian Dementia:
-  - Does not require control of a ready Malkavian. [RTR 19951124]
-  - The loss of control happens at the start of unlock phase, before unlocking. This cannot be ordered among other unlock
-    effects, the Malkavian is not unlocked. [ANK 20200129] [LSJ 20091208] [RTR 19951017]
+  - The effect ends at the start of the next unlock phase, before unlocking or deciding on contests. This cannot be ordered
+    among other unlock effects, the Malkavian is not unlocked. [ANK 20200129] [LSJ 20091208] [RTR 19951017]
   - It makes no difference if the target changes clan afterwards. [ANK 20221208-2]
 '101151|Malkavian Derangement: Alternate Personality':
   - If the action fails, modifiers and reactions that can be used at the end/after an action can still be used afterwards.
@@ -2158,12 +2157,6 @@
     [LSJ 20100308]'
 101215|Puppet Master:
   - '[DOM] Can be played on a locked vampire. [PIB 20150412]'
-  - '[DOM] Can be burned to take control of the target at any point during the appropriate minion phase. It does not have
-    to be done before non-mandatory actions. [LSJ 20001201]'
-  - '[DOM] Is removed if its controller (the Methuselah who played it) is ousted (rulings before 2008-11-19 have been reversed).
-    [ANK 20181110]'
-  - '[DOM] The stolen minion is removed from the game when he should return to a Methuselah who has been ousted. [ANK 20181110]'
-  - '[DOM] The stolen minion returns to his previous controller even if he is in torpor (but stays in torpor). [LSJ 20010119]'
 101217|Minion Tap:
   - Pay the cost (if any, eg. {Secure Haven} or {Villein} on the target) at the same time you gain pool from it, you do not
     get ousted in between. [LSJ 20020620]
@@ -3116,7 +3109,6 @@
   - '[OBE] If the bleed is canceled, the vampire still returns to its original controller. [RTR 20020501]'
   - '[OBE] "After resolution" effects are applied before the target vampire is returned to his or her previous controller.
     [LSJ 20030219]'
-  - '[OBE] The minion is removed from the game when he should return to a Methuselah who has been ousted. [ANK 20181110]'
 101850|Spirit's Touch:
   - '[AUS] The maneuver can only be used if the block is successful, and only in the resulting (block-induced) combat. It
     does not carry over to a follow-up combat (eg. [CEL] {Psyche!}). [LSJ 20010813] [LSJ 20010819-2]'
@@ -3338,23 +3330,14 @@
   - 'Each copy of this card provides its own action: if the vampire manage to unlock during the minion phase, he can perform
     the action more than once (once per copy). [RTR 20030519]'
 101954|Temptation:
-  - If used to steal a vampire in combat, combat ends. Any damage yet to resolve still resolves before the change of control.
-    [LSJ 20020618]
-  - The stolen minion is removed from the game when he should return to a Methuselah who has been ousted. [ANK 20181110]
-  - The stolen minion returns to his previous controller even if he is in torpor (but stays in torpor). [LSJ 20010119]
   - If played on one of your own vampires, the action is undirected. Its effect can be used to unlock the vampire. [LSJ 20010828]
     [ANK 20180917]
-  - 'Multiple Temptations on the same minion are handled separately: effects do not stack, stealing the minion only burns
-    the counters on one of them. [LSJ 20010227]'
-  - 'No effect can be used between the decision to burn the counters and the moment the vampire changes control: the effect
-    is resolved at once. (eg. {Shalmath} cannot untap). [PIB 20121028]'
-  - If used to steal a minion attempting to block, the block attempt fails. [LSJ 20080326]
-  - If used to steal a minion targeted by an action, the action continues with the same target. Methuselahs who declined to
-    block do not get another opportunity. If the target is not legal anymore (eg. [DOM] {Slaughtering the Herd}), the action
-    ends with no effect. [LSJ 20020725]
-  - If used to steal a minion during an action, Methuselahs who declined to block are still declining to block. The new controller,
-    if he is eligible and has not declined to block yet, can block with the stolen minion even if the previous controller
-    has declined to block. [PIB 20150501]
+  - Multiple Temptations on the same minion are handled separately. Counters from one Temptation do not affect counters on
+    another Temptation. [LSJ 20010227]
+  - There is no stack in VTES; no effect can be used in response to the decision to burn the counters (e.g. {Shalmath} cannot
+    unlock). [PIB 20121028]
+  - If Temptation has 0 counters, you may still burn all counters to unlock and take control of a vampire with 0 blood. [LSJ
+    20010828-2]
 101956|Tend the Flock:
   - The blood comes from the blood bank. [ANK 20190511]
 101958|Tension in the Ranks:
@@ -4595,7 +4578,11 @@
   - She can use her ability to pay for equipments that are locations while in play (eg. {Palatial Estate}). [LSJ 20080107]
     [LSJ 20080114]
 G00001|Temporary control:
-  - If one is ousted while having temporary control of a minion, the minion is removed from the game. [LSJ 20081105]
+  - If one is ousted while having temporary control of a minion, the minion is removed from the game.  (Reversal of Previous
+    Rulings) [ANK 20181110] [LSJ 20081105]
+  - The stolen minion is removed from the game when he should return to a Methuselah who has been ousted. [ANK 20181110]
+  - The stolen minion returns to his previous controller even if he is in torpor/incapacitated (but stays in torpor/incapacitated).
+    [LSJ 20010119]
 G00002|From ash heap to deck:
   - Crypt cards cannot be put in the library and library cards cannot be put in the crypt. [LSJ 20041201]
 G00003|Circle:
@@ -4897,3 +4884,15 @@ G00106|Change the target of a bleed:
   - Cannot be used to direct a bleed to a Methuselah who would be an invalid target for a bleed. [PIB 20130711]
 G00107|Ability active in torpor:
   - The passive ability applies even if the vampire is in torpor. [LSJ 20011022]
+G00108|can steal minion during an action:
+  - If used to steal a vampire in combat, combat ends. Any damage yet to resolve still resolves before the change of control.
+    [LSJ 20020618]
+  - If used to steal a minion attempting to block, the block attempt fails. [LSJ 20080326]
+  - If used to steal a minion during an action, Methuselahs who declined to block are still declining to block. The new controller,
+    if he is eligible and has not declined to block yet, can block with the stolen minion even if the previous controller
+    has declined to block. [PIB 20150501]
+  - If used to steal a minion targeted by an action, the action continues with the same target. Methuselahs who declined to
+    block do not get another opportunity. If the target is not legal anymore (eg. [DOM] {Slaughtering the Herd}), the action
+    fizzles (ends successfully with no effect). [LSJ 20020725]
+  - Can be used to take control of the target at any point during the appropriate minion phase. It does not have to be done
+    before non-mandatory actions. [LSJ 20001201]
