@@ -1675,3 +1675,13 @@ G00107|Ability active in torpor:
 G00108|can steal minion during an action:
   101215|Puppet Master: '[DOM]'
   101954|Temptation: ''
+G00109|Cannot be dodged:
+  100377|Collapse the Arches: '[vis],[VIS]'
+  100597|Dust Up: '[ani]'
+  100604|Earthshock: ''
+  100706|Fata Amria: ''
+  101493|Projectile: ''
+  101678|Sanguinary Wind: ''
+  101693|Scorpion Sting: '[ANI]'
+  102106|Vengeance of Samiel: '[val],[VAL]'
+  102286|Aggressive Corpse: ''
