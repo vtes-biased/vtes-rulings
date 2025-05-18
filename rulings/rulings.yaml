@@ -4893,3 +4893,5 @@ G00108|can steal minion during an action:
     before non-mandatory actions. [LSJ 20001201]
 G00109|Cannot be dodged:
   - Does not prevent the opponent from dodging, the dodge just has no effect. [LSJ 20030902-2] [LSJ 20060808-1]
+G00110|Put Card in play ignoring requirements:
+  - Cards requiring a discipline come in play at the inferior version. [RBK equip] [RBK recruit-ally] [RBK employ-retainer]
