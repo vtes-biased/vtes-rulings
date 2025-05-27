@@ -379,6 +379,9 @@
   - '[VAL] If both vampires play it, the acting Methuselah decides which resolves first. The other is lost. [PIB 20120225]
     [LSJ 20011215]'
   - '[ani] Additional damage inherits all of the properties of the base damage. [TOM 19960225]'
+  - '[VAL] If the combat continues (e.g. {Telepathic Tracking}), the card has no effect (no new combat occurs afterwards).
+    [RTR 20020501]'
+  - '[VAL] Queues a combat. No other combat can be queued afterwards (e.g. {Psyche!} cannot be used). [LSJ 19971003]'
 100191|Blithe Acceptance:
   - '[OBF] If a new combat begins (eg. {Psyche!}), you need to burn 1 blood again (or the card). [ANK 20230527]'
 100192|Blood Agony:
