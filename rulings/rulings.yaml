@@ -1595,7 +1595,6 @@
   - '[cel] A limited additional strike can be played before or after. [LSJ 20001206] [ANK 20211124]'
 100912|Herald of Topheth:
   - Can use {Charming Lobby} to call a referendum "as a vampire". [RTR 20020501]
-  - Cannot play Anarch cards. [ANK 20230810]
 100913|Heroic Might:
   - The strikes it provides are Potence [pot] strikes (eg. they benefit from {Increased Strength}). [LSJ 20081120-2]
 100916|Hidden Lurker:
@@ -4890,3 +4889,5 @@ G00109|Cannot be dodged:
   - Does not prevent the opponent from dodging, the dodge just has no effect. [LSJ 20030902-2] [LSJ 20060808-1]
 G00110|Put Card in play ignoring requirements:
   - Cards requiring a discipline come in play at the inferior version. [RBK equip] [RBK recruit-ally] [RBK employ-retainer]
+G00111|Allies without a specified sect:
+  - counts as "independent" when playing cards as a vampire [LSJ 20020503] [LSJ 20060126]
