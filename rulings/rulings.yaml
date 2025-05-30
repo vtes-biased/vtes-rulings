@@ -384,9 +384,6 @@
   - '[VAL] Queues a combat. No other combat can be queued afterwards (e.g. {Psyche!} cannot be used). [LSJ 19971003]'
 100191|Blithe Acceptance:
   - '[OBF] If a new combat begins (eg. {Psyche!}), you need to burn 1 blood again (or the card). [ANK 20230527]'
-100192|Blood Agony:
-  - Must be played before strike resolution and damage prevention in order to affect the current strike (can be played after
-    both strikes have been chosen). [RTR 19960112]
 100195|Blood Brother Ambush:
   - Can be used by a Brujah Antitribu taking an action while in torpor. If this happens, the blocker loses the opportunity
     to commit diablerie. [RTR 20010710]
@@ -452,9 +449,6 @@
 100224|Bloodstorm of Chorazin:
   - The action ends unsuccessfully immediately, no other action modifier or reaction can be played afterwards. [RTR 20180719]
     [ANK 20200207]
-100228|Body Arsenal:
-  - Must be played before strike resolution and damage prevention in order to affect the current strike. (can be played after
-    both strikes have been chosen) [RTR 19960112]
 100229|Body Bag:
   - Can be equipped by a non-Anarch and would still count as a haven, although the rest of his effect does not apply. [LSJ
     20030607]
@@ -682,9 +676,6 @@
     voting 'no' before it is played, as well as to vampores voting 'no' after it is played. [RTR 19951110]
 100340|Children of Stone:
   - This is an "equip action" [TOM 19960130]
-100344|Chiropteran Marauder:
-  - '[VIC] Must be played before strike resolution and damage prevention in order to affect the current strike (can be played
-    after both strikes have been chosen). [RTR 19960112]'
 100347|Church of the Order of St. Blaise:
   - Can put counters on locations that use "blood" or "pool" counters. [PIB 20110712-1] [LSJ 20040518-2]
 100352|Claiming the Body:
@@ -702,9 +693,6 @@
 100355|Clandestine Contract:
   - The action to put the card in play and the one once the card is in play are different (a vampire can take both in the
     same turn if they unlock in between). [ANK 20220910]
-100356|Claws of the Dead:
-  - '[pro] Must be played before strike resolution and damage prevention in order to affect the current strike. Can be played
-    after both strikes have been chosen. [RTR 19960112]'
 100358|Cleave:
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
   - The effect lasts until the end of the action. [LSJ 20060412]
@@ -3090,7 +3078,6 @@
     but not {Compel the Spirit}). [LSJ 20071014]
   - The mummies are not affected by {Wormwood}. [LSJ 20100716]
 101847|Spirit Claws:
-  - '[pro] Must be played before strike resolution (and damage prevention) in order to affect the current strike [RTR 19960112]'
   - '[SPI][PRO] The [pro] and [spi][pro] versions do not contest with it. [ANK 20180629]'
 101848|Spirit Marionette:
   - '[OBE] Requirements do not apply when taking control of a card already in play. [TOM 19960226-1]'
@@ -3653,9 +3640,6 @@
 102189|WMRH Talk Radio:
   - Does not consider blocks made before the effect was used (if the action has been continued with eg. {Form of Mist}). [ANK
     20230319]
-102190|Wolf Claws:
-  - '[pro] Must be played before strike resolution and damage prevention in order to affect the current strike. Can be played
-    after both strikes have been chosen. [RTR 19960112]'
 102192|Wooden Stake:
   - If placed on a minion that cannot have equipment, the Stake is burned. The "does not unlock as normal" effect still applies.
     [LSJ 19980831]
@@ -4891,3 +4875,6 @@ G00110|Put Card in play ignoring requirements:
   - Cards requiring a discipline come in play at the inferior version. [RBK equip] [RBK recruit-ally] [RBK employ-retainer]
 G00111|Allies without a specified sect:
   - counts as "independent" when playing cards as a vampire [LSJ 20020503] [LSJ 20060126]
+G00112|Make strike aggravated:
+  - The ability to make the damage from the vampire's strikes aggravated that round must be used before strike resolution
+    and damage prevention in order to affect the current strike. Can be played after both strikes have been chosen. [RTR 19960112]
