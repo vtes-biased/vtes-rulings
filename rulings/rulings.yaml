@@ -909,13 +909,11 @@
   - If played on a referendum provided by a card in play (eg. {Anarch Revolt}), does not prevent referendums provided by another
     copy of the same card in play. [LSJ 20020201]
 100527|Derange:
-  - Cannot be moved to a Malkavian nor to a Malkavian antitribu vampire. [LSJ 19970224]
   - The clan is set when the card is played, it does not depend on the clan of the vampire that has the card on them. [LSJ
     20070707]
-  - Does not change the sect of the target. [RTR 20201130]
   - If the target changes clan to a clan inappropriate for his title, he loses its benefit until his clan is appropriate.
     He immediately yields the title if it is contested or he receives a new one. [RTR 20201130] [LSJ 20060904]
-  - When removed, the vampire goes back to its underlying clan. [RTR 20201130] [ANK 20200415]
+  - When removed, the vampire goes back to its underlying clan and sect. [RTR 20201130] [ANK 20200415]
   - Only requires one clan or the other (Malkavian or Malkavian antitribu) to be played. [ANK 20190203]
   - If another effect also changes the clan (eg. {Clan Impersonation}), the most recent one takes precedenced. [LSJ 20021209]
 100528|Descent into Darkness:
