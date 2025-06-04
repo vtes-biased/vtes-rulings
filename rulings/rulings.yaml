@@ -1635,6 +1635,8 @@
 100939|Hostile Takeover:
   - The bidding is conducted in an open format, similar to a referendum. The player who played the card conducts the auction.
     [LSJ 19990104]
+  - A Methuselah must be able to pay for their bid. Since the controller pays a reduce cost, they can bid up to twice their
+    current pool total, while other Methuselahs can bid up to their pool total. [LSJ 19990825]
 100944|Hunger Moon:
   - If the vampire gains no blood from their hunt, it's not successful, so Hunger Moon's effect does not apply. [LSJ 20050720-2]
 100947|I am Legion:
