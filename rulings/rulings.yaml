@@ -187,7 +187,6 @@
   - Burn blood effects are cumulative. [LSJ 19980225]
   - A vampire with no blood can still block, they burn what they can. [LSJ 19970707]
 100085|Archon Investigation:
-  - Must be played after blocks are declined, playing it implicitly declines block attempts. [LSJ 20070203]
   - Must be played before action resolution, before any modifier or reaction played "as the action would be successful" are
     played (eg. cannot be played after a {Spying Mission} on the vampire triggers). [LSJ 19980105]
   - Targets the bleeding vampire (eg. costs one more against {Secure Haven}, cannot be played on {Mimir}). [LSJ 20010817]
