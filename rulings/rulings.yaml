@@ -4880,3 +4880,6 @@ G00112|Make strike aggravated:
 'G00113|Create vampire from Master: Discipline':
   - If an {Agent of Power} is choosen its card text is not appled. The created vampire has no dsiciplines, is still non-unique
     and does not burn in your discard phase. [LSJ 20071001-1]
+G00114|Effect during press step:
+  - 'The effect in the press step does not happen if the combat ends prematurely (e.g. from torpor or "strike: combat ends").
+    [LSJ 20010312] [LSJ 20001027]'
