@@ -1854,7 +1854,8 @@
 101057|King of the Mountain:
   - '[FOR] Damage dealt to the opponent is environmental. [RTR 19970630] [LSJ 19970801]'
 101062|Kiss of Ra, The:
-  - Can be played by an acting vampire in torpor. [LSJ 19970325]
+  - When used by an acting vampire in torpor, there is no opportunity to diablerize the acting vampire, as the action is ended
+    without a successful block. [RBK leave-torpor] [LSJ 19970325]
   - 'No reaction or modifier can be played afterwards: the action ends immediately. [RTR 20180719]'
   - The action has not reached resolution, it is effectively canceled. The same vampire can undertake the same action again,
     but not if it was blocked then continued before (eg. [PRO] {Form of Mist}). [ANK 20211015] [ANK 20210124] [LSJ 20090220]
