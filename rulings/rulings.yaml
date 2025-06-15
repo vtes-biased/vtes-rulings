@@ -2708,6 +2708,9 @@
   - '[cel] [CEL] If the strike is dodged, no damage is done. [LSJ 19980526] [RTR 20041202]'
   - "[cel] [CEL] Is a damage dealing strike and can be modified by other effects like {Target Vitals} or {Dam the Heart's\
     \ River}, even if they are done after combat.  [ANK 20170111] [PIB 20130319]"
+101639|Rise of the Nephtali:
+  - The title stays in play when the event is removed (eg {The Uncoiling}) but can't be claimed any more with the action.
+    [LSJ 20070125]
 101640|Rising, The:
   - Anything that would increase the pool amount is considered "gaining pool". [ANK 20181105]
   - Methuselahs do not gain the pool granted by a bleed action (eg. {Kindred Spirits}) if they do not have the edge or a VP
