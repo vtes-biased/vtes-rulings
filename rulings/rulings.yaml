@@ -4862,7 +4862,7 @@ G00106|Change the target of a bleed:
   - Cannot be used to direct a bleed to a Methuselah who would be an invalid target for a bleed. [PIB 20130711]
 G00107|Ability active in torpor:
   - The passive ability applies even if the vampire is in torpor. [LSJ 20011022]
-G00108|can steal minion during an action:
+G00108|Can steal minion during an action:
   - If used to steal a vampire in combat, combat ends. Any damage yet to resolve still resolves before the change of control.
     [LSJ 20020618]
   - If used to steal a minion attempting to block, the block attempt fails. [LSJ 20080326]
