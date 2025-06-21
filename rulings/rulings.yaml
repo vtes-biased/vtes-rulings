@@ -2361,8 +2361,6 @@
     a weapon. [RTR 20010710]
   - Can be called even if there are no weapons in play. [RTR 20010710]
   - One can decide to burn a weapon with no pool cost (not paying zero). [ANK 20190724]
-101383|Pentex(TM) Loves You!:
-  - 'The ability to increase bleed is treated as an action modifier: it can be used at any time during the action. [LSJ 19970718]'
 101385|Père Lachaise, France:
   - The vampire retrieved need only be in your ash heap. It does not have to be a vampire that you had first controlled. [LSJ
     20040812]
@@ -3687,7 +3685,6 @@
   - "Can only be used once per action (multiple Haqim's Law: Retribution can each be used once). [ANK 20221102-2]"
   - If used by a Banu Haqim and another takes the action over with {Mask of a Thousand Faces}, they cannot use it again. [ANK
     20221102-2]
-  - Cannot be used during combat. [ANK 20231124]
   - Can only be used by an acting bleeding minion. [ANK 20220502]
 102227|Hunger of Marduk:
   - The provided strike can be chosen and used more than once during the round. [ANK 20220207]
@@ -3828,7 +3825,6 @@
   - 'Cost reductions apply (eg. {Powerbase: Tshwane}), except if they require an action (eg. {Charisma}). [LSJ 20090920-2]
     [RTR 20070707]'
 200119|Anu Diptinatpa:
-  - Her ability cannot be used during combat. [ANK 20231124]
   - Her ability can only be used on an acting bleeding minion. [ANK 20220502]
 200135|Arika:
   - Arika's prey can use a location during her unlock phase before burning it. [ANK 20200629]
@@ -4296,7 +4292,6 @@
   - His "as he enters play" ability can be used before he enters contest if there is another one in play. [LSJ 20080526]
 201132|Prejudice:
   - Can only use his ability when he is bleeding. [ANK 20180514]
-  - He is the one to get the bleed bonus. [ANK 20180511-2]
 201136|Pugfar:
   - His ability to give a press can only be used during the press step. [PIB 20150121]
 201138|Qawiyya el-Ghaduba:
@@ -4886,3 +4881,5 @@ G00115|Wake:
 G00116|Damage before block resolution:
   - If an acting minion leaves the ready region before block resolution, the action ends immediately and the blocking minion
     is not locked. [RBK resolve-the-action]
+G00117|Permanents that increase bleed amount during an action:
+  - The ability to increase bleed can only be used during a bleed action before Action Resolution. [ANK 20231124] [LSJ 19970718]
