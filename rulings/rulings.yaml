@@ -503,8 +503,6 @@
 100253|Brick Laying:
   - "[POT] If it burns an ally as a result, this counts as a Ⓓ action burning an ally (eg. Trophies, {Predator's Transformation}).\
     \ [ANK 20220507]"
-100254|Brigitte Gebauer:
-  - She can lock to use her ability the turn she is recruited. [ANK 20180517]
 100257|Brother's Blood:
   - Can be played even if there is no damage yet, can be used to heal and prevent destruction at the same time. [LSJ 20100527]
 100260|Brujah Debate:
@@ -578,7 +576,7 @@
     [LSJ 20041022] [RTR 20180719] [ANK 20220118] [ANK 20221205].
   - The action has reached resolution, so is subject to NRA (Non Repeatable Action) rules. [RTR 20180719] [ANK 20211015]
 100298|Carlton Van Wyk:
-  - He can use his ability to burn a vampire who has committed diablerie the turn she is recruited. [ANK 20180517]
+  - He can use his ability to burn a vampire who has committed diablerie the turn he is recruited. [ANK 20180517]
 100303|Carver's Meat Packing and Storage:
   - The effect to burn a hostage counter can be done only once per turn. [ANK 20200729] [RBK wording-templates]
 100307|Catatonic Fear:
@@ -1008,8 +1006,6 @@
   - '[CHI] Effectively gives a -X stealth modifier to the action, where X is the amount of stealth reduced by Draba at the
     time it was played. [RTR 20030519]'
   - '[CHI] Can be played on a minion with no or negative stealth, in which case it has no effect. [LSJ 20021211]'
-100579|Draeven Softfoot:
-  - He can lock to use his ability the turn he is recruited. [ANK 20180517]
 100580|Dragon's Breath Rounds:
   - 'Does not burn the gun if combat ends before the strike resolves (eg. {Rötschreck} or if the opponent uses a "strike:
     combat ends"). [LSJ 19981006] [LSJ 20001127-2]'
@@ -1072,7 +1068,6 @@
 100607|Eccentric Billionaire:
   - The "lock to reduce the cost" effect can be used when the action is announced or when the cost is paid. [LSJ 20090705]
     [ANK 20170605]
-  - He can lock to use his ability the turn he is recruited. [ANK 20180517]
 100608|Echo of Harmonies:
   - '[mel] [MEL] Can only be played by the controller of the acting minion. [LSJ 19990425]'
   - '[mel] [MEL] Can be played by a locked vampire. [LSJ 19980210]'
@@ -1425,7 +1420,6 @@
     a {.44 Magnum}). In this case the opponent strike has no effect. [PIB 20141026]
   - 'She cannot use her ability to inflict damage if a "Strike: combat ends" was used, or if combat ends due to first strike
     aggravated damage. [ANK 20211130]'
-  - She can lock to use her ability the turn she is recruited. [ANK 20180517]
 100824|Giant's Blood:
   - Cannot target an uncontrolled vampire. [LSJ 20061109]
 100825|Gift of Bellona:
@@ -1441,7 +1435,6 @@
 100832|Giulia Giovanni Abruzzina:
   - When setting the range for the round, no other effect can be used to reset the range. Skip the determine range step this
     round, but other pre-range effects can be played afterwards. [RTR 19970630] [ANK 20180720]
-  - She can lock to use her ability the turn she is recruited. [ANK 20180517]
 100834|Glancing Blow:
   - Cannot be used if there is no damage to prevent. [LSJ 20001114]
 100836|Glaser Rounds:
@@ -1718,9 +1711,6 @@
   - '[CEL] Effects that make you discard (eg. {Nicomedes}) are subject to Infernal Pursuit. [ANK 20180925-1]'
   - '[CEL] When played multiple times, each time you replace a card, draw all additional cards at once then discard down to
     hand size. [TOM 19950921-2]'
-100981|Infernal Servitor:
-  - The "can act the turn it is recruited" text does not let him act during an opponent turn if it was recruited then (eg.
-    using {Madness Network}). [ANK 20200813-3]
 100989|Inscription:
   - The vampire receiving the card need not meet any of the requirements of the card to receive the Inscription, but must
     meet all of the requirements, other than the [tha]Blood Sorcery requirement to use its effects. [ANK 20230822] [LSJ 20031116]
@@ -2268,9 +2258,6 @@
   - It still burns if a block is attempted and then an effect prevents the block (eg. {Daring the Dawn}, {Psalm of the Damned}).
     [LSJ 20090810] [LSJ 20100305]
   - It does not provide the ability to play reaction cards while locked (this is not a wake). [LSJ 20070208]
-101293|Nocturn:
-  - The "can act the turn it is recruited" text does not let him act during an opponent's turn if it was recruited then (eg.
-    using {Madness Network}). [ANK 20200813-3] [ANK 20200930]
 101295|Nod:
   - Choose for each equipment which minion will receive it, then transfer all the equipment accordingly. [ANK 20190717-1]
 101302|Nosferatu Putrescence:
@@ -2716,8 +2703,6 @@
   - '[VIS] Superior still prevents only half of the current strike. [PIB 20120116]'
 101649|Rolling with the Punches:
   - '[for] Cannot be used if there is no damage to prevent. [LSJ 20001114]'
-101650|Rom Gypsy:
-  - He can lock to use his ability the turn he is recruited. [ANK 20180517]
 101652|Root of Vitality:
   - '[vic] Is not the default action, no blood is paid for the rescue. [ANK 20181017]'
 101654|Rötschreck:
@@ -2751,8 +2736,6 @@
 101664|Rutor's Hand:
   - If the vampire is stolen before "your next turn", the Hand will not allow the vampire an extra unlock until a Methuselah
     begins a turn with the vampire with the Hand under her control. [LSJ 20031106]
-101665|Saatet-ta:
-  - She can lock to use her ability the turn she is recruited. [ANK 20180517]
 101667|Sabbat Priest:
   - Burn blood effects are cumulative. [LSJ 19980225]
   - A vampire with no blood can still block, he burns what he can. [LSJ 19970707]
@@ -3196,8 +3179,6 @@
 101908|Surge:
   - '[REACTION] Can be used only when reactions can be used (unlocked or with a wake effect). It does not count as playing
     a reaction card. [LSJ 20070403] [LSJ 20070413]'
-101910|Survivalist:
-  - He can lock to use his ability the turn he is recruited. [ANK 20180517]
 101914|Swarm:
   - If the action to employ the Swarm is blocked, the Swarm goes on the acting minion immediately, before combat, if any.
     [LSJ 20090601]
@@ -3469,7 +3450,6 @@
     {New Blood}. Multiple uncontrolled Angelos or New Bloods are in distinct "circle of one" though, so you have to choose
     one. [LSJ 20050927] [ANK 20211113]
 102087|Vagabond Mystic:
-  - He can lock to use his ability the turn he is recruited. [ANK 20180517]
   - His ability cannot be used in the middle of a single damage resolution step. [LSJ 20001111]
 102088|Vampiric Disease:
   - At the beginning of the unlock phase, an afflicted vampires unlocks and burns a blood before effects that are applied
@@ -3557,7 +3537,6 @@
     [ANK 20170309-2]
   - Can use its ability to "lock and burn to burn a location" during an action that would steal it (eg. [PRE] {Entrancement}).
     The action will have no effect but is still successful if unblocked and must then be paid. [PIB 20121031]
-  - Can use its ability to "lock and burn to burn a location" the turn it is recruited. [ANK 20180517]
 102146|Warding the Beast:
   - '[val] Is not the default action, no blood is paid for the rescue. [ANK 20181017]'
 102149|Warsaw Station:
@@ -3744,9 +3723,17 @@
 102280|Shadow Cast:
   - If the set of Methuselahs includes the controller of the vampire this card is on, the controller of the vampire is not
     considered as part of that set of Methuselahs. [LSJ 20100527]
+102283|Touch of Oblivion:
+  - '[OBL] an opposing vampire is wounded (if they play {Undying Tenacity}, they go to torpor after combat). [LSJ 20090622-2]'
+102293|Bone Shambler:
+  - A copy that was recruited this turn can be locked to grant the bleed bonus. [ANK 20180517]
+102295|Shroud of Decay:
+  - '[OBL] The cards to remove are chosen by the player playing it. There is no order to the ash heap. [LSJ 20090710]'
 102304|Rotting Behemoth:
-  - When paying their last blood for the action, the action is still considerd succesful, but combat immediately ends. [LSJ
+  - When paying their last life for the action, the action is still considerd succesful, but combat immediately ends. [LSJ
     20080512]
+  - The acting vampire's controller can choose not to remove a minion from his or her ash heap and thus burn the Rotting Behemoth.
+    [LSJ 20030701-2]
 200011|Adana de Sforza:
   - Card with multiple types (eg. Combat/Action Modifier) are considered of the type they are played as, not both. [PIB 20150924-2]
 200017|Aeron:
@@ -4883,3 +4870,8 @@ G00116|Damage before block resolution:
     is not locked. [RBK resolve-the-action]
 G00117|Permanents that increase bleed amount during an action:
   - The ability to increase bleed can only be used during a bleed action before Action Resolution. [ANK 20231124] [LSJ 19970718]
+G00118|Can act the turn it is recruited:
+  - The "can act the turn it is recruited" text does not let him act during an opponent's turn if it was recruited then (eg.
+    using {Enkil Cog}). [ANK 20200930] [ANK 20200813-3]
+G00119|Allies with "lock this ally to" abilities:
+  - They can lock to use their ability the turn they where recruited. [ANK 20180517]

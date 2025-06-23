@@ -155,6 +155,7 @@ G00011|Allies who can play as a vampire:
   101930|Talaq, The Immortal: ''
   102047|Tunnel Runner: ''
   102128|Vivienne Géroux: ''
+  102296|Spectral Servitor: ''
 G00012|Black Hand:
   '102027|Trophy: Chosen': ''
   200038|Al-Muntathir, God's Witness: ''
@@ -637,6 +638,7 @@ G00040|Non-locking referendum ability:
   201314|Stefano Giovanni: ''
   201325|Sundown: ''
   201529|Alexa Draper: ''
+  201716|Yewon Ong: ''
 G00041|True Brujah:
   200037|Al-Muntaquim, The Avenger: ''
   200038|Al-Muntathir, God's Witness: ''
@@ -791,6 +793,8 @@ G00052|Modifier as announced:
   101975|Those Who Endure Judge: ''
   102058|Uncontrollable Rage: ''
   102138|Walk of Caine: ''
+  102288|Consign to Oblivion: ''
+  102300|Paths in Two Worlds: ''
 G00054|Action creating vampire:
   100010|Abomination: ''
   100129|Bamba: ''
@@ -1136,6 +1140,7 @@ G00077|Requires successful action:
   201495|Yusuf, Scribe of Alamut: ''
   201576|Aline Gädeke: ''
   201659|Keegan: ''
+  201725|"Mother" Anja Giovanni: ''
 G00078|Action targeting locked minion:
   100046|Ambush: ''
   100204|Blood of Sandman: '[THA]'
@@ -1212,6 +1217,7 @@ G00083|Meets inferior discipline:
   101737|Shadow Court Satyr: ''
   101930|Talaq, The Immortal: ''
   102047|Tunnel Runner: ''
+  102296|Spectral Servitor: ''
 G00084|Meets a single discipline:
   100048|Amulet of Temporal Perception: ''
   100051|Ananasi Vampirephile: ''
@@ -1236,6 +1242,7 @@ G00084|Meets a single discipline:
   101737|Shadow Court Satyr: ''
   101930|Talaq, The Immortal: ''
   102047|Tunnel Runner: ''
+  102296|Spectral Servitor: ''
   200616|Ian Forestal: ''
 G00085|Meets missing disciplines:
   100039|Alia, God's Messenger: ''
@@ -1264,6 +1271,7 @@ G00085|Meets missing disciplines:
   101737|Shadow Court Satyr: ''
   101930|Talaq, The Immortal: ''
   102047|Tunnel Runner: ''
+  102296|Spectral Servitor: ''
   200616|Ian Forestal: ''
 G00086|Multi-discipline:
   100013|Absorb the Mind: ''
@@ -1722,6 +1730,7 @@ G00111|Allies without a specified sect:
   101737|Shadow Court Satyr: ''
   101930|Talaq, The Immortal: ''
   102047|Tunnel Runner: ''
+  102296|Spectral Servitor: ''
 G00112|Make strike aggravated:
   100121|Baal's Bloody Talons: ''
   100192|Blood Agony: ''
@@ -1798,3 +1807,21 @@ G00117|Permanents that increase bleed amount during an action:
   201452|Virginie, Prodigy: ''
   201553|Larissa Moreira: ''
   201619|Victoria Ash: ''
+G00118|Can act the turn it is recruited:
+  100981|Infernal Servitor: ''
+  101293|Nocturn: ''
+  102296|Spectral Servitor: ''
+G00119|Allies with "lock this ally to" abilities:
+  100254|Brigitte Gebauer: ''
+  100434|Courier: ''
+  100579|Draeven Softfoot: ''
+  100607|Eccentric Billionaire: ''
+  100823|Gianna di Canneto: ''
+  100832|Giulia Giovanni Abruzzina: ''
+  101317|Ohoyo Hopoksia (Bastet): ''
+  101650|Rom Gypsy: ''
+  101665|Saatet-ta: ''
+  101910|Survivalist: ''
+  102087|Vagabond Mystic: ''
+  102144|War Ghoul: ''
+  102234|City Star Taxi: ''
