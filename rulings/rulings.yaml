@@ -4864,7 +4864,8 @@ G00114|Effect during press step:
     [LSJ 20010312] [LSJ 20001027]'
 G00115|Wake:
   - 'The minion need not attempt to block nor play further reaction cards: that is merely an option. [TOM 19951129]'
-  - Can be played after action resolution (eg. to use a reaction card like {Fast Reaction} after combat). [LSJ 20091123]
+  - Can be played or used after action resolution (e.g. to use a reaction card like {Fast Reaction} after combat). [LSJ 20091123]
+  - Can be played or used during the “as a card is played” window, except in combat, or when there is no action. [ANK 20210819]
 G00116|Damage before block resolution:
   - If an acting minion leaves the ready region before block resolution, the action ends immediately and the blocking minion
     is not locked. [RBK resolve-the-action]
