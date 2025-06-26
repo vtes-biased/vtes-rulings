@@ -832,8 +832,6 @@
 100485|Dabbler:
   - Cannot be used if the action is canceled. [ANK 20220411]
   - Takes into account all the cards played, even if they are canceled. [ANK 20220411]
-100486|Daemonic Possession:
-  - This is not a directed action, even when targeting another Methuselah's ash heap. [LSJ 20010627] [ANK 20181129]
 100487|Dagger:
   - Still allows to fetch a second Dagger if equipped in a non-standard way (eg. {Gift of Bellona}). [LSJ 20100421]
 100488|Dagon's Call:
@@ -1157,7 +1155,6 @@
   - You cannot use the effect to burn the card and the vampire if the vampire is no longer in play to be burned. [LSJ 20070928-1]
   - You still cannot burn it if the vampire that was brought back was burned and later returned to play. [LSJ 20040726] [ANK
     20191031]
-  - "[SER] is not a directed action, even when targeting another Methuselah's ash heap. [LSJ 20010627] [ANK 20181129]"
   - If The Eternal Mask is burned by something else than its own effect (including when the vampire it is on is burned), the
     vampire that has been brought back is unaffected. [LSJ 20071206] [LSJ 20090725]
 100666|Eternal Vigilance:
@@ -1398,8 +1395,6 @@
   - '[nec] The card to retrieve must be announced when declaring the action. [LSJ 20010627]'
 100814|Gemini's Mirror:
   - Does not protect the minion's equipment, retainers, or any other cards on him. Just him and his blood. [LSJ 20031118]
-100816|Ghost-Eater:
-  - This is not a directed action, even when targeting another Methuselah's ash heap. [LSJ 20010627] [ANK 20181129]
 100817|Ghoul Escort:
   - Cannot be used if blocked when leaving torpor, as no combat would happen. [ANK 20181122-1]
 100819|Ghoul Retainer:
@@ -1890,14 +1885,6 @@
   - Effects to begin a new combat cannot be used on the Left for Dead ally as he is not ready. [LSJ 20020509]
 101085|Legacy:
   - The burn option can be used if all your unmerged advanced vampires are in torpor. [LSJ 20091203]
-101086|Legacy of Caine:
-  - The vampire must take the action directed at a vampire, even if no vampire has any blood left. [LSJ 19970224]
-  - When hunting on a target that has no blood to steal, the hunt action will simply have no effect, stealing zero blood.
-    [LSJ 19970224]
-  - The vampire cannot hunt if there are no vampires at all. [LSJ 19970224]
-  - If the vampire with the card "cannot gain blood", then the stolen blood is moved to the blood bank when he hunts. [LSJ
-    20010809-1]
-  - Cannot choose to target a vampire when using another non-standard hunt action (eg. {Abactor}). [LSJ 20090606] [ANK 20190707]
 101087|Legacy of Pander:
   - Multiple copies in play give only 1 vote in total to non-titled Panders. [LSJ 20010819] [PIB 20130722]
 101088|Legacy of Power:
@@ -2443,9 +2430,7 @@
     "regular" action modifier or reaction cards. [ANK 20190425]'
   - '[abo] [ACTION MODIFIER] Replace the action card (if any) before playing it. [ANK 20181208]'
 101481|Pressing Flesh:
-  - This is not a directed action, even when targeting another Methuselah's ash heap. [LSJ 20010627] [ANK 20181129]
-  - Requirements need not to be met. If the ally requires a discipline, the inferior version is used. If the cost is X (eg.
-    {Reanimated Corpse}), X is zero. [LSJ 20071015] [LSJ 20100302-1]
+  - Requirements need not to be met. If the cost is X (eg. {Reanimated Corpse}), X is zero. [LSJ 20071015] [LSJ 20100302-1]
   - Can be used on an Imbued, it comes back as a zombie ally and is not an Imbued anymore. It has no Creed and cannot use
     Virtues, nor does it get Convictions. [LSJ 20100211]
   - A card burned while representing something else (eg. an ally raised by {Khazar's Diary (Endless Night)}) is not a valid
@@ -2645,8 +2630,6 @@
 101609|Resilient Mind:
   - Can be used when a {Form of Corruption} is put into play to protect that vampire from that {Form of Corruption}. [LSJ
     20031223]
-101614|Restricted Vitae:
-  - A hunt is not successful if no blood is gained, even if the hunt action is still successful. [LSJ 20050720-2]
 101615|Restructure:
   - Requirements do not apply when taking control of a card already in play. [TOM 19960226-1]
 101616|Resume the Coil:
@@ -3524,8 +3507,6 @@
   - May still be "canceled as it is played" when used as an out-of-turn master. [LSJ 20031201]
 102135|Vulture's Buffet:
   - Is a hunt action. [ANK 20200421]
-  - Cannot be played if there is no minion or retainer in any Methuselah's ash heap. [ANK 20200420-3]
-  - Is undirected. [ANK 20180202]
 102141|Walks-With-Might:
   - Only affects the cost of masters played by his controller. [LSJ 20081124-1]
 102143|Wanderer's Counsel:
@@ -3573,9 +3554,6 @@
     another pre-range damaging effect is played then, all damages are prevented and mended together. [ANK 20170930]
 102165|Web of Knives Recruit:
   - It is not an action to put a vampire in play (eg. {Blood Cult Awareness Network} does not give it -1 stealth). [LSJ 20060616-2]
-102166|Week of Nightmares:
-  - Ravnos can target a Ravnos with no blood with the +1 stealth hunt action. [RTR 20010711]
-  - Cannot choose to target a vampire when using another non-standard hunt action (eg. {Abactor}). [LSJ 20090606] [ANK 20190707]
 102168|Weigh the Heart:
   - '[AUS][SER] Cards and effects that are played "as the action is announced" must be played before playing "regular" action
     modifier or reaction cards. [ANK 20190425]'
@@ -3963,6 +3941,8 @@
   - She cannot play {Lay Low}. [ANK 20220810]
 200508|Gerald Windham:
   - His ability gives him votes but no title. [ANK 20190725]
+200521|Giovanni del Georgio:
+  - His special is an undirected action [ANK 20180202] [LSJ 20010627]
 200528|Goratrix:
   - Can steal 2 blood or life. [ANK 20190701]
 200529|Goratrix:
@@ -4087,11 +4067,6 @@
     and they're forced to abstain instead. [PIB 20141226]
 200793|Krassimir:
   - When he cancels an action, it has reached resolution, so is subject to NRA (Non Repeatable Action) rules. [LSJ 20011202-2]
-200798|Kyoko Shinsegawa:
-  - She can only perform the action provided by her ability once per turn. [PIB 20121112]
-  - If other non-standard hunt actions are granted, she may choose from among those options. [LSJ 20060306]
-  - She cannot steal more blood than the target has when using a special hunt ability. [LSJ 20100915]
-  - Cannot choose to target a vampire when using another non-standard hunt action (eg. {Abactor}). [LSJ 20090606]
 200811|Lambach:
   - The provided action is an "equip action" [TOM 19960130]
   - '[MERGED] Is Independent. If the base version was the one in play, it changes sect as it is merged. If it had an anarch
@@ -4696,6 +4671,7 @@ G00063|Cancel with no action:
   - Cannot be played during combat. [LSJ 20080618]
 G00064|Special Hunt action:
   - Is affected by increases to Hunt value. Blood comes from the target of the hunt. [RTR 20030519] [RTR 20180511]
+  - A minion can only perform this special hunt once per turn. [RBK action-card-or-card-in-play]
 G00065|Burn blood for effect:
   - The burn blood effect is not reduced by effects that reduce the cost of the card (eg. {Adana de Sforza}). [ANK 20210226]
 G00066|Changes controller of location:
@@ -4876,3 +4852,15 @@ G00118|Can act the turn it is recruited:
     using {Enkil Cog}). [ANK 20200930] [ANK 20200813-3]
 G00119|Allies with "lock this ally to" abilities:
   - They can lock to use their ability the turn they where recruited. [ANK 20180517]
+G00120|Prohibits hunt as normal:
+  - 'Other non-standard hunt actions are still permitted (e.g. {Abactor}). When performing such actions, their text apply:
+    this card does not combine with them. [LSJ 20090606] [ANK 20190707] [LSJ 20060306]'
+G00121|Steal Blood as a Hunt action:
+  - This special hunt cannot steal more blood than the target has. It can target a vampire with no blood. If no blood is stolen,
+    the hunt is unsuccessful, even if the action stays successful. [LSJ 20050720-2] [RTR 20010711] [LSJ 20100915]
+  - The blood stolen by this special hunt goes to the blood bank if it cannot be gained by the vampire. [LSJ 20010809-1]
+  - This special hunt must be directed at a vampire, even if none has any blood. It cannot be performed if there are no other
+    vampires. [LSJ 19970224]
+G00122|Targets card in Ash Heap:
+  - Is an undirected action, even when targeting another Methuselah's ash heap. [LSJ 20010627] [ANK 20180202]
+  - Cannot be played if no target is available in any Methuselah's ash heap. [ANK 20200420-3]
