@@ -331,8 +331,6 @@
   - Can be used by a vampire who is already attempting to block. [ANK 20181122-2]
   - '[QUI] Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]'
   - '[QUI] Does not ignore the normal prey, predator or target restrictions. [ANK 20180623]'
-  - '[QUI] The block attempt and subsequent combat still happen if the action lacks a suitable target because of the unlock
-    (eg. {Ambush}). [LSJ 20090514]'
 100172|Black Throne, The:
   - The contract effect can be used even if the target is burned or if the contract is burned when the target leaves the ready
     region (eg. {Priority Contract}). [PIB 20150512]
@@ -1160,8 +1158,6 @@
 100666|Eternal Vigilance:
   - Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
   - When used to block, does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
-  - The block attempt and subsequent combat still happen if the action lacks a suitable target because of the unlock (eg.
-    {Ambush}). [LSJ 20090514]
 100667|Eternals of Sirius, The:
   - Pay the cost at the same time you gain pool from it, you do not get ousted in between (ie. can be played when at 4 pool).
     [LSJ 20020620] [LSJ 20080612]
@@ -2786,8 +2782,6 @@
   - Can be used by a locked a vampire who is already attempting to block (eg. if he played a wake effect before)". [ANK 20181122-2]
   - Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
   - Does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
-  - The block attempt and subsequent combat still happen if the action lacks a suitable target because of the unlock (eg.
-    {Ambush}). [LSJ 20090514]
 101707|Secret Horde:
   - If put into play with no counters (X=0), it burns immediately. [LSJ 20070308]
 101710|Secret Passage:
@@ -2812,8 +2806,6 @@
   - '[ANI] Can be used by a vampire who is already attempting to block. [ANK 20181122-2]'
   - '[ANI] Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]'
   - '[ANI] Does not ignore the normal prey, predator or target restrictions. [ANK 20180623]'
-  - '[ANI] The block attempt and subsequent combat still happen if the action lacks a suitable target because of the unlock
-    (eg. {Ambush}). [LSJ 20090514]'
 101720|Sense Vitality:
   - '[val], [VAL] Is not the default action, no blood is paid for the rescue. [ANK 20181017]'
 101721|Sensory Deprivation:
@@ -3355,8 +3347,6 @@
 '102031|Trophy: Domain':
   - Cannot be used to unlock if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
   - When used to block, does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
-  - When used to block, the block attempt and subsequent combat still happen if the action lacks a suitable target because
-    of the unlock (eg. {Ambush}). [LSJ 20090514]
 '102032|Trophy: Hunting Ground':
   - Is a non-derivative hunting ground (ie. taken into account by {Poacher's Hunting Ground}), even if not active yet. [ANK
     20170430] [LSJ 20080610]
@@ -3385,8 +3375,6 @@
 102063|Under Siege:
   - Cannot be used to unlock if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
   - When used to block, does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
-  - The block attempt and subsequent combat still happen if the action lacks a suitable target because of the unlock (eg.
-    {Ambush}). [LSJ 20090514]
   - Can be used for intercept even if the vampire is already unlocked. [PIB 20150216]
   - Can be used by a vampire who is already attempting to block. [ANK 20181122-2]
 102065|Underbridge Stray:
@@ -4864,3 +4852,6 @@ G00121|Steal Blood as a Hunt action:
 G00122|Targets card in Ash Heap:
   - Is an undirected action, even when targeting another Methuselah's ash heap. [LSJ 20010627] [ANK 20180202]
   - Cannot be played if no target is available in any Methuselah's ash heap. [ANK 20200420-3]
+G00123|Unlocks and attempts to block:
+  - If the action lacks a suitable target because of the unlock (e.g. {Ambush}), the block attempt still happens, as does
+    the resulting combat if the block is successful. [LSJ 20090514]
