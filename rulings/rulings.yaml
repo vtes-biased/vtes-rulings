@@ -783,8 +783,6 @@
 100432|Coterie Tactics:
   - Cannot be used if the vampires cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
   - Does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
-  - The block attempt and subsequent combat still happen if the action lacks a suitable target because of the unlock (eg.
-    {Ambush}). [LSJ 20090514]
 100433|Council of Seraphim:
   - The burn option cannot be used if all your Seraph are in torpor. [LSJ 20091204]
 100434|Courier:
