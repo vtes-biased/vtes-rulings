@@ -327,10 +327,6 @@
   - Cannot be attempted twice even if the first attempted was blocked and failed. [LSJ 20091224]
 100166|Black Gloves:
   - Damage done to the bearer is environmental. [LSJ 19970801]
-100171|Black Sunrise:
-  - Can be used by a vampire who is already attempting to block. [ANK 20181122-2]
-  - '[QUI] Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]'
-  - '[QUI] Does not ignore the normal prey, predator or target restrictions. [ANK 20180623]'
 100172|Black Throne, The:
   - The contract effect can be used even if the target is burned or if the contract is burned when the target leaves the ready
     region (eg. {Priority Contract}). [PIB 20150512]
@@ -780,9 +776,6 @@
   - If recruited in the normal fashion, the card will have been replaced by the time the ally enters play. In other cases
     however, it won't have been and the Methuselah will have to work with only the cards in hand (or ash heap) to add life
     to it before replacing. [LSJ 20070707]
-100432|Coterie Tactics:
-  - Cannot be used if the vampires cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
-  - Does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
 100433|Council of Seraphim:
   - The burn option cannot be used if all your Seraph are in torpor. [LSJ 20091204]
 100434|Courier:
@@ -1089,9 +1082,6 @@
   - '[for] Cannot be used if there is no damage to prevent. [LSJ 20001114]'
 100627|Elixir of Distillation:
   - Does not burn if combat ends before it resolves. [LSJ 20001127-2] [LSJ 20010806-1] [LSJ 19981006]
-100628|Eluding the Arms of Morpheus:
-  - Can be used by a vampire who is already attempting to block. [ANK 20181122-2]
-  - Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
 '100631|Elysium: The Arboretum':
   - When ending combat, cards that are played at the end of round/combat can still be played (eg. {Taste of Vitae}, {Disarm}).
     [RTR 20001020] [LSJ 20001024]
@@ -1153,9 +1143,6 @@
     20191031]
   - If The Eternal Mask is burned by something else than its own effect (including when the vampire it is on is burned), the
     vampire that has been brought back is unaffected. [LSJ 20071206] [LSJ 20090725]
-100666|Eternal Vigilance:
-  - Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
-  - When used to block, does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
 100667|Eternals of Sirius, The:
   - Pay the cost at the same time you gain pool from it, you do not get ousted in between (ie. can be played when at 4 pool).
     [LSJ 20020620] [LSJ 20080612]
@@ -1496,7 +1483,6 @@
     20180926]
   - All effects apply for the duration of the action. They still apply if the action "continues as if unblocked" (eg. [PRO]
     {Form of Mist}) and, if [aus] was used, the maneuver is provided again. [LSJ 20010814-2] [ANK 20181127]
-  - Can be used by a vampire who is already attempting to block. [ANK 20181122-2]
   - '[aus] The maneuver can only be used if the block is successful, and only in the resulting (block-induced) combat. It
     does not carry over to a follow-up combat (eg. [CEL] {Psyche!}). [LSJ 20010813] [LSJ 20010819-2]'
 100869|Guide and Mentor:
@@ -2136,8 +2122,6 @@
   - If there is another copy in play, the cards are put on it before it enters contest. [ANK 20221028] [LSJ 20090428-1]
   - If it is not equipped but merely put into play (eg. {Alastor}), it does not get cards. It does is if it is equipped (eg.
     {Magic of the Smith}). [LSJ 20090506]
-101233|Mole, The:
-  - '[ani] Can be used by a vampire who is already attempting to block. [ANK 20181122-2]'
 101235|Molotov Cocktail:
   - 'If the opponent strikes: combat ends, this strike is not resolved and the Cocktail is not put on this minion, even if
     combat continues thanks to another effect like {Relentless Reaper}. [ANK 20200203-1]'
@@ -2212,7 +2196,6 @@
 101275|Netwar:
   - '[aus] If another Methuselah is the target, he must declare whether he attempts or declines to block before Netwar can
     be played. [LSJ 20100507] [ANK 20210131-1]'
-  - '[chi] Can be used by a vampire who is already attempting to block. [ANK 20181122-2]'
 101276|Neutral Guard:
   - No other effect can be used to reset the range, but other pre-range effects can be played. [RTR 19970630] [ANK 20180720]
   - If another effect also sets the range, the first to resolve has priority (eg. {Squirrel Balance} and {Asanbonsam Ghoul}
@@ -2270,8 +2253,6 @@
 101320|Omael Kuman:
   - When setting the range for the round, no other effect can be used to reset the range. Skip the determine range step this
     round, but other pre-range effects can be played afterwards. [RTR 19970630] [ANK 20180720]
-101322|Open Dossier:
-  - Can be used by a vampire who is already attempting to block. [ANK 20181122-2]
 101325|Ophidian Gaze:
   - '[SER][PRE] Can be used to cancel an action modifier player "after the action/referendum is successful" (eg. {Voter Captivation}
     or {Freak Drive}). [ANK 20180909]'
@@ -2551,8 +2532,6 @@
   - If the canceled card had a "Do Not Replace Until" clause on it, that clause is canceled as well and the card is replaced
     normally. [LSJ 20011023]
   - Can be used to cancel all action cards, including employ retainer, recruit ally and political action. [ANK 20200813-2]
-101559|Read the Winds:
-  - '[ANI][AUS] Can be used by a vampire who is already attempting to block. [ANK 20181122-2]'
 101561|Reality Mirror:
   - Cannot be used to bypass restrictions (like Clan restriction or any other play restriction). [LSJ 20020426]
 101563|Reanimated Corpse:
@@ -2776,10 +2755,6 @@
     Fortitude levels. [LSJ 20070320-2]
   - 'Can be equipped by a vampire with capacity less than 6: he cannot use it to bleed but the disciplines bonus applies.
     [LSJ 20030607] [ANK 20180801]'
-'101706|Second Tradition: Domain':
-  - Can be used by a locked a vampire who is already attempting to block (eg. if he played a wake effect before)". [ANK 20181122-2]
-  - Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
-  - Does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
 101707|Secret Horde:
   - If put into play with no counters (X=0), it burns immediately. [LSJ 20070308]
 101710|Secret Passage:
@@ -2800,10 +2775,6 @@
 101714|Selective Silence:
   - '[QUI] No other effect can be used to reset the range, but other pre-range effects can be played afterwards. [RTR 19970630]
     [ANK 20180720]'
-101717|Sense the Savage Way:
-  - '[ANI] Can be used by a vampire who is already attempting to block. [ANK 20181122-2]'
-  - '[ANI] Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]'
-  - '[ANI] Does not ignore the normal prey, predator or target restrictions. [ANK 20180623]'
 101720|Sense Vitality:
   - '[val], [VAL] Is not the default action, no blood is paid for the rescue. [ANK 20181017]'
 101721|Sensory Deprivation:
@@ -3011,10 +2982,6 @@
     be played before the Blood Hunt. [RTR 19991206]'
 101838|Sowing Dissension:
   - Is an action directed at all other Methuselahs [PIB 20150821] [RTR 20080808]
-101840|Speak with Spirits:
-  - '[SPI] Can be used by a vampire who is already attempting to block. [ANK 20181122-2]'
-101841|Special Report:
-  - Can be used on a vampire who is already attempting to block". [ANK 20181122-2]
 101845|Spell of Life:
   - The copies you burn need not be ones you control. [LSJ 20090428]
   - The mummies put into play are unique by card name. The name is "in play" for anything that cares. They contest unique
@@ -3342,9 +3309,6 @@
 '102029|Trophy: Diablerie':
   - 'May be retrieved when diablerizing a Red List vampire prior to the blood hunt referendum: it protects the vampire in
     that referendum. All copies on the vampire are then burned at the end of that action. [LSJ 20050222]'
-'102031|Trophy: Domain':
-  - Cannot be used to unlock if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
-  - When used to block, does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
 '102032|Trophy: Hunting Ground':
   - Is a non-derivative hunting ground (ie. taken into account by {Poacher's Hunting Ground}), even if not active yet. [ANK
     20170430] [LSJ 20080610]
@@ -3371,10 +3335,7 @@
 102061|Undead Strength:
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
 102063|Under Siege:
-  - Cannot be used to unlock if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
-  - When used to block, does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
   - Can be used for intercept even if the vampire is already unlocked. [PIB 20150216]
-  - Can be used by a vampire who is already attempting to block. [ANK 20181122-2]
 102065|Underbridge Stray:
   - He can burn 1 life to give a minion you control a press the turn he is recruited. [ANK 20180517]
 102067|Undue Influence:
@@ -3631,8 +3592,6 @@
   - Can only be used by an acting bleeding minion. [ANK 20220502]
 102227|Hunger of Marduk:
   - The provided strike can be chosen and used more than once during the round. [ANK 20220207]
-102230|Organized Resistance:
-  - Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
 102232|Platinum Protocol, The:
   - '[pro] The minion getting the corruption counter is chosen at action resolution (not declaration). [ANK 20240706] [LSJ
     20080608]'
@@ -4853,3 +4812,7 @@ G00122|Targets card in Ash Heap:
 G00123|Unlocks and attempts to block:
   - If the action lacks a suitable target because of the unlock (e.g. {Ambush}), the block attempt still happens, as does
     the resulting combat if the block is successful. [LSJ 20090514]
+G00124|forces Block attempt:
+  - Can be used by a vampire who is already attempting to block. [ANK 20181122-2]
+  - Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
+  - Does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
