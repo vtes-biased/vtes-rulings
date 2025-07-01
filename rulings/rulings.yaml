@@ -1615,7 +1615,6 @@
     combat occurs afterwards). [RTR 20020501]
   - Queues a combat. No other combat can be queued afterwards (eg. {Psyche!} cannot be used). [LSJ 19971003]
   - Cannot be used if there is already another combat queued. [RTR 20020501]
-  - Cannot be played when your crypt is empty. [RTR 20000501]
   - If the illusionary vampire does not enter combat, then they are removed from the game at the end of the current action.
     [LSJ 19991110]
   - If the illusionary vampire is burned in combat (aggravated damage or blood hunt referendum after an {Amaranth}), they
@@ -2151,6 +2150,8 @@
   - '[DOM] Can be played by a locked vampire. [LSJ 19980210]'
   - '[DOM] Multiple copies can be played by different minions on the same action. [ANK 20200515]'
   - '[DOM] Cannot be used to let the target play a [dom] action card. [LSJ 20100527]'
+101248|Mozambique Allure:
+  - Cannot be played if the vampire is Laibon and your crypt is empty. [LSJ 20070411-2] [RTR 20000501]
 101251|Mummify:
   - The unlock effect takes place before the end of combat. The rest of the effect takes place after the end of combat. [RTR
     19970630]
@@ -4815,3 +4816,5 @@ G00124|forces Block attempt:
 G00125|Exchange card with ash heap:
   - Both the card in the ash heap and the card in hand have to be named when announcing the action or effect. [LSJ 20000222]
     [LSJ 20011023]
+G00126|Move or reveal card from crypt:
+  - Cannot be played when the target crypt is empty. [RTR 20000501] [LSJ 20070411-2]
