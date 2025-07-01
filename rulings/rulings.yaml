@@ -661,7 +661,7 @@
   - May be played at any time during the voting process and, when votes are tallied, will cause the loss of blood to vampires
     voting 'no' before it is played, as well as to vampores voting 'no' after it is played. [RTR 19951110]
 100340|Children of Stone:
-  - This is an "equip action" [TOM 19960130]
+  - '[tha] This is an equip action. [TOM 19960130]'
 100347|Church of the Order of St. Blaise:
   - Can put counters on locations that use "blood" or "pool" counters. [PIB 20110712-1] [LSJ 20040518-2]
 100352|Claiming the Body:
@@ -711,8 +711,6 @@
 100391|Conceal:
   - Is directed against the Methuselah controlling the equipment or location, not the minion it's on. [LSJ 20090324]
 100392|Concealed Weapon:
-  - 'The weapon must be announced and in hand when the card is played, before it is replaced, but need not to be shown: it
-    can be kept apart face down. [LSJ 19991207] [ANK 20180925-2] [LSJ 20100130]'
   - A weapon's "current damage" is the amount of damage that it would inflict if used as a strike against a generic opponent.
     [RTR 19980623]
   - Strength or other bonus from the minion or other cards in play are not counted for the damage limit. [LSJ 20020821] [LSJ
@@ -941,8 +939,6 @@
   - '[REACTION] Can be used only when reactions can be used (unlocked or with a wake effect). It does not count as playing
     a reaction card. [LSJ 20070403] [LSJ 20070413]'
 100555|Disguised Weapon:
-  - The weapon is announced when the card is played, it must be in hand but need not to be shown. You can put the card apart
-    face down when announcing it. [LSJ 19991207] [ANK 20180925-2]
   - If used to equip and contest a unique weapon already in play, neither weapon is available for use during the combat. If
     the opposing minion had already chosen that weapon as his strike, then the strike has no effect. [LSJ 19980319]
 100557|Disputed Territory:
@@ -1711,8 +1707,6 @@
   - Provides no additional strength to a Priscus for his ballots. [RTR 19970630]
 101016|Jack of Both Sides:
   - Is an "equip action" when equipping an equipment, an "employ action" when employing an retainer. [TOM 19960130] [LSJ 20091110]
-  - The target card is announced when announcing the action, but is not discarded if the action fails. It must be in hand
-    before replacing the Jack. [LSJ 20040519-2] [RTR 19991001] [LSJ 20101210]
   - Requirements apply but do not count as requirements for the action (eg. you cannot use {CrimethInc.} if the card requires
     an Anarch). [LSJ 20100725] [LSJ 20100303] [ANK 20180817]
   - Does not prevent the acting vampire from playing the equipment or retainer directly this turn if he unlocks (not the same
@@ -4782,3 +4776,6 @@ G00127|Set range:
   - Once the range is set, no other effect can be used to reset the range that round, but other pre-range effects can be played
     afterwards. Skip the Determine Range step for that round. [RTR 19970630] [ANK 20180720]
   - If another effect was already setting that round's range (e.g. {Neutral Guard}), that effect has priority. [PIB 20120214]
+G00128|Equip or employ another card from hand:
+  - The equipment or retainer must be announced by name, and in hand, when the card or effect is declared (before the card,
+    if any, is replaced), but need not to be shown until the effect resolves. [LSJ 20100130] [ANK 20180925-2] [LSJ 19991207]
