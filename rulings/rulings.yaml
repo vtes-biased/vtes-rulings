@@ -4816,3 +4816,6 @@ G00124|forces Block attempt:
   - Can be used by a vampire who is already attempting to block. [ANK 20181122-2]
   - Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
   - Does not ignore the normal prey, predator or target restrictions. [ANK 20180623]
+G00125|Exchange card with ash heap:
+  - Both the card in the ash heap and the card in hand have to be named when announcing the action or effect. [LSJ 20000222]
+    [LSJ 20011023]
