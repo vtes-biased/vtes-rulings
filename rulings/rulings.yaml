@@ -4488,8 +4488,6 @@ G00029|Retainer that strike:
   - Does not gain additional strikes from its owner. [RTR 19941109]
 G00030|Vote playable once per game:
   - Burning the card for a vote is not considered playing it. [ANK 20210309-2]
-G00031|Master on vampire who can use it:
-  - The vampire's controller chooses to use the effect of the card or not. [ANK 20210309-3]
 G00032|Cost X:
   - X can be zero. [LSJ 20030502]
 G00033|Prevent non-aggravated:
@@ -4763,7 +4761,7 @@ G00122|Targets card in Ash Heap:
 G00123|Unlocks and attempts to block:
   - If the action lacks a suitable target because of the unlock (e.g. {Ambush}), the block attempt still happens, as does
     the resulting combat if the block is successful. [LSJ 20090514]
-G00124|forces Block attempt:
+G00124|Forces Block attempt:
   - Can be used by a vampire who is already attempting to block. [ANK 20181122-2]
   - Cannot be used if the vampire cannot attempt to block the action (eg. {Daring the Dawn}). [LSJ 20010714-2]
   - Does not ignore the normal prey, predator or target restrictions. [ANK 20180623]

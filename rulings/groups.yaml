@@ -532,9 +532,6 @@ G00030|Vote playable once per game:
   100064|Ancient Influence: ''
   101417|Political Stranglehold: ''
   101591|Reins of Power: ''
-G00031|Master on vampire who can use it:
-  100425|Corporal Reservoir: ''
-  101388|Perfectionist: ''
 G00032|Cost X:
   100119|Awe: ''
   100242|Bounty: ''
@@ -1859,7 +1856,7 @@ G00123|Unlocks and attempts to block:
   102222|Eyes of the Wild: ''
   102230|Organized Resistance: ''
   102256|One With the Land: '[PRO]'
-G00124|forces Block attempt:
+G00124|Forces Block attempt:
   100120|Aye: ''
   100171|Black Sunrise: ''
   100432|Coterie Tactics: ''
