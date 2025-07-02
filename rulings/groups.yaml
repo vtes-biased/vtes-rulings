@@ -1924,3 +1924,6 @@ G00128|Equip or employ another card from hand:
   200255|Castiel: ''
   200459|Fatima al-Faqadi: ''
   201467|White Lily: ''
+G00129|End of round effects that care about the range:
+  100549|Disarm: ''
+  101515|Pulled Fangs: ''
