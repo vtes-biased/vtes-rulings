@@ -1626,6 +1626,8 @@
 100964|Improvised Flamethrower:
   - If any ranged damage is inflicted at long range, even if it is prevented or ignored, the Flamethrower will burn and inflict
     damage. [LSJ 20040802]
+  - When range was set to long (e.g. {Neutral Guard}, {Sniper Rifle}), or the range default is long (e.g. [dai]{Fear of the
+    Void Below}), [TEM]{Outside the Hourglass} triggers the Flamethrower [LSJ 20100709]
 100965|Improvised Tactics:
   - '[pot] Is a strike that requires Potence, so would be enhanced by {Increased Strength}. [LSJ 20030611]'
 100966|Impundulu:
