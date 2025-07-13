@@ -3168,8 +3168,6 @@
   - '[ANI] It affects card costs, cost reductions from other effects do apply. [LSJ 20070829-1]'
   - '[ANI] Also affects the cost of combat cards played at then of a round or combat (eg. {Disarm}, {Telepathic Tracking},
     {Psyche!}, {Taste of Vitae}). [ANK 20191221]'
-101961|Terrorists:
-  - The provided action is an "equip action" [TOM 19960130]
 101964|Thanks for the Donation:
   - If your prey cannot afford to contest, she pays what she has, she is ousted, and you still yield. [RTR 20010710]
 101966|Theft of Vitae:
@@ -4777,3 +4775,8 @@ G00132|Equip/Employ/Recruit action:
   - When choosing a card whose effect depend on Discipline level, the vampire decides in respect to his disciplines the normal
     way. [LSJ 20080803]
   - Is an action of the appropriate type for the chosen card (recruit/employ/equip). [TOM 19960130]
+G00133|Allies with equip actions:
+  - Does not prevent the acting ally from playing the equipment directly this turn if he unlocks (not the same action). [ANK
+    20180817]
+  - Their special is an equip action. [TOM 19960130]
+  - Requirements apply. [ANK 20180817] [LSJ 20100303] [LSJ 20100725]
