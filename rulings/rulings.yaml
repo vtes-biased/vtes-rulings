@@ -2543,8 +2543,6 @@
     the end of it. [ANK 20191219]'
   - '[THN] Must be played after presses, can be played if the round ends prematurely and can be played before or after effects
     that are played "at then of the round" (eg. {Taste of Vitae}). [LSJ 20021113] [RTR 20030519] [ANK 20180910-1]'
-101602|Renegade Garou:
-  - The additional strike is mandatory. [PIB 20121028]
 101603|Renewed Vigor:
   - '[obe], [OBE]: Is undirected if you control the target, directed at the controller of the target otherwise. [PIB 20121210]'
 101605|Repo Man:
@@ -4784,3 +4782,5 @@ G00133|Allies with equip actions:
     20180817]
   - Their special is an equip action. [TOM 19960130]
   - Requirements apply. [ANK 20180817] [LSJ 20100303] [LSJ 20100725]
+G00134|Mandatory additional strike:
+  - The additional strike is mandatory. [PIB 20121028]
