@@ -746,7 +746,6 @@
     is. [LSJ 20090922] [ANK 20220916]'
 100414|Conservative Agitation:
   - Cannot allocate all X points to a single Methuselah, but you can allocate points to yourself. [LSJ 20000622]
-  - Can allocate more points than a Methuselah has pool. [LSJ 20020819]
 100415|Consignment to Duat:
   - '[ser] Can target a vampire with no blood. [RTR 20010711]'
   - "[ser] If it burns an ally as a result, this counts as a Ⓓ action burning an ally (eg. Trophies, {Predator's Transformation}).\
@@ -1788,7 +1787,6 @@
     the vampire could burn 1 blood to prevent one of the Games from moving on. [RTR 19951017]
 101056|Kine Resources Contested:
   - Cannot allocate 4 points to a single Methuselah, but you can allocate points to yourself. [LSJ 20000622]
-  - Can allocate more points than a Methuselah has pool. [LSJ 20020819]
 101057|King of the Mountain:
   - '[FOR] Damage dealt to the opponent is environmental. [RTR 19970630] [LSJ 19970801]'
 101062|Kiss of Ra, The:
@@ -1871,8 +1869,6 @@
     not burned until a total of one victory point has been awarded. [RTR 19991206]
   - If the effect ousting the target simultaneously ousts the target's prey (eg. {Kine Resources Contested}), the victory
     point goes to the Mathusalah who played Life Boon and the target gets 6 pool. [LSJ 20021029]
-101109|Lily Prelude:
-  - Can allocate more points than a Methuselah has pool. [LSJ 20020819]
 101110|Line, The:
   - Can reduce the cost in blood (not in pool) of any action (ally, retainer, equipment, political). [ANK 20181007]
   - Cannot be used by an ally acting "as a vampire". [ANK 20200605]
@@ -2501,7 +2497,6 @@
 101567|Reckless Agitation:
   - Cannot allocate 6 points to a single Methuselah, nor any point to yourself. Cannot be played if there is only one opponent
     left. [LSJ 20000622] [LSJ 20100129]
-  - Can allocate more points than a Methuselah has pool. [LSJ 20020819]
 101571|Recure of the Homeland:
   - Is not the default action, no blood is paid to leave torpor. [ANK 20181017]
 101573|Red Herring:
@@ -3565,6 +3560,9 @@
     [LSJ 20010814-2]'
 102263|Unleashing the Bestial Soul:
   - An opponent can play a reaction to wake as the card is played, before its effects apply. [ANK 20231028]
+102270|Camarilla's Iron Fist:
+  - Cannot allocate 5 points to a single Methuselah, nor any point to the methuselah gaining pool. Cannot be played if there
+    is only one opponent left. [ANK 20241106] [LSJ 20100129] [LSJ 20000622]
 102273|Loup:
   - Can be used even if the stealth is not currently needed. [LSJ 20011214-2]
 102280|Shadow Cast:
@@ -4781,3 +4779,5 @@ G00133|Allies with equip actions:
   - Requirements apply. [ANK 20180817] [LSJ 20100303] [LSJ 20100725]
 G00134|Mandatory additional strike:
   - The additional strike is mandatory. [PIB 20121028]
+G00135|Allocate points for pool damage:
+  - Can allocate more points than a Methuselah has pool. [LSJ 20020819]
