@@ -3839,6 +3839,8 @@
     token, it is burned. [ANK 20180524]'
   - '[MERGED] Immune means damage is not inflicted, even if non-preventable or outside combat. [LSJ 20010627] [LSJ 20010629]
     [LSJ 20090304-1]'
+  - Can choose any number for X for [aus] and [dom] reaction cards that cost X (e.g. {Kindred Coercion}), and still pay no
+    blood. [LSJ 20051117]
 200590|Henry Taylor:
   - A card with multiple types (eg. {Swallowed by the Night}) needs to have been played as a combat card to be eligible. [LSJ
     20031221]
