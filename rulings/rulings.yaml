@@ -1876,6 +1876,9 @@
   - Cannot be used by an ally acting "as a vampire". [ANK 20200605]
 101112|Liquidation:
   - Is not playable if you have less than 7 cards in your library. [LSJ 20070901]
+101114|Living Manse:
+  - An action targeting it (eg. {Conceal}) is directed at the Methuselah controlling it, not the minion it is on. [LSJ 20090324]
+  - May be put on any minion if the controller changes. If the new controller has no minions, it is burned. [RTR 19960112]
 101118|Lock:
   - Once in play, applies to an action if any one of its targets would be enough to enable his effect. [LSJ 20080809-2] [KOT
     20081119]
