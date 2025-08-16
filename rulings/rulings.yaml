@@ -4577,6 +4577,9 @@ G00074|Adding costs to a strike:
     {Dam the Heart's River}), you may choose not to strike. [LSJ 20071017]
   - If an effect granting a strike (e.g. {.44 Magnum}) is played/used after another effect that adds a cost to strike, you
     must pay the additional cost to use that first effect. [LSJ 20090529]
+  - Strikes are paid at declaration. If an ally spends their last life on a strike, combat ends before strike resolution.
+    If the strike damage depends on the amount of life/blood of the striking minion, it is calculated after the strike is
+    paid for (e.g. {Shambling Hordes}). [LSJ 20090703]
 G00075|Discounts for rescue:
   - The discount applies to the action, regardless of who pays. [PIB 20110918] [LSJ 20020304-2]
 G00076|Is affected by BCAN:
