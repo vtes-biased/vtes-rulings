@@ -2224,6 +2224,8 @@
   - Does not give the ability to play reaction cards as if unlocked. [LSJ 20080605]
   - The block attempt only applies to one block attempt (the +2 intercept remains for the entire action). If the action later
     continues as if unblocked (e.g. {Form of Mist}), another one is needed. [LSJ 20030227]
+101324|Open War:
+  - The actions provided by Open war are considered actions requiring an Anarch. [LSJ 20080604]
 101325|Ophidian Gaze:
   - '[SER][PRE] Can be used to cancel an action modifier player "after the action/referendum is successful" (eg. {Voter Captivation}
     or {Freak Drive}). [ANK 20180909]'
@@ -3575,6 +3577,10 @@
     considered as part of that set of Methuselahs. [LSJ 20100527]
 102283|Touch of Oblivion:
   - '[OBL] an opposing vampire is wounded (if they play {Undying Tenacity}, they go to torpor after combat). [LSJ 20090622-2]'
+102290|Gate of Acheron, The:
+  - The actions provided by Open war are considered Actions requiring a Hecata. [LSJ 20080604]
+102291|Pit of Contemplation:
+  - The actions provided by Open war are considered Actions requiring a Hecata. [LSJ 20080604]
 102293|Bone Shambler:
   - A copy that was recruited this turn can be locked to grant the bleed bonus. [ANK 20180517]
 102295|Shroud of Decay:
