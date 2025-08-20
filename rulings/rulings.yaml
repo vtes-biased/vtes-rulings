@@ -3921,8 +3921,17 @@
 200742|Kahina the Sorceress:
   - Her ability inflicts a total of one damage to a minion with one or more corruption counters. [LSJ 20030820]
 200753|Karen Suadela:
-  - She keeps her title if {Fall of the Camarilla} is played. She can be chosen for {Recalled to the Founder}, but does not
-    burn. Allies still benefit from {The Unmasking} intercept when trying to block her. [LSJ 20081120-2]
+  - "She can't take actions provided by Gehenna events in play ({The New Inquisition}, {Break the Code}, {Restricted Vitae}).\
+    \ She keeps her title if {Fall of the Camarilla} is played. Her controller doesn't reveal cards due to {Veil of Darkness}\
+    \ when she plays cards requiring disciplines.\nShe doesn't become immune to blood hunts via {Fueled by Heart's Blood}.\
+    \ [LSJ 20100121] [LSJ 20081120-2]"
+  - "She can be chosen for the effects of a Gehenna event, but stays unaffected: she can be chosen for {Recalled to the Founder},\
+    \ but doesn't burn. Her controller can choose to discard a card for her for {Nightmares upon Nightmares}, but she isn't\
+    \ locked if they don't. {Blood Trade} can't move blood from her, and blood moved to her go to the blood bank instead.\
+    \ [LSJ 20081120-2] [LSJ 20100121]"
+  - 'Her immunity does not extend to other things affected by events: Allies still benefit from {The Unmasking} intercept
+    when trying to block her. Locations on her are affected by {Conquest of Humanity}. Her controller burns pool to {Dragonbound}
+    while she is in Torpor. [LSJ 20081120-2] [LSJ 20100121]'
 200754|Karif al Numair:
   - His ability applies when he is in torpor. [LSJ 20011022] [LSJ 20100902-2]
 200758|Karsh:
