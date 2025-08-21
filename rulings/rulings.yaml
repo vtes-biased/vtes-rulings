@@ -3193,8 +3193,6 @@
   - '[DOM] Cards that merely provide the ability to strike (eg. {.44 Magnum}), are allowed. [ANK 20210928-2]'
   - '[DOM] Strike cards that are played during the Determine Range step because they provide a maneuver (eg. {Aid from Bats})
     are not allowed. [ANK 20210928-2]'
-101985|Tinglestripe:
-  - '[MYT] The optional maneuver cannot be used if the strike cannot be used (eg. {Hidden Lurker}). [LSJ 20021028]'
 101988|Tongue of the Serpent:
   - Can target a minion with less blood than the amount stolen. [RTR 20010711]
 101989|Toreador Grand Ball:
@@ -4459,7 +4457,7 @@ G00022|Usable during the polling step:
   - Cannot be used during a referendum that is automatically passing. [PIB 20150105] [LSJ 19980107]
 G00023|Can draw during action:
   - Can be used during an action, when the controller has the opportunity to play an effect. [ANK 20200616]
-G00024|Weapon with optional maneuver:
+G00024|Strikes with optional maneuver:
   - The optional maneuver cannot be used if the strike cannot be used (eg. {Hidden Lurker}). [LSJ 20021028]
 G00025|Replace next turn:
   - 'Is replaced before unlocking cards: other unlock effects cannot be ordered before. [ANK 20200129] [LSJ 20091208] [RTR
