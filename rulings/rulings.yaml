@@ -3615,7 +3615,6 @@
     [ANK 20210620]
 200049|Alexandra:
   - Can use her unlock ability at any point during the turn, including during a political action. [TOM 19960214]
-  - If she locks a Toreador who was attempting to block, then that block will fail. [TOM 19951007] [LSJ 19991025]
 200063|Alvaro, The Scion of Angelica:
   - He gains blood if he casts no vote, even if he has lost his title or is in torpor. [LSJ 20010526]
 200070|Ambrosio Luis Monçada, Plenipotentiary:
@@ -4806,3 +4805,5 @@ G00134|Mandatory additional strike:
   - The additional strike is mandatory. [PIB 20121028]
 G00135|Allocate points for pool damage:
   - Can allocate more points than a Methuselah has pool. [LSJ 20020819]
+G00136|Lock a minion during block attempt:
+  - If a minion who is attempting to block is locked, then that block will fail. [TOM 19951007] [LSJ 19991025]
