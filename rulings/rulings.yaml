@@ -2980,7 +2980,6 @@
 101860|Starshell Grenade Launcher:
   - Using the Launcher to reduce stealth does not force the minion to strike with it if he blocks. [LSJ 19971215]
   - Can be used to reduce stealth multiple times in the same action if the bearer manages to unlock. [LSJ 20011023-2]
-  - Locking to reduce stealth makes the bearer unable to block if he does not unlock or wake. [LSJ 20010702]
 101862|Static Virtue:
   - 'For a Laibon moved into the ready region in the last influence phase, you must retrieve Aye and Orun in pairs: the same
     number of Aye as Orun. [LSJ 20051127]'
@@ -4809,7 +4808,8 @@ G00134|Mandatory additional strike:
 G00135|Allocate points for pool damage:
   - Can allocate more points than a Methuselah has pool. [LSJ 20020819]
 G00136|Lock a minion during block attempt:
-  - If a minion who is attempting to block is locked, then that block will fail. [TOM 19951007] [LSJ 19991025]
+  - If a minion who is attempting to block is locked, then that block will fail, unless they woke earlier during the action.
+    [LSJ 20010702] [TOM 19951007] [LSJ 19991025]
 G00137|Prohibits additional strikes:
   - "The affected minion cannot play a card that provides an additional strike, even if just to benefit from another effect\
     \ (e.g.\n{Acrobatics}). [LSJ 20011214-5]"
