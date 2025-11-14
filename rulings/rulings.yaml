@@ -536,7 +536,6 @@
 100275|Cadet:
   - The target vampire is not Black Hand if he is not Sabbat. [LSJ 20070322]
 100280|Call the Great Beast:
-  - The action to put a counter on the card is an action that requires Baali. [LSJ 20050112]
   - The action to put the 11th counter on it is an action to put a vampire into play, a sterile vampire cannot do it (eg.
     {Blood Cult Awareness Network} gives it -1 stealth). [LSJ 20060815] [LSJ 20011212]
 100281|Call the Lamprey:
@@ -1485,9 +1484,6 @@
 100882|Hand of Conrad:
   - The minion cannot use the discipline provided if some effect prevents him to use the equipment (eg. {Drawing Out the Beast}).
     [RTR 20010710]
-"100884|Haqim's Law: Judgment":
-  - The provided action is considered as an action that requires an Anarch or an Independent. (eg {CrimethInc.} can be used).
-    [ANK 20180529]
 100886|Harass:
   - If the action is not blocked and the target has now more then 3 blood and is unlocked, the action "fizzles" (cost, if
     any, is paid, and it is considered successful, but has no effect). [LSJ 20070411] [LSJ 20090514]
@@ -2224,8 +2220,6 @@
   - Does not give the ability to play reaction cards as if unlocked. [LSJ 20080605]
   - The block attempt only applies to one block attempt (the +2 intercept remains for the entire action). If the action later
     continues as if unblocked (e.g. {Form of Mist}), another one is needed. [LSJ 20030227]
-101324|Open War:
-  - The actions provided by Open war are considered actions requiring an Anarch. [LSJ 20080604]
 101325|Ophidian Gaze:
   - '[SER][PRE] Can be used to cancel an action modifier player "after the action/referendum is successful" (eg. {Voter Captivation}
     or {Freak Drive}). [ANK 20180909]'
@@ -2346,6 +2340,7 @@
     20050105-1]'
 '101432|Powerbase: Berlin':
   - Blood moved to it by a Ventrue action comes from the Ventrue. [LSJ 19970414]
+  - The action to move blood to this card is considered to be an action requiring Ventrue. [LSJ 20080604]
 '101435|Powerbase: Los Angeles':
   - A card requiring a Baron (eg. {Open War}) is a card requiring an Anarch. [LSJ 20050128] [LSJ 20080603]
 '101440|Powerbase: New York':
@@ -3205,6 +3200,8 @@
 101998|Touch of Clarity:
   - Can be used as an action modifier by a non-acting ready unlocked minion controlled by the controller of the acting minion.
     [LSJ 20090425] [LSJ 19990425]
+102003|Tracker's Mark:
+  - The action to enter combat is considered to be an action requiring Salubri antitribu. [LSJ 20080604]
 102009|Transcendent Laibon:
   - The burn option can only be used if there is no Laibon with at least three Aye and three Orun. [LSJ 20110611-2]
 102011|Transfusion:
@@ -3248,6 +3245,8 @@
   - Damage done from stealing blood to the Runner is environmental. [RTR 19970630]
   - 'Damage done from stealing blood is done at the same time strike damage is done: a single instantaneous prevention card
     (eg. {Soak}) can prevent both. [ANK 20200517-2]'
+102055|Unacceptable Appearance:
+  - The action to enter combat with this vampire is considered to be an action requiring Nosferatu antitribu. [LSJ 20080604]
 102058|Uncontrollable Rage:
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
   - All the damage is aggravated. [LSJ 20011204]
@@ -3573,10 +3572,6 @@
     considered as part of that set of Methuselahs. [LSJ 20100527]
 102283|Touch of Oblivion:
   - '[OBL] an opposing vampire is wounded (if they play {Undying Tenacity}, they go to torpor after combat). [LSJ 20090622-2]'
-102290|Gate of Acheron, The:
-  - The actions provided by Open war are considered Actions requiring a Hecata. [LSJ 20080604]
-102291|Pit of Contemplation:
-  - The actions provided by Open war are considered Actions requiring a Hecata. [LSJ 20080604]
 102293|Bone Shambler:
   - A copy that was recruited this turn can be locked to grant the bleed bonus. [ANK 20180517]
 102295|Shroud of Decay:
@@ -4810,3 +4805,7 @@ G00136|Lock a minion during block attempt:
 G00137|Prohibits additional strikes:
   - "The affected minion cannot play a card that provides an additional strike, even if just to benefit from another effect\
     \ (e.g.\n{Acrobatics}). [LSJ 20011214-5]"
+G00138|Action requirements from a card in play:
+  - The action provided by this card is considered to be an action requiring the listed clan/sect/capacity/title (e.g. the
+    action provided by {Open War} is considered an action that requires an Anarch, the action provided by {The Gate of Acheron}
+    is considered an action that requires Hecata). [LSJ 20080604]
