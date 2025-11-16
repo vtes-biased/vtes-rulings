@@ -1752,8 +1752,6 @@
 '101044|Khabar: Honor, The':
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
 101046|Khazar's Diary (Endless Night):
-  - The action to put a minion from any ash heap into play is not a directed action, even when targeting another Methuselah's
-    ash heap. [LSJ 20010627] [ANK 20181129]
   - Wraiths minions can act the turn they are put into play. [LSJ 20080426]
   - Minions put into play by the Diary go back to their owner's ash heap when burned. They do not count has allies burned
     from play (eg. for {Pressing Flesh}). [PIB 20130128-2] [LSJ 20100325-2]
