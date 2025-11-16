@@ -120,8 +120,6 @@
   - '[OBE] If one is ousted while having temporary control of a minion, the minion is removed from the game. [LSJ 20081105]'
 100038|Alastor:
   - If the weapon retrieved costs blood, that cost is paid by the vampire chosen by the terms. [LSJ 20040518]
-  - Requirements do not apply. If a discipline is required (eg. {Inscription}) and the Alastor vampire does not have it, the
-    inferior version is used. [ANK 20200901] [LSJ 20040518-2]
   - Finding equipment is optional. When no equipment is found, alastor is still attached. [LSJ 20050331-2]
 100040|Alpha Glint:
   - Cards that are played at the end of round/combat can still be played (eg. {Taste of Vitae}, {Disarm}). [RTR 20001020]
@@ -704,8 +702,6 @@
   - Can only be played if the ally or retainer is in the ash heap, not if he was moved elsewhere. [RTR 19980928] [LSJ 19980929]
   - The ally or retainer retrieved is considered a new ally or retainer for all game purposes. In particular, he is not bound
     to not repeat an action his previous incarnation has already performed this turn. [LSJ 20010627]
-  - Requirements need not to be met. If the ally requires a discipline, the inferior version is used. If the cost is X (eg.
-    {Reanimated Corpse}), X is zero. [LSJ 20071015] [LSJ 20100302-1]
   - Cannot be used if the ally in the ash heap was representing something else while in play (eg. {Khazar's Diary (Endless
     Night)}). [LSJ 20071014]
 100389|Compress:
@@ -2358,7 +2354,6 @@
     "regular" action modifier or reaction cards. [ANK 20190425]'
   - '[abo] [ACTION MODIFIER] Replace the action card (if any) before playing it. [ANK 20181208]'
 101481|Pressing Flesh:
-  - Requirements need not to be met. If the cost is X (eg. {Reanimated Corpse}), X is zero. [LSJ 20071015] [LSJ 20100302-1]
   - Can be used on an Imbued, it comes back as a zombie ally and is not an Imbued anymore. It has no Creed and cannot use
     Virtues, nor does it get Convictions. [LSJ 20100211]
   - A card burned while representing something else (eg. an ally raised by {Khazar's Diary (Endless Night)}) is not a valid
@@ -3025,7 +3020,6 @@
   - If used to cancel a Trifle, the target does not get an extra Master Phase Action from the canceled Trifle. [LSJ 20090126]
     [RBK trifle]
 101897|Summon History:
-  - Requirements do not apply. If the card is an ally, it can act this turn. [LSJ 20100204]
   - You must decide the value of X (blood cost) when playing the card. [LSJ 20100314]
   - If used to fetch a card with a variable cost of X, X is zero (eg. {Reanimated Corpse}), whatever cost was announced and
     paid for Summon History. [PIB 20111101]
@@ -4698,6 +4692,8 @@ G00109|Cannot be dodged:
   - Does not prevent the opponent from dodging, the dodge just has no effect. [LSJ 20030902-2] [LSJ 20060808-1]
 G00110|Put card in play ignoring requirements:
   - Cards requiring a discipline come in play at the inferior version. [RBK equip] [RBK recruit-ally] [RBK employ-retainer]
+  - Requirements do not apply. If the cost is X (e.g. {Reanimated Corpse}), X is zero. If the effect puts/moves a minion into
+    the ready region, that minion can act this turn. [LSJ 20100204] [LSJ 20040518-2] [LSJ 20100302-1]
 G00111|Allies without a specified sect:
   - The ally counts as "independent" when playing cards as a vampire [LSJ 20020503] [LSJ 20060126]
 G00112|Make strike aggravated:
