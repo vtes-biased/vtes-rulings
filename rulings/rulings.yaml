@@ -1580,6 +1580,8 @@
 100951|Illegal Search and Seizure:
   - A weapon's "current damage" is the amount of damage that it would inflict if used as a strike by the bearer against a
     generic opponent. [RTR 19980623]
+  - Cost modifications that are not limited to cards "played" are considered before checking for card cost. [ANK 20181216]
+    [LSJ 20080125] [LSJ 20040701]
 100954|Illusions of the Kindred:
   - If the combat continues nonetheless (eg. {Telepathic Tracking}), the card has no effect (no crypt card is drawn, no new
     combat occurs afterwards). [RTR 20020501]
