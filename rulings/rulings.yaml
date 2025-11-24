@@ -514,6 +514,12 @@
 100264|Brute Force:
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
   - The "make a melee strike" option can be used with {Bundi} while {Immortal Grapple} is in effect. [LSJ 20090114]
+100265|Bujo:
+  - The chosen action card does not provide its +1 Vote, since it was not played to call the Referendum. Another Political
+    Action card can be discarded by the acting mehtuselah to gain +1 vote. [LSJ 20080219]
+  - Cannot choose a Political action that cannot be played anymore. (e.g. {Veles' Hunt}) [LSJ 20050308]
+  - When {Delaying Tactics} is played during the referendum called by Bujo, the card is not returned to anyone's hand. [LSJ
+    20100527]
 100267|Bundi:
   - Preventing damage with it does not force the minion to strike with it. [LSJ 19971215]
   - Inherits all of the properties of the base hand strike. [TOM 19960225] [LSJ 20071020]
