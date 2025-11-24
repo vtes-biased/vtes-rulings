@@ -4810,3 +4810,6 @@ G00138|Action requirements from a card in play:
 G00139|Action provided to equipped minion:
   - The action provided by the equipment to the attached minion fizzles (resolves successfully for no effect) if the equipment
     is not attached to the acting minion when the action resolves unblocked. [RTR 19960221]
+G00140|Play another action card as part of the action:
+  - Requirements apply but do not count as requirements for the action (eg. you cannot use {CrimethInc.} if the chosen card
+    requires an Anarch). [LSJ 20100725] [LSJ 20100303] [ANK 20180817]
