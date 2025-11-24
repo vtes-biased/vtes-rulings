@@ -399,7 +399,6 @@
   - A weapon strike done with first strike is unaffected (unless Soul Burn is used with first strike too). [LSJ 20040928]
   - Only nullify the weapon damage when it resolves, an opponent can successfully use {Rötschreck} after declaring a strike
     with {Ivory Bow}. [ANK 20170519]
-  - The opponent cannot play [for] prevention cards (eg. for cycling). [LSJ 20050628]
 100203|Blood of Acid:
   - Damage from Blood of Acid is environmental. [RTR 19970630] [LSJ 20020708]
   - Environmental damage is not counted by Blood of Acid. [RTR 19970630]
@@ -415,7 +414,6 @@
   - '[THA] Additional damage inherits all of the properties of the base damage. [TOM 19960225]'
   - If the opponent dodges this strike, his weapons are unaffected and do damage this round. [LSJ 20040928]
   - Does not protect the target from self-inflicted damage from a weapon. [LSJ 19980216]
-  - The opponent cannot play [for] prevention cards (eg. for cycling). [LSJ 20050628]
 100209|Blood Shield:
   - The blood is burned by the opponent when the owner prevents damage, immediately, before loosing blood to heal strike damage.
     Depending on the sequencing order, it can be before or after he has the opportunity to play damage prevention themselves.
@@ -453,7 +451,6 @@
   - '[pro] Damage done to the striking minion is environmental. [LSJ 19970801]'
 100232|Bollix:
   - '[tha] Additional damage inherits all of the properties of the base damage. [TOM 19960225]'
-  - '[tha] The opponent cannot play [for] prevention cards (eg. for cycling). [LSJ 20050628]'
   - '[tha] Does not protect from weapons if played at long range. [ANK 20230823]'
 100233|Bomb:
   - Using the provided action does not force the minion to strike with it if he is blocked. [LSJ 19971215]
@@ -840,7 +837,6 @@
   - Applies to environmental and retainer damage too. [PIB 20150603-1]
 100503|Dead Hand:
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
-  - '[NEC] The opponent cannot play [for] prevention cards (eg. for cycling). [LSJ 20050628]'
 100510|Death Seeker:
   - If used to cancel a strike, another strike is chosen. [RBK cancel-a-card] [LSJ 20100206]
   - 'Can be used to cancel a card played at the end of a round (eg. {Disarm}) or "when combat would end" (eg. {Psyche!}):
@@ -1248,9 +1244,6 @@
 100745|Flash Grenade:
   - If the opponent dodges, the "is locked and does not unlock as normal" effect do not apply, but it still burns. [RTR 20041202]
     [LSJ 20060808]
-  - 'If the combat continues or a new combat begins, the "is locked and does not unlock as normal" effect do not apply, but
-    it still burns. [RTR 20020501] [LSJ 20040602], '
-  - If the opponent unlocks before combat ends (eg. {Majesty}), the Grenade locks them again after it ends. [LSJ 20040601]
   - 'Still burns when used if the opponent uses a "strike: combat ends" too. It does not if combat ends before strike resolution
     (eg. {Rötschreck}). [LSJ 20001127-2] [LSJ 20010806-1]'
 100749|Flesh of Marble:
@@ -2520,12 +2513,6 @@
     cannot withdraw even if the total was positive. [ANK 20180813]
 101595|Relentless Reaper:
   - '[for] Cannot be used if there is no damage to prevent. [LSJ 20001114]'
-  - '[THN] Effects that end combat and then do something else after combat (include continuing the action as if unblocked)
-    will be lost, except for unlock effects. [LSJ 19980109] [RTR 20020501]'
-  - '[THN] Cannot be played after [CEL] {Psyche!}. When played before, combat continues and {Psyche!} can only be played at
-    the end of it. [ANK 20191219]'
-  - '[THN] Must be played after presses, can be played if the round ends prematurely and can be played before or after effects
-    that are played "at then of the round" (eg. {Taste of Vitae}). [LSJ 20021113] [RTR 20030519] [ANK 20180910-1]'
 101603|Renewed Vigor:
   - '[obe], [OBE]: Is undirected if you control the target, directed at the controller of the target otherwise. [PIB 20121210]'
 101605|Repo Man:
@@ -2810,12 +2797,10 @@
   - Losing the use of the Finger won't make the vampire vulnerable to a previously-played Frenzy card, and gaining it won't
     render him immune to a previously-played Frenzy card. [LSJ 20040210]
 101786|Siren's Lure:
-  - '[mel] [MEL] Can only be played by the controller of the acting minion. [LSJ 19990425]'
-  - "[mel] [MEL] Cannot be played to queue a second combat after a combat is already set up for later (e.g. by a previous\
-    \ Siren's Lure). [LSJ 20020125]"
-  - '[mel] [MEL] Other effects that queue a combat cannot be used until the new combat begins. [LSJ 20021121]'
-  - '[mel] [MEL] Combat does not occur if the action ends prematurely. [LSJ 20090826]'
-  - '[mel] [MEL] The new combat is still part of the action (eg. {Heidelberg Castle, Germany} cannot be used between combats).
+  - '[mel]/[MEL] Can only be played by the controller of the acting minion. [LSJ 19990425]'
+  - '[mel]/[MEL] Other effects that queue a combat cannot be used until the new combat begins. [LSJ 20021121]'
+  - '[mel]/[MEL] Combat does not occur if the action ends prematurely. [LSJ 20090826]'
+  - '[mel]/[MEL] The new combat is still part of the action (eg. {Heidelberg Castle, Germany} cannot be used between combats).
     [ANK 20170918-2]'
 101790|Skin of Night:
   - '[FOR] Cannot be used if there is no damage to prevent. [LSJ 20001114]'
@@ -2887,7 +2872,6 @@
   - Does not protect the target from self-inflicted damage from a weapon. [LSJ 19980216]
   - Only nullify the weapon damage when it resolves, an opponent can successfully use {Rötschreck} after declaring a strike
     with {Ivory Bow}. [ANK 20170519]
-  - The opponent cannot play [for] prevention cards (eg. for cycling). [LSJ 20050628]
 101832|Soul Gem of Etrius:
   - If the new vampire is the same as the one who burned, he is still considered a new vampire for all purposes. (eg. he can
     bleed even if the previous version has already bled this turn) [LSJ 20100213]
@@ -3115,15 +3099,6 @@
 101948|Telepathic Counter:
   - Must be played before the bleed can be considered successful (eg. before [OBF] {Spying Mission}), but can be played before
     or after block attempts. [TOM 19960303] [LSJ 20061212]
-101950|Telepathic Tracking:
-  - '[AUS] Effects that end combat and then do something else after combat (include continuing the action as if unblocked)
-    will be lost, except for unlock effects. [LSJ 19980109] [RTR 20020501]'
-  - '[AUS] Cannot be played after [CEL] {Psyche!}. When played before, combat continues and {Psyche!} can only be played at
-    the end of it. [ANK 20191219]'
-  - '[AUS] Must be played after presses, can be played if the round ends prematurely and can be played before or after effects
-    that are played "at then of the round" (eg. {Taste of Vitae}). [LSJ 20021113] [RTR 20030519] [ANK 20180910-1]'
-  - '[AUS] Can be played before of after effects that are played "at the end of combat". [LSJ 20021113] [ANK 20191219] [ANK
-    20180910-1]'
 101951|Telepathic Vote Counting:
   - May be played before, during, or after votes and ballots have been cast. [LSJ 19980130]
   - '[aus] The results are not tallied (eg. {Scorn of Adonis} or {Bribes} have no effect). [LSJ 20010209]'
@@ -3144,7 +3119,6 @@
 101958|Tension in the Ranks:
   - Pool is not paid when an imbued is incapacitated. [LSJ 20060409-2]
 101960|Terror Frenzy:
-  - '[ANI] It affects card costs, cost reductions from other effects do apply. [LSJ 20070829-1]'
   - '[ANI] Also affects the cost of combat cards played at then of a round or combat (eg. {Disarm}, {Telepathic Tracking},
     {Psyche!}, {Taste of Vitae}). [ANK 20191221]'
 101964|Thanks for the Donation:
@@ -3569,6 +3543,14 @@
     20080512]
   - The acting vampire's controller can choose not to remove a minion from his or her ash heap and thus burn the Rotting Behemoth.
     [LSJ 20030701-2]
+102328|Hedonism:
+  - '[for]/[pre] Other effects that queue a combat cannot be used until the new combat begins. [LSJ 20021121]'
+  - '[for]/[pre] Combat does not occur if the action ends prematurely. [LSJ 20090826]'
+  - '[for]/[pre] The new combat is still part of the action (eg. {Heidelberg Castle, Germany} cannot be used between combats).
+    [ANK 20170918-2]'
+102329|Hunting the Quarry:
+  - '[cel]/[tha] effects that are played when a combat "would end" (eg. {Telepathic Tracking}) cannot be play afterwards.
+    [ANK 20191219]'
 200011|Adana de Sforza:
   - Card with multiple types (eg. Combat/Action Modifier) are considered of the type they are played as, not both. [PIB 20150924-2]
 200017|Aeron:
@@ -4378,6 +4360,9 @@
 201648|Regina Blake:
   - She can use her ability to pay for equipments that are locations while in play (eg. {Palatial Estate}). [LSJ 20080107]
     [LSJ 20080114]
+201776|Věnceslava, The Implacable:
+  - Their ability is not applied if his controller is ousted by the referendum effects (reversal of previous rulings). [ANK
+    20220808]
 G00001|Temporary control:
   - If one is ousted while having temporary control of a minion, the minion is removed from the game.  (Reversal of Previous
     Rulings) [ANK 20181110] [LSJ 20081105]
@@ -4570,9 +4555,9 @@ G00073|Impersonating requirements to play cards:
   - When meeting a requirement to play a card, the vampire is treated as such for all the effects of the card, and only them,
     including duration effects. The vampire is not treated as meeting the requirements for effects the card has from being
     in play. [LSJ 20101013] [ANK 20190228] [ANK 20200703-3] [LSJ 20070708] [RTR 20070707]
-G00074|Adding costs to a strike:
-  - If an effect granting a strike is played/used before another effect that adds a cost to strike (e.g. {Lucian, the Perfect},
-    {Dam the Heart's River}), you may choose not to strike. [LSJ 20071017]
+G00074|Adding costs to a strike or strike card:
+  - If an effect granting a strike is played/used before another effect that adds a cost to strike (e.g. {Dam the Heart's
+    River}), you may choose not to strike. [LSJ 20071017]
   - If an effect granting a strike (e.g. {.44 Magnum}) is played/used after another effect that adds a cost to strike, you
     must pay the additional cost to use that first effect. [LSJ 20090529]
   - Strikes are paid at declaration. If an ally spends their last life on a strike, combat ends before strike resolution.
@@ -4813,3 +4798,17 @@ G00139|Action provided to equipped minion:
 G00140|Play another action card as part of the action:
   - Requirements apply but do not count as requirements for the action (eg. you cannot use {CrimethInc.} if the chosen card
     requires an Anarch). [LSJ 20100725] [LSJ 20100303] [ANK 20180817]
+G00141|Prevent discipline based prevention:
+  - The opponent cannot play prevention cards of that discipline (eg. for cycling). [LSJ 20050628]
+G00142|Playable "when combat would end" or "is about to end":
+  - Can be played before of after effects that are played "at the end of combat". [LSJ 20021113] [ANK 20191219] [ANK 20180910-1]
+G00143|Lock after combat ends:
+  - If the opponent unlocks before combat ends (eg. {Majesty}), the effect locks them again after it ends. [LSJ 20040601]
+G00144|Increasing strike costs:
+  - It affects card costs, cost reductions from other effects do apply. [LSJ 20070829-1]
+G00145|Continue combat:
+  - Effects that end combat and then do something else after combat (include continuing the action as if unblocked) will be
+    lost, except for unlock effects. [RTR 20020501] [LSJ 19980109]
+  - Cannot be played after [CEL] {Psyche!}. When played before, combat continues and Psyche! can only be played at the end
+    of it. [ANK 20191219]
+  - Must be played after presses, can be played if the round ends prematurely. [RTR 20030519]
