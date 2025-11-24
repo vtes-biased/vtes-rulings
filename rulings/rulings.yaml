@@ -3198,6 +3198,9 @@
   - Does nothing to the target Prince if the Prince is in Torpor with zero blood. [TOM 19960423]
   - Will cease functioning if the vampire it is on loses his Prince title. It will resume working if the vampire becomes a
     Prince again. [LSJ 19980209]
+102018|Treaty of Laibach:
+  - A Minister who has a higher level of [tha] Blood Sorcery than [ser] Serpentis (eg {Vivian VI}) has their level of Blood
+    Sorcery lowered to match their level of Serpentis. Likewise, for Tremere who have levels of Serpentis. [LSJ 20080205]
 102023|Tribute to the Master:
   - Can be played with no ready vampire. [ANK 20210717]
 102025|Triole's Revenge:
