@@ -4744,6 +4744,7 @@ G00127|Set range:
 G00128|Equip or employ another card from hand:
   - The equipment or retainer must be announced by name, and in hand, when the card or effect is declared (before the card,
     if any, is replaced), but need not to be shown until the effect resolves. [LSJ 20100130] [ANK 20180925-2] [LSJ 19991207]
+  - Cannot select cards that are "playable as if in hand" (e.g. from {The Erciyes Fragments}) [LSJ 20050913]
 G00129|End of round effects that care about the range:
   - If the round ends before range is determined (e.g. {Alpha Glint}) Range is assumed to be at default (usually close, unless
     e.g. [dai]{Fear of the Void Below} was played), unless range was set by another effect (e.g. {Sniper Rifle}, [obe]{Neutral
