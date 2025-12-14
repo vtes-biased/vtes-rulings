@@ -2496,6 +2496,8 @@
     (eg. {Writ of Acceptance}). [LSJ 20100811]
   - Does not make the action an action that "makes this vampire anarch" (eg. {CrimethInc.} cannot be played). [ANK 20180125]
   - The burn option cannot be used if you have a non-titled, non-Anarch vampire in torpor. [LSJ 20091204]
+  - If the action required another (non-Anarch) sect and is not blocked, the action fizzles (is successful but has no effect).
+    [ANK 20210124]
 101579|Redistribution:
   - Cannot target an uncontrolled Blood Brother. [LSJ 20061109]
 101581|Reform Body:
