@@ -4818,3 +4818,6 @@ G00145|Continue combat:
   - Cannot be played after [CEL] {Psyche!}. When played before, combat continues and Psyche! can only be played at the end
     of it. [ANK 20191219]
   - Must be played after presses, can be played if the round ends prematurely. [RTR 20030519]
+G00146|Vote reduction:
+  - A vampire can have net negative votes, but net negative votes do not subtract from the total when votes are tallied. [ANK
+    20251125] [LSJ 20050221-2]
