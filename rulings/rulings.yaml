@@ -836,6 +836,9 @@
 100501|Dawn Operation:
   - Only applies to damage done in combat, not damage done after combat like {Catatonic Fear}. [LSJ 20020314] [PIB 20130319]
   - Applies to environmental and retainer damage too. [PIB 20150603-1]
+100502|Day Operation:
+  - When played together with post-resolution, aggravated damage effects (e.g. {Force of Will}), the acting Methuselah can
+    resolve these effects in any order. [LSJ 20040120-2]
 100503|Dead Hand:
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
 100510|Death Seeker:
