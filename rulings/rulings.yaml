@@ -4458,7 +4458,7 @@ G00029|Retainer that strike:
 G00030|Vote playable once per game:
   - Burning the card for a vote is not considered playing it. [ANK 20210309-2]
 G00032|Cost X:
-  - X can be zero. [LSJ 20030502]
+  - X can be zero, but not less than zero. [LSJ 20030502]
 G00033|Prevent non-aggravated:
   - Cannot be used to prevent aggravated damage, even if the minion treats them as normal damage (eg. {Skin of Night}). [LSJ
     20040812-2] [PIB 20130327]
