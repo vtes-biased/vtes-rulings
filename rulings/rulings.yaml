@@ -4829,3 +4829,6 @@ G00145|Continue combat:
 G00146|Vote reduction:
   - A vampire can have net negative votes, but net negative votes do not subtract from the total when votes are tallied. [ANK
     20251125] [LSJ 20050221-2]
+G00147|Fail an action as announced:
+  - The ability to fail an action must be used before action modifiers or reactions that are not explicitly played "as the
+    action is announced". [ANK 20190425]
