@@ -1965,7 +1965,8 @@
 101160|Manstopper Rounds:
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
 101169|Marked Path:
-  - Can be burned during an action that targets only part of the Methuselah that were targeted by the first action. [LSJ 20100527]
+  - If the set of Methuselahs includes the controller of the vampire this card is on, the controller of the vampire is not
+    considered as part of that set of Methuselahs. [LSJ 20100527]
 101174|Martinelli's Ring:
   - The bearer cannot use [ser] or [dem] cards on themselves (eg. {Mummify}). [LSJ 20080212]
 101175|Martyr's Resilience:
@@ -3539,8 +3540,8 @@
 102273|Loup:
   - Can be used even if the stealth is not currently needed. [LSJ 20011214-2]
 102280|Shadow Cast:
-  - If the set of Methuselahs includes the controller of the vampire this card is on, the controller of the vampire is not
-    considered as part of that set of Methuselahs. [LSJ 20100527]
+  - '[OBL] If the set of Methuselahs includes the controller of the vampire this card is on, the controller of the vampire
+    is not considered as part of that set of Methuselahs. [LSJ 20100527]'
 102283|Touch of Oblivion:
   - '[OBL] an opposing vampire is wounded (if they play {Undying Tenacity}, they go to torpor after combat). [LSJ 20090622-2]'
 102293|Bone Shambler:
