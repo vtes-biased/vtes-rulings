@@ -4683,7 +4683,7 @@ G00107|Ability active in torpor:
 G00108|Can steal minion during an action:
   - If used to steal a vampire in combat, combat ends. Any damage yet to resolve still resolves before the change of control.
     [LSJ 20020618]
-  - If used to steal a minion attempting to block, the block attempt fails. [LSJ 20080326]
+  - If used to steal a minion attempting to block, if the block attempt becomes illegal, the block attempt fails. [LSJ 20080326]
   - If used to steal a minion during an action, Methuselahs who declined to block are still declining to block. The new controller,
     if he is eligible and has not declined to block yet, can block with the stolen minion even if the previous controller
     has declined to block. [PIB 20150501]
