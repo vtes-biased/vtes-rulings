@@ -2287,9 +2287,9 @@
   - '[TEM] Cannot be used to start a new combat if there is already a pending combat queued. [RTR 20020501]'
   - '[TEM] Cannot be used to start a new combat if the opponent is not ready. [ANK 20220429]'
 101406|Poison Pill:
-  - Any decrease in pool (burning, paying, ...) is considered "loosing pool". [ANK 20180719-2]
-  - Gaining pool does not count as a negative loss. If a vote entails both a gain and a loss (eg. {Ancient Influence}), only
-    the loss is counted, not the difference. [ANK 20180813] [LSJ 20041025]
+  - Any decrease in pool (burning, paying, ...) is considered "losing pool". [ANK 20180719-2]
+  - Gaining pool does not count as a negative loss. If the effects of the referendum results in both gain and loss (eg. {Ancient
+    Influence}), only the loss is counted, not the difference. [ANK 20180813] [LSJ 20041025]
 101416|Political Seizure:
   - If you yield the Political Seizure, the location it was contesting does not come into play under your control. [LSJ 19980223]
 101418|Political Struggle:
