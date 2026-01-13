@@ -868,13 +868,14 @@
   - If played on a referendum provided by a card in play (eg. {Anarch Revolt}), does not prevent referendums provided by another
     copy of the same card in play. [LSJ 20020201]
 100527|Derange:
-  - The clan is set when the card is played, it does not depend on the clan of the vampire that has the card on them. [LSJ
-    20070707]
-  - If the target changes clan to a clan inappropriate for his title, he loses its benefit until his clan is appropriate.
-    He immediately yields the title if it is contested or he receives a new one. [RTR 20201130] [LSJ 20060904]
-  - When removed, the vampire goes back to its underlying clan. [RTR 20201130] [ANK 20200415]
+  - The clan and sect assigned to Derange is set when the card is played and does not change when it is moved. [LSJ 20070707]
+  - If the target changes clan or sect to a clan or sect inappropriate for their title, they lose its benefit until their
+    clan or sect is appropriate. They immediately yield the title if it is contested or they receives a new one. [RTR 20201130]
+    [LSJ 20060904]
+  - When removed, the vampire goes back to its underlying clan and sect. [RTR 20201130] [ANK 20200415]
   - Only requires one clan or the other (Malkavian or Malkavian antitribu) to be played. [ANK 20190203]
-  - If another effect also changes the clan (eg. {Clan Impersonation}), the most recent one takes precedenced. [LSJ 20021209]
+  - If another effect also changes the clan or sect (eg. {Clan Impersonation}, {Into the Fire}), the most recent one takes
+    precedence. [LSJ 20021209]
 100528|Descent into Darkness:
   - Breaks any temporary control effects, so the vampire is given, face down and out of play, to his current permanent controller,
     with the Descent into Darkness card which, as a minion card, is then controlled by that permanent controller. [LSJ 20040526]
