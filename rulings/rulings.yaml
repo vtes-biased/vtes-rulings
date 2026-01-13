@@ -124,9 +124,6 @@
 100040|Alpha Glint:
   - Cards that are played at the end of round/combat can still be played (eg. {Taste of Vitae}, {Disarm}). [RTR 20001020]
     [LSJ 20001024]
-100043|Amaranth:
-  - If both minions want to play a card "when a vampire should go into torpor", the acting minion goes first. If played first,
-    {Undead Persistence} would prevent the opponent to play {Amaranth} and vice-versa. [RTR 20010710]
 100048|Amulet of Temporal Perception:
   - A second copy allows a second use in the same turn. [ANK 20230316]
 100050|Anachronism:
@@ -836,10 +833,6 @@
   - If used to cancel a strike, another strike is chosen. [RBK cancel-a-card] [LSJ 20100206]
   - 'Can be used to cancel a card played at the end of a round (eg. {Disarm}) or "when combat would end" (eg. {Psyche!}):
     it then counts as having been played during that ending round. [ANK 20180910-2] [ANK 20191221]'
-100511|Decapitate:
-  - '"when a vampire is going into torpor" and "when a vampire should go into torpor" are the same window. If both minions
-    want to play a card, acting minion goes first. If played first, {Undead Persistence} would prevent the opponent to play
-    {Decapitate} and vice-versa. [RTR 20010710]'
 100513|Deed the Heart's Desire:
   - '[QUI] An opponent can play a reaction to wake as the card is played, before its effects apply. [ANK 20231028]'
 100514|Deep Cover Agent:
@@ -3191,7 +3184,6 @@
   - Additional damage inherits all of the properties of the base damage. [TOM 19960225]
   - All the damage is aggravated. [LSJ 20011204]
 102060|Undead Persistence:
-  - '[for] The vampire can play cards which are not usable by vampires going to torpor. [LSJ 19970303]'
   - '[for] Cannot be used twice by the same vampire during the same combat: because of the first, the vampire is not going
     into torpor and does not meet the requirement to play it anymore. [LSJ 20030214]'
   - '[for] If an effect causes a new combat to occur at the end of combat, then the "go to torpor" effect will be delayed
@@ -3207,8 +3199,6 @@
   - He can burn 1 life to give a minion you control a press the turn he is recruited. [ANK 20180517]
 102067|Undue Influence:
   - Cannot be played with no vampire in the uncontrolled region. [LSJ 20060623]
-102068|Undying Tenacity:
-  - '[for] The vampire can play cards which are not usable by vampires going to torpor. [LSJ 19970303]'
 102069|Undying Thirst:
   - If the vampire is empty, he must either hunt or diablerize, this is a mandatory action. [LSJ 20081213-2]
   - Has no effect on a vampire that cannot commit diablerie (eg. because of {Humanitas}). [LSJ 20050324-2]
@@ -4797,3 +4787,6 @@ G00147|Fail an action as announced:
 G00148|Adding damage to strikes:
   - Adding damage to a strike that does not deal damage has no effect, so the strike still will not do damage. [RTR 19960221]
   - Additional damage inherits all of the properties of the base damage. [RTR 19970630] [TOM 19960225]
+G00149|Usable when going to torpor:
+  - Sequencing rules apply, and if played first, effects that stop a vampire from going to torpor would prevent the use of
+    effects that are only usable on a vampire going to torpor. [RTR 20010711]
