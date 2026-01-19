@@ -869,6 +869,8 @@
   - Only requires one clan or the other (Malkavian or Malkavian antitribu) to be played. [ANK 20190203]
   - If another effect also changes the clan or sect (eg. {Clan Impersonation}, {Into the Fire}), the most recent one takes
     precedence. [LSJ 20021209]
+  - Is a temporary effect that overrides the underlying sect. The most recent override takes precedence. It stays active if
+    another effect changes the underlying sect, like using the default action to become Anarch. [LSJ 20100811] [ANK 20190619]
 100528|Descent into Darkness:
   - Breaks any temporary control effects, so the vampire is given, face down and out of play, to his current permanent controller,
     with the Descent into Darkness card which, as a minion card, is then controlled by that permanent controller. [LSJ 20040526]
