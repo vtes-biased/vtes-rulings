@@ -613,6 +613,9 @@
   - The superior Obfuscate is not optional. [RTR 19980707] [LSJ 19980722]
 100326|Chanjelin Ward:
   - Applies to an action if any one of its targets would be enough to enable his effect. [LSJ 20080809-2] [RTR 20081119]
+100327|Channel 10:
+  - Cannot be used if the first action was cancelled "as played" ({Direct Intervention}) but can be used when the first action
+    was cancelled after it was played ({Tangle Atropos' Hand}). [LSJ 20100505] [ANK 20210124]
 100330|Charge of the Buffalo:
   - '[spi]/[SPI] Additional damage inherits all of the properties of the base damage. [TOM 19960225]'
 100331|Charigger, The Axe:
@@ -3265,8 +3268,8 @@
     [LSJ 20100728] [LSJ 20090213]
 102097|Veil the Legions:
   - Can only be played by the controller of the acting minion. [LSJ 19990425]
-  - "[OBF] If an action is canceled after it has been played (eg. {Tangle Atropos' Hand} but not {Direct Intervention}) it\
-    \ still counts as \"one of the next X actions\". [ANK 20210124]"
+  - "[OBF] If an action is cancelled after it has been played (e.g. {Tangle Atropos' Hand} but not {Direct Intervention})\
+    \ it still counts as \"one of the next X actions\". [LSJ 20070526] [ANK 20210124]"
 102098|Veiled Sight:
   - '[CHI] The strike can be used on a minion with no blood. [RTR 20010711]'
   - '[CHI] The strike is not ranged. [TOM 19951215-2]'
@@ -3311,6 +3314,9 @@
   - May still be "canceled as it is played" when used as an out-of-turn master. [LSJ 20031201]
 102135|Vulture's Buffet:
   - Is a hunt action. [ANK 20200421]
+102136|Waiting Game:
+  - If an action is cancelled after it has been played (e.g. {Tangle Atropos' Hand} but not {Direct Intervention}) it still
+    counts as taken. [ANK 20210124]
 102141|Walks-With-Might:
   - Only affects the cost of masters played by his controller. [LSJ 20081124-1]
 102143|Wanderer's Counsel:
