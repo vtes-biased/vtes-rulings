@@ -160,6 +160,9 @@
   - Does not end combat until after strike resolution, so the damage can be prevented or healed as normal. [LSJ 20011210-3]
 100067|Angel of Berlin:
   - May be played after a block is successful before combat begins. [LSJ 20060410]
+100068|Anima Gathering:
+  - Anima Gathering does not burn if the vampire moves through the uncontrolled region (via {Banishment}, etc.) and returns
+    to play unlocked. [LSJ 20060808-2] [LSJ 20060213]
 100071|Ankara Citadel, Turkey, The:
   - Concerning the cost of the cards, multiplications and divisions are applied first, followed by additions and subtractions.
     [RTR 20070707]
