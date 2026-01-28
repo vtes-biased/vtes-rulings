@@ -4601,6 +4601,7 @@ G00095|Play stored card as if from hand:
   - Ignores all "do not replace" clauses and special replacement effects on cards played from it. [LSJ 20081126]
   - The card on it cannot be discarded or burned to satisfy another effect (eg. {Tension in the Ranks} or using political
     action cards for votes). [LSJ 20050118]
+  - A card played "as if from hand" can be canceled "as played" [LSJ 20060106]
 G00096|Optional press:
   - The optional press can only be used during the current round. [TOM 19960521]
 G00097|Burn blood for effect (mandatory):
