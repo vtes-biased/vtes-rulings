@@ -749,10 +749,6 @@
   - Must be played after the presses are handled and can be played if the round ends prematurely. [RTR 20030519]
 100428|Corpse Minion:
   - May be used any number of times during a single action. [TOM 19960109]
-100429|Corrupt Construction:
-  - If recruited in the normal fashion, the card will have been replaced by the time the ally enters play. In other cases
-    however, it won't have been and the Methuselah will have to work with only the cards in hand (or ash heap) to add life
-    to it before replacing. [LSJ 20070707]
 100433|Council of Seraphim:
   - The burn option cannot be used if all your Seraph are in torpor. [LSJ 20091204]
 100434|Courier:
@@ -3326,9 +3322,6 @@
   - '[ACTION MODIFIER] A hunt is not successful if no blood is gained, even if the hunt action is still successful. [LSJ 20050720-2]'
   - '[ACTION MODIFIER][REACTION] Cannot be used during a referendum that is automatically passing. [PIB 20150105] [LSJ 19980107]'
 102144|War Ghoul:
-  - If you have no other allies and no retainers in play when it is recruited, then you burn it. [RTR 19961113]
-  - An ally or retainer must be burn when it comes into play, regardless of how it did come into play (eg. {Pressing Flesh}).
-    [ANK 20170309-2]
   - Can use its ability to "lock and burn to burn a location" during an action that would steal it (eg. [PRE] {Entrancement}).
     The action will have no effect but is still successful if unblocked and must then be paid. [PIB 20121031]
 102146|Warding the Beast:
@@ -4297,8 +4290,9 @@
 201499|Zack North:
   - '[MERGED] Is Anarch. If the base version was the one in play, it changes sect as it is merged. [ANK 20180524]'
 201506|Zhenga:
-  - She can choose the order in which the allies brought by her ability come into play (eg. bring a first ally, then {War
-    Ghoul} second burning the first one). [LSJ 20060530-1]
+  - She can choose the order in which the allies brought by her ability come into play (e.g. bring a first ally, then {War
+    Ghoul} second burning the first one), but cards are not replaced in between (e.g. {Corrupt Construction}). [LSJ 20070707]
+    [LSJ 20060530-1]
   - The allies brought into play by her ability are not "played in the normal way" (eg. {Direct Intervention} cannot be used
     to counter them). [LSJ 20060530-2]
   - Her ability does not work with {Piper} (not an action). [LSJ 20090115-1] [ANK 20170309]
@@ -4801,3 +4795,9 @@ G00148|Adding damage to strikes:
 G00149|Usable when going to torpor:
   - Sequencing rules apply, and if played first, effects that stop a vampire from going to torpor would prevent the use of
     effects that are only usable on a vampire going to torpor. [RTR 20010711]
+G00150|Allies with enter play effects:
+  - The enter play effect happens regardless of how it comes into play (e.g, {Pressing Flesh}). [ANK 20170309-2]
+G00151|Allies that burn an ally when entering play:
+  - An ally or retainer must be burned when it comes into play, regardless of how it enters play (e.g, {Pressing Flesh}).
+    [ANK 20170309-2]
+  - If you have no other allies or retainers in play when it enters play, it must burn itself. [RTR 19961113]
