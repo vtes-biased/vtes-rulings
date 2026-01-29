@@ -2247,6 +2247,9 @@
   - Cards and effects that can be played "after resolution" can be played after the gain blood effect. [ANK 20190113]
   - The blood can be gained if the action is unblocked even if it has no effect (due to lack of a suitable target, for example).
     [LSJ 20070411]
+101392|Persistent Echo:
+  - A vampire can use any effect on the stored card, if they otherwise fulfill its requirements (e.g. [chi] on {Phantom Speaker},
+    if they have [chi]) [LSJ 20051114]
 101395|Personal Scourge:
   - If the opponent dodges this strike, his weapons are unaffected and do damage this round. [LSJ 20040928]
   - Does not protect the target from self-inflicted damage from a weapon. [LSJ 19980216]
