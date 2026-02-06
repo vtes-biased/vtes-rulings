@@ -1132,6 +1132,7 @@ G00073|Impersonating requirements to play cards:
 G00074|Adding costs to a strike or strike card:
   100489|Dam the Heart's River: '[QUI]'
   100963|Imprison: ''
+  102161|Wave of Lethargy: '[QUI]'
   102319|Ensnare a Beast: '[ANI]/[CEL]'
   200871|Lucian, the Perfect: ''
   201738|Algirdas, The Solar Prophet: ''
@@ -2230,3 +2231,6 @@ G00150|Allies with enter play effects:
 G00151|Allies that burn an ally when entering play:
   102144|War Ghoul: ''
   102267|Vozhd of Sofia, The: ''
+G00152|Adding costs to non-card strike:
+  100489|Dam the Heart's River: '[QUI]'
+  100963|Imprison: ''

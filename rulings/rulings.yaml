@@ -803,8 +803,6 @@
   - The opponent is the one affected by frenzy (eg. for {Blade of Enoch}). [ANK 20220409]
   - Applies to environmental damage inflicted to the opposing minion. [ANK 20181128]
   - Applies to damage played in combat that are resolved after combat (eg. {Catatonic Fear}). [ANK 20170111] [LSJ 20071011]
-  - '[QUI] The opponent must pay 1 blood to use a strike that provides a maneuver if he plays it when choosing range. [ANK
-    20181026]'
 100490|Damned, The:
   - The acting player decides the order of (and can play other) "after resolving the action" effects. [ANK 20180206]
 100492|Daring the Dawn:
@@ -3924,9 +3922,9 @@
   - Cannot attempt to steal a piece of equipment that he is prohibited from having (eg. a second {Leather Jacket}). [LSJ 19980206]
   - The stolen equipment cannot be used until the next round. [LSJ 19980206] [RBK steal-equipment]
 200871|Lucian, the Perfect:
-  - Strikes that do not target him (dodge, combat ends) do not cost more. They do if they plan to damage him after combat
-    (eg. [PRE] {Catatonic Fear}). [LSJ 20090528-2] [LSJ 20031118]
+  - Strikes that deal damage after combat are affected (eg. [PRE] {Catatonic Fear}). [LSJ 20031118]
   - Strikes that target cards on him, are not affected (eg. {Target Retainer}, {Canine Horde}). [LSJ 20090528-2]
+  - When using a card that locks you into a strike (eg {.44 Magnum} s maneuver) you cannot chose not to strike [LSJ 20090528-2-2]
 200885|Luna Giovanni:
   - Her ability does not apply to the political action card played for a current action (it is in limbo). [LSJ 20070927]
 200890|Lutz von Hohenzollern:
@@ -4526,10 +4524,7 @@ G00073|Impersonating requirements to play cards:
     including duration effects. The vampire is not treated as meeting the requirements for effects the card has from being
     in play. [LSJ 20101013] [ANK 20190228] [ANK 20200703-3] [LSJ 20070708] [RTR 20070707]
 G00074|Adding costs to a strike or strike card:
-  - If an effect granting a strike is played/used before another effect that adds a cost to strike (e.g. {Dam the Heart's
-    River}), you may choose not to strike. [LSJ 20071017]
-  - If an effect granting a strike (e.g. {.44 Magnum}) is played/used after another effect that adds a cost to strike, you
-    must pay the additional cost to use that first effect. [LSJ 20090529]
+  - If an opponent then plays an effect that grants a strike (e.g, {Aid from Bats}), they pay the additional cost. [LSJ 20090529]
   - Strikes are paid at declaration. If an ally spends their last life on a strike, combat ends before strike resolution.
     If the strike damage depends on the amount of life/blood of the striking minion, it is calculated after the strike is
     paid for (e.g. {Shambling Hordes}). [LSJ 20090703]
@@ -4805,3 +4800,6 @@ G00151|Allies that burn an ally when entering play:
   - An ally or retainer must be burned when it comes into play, regardless of how it enters play (e.g, {Pressing Flesh}).
     [ANK 20170309-2]
   - If you have no other allies or retainers in play when it enters play, it must burn itself. [RTR 19961113]
+G00152|Adding costs to non-card strike:
+  - If the opponent has played an effect that grants a strike before (e.g, {Sniper Rifle}), they may choose not to strike.
+    [LSJ 20071017]
