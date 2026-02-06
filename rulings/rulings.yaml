@@ -89,8 +89,9 @@
   - Putting the top card of your library in play as a ghoul does not count as playing the card. [LSJ 20040531]
   - The card used to represent the ally is face up, but the name on that card is ignored if something goes looking for a card
     by name. They do not contest. [LSJ 20040623] [LSJ 20071003]
-  - A burned ghoul is removed from the game but is still burned first, triggering cards such as {Tension in the Ranks}. [LSJ
-    20090920]
+  - A burned ghoul is removed from the game, but it is still burned (e.g. it triggers {Tension in the Ranks}). However, when
+    Absimillard's Army is removed from the game, the ghouls are removed without burning (will not trigger {Tension in the
+    Ranks}). [LSJ 20090920]
 100013|Absorb the Mind:
   - Can be played against a vampire with no blood. [RTR 20010711]
   - '[MYT] cannot be used to steal a discipline that could not be played on the stealing vampire (e.g. Dominate is ineligible
