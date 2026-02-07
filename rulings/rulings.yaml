@@ -3249,8 +3249,9 @@
     "during" the unlock phase. [ANK 20180702]
   - Unlocking an already unlocked vampire does not trigger the effect. [ANK 20170227] [LSJ 20020408]
   - Any unlock, even one costing blood already, triggers the burning blood effect (eg. {Freak Drive}, {Derange}). [ANK 20221210-2]
-  - The counter is placed after range is determined, before strikes are chosen (defensive strikes like dodge or combat ends
-    do not avoid it). [ANK 20210422] [LSJ 20040830]
+  - The counter is placed before strikes are chosen (i.e. after range is determined, in the same step as {Immortal Grapple}).
+    The second vampire does not get a counter if this step is skipped but will get a counter even if they play defensive strikes
+    like dodge or combat ends. [ANK 20210422] [LSJ 20040830]
 102092|Vast Wealth:
   - The provided action is an "equip action" [TOM 19960130] [RTR 19960124]
   - You only search your library if the action is successful. [TOM 19951107]
