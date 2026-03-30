@@ -3461,6 +3461,8 @@
 102329|Hunting the Quarry:
   - '[cel]/[tha] effects that are played when a combat "would end" (eg. {Telepathic Tracking}) cannot be play afterwards.
     [ANK 20191219]'
+102330|Kiss of Cathari:
+  - '[PRE] If the strike is dodged, the opposing minion is not stunned. [LSJ 20070124]'
 200011|Adana de Sforza:
   - Card with multiple types (eg. Combat/Action Modifier) are considered of the type they are played as, not both. [PIB 20150924-2]
 200017|Aeron:
