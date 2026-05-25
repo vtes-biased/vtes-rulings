@@ -1813,9 +1813,6 @@
   - '[val] [VAL] If the strike is dodged, no damage is done. [LSJ 19980526] [RTR 20041202] [PIB 20130319]'
   - '[VAL] The blood to unlock can be paid until the end of combat, including after other effects that are played at the end
     of round. [ANK 20180618]'
-101130|Loyalist:
-  - If the Loyalist vampire's votes are changed to be in favor, the votes granted by Loyalist are silenced (not cast). [LSJ
-    20031115]
 101131|Lucky Blow:
   - You cannot use another strike card as the hand strike for Lucky Blow. [LSJ 20010627]
 101132|Lunatic Eruption:
@@ -4722,3 +4719,9 @@ G00157|Fail an Action:
 G00158|Political action with illegal terms:
   - Cannot be used or played if the conditions for the terms of the referendum cannot be met (e.g. no legal selection, insufficient
     cards/players to choose from, prohibited by card text, uniqueness, etc). [LSJ 20100129] [ANK 20191228]
+G00159|Gains votes against:
+  - If a minion who has gained the votes provided against the referendum, is subsequently forced to vote in favor, the provided
+    votes are not counted when votes are tallied until that minion is again forced to vote against the referendum. [LSJ 20031115]
+  - Cannot be used by a minion who is voting in favor of the referendum. [LSJ 20031115]
+  - Gaining the provided votes immediately forces the minion to vote against the referendum, if they are not already doing
+    so. [LSJ 20031119]
