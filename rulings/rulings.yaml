@@ -728,6 +728,9 @@
   - Must be played after the presses are handled and can be played if the round ends prematurely. [RTR 20030519]
 100428|Corpse Minion:
   - May be used any number of times during a single action. [TOM 19960109]
+100432|Coterie Tactics:
+  - The vampire who ceases to block is still considered to have blocked the action (e.g. they can play {Cats' Guidance}).
+    [LSJ 20090509]
 100433|Council of Seraphim:
   - The burn option cannot be used if all your Seraph are in torpor. [LSJ 20091204]
 100434|Courier:
