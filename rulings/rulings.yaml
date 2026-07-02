@@ -4383,6 +4383,7 @@ G00058|Cancel:
     card which text prohibits to play more than once cannot be played again. [ANK 20190104] [RBK cancel-a-card] [LSJ 19980212]
   - If a limited effect is canceled (bleed, additional strike), then the limit is not triggered and another limited effect
     can be used. [LSJ 20030224]
+  - A card played "as if from hand" can be canceled "as played" [LSJ 20060106]
 G00060|Reflex:
   - '[abo] [REFLEX] Any frenzy card that targets/selects/chooses/affects the minion when played, is considered being played
     on the minion. [LSJ 20051113]'
