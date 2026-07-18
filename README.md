@@ -24,11 +24,38 @@ and is more readable than JSON, if anyone has to pick the project up without con
 
 1. The rulings can contain disciplines and card types symbols in brackets (eg. `[pot]`), see the list below
 2. The rulings can contain card names in braces (eg. `{Abbot}`)
-3. Each ruling ends with one or more rulings reference IDs in brackets.
-   References URLs are listed in the [references.yaml](rulings/references.yaml) file
+3. A ruling usually ends with one or more rulings reference IDs in brackets (eg. `[LSJ 20040518]`).
+   References URLs are listed in the [references.yaml](rulings/references.yaml) file.
+   Reminder rulings (see below) are the exception and may carry no reference.
 4. Rulings are attached to a card, the format of the key is `<card_id>|<card_name>`, using the VEKN CSV cards IDs,
    or to group of cards, using the `<id>|<name>` format, with an ID beginning with `G`. Cards groups are listed in
    the [groups.yaml](rulings/groups.yaml) file.
+
+#### Reminders
+
+A **reminder** merely restates official card text or a core rule; it is not a genuine ruling and needs
+no discussion. It is written like any ruling but ends with a trailing `[REMINDER]` tag, and may omit any
+reference. It stays a plain string:
+
+```yaml
+100015|Academic Hunting Ground:
+  - A copy in play prevents playing another with the same title. [LSJ 20040518]
+  - It provides the master phase action it is played with. [REMINDER]
+```
+
+#### Overrides
+
+A group ruling sometimes needs different wording for a few of the cards in the group. Such a ruling is
+written as a map instead of a plain string: a `text` key with the default wording, and an `overrides`
+map keyed by `<card_id>|<card_name>` giving the replacement wording for those cards. This map form is
+used **only** for overrides:
+
+```yaml
+G00008|Permanent not replaced:
+  - text: The permanent is not replaced. [LSJ 20040518]
+    overrides:
+      100015|Academic Hunting Ground: The hunting ground is not replaced. [LSJ 20040518]
+```
 
 #### List of symbols
 

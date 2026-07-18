@@ -373,11 +373,18 @@ def check_references_are_used(rulings: dict, references: dict):
     used = set()
     for item, rulings in rulings.items():
         for ruling in rulings:
-            for token in RE_RULING_REFERENCE.findall(ruling):
-                reference = token[1:-1]
-                if reference not in references:
-                    warnings.warn(UnknownReference(f"In {item} rulings: {token}"))
-                used.add(reference)
+            # An entry is a plain string, or a {text, overrides} map for group overrides;
+            # scan the default text and every override text for reference tokens.
+            if isinstance(ruling, str):
+                texts = [ruling]
+            else:
+                texts = [ruling["text"], *ruling.get("overrides", {}).values()]
+            for text in texts:
+                for token in RE_RULING_REFERENCE.findall(text):
+                    reference = token[1:-1]
+                    if reference not in references:
+                        warnings.warn(UnknownReference(f"In {item} rulings: {token}"))
+                    used.add(reference)
     for unused in set(references.keys()) - used:
         if unused.startswith("RBK"):
             continue
