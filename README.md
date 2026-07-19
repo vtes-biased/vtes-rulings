@@ -35,7 +35,7 @@ and is more readable than JSON, if anyone has to pick the project up without con
 
 A **reminder** merely restates official card text or a core rule; it is not a genuine ruling and needs
 no discussion. It is written like any ruling but ends with a trailing `[REMINDER]` tag, and may omit any
-reference. It stays a plain string:
+reference. The tag is just a text marker at the end of the ruling:
 
 ```yaml
 100015|Academic Hunting Ground:
@@ -56,6 +56,9 @@ G00008|Permanent not replaced:
     overrides:
       100015|Academic Hunting Ground: The hunting ground is not replaced. [LSJ 20040518]
 ```
+
+The default `text` follows the usual ruling conventions, so it ends with a trailing `[REMINDER]` tag
+when the ruling is itself a reminder (reminders and overrides are independent).
 
 #### List of symbols
 
