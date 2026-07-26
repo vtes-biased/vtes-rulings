@@ -1,6 +1,7 @@
 # vtes-rulings
 
 The official VTES rulings database.
+Check the **[Rulings website](https://rulings.krcg.org)** for a searchable online version
 
 ## Design notes
 
