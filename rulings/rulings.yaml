@@ -4738,3 +4738,7 @@ G00159|Gains votes against:
 G00160|Can draw from empty:
   - You can draw more cards than are in the library or crypt (even from an empty library or crypt); draw as much as you can.
     [LSJ 20060620]
+G00161|Master on vampire who can use it:
+  - overrides:
+      100326|Chanjelin Ward: The vampire's controller chooses to burn the card to fail an action or not.
+    text: The vampire's controller chooses to use the effect of the card or not. [ANK 20210309-3]
