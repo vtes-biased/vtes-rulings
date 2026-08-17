@@ -936,10 +936,6 @@
     a reaction card. [LSJ 20070403] [LSJ 20070413]'
 100576|Donnybrook:
   - '[ser] can target a minion with less than 2 blood or life. [RTR 20010711]'
-100578|Draba:
-  - '[CHI] Effectively gives a -X stealth modifier to the action, where X is the amount of stealth reduced by Draba at the
-    time it was played. [RTR 20030519]'
-  - '[CHI] Can be played on a minion with no or negative stealth, in which case it has no effect. [LSJ 20021211]'
 100580|Dragon's Breath Rounds:
   - 'Does not burn the gun if combat ends before the strike resolves (eg. {Rötschreck} or if the opponent uses a "strike:
     combat ends"). [LSJ 19981006] [LSJ 20001127-2]'
@@ -3374,9 +3370,6 @@
   - '[DOM] Is affected by {Blood Cult Awareness Network}, when choosing a younger vampire in your uncontrolled region. [LSJ
     20060414] [ANK 20240118-2]'
 102254|Night Terrors:
-  - Effectively gives a -X stealth modifier to the action, where X is the amount of stealth reduced by Night Terrors at the
-    time it was played. [RTR 20030519]"
-  - Can be played on a minion with no or negative stealth, in which case it has no effect. [LSJ 20021211]
   - '[OBF][PRE] The strike: combat ends can only be used in the combat resulting from a successful block. It does not carry
     over to follow-up combats (eg. [CEL] {Psyche!}). [LSJ 20010813] [LSJ 20010819-2]'
   - '[OBF][PRE] The strike: combat ends is provided again if a second block happens on the same action (eg. after [PRO] {Form
@@ -4742,3 +4735,7 @@ G00161|Master on vampire who can use it:
   - overrides:
       100326|Chanjelin Ward: The vampire's controller chooses to burn the card to fail an action or not.
     text: The vampire's controller chooses to use the effect of the card or not. [ANK 20210309-3]
+G00162|Reduce stealth to 0:
+  - Can be played on a minion with zero or negative stealth, leaving the stealth unchanged. [LSJ 20021211]
+  - Effectively gives a -X stealth modifier to the action, where X is the amount of stealth that was reduced when this card
+    was played. [RTR 20030519]
