@@ -70,11 +70,12 @@ when the ruling is itself a reminder (reminders and overrides are independent).
   pro, qui, san, ser, spi, str, tem, thn, tha, val, vic, vis
 - Superior disciplines: ABO, ANI, AUS, CEL, CHI, DAI, DEM, DOM, FOR, MAL, MEL, MYT, NEC, OBE, OBF, OBL, OBT, POT, PRE,
   PRO, QUI, SAN, SER, SPI, STR, TEM, THN, THA, VAL, VIC, VIS
-- Virtues: vin, def, jus, inn, mar, ven, red
-- Card types: ACTION, POLITICAL, ALLY, RETAINER, EQUIPMENT, MODIFIER, REACTION, COMBAT, REFLEX, POWER
+- Virtues: def, inn, jud, mar, red, ven, viz
+- Card types: ACTION, POLITICAL ACTION, ALLY, RETAINER, EQUIPMENT, ACTION MODIFIER, REACTION, COMBAT,
+  REFLEX, POWER
 - Other: FLIGHT, MERGED, CONVICTION
 
- Note the "Vision" virtue uses the `[vsn]` trigram, to avoid confusion with the "Visceratika" discipline `[vis]`.
+ Note the "Vision" virtue uses the `[viz]` trigram, to avoid confusion with the "Visceratika" discipline `[vis]`.
  Some versions of the VEKN CSV do use `[vis]` for both indistinctively.
 
 ### Discarded options
