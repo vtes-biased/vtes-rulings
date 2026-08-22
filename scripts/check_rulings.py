@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
-"""Script to check the rulings consistency
-"""
-import arrow
+"""Script to check the rulings consistency"""
+
 import asyncio
-import aiohttp
 import datetime
 import html.parser
-import krcg.collections
-import krcg.loader
 import pathlib
 import random
 import re
-import ruyaml
-import urllib.parse
 import sys
+import urllib.parse
 import warnings
+
+import aiohttp
+import arrow
+import krcg.collections
+import krcg.loader
+import krcg.rulings
+import ruyaml
 
 
 class UnknownCard(UserWarning): ...
@@ -30,6 +32,9 @@ class UnusedReference(UserWarning): ...
 
 
 class UnknownGroup(UserWarning): ...
+
+
+class NotInGroup(UserWarning): ...
 
 
 class UnknownReference(UserWarning): ...
@@ -121,6 +126,11 @@ def check_cards(rulings: dict, groups: dict):
             check_card_tokens(f"{item} rulings", entry["text"], cards)
             for override, text in (entry.get("overrides") or {}).items():
                 check_card_name(f"{item} overrides", override, cards)
+                if override.partition("|")[0] not in {
+                    c.partition("|")[0] for c in groups.get(item, {})
+                }:
+                    msg = f"In {item} overrides: {override} is not in the group"
+                    warnings.warn(NotInGroup(msg))
                 check_card_tokens(f"{item} override {override}", text, cards)
 
     for unused in set(groups.keys()) - used:
@@ -243,36 +253,7 @@ LEGAL_DOMAINS = {
     "www.vekn.net",
 }
 
-RULING_SOURCES = {
-    "TOM": (
-        "Thomas R Wylie",
-        datetime.date.fromisoformat("1994-12-15"),
-        datetime.date.fromisoformat("1996-07-29"),
-    ),
-    "SFC": (
-        "Shawn F. Carnes",
-        datetime.date.fromisoformat("1996-07-29"),
-        datetime.date.fromisoformat("1996-10-18"),
-    ),
-    "JON": (
-        "Jon Wilkie",
-        datetime.date.fromisoformat("1996-10-18"),
-        datetime.date.fromisoformat("1997-02-24"),
-    ),
-    "LSJ": (
-        "L. Scott Johnson",
-        datetime.date.fromisoformat("1997-02-24"),
-        datetime.date.fromisoformat("2011-07-06"),
-    ),
-    "PIB": (
-        "Pascal Bertrand",
-        datetime.date.fromisoformat("2011-07-06"),
-        datetime.date.fromisoformat("2016-12-04"),
-    ),
-    "ANK": ('Vincent "Ankha" Ripoll', datetime.date.fromisoformat("2016-12-04"), None),
-    "RTR": ("Rules Team Ruling", None, None),
-    "RBK": ("Rulebook", None, None),
-}
+RULING_SOURCES = krcg.rulings.RULING_AUTHORS
 
 
 async def fetch_ruling_parameters(
@@ -391,7 +372,7 @@ async def check_references_are_valid(references: dict):
             except HTTPError as e:
                 ret.append(e)
                 break
-            except Exception as e:
+            except Exception as e:  # noqa: BLE001
                 ret.append(e)
             await asyncio.sleep(random.random() * 5)
         for i, item in enumerate(ret):
@@ -401,9 +382,9 @@ async def check_references_are_valid(references: dict):
                 )
 
 
-RE_RULING_REFERENCE = re.compile(
-    r"\[(?:" + r"|".join(RULING_SOURCES) + r")\s[\w0-9-]+\]"
-)
+#: Any three-letter prefix, not just the known sources: a typo'd source (KOT for RTR) would
+#: otherwise read as prose and be flagged by nothing.
+RE_RULING_REFERENCE = re.compile(r"\[([A-Z]{3})\s(?![A-Z])[\w-]+\]")
 
 
 def check_references_are_used(rulings: dict, references: dict):
@@ -411,11 +392,13 @@ def check_references_are_used(rulings: dict, references: dict):
     for item, item_rulings in rulings.items():
         for ruling in item_rulings:
             for text in ruling_texts(ruling):
-                for token in RE_RULING_REFERENCE.findall(text):
-                    reference = token[1:-1]
-                    if reference not in references:
+                for match in RE_RULING_REFERENCE.finditer(text):
+                    token = match.group(0)
+                    if match.group(1) not in RULING_SOURCES:
+                        warnings.warn(UnknownSource(f"In {item} rulings: {token}"))
+                    elif token[1:-1] not in references:
                         warnings.warn(UnknownReference(f"In {item} rulings: {token}"))
-                    used.add(reference)
+                    used.add(token[1:-1])
     for unused in set(references.keys()) - used:
         if unused.startswith("RBK"):
             continue
@@ -437,7 +420,7 @@ def main():
     for warning in record_copy:
         print(f"{warning.category.__name__}: {warning.message}", file=sys.stderr)
     if record_copy:
-        exit(1)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
