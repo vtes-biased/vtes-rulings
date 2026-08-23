@@ -4,11 +4,13 @@
 import asyncio
 import datetime
 import html.parser
+import json
+import os
 import pathlib
-import random
 import re
 import sys
 import urllib.parse
+import urllib.request
 import warnings
 
 import aiohttp
@@ -53,6 +55,12 @@ class URLMoved(UserWarning): ...
 
 
 class HTTPError(UserWarning): ...
+
+
+class UnknownThread(UserWarning): ...
+
+
+class BadAnchor(UserWarning): ...
 
 
 RE_CARD = re.compile(r"{[^}]+}")
@@ -171,39 +179,6 @@ class SmartParser(html.parser.HTMLParser):
         self.handle_endtag(tag)
 
 
-GGROUPS_AUTHORS = {
-    "LSJ": "LSJ",
-    "LSJ (VtES Rep)": "LSJ",
-    "L. Scott Johnson": "LSJ",
-    "Thomas R Wylie": "TOM",
-}
-
-
-class GGroupParser(SmartParser):
-    def __init__(self, msg_id: str, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.msg_id: str = msg_id
-        self.author: str = ""
-        self.date: datetime.date = None
-
-    def on_tag(self, tag: str, attrs: dict[str, str | None]) -> None:
-        if "MESSAGE" not in self.state and tag != "section":
-            return
-        if "data-doc-id" in attrs and attrs["data-doc-id"] == self.msg_id:
-            self.set_state("MESSAGE")
-            author = attrs["data-author"]
-            self.author = GGROUPS_AUTHORS.get(author, author)
-
-    def handle_data(self, data: str) -> None:
-        if "MESSAGE" not in self.state:
-            return
-        if not self.date:
-            try:
-                self.date = arrow.get(data, "MMM D, YYYY").date()
-            except arrow.ParserError:
-                pass
-
-
 VEKN_AUTHORS = {
     "213-ankha": "ANK",
     "74-pascal-bertrand": "PIB",
@@ -211,47 +186,149 @@ VEKN_AUTHORS = {
 
 
 class VEKNParser(SmartParser):
+    """Read the date, the author and the thanks of one post on a forum page.
+
+    A page holds several posts, each headed by its own dates and anchor, and the URL
+    names the one that is the ruling. Reading the first date on the page reads the
+    wrong post, and the reference then looks misdated when it is not.
+    """
+
     def __init__(self, msg_id: str, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.msg_id: str = msg_id
         self.author: str = ""
         self.date: datetime.date = None
+        #: who pressed Thank You on that post
+        self.thanked: set[str] = set()
+        #: dates read since the current post header started
+        self._dates: list[datetime.date] = []
 
     def on_tag(self, tag: str, attrs: dict[str, str | None]) -> None:
-        if (
-            "MESSAGE" not in self.state
-            and tag == "span"
-            and "kdate" in attrs.get("class", "")
-        ):
+        # Each post header holds its dates and its anchor, in that order.
+        if tag == "small":
+            self._dates = []
+        if tag == "span" and "kdate" in (attrs.get("class") or ""):
             self.set_state("DATE")
-        if tag == "a" and attrs.get("id", "") == self.msg_id:
-            self.state.add("MESSAGE")
-        if (
-            "MESSAGE" in self.state
-            and not self.author
-            and tag == "a"
-            and "kwho" in attrs.get("class", "")
-        ):
-            author = attrs["href"].split("/")[-1]
-            self.author = VEKN_AUTHORS.get(author, author)
+        if tag == "a" and (attrs.get("id") or "").isdigit():
+            # A post opens on its own anchor, and so closes the one before it:
+            # without that, a post carrying no thanks would take the next one's.
+            self.state.discard("MESSAGE")
+            if attrs["id"] == self.msg_id:
+                # A post shows when it was posted, then when it was last edited.
+                if self._dates:
+                    self.date = self._dates[0]
+                self.state.add("MESSAGE")
+        if "MESSAGE" not in self.state:
+            return
+        if tag == "div" and "kmessage-thankyou" in (attrs.get("class") or ""):
+            self.set_state("THANKS")
+        if tag == "a" and "kwho" in (attrs.get("class") or ""):
+            who = VEKN_AUTHORS.get(name := attrs["href"].split("/")[-1], name)
+            if "THANKS" in self.state:
+                self.thanked.add(who)
+            elif not self.author:
+                self.author = who
 
     def handle_data(self, data: str) -> None:
         if "DATE" not in self.state:
             return
-        if not self.date:
-            try:
-                self.date = arrow.get(data, "D MMM YYYY").date()
-            except arrow.ParserError:
-                pass
+        try:
+            self._dates.append(arrow.get(data, "D MMM YYYY").date())
+        except arrow.ParserError:
+            pass
 
+
+#: References whose source is gone for good: the page 404s and no copy of it is
+#: known. They are listed in references_dangling.md with what rests on them, so
+#: failing the check for each of them again says nothing new. One that starts
+#: answering again is worth knowing about, and is reported.
+UNREACHABLE = {
+    "ANK 20210529": "the forum topic no longer exists (404)",
+}
 
 LEGAL_DOMAINS = {
     "boardgamegeek.com",
     "groups.google.com",
+    "usenet.krcg.org",
     "www.blackchantry.com",
     "www.boardgamegeek.com",
     "www.vekn.net",
 }
+
+#: The newsgroup archive the newsgroup-era references point into. A local clone is
+#: checked first -- it is what the maintainer edits against -- and the index the
+#: site publishes is the fallback for anyone who has not cloned it.
+ARCHIVE_ENV = "NEWSGROUP_ARCHIVE"
+DEFAULT_ARCHIVE = pathlib.Path(__file__).resolve().parents[2] / "newsgroup-archive"
+ARCHIVE_INDEX = "https://usenet.krcg.org/threads.json"
+
+RE_ARCHIVE_PATH = re.compile(r"^/t/([A-Za-z0-9_-]+)/$")
+RE_ANCHOR = re.compile(r"^m(\d+)$")
+
+
+def archive_message_counts(thread_ids: set[str]) -> dict[str, int]:
+    """How many messages each cited thread holds.
+
+    The thread id is in the file name, so the local clone is read by name and only
+    the cited threads are opened.
+    """
+    root = pathlib.Path(os.environ.get(ARCHIVE_ENV) or DEFAULT_ARCHIVE)
+    if (root / "threads").is_dir():
+        counts = {}
+        for path in (root / "threads").glob("*/*.json"):
+            # threads/<year>/<date>_<time>_<ThreadId>.json
+            thread_id = path.stem.split("_", 2)[-1]
+            if thread_id in thread_ids:
+                counts[thread_id] = len(json.loads(path.read_text())["Messages"])
+        return counts
+    print(f"no archive in {root}, using {ARCHIVE_INDEX}")
+    with urllib.request.urlopen(ARCHIVE_INDEX) as response:
+        index = json.loads(response.read())
+    # [thread id, title, first date, authors, message count]
+    return {row[0]: row[4] for row in index if row[0] in thread_ids}
+
+
+def check_archive_references(archive_references: dict[str, urllib.parse.ParseResult]):
+    """Check the newsgroup citations still point at a message that exists.
+
+    Anchors are positional (`#m0` is the first message of the thread), so a thread
+    losing or gaining a message silently moves every citation after it. Author and
+    date are deliberately not checked: a citation may point at a post quoting the
+    Rules Director when his own post was never archived.
+    """
+    threads = {}
+    for reference, url in archive_references.items():
+        match = RE_ARCHIVE_PATH.match(url.path)
+        if not match:
+            warnings.warn(
+                UnknownThread(f"Reference {reference}: {url.path} is not a thread URL")
+            )
+            continue
+        threads[reference] = match.group(1)
+    try:
+        counts = archive_message_counts(set(threads.values()))
+    except OSError as e:
+        warnings.warn(HTTPError(f"cannot read the newsgroup archive: {e}"))
+        return
+    for reference, thread_id in threads.items():
+        if thread_id not in counts:
+            warnings.warn(
+                UnknownThread(f"Reference {reference}: no thread {thread_id}")
+            )
+            continue
+        fragment = archive_references[reference].fragment
+        if not fragment:
+            # The thread survived but the cited reply did not: no anchor to check.
+            continue
+        match = RE_ANCHOR.match(fragment)
+        if not match or int(match.group(1)) >= counts[thread_id]:
+            warnings.warn(
+                BadAnchor(
+                    f"Reference {reference}: #{fragment} is not a message of "
+                    f"{thread_id} ({counts[thread_id]} messages)"
+                )
+            )
+
 
 RULING_SOURCES = krcg.rulings.RULING_AUTHORS
 
@@ -260,41 +337,54 @@ async def fetch_ruling_parameters(
     session: aiohttp.ClientSession, reference: str, url: str, date: str, source: str
 ):
     parsed_url = urllib.parse.urlparse(url)
-    if parsed_url.hostname == "groups.google.com":
-        parser = GGroupParser(parsed_url.path.split("/")[-1])
-    elif parsed_url.hostname == "www.vekn.net":
-        parser = VEKNParser(parsed_url.fragment)
+    parser = VEKNParser(parsed_url.fragment)
 
     async with session.get(url) as response:
         if response.history:
-            if response.url.path.startswith("/sorry/index"):
-                raise HTTPError("Google rate limit hit")
             warnings.warn(
                 URLMoved(f"Reference {reference}: URL moved to {response.url}")
             )
         parser.feed(await response.text())
 
-    if parser.date.isoformat() != date:
+    if parser.date is None:
+        # No post carrying that anchor: the topic is gone, or was renumbered.
+        if reference not in UNREACHABLE:
+            warnings.warn(HTTPError(f"Reference {reference}: no post {url} to read"))
+        return
+    if reference in UNREACHABLE:
+        warnings.warn(
+            URLMoved(
+                f"Reference {reference} reads again: {UNREACHABLE[reference]} is no "
+                f"longer true, take it out of UNREACHABLE and references_dangling.md"
+            )
+        )
+    # The forum stamps posts in its own timezone, so a ruling given late in the
+    # evening is filed under the following day. A day either way is not an error.
+    if abs(parser.date - datetime.date.fromisoformat(date)).days > 1:
         warnings.warn(
             DateError(
                 f"Reference {reference} uses date {date}, "
                 f"but the URL is from {parser.date.isoformat()}"
             )
         )
-    if parser.author != source:
+    # A ruling is sometimes stated by someone else and endorsed by the Rules Director
+    # pressing Thank You on it, which is the forum's version of a "Correct." reply.
+    # That post is then his ruling as much as one he typed himself.
+    if parser.author != source and source not in parser.thanked:
         warnings.warn(
             UnknownSource(
-                f"Reference {reference} has source {source}, "
-                f"but the URL author is {parser.author}"
+                f"Reference {reference} has source {source}, but the URL author is "
+                f"{parser.author} and {source} did not thank the post"
             )
         )
 
 
 async def check_references_are_valid(references: dict):
     to_check = []
-    slow_check = []
+    archive_references = {}
     for reference, url in references.items():
-        hostname = urllib.parse.urlparse(url).hostname
+        parsed_url = urllib.parse.urlparse(url)
+        hostname = parsed_url.hostname
         if hostname not in LEGAL_DOMAINS:
             warnings.warn(
                 UnknownSource(
@@ -303,30 +393,6 @@ async def check_references_are_valid(references: dict):
             )
             continue
         source = reference[:3]
-        if source == "RBK":
-            date = None
-        else:
-            try:
-                date = datetime.date.fromisoformat(reference[4:12]).isoformat()
-            except ValueError as e:
-                warnings.warn(DateError(f"Ruling {reference} has a wrong date: {e}"))
-        if hostname == "groups.google.com" and source != "RTR":
-            slow_check.append(
-                {"reference": reference, "url": url, "date": date, "source": source}
-            )
-        if hostname == "www.vekn.net" and source not in {"RBK", "RTR"}:
-            if urllib.parse.urlparse(url).path.startswith("/forum"):
-                to_check.append(
-                    {"reference": reference, "url": url, "date": date, "source": source}
-                )
-            else:
-                warnings.warn(
-                    UnknownSource(
-                        f"Ruling {reference} should be from the VEKN forum: "
-                        f"only RTR and RBK rulings are allowed otherwise. ({url})"
-                    )
-                )
-                continue
         if source not in RULING_SOURCES:
             warnings.warn(
                 UnknownSource(
@@ -335,8 +401,15 @@ async def check_references_are_valid(references: dict):
                 )
             )
             continue
+        date = None
+        if source != "RBK":
+            try:
+                date = datetime.date.fromisoformat(reference[4:12]).isoformat()
+            except ValueError as e:
+                warnings.warn(DateError(f"Ruling {reference} has a wrong date: {e}"))
+                continue
         name, date_from, date_to = RULING_SOURCES[source]
-        if date_from or date_to:
+        if date and (date_from or date_to):
             ref_date = datetime.date.fromisoformat(date)
             if date_from and ref_date < date_from:
                 warnings.warn(
@@ -352,9 +425,26 @@ async def check_references_are_valid(references: dict):
                         f"on {ref_date}"
                     )
                 )
+        if hostname == "usenet.krcg.org":
+            archive_references[reference] = parsed_url
+        elif hostname == "www.vekn.net" and source not in {"RBK", "RTR"}:
+            if parsed_url.path.startswith("/forum"):
+                to_check.append(
+                    {"reference": reference, "url": url, "date": date, "source": source}
+                )
+            else:
+                warnings.warn(
+                    UnknownSource(
+                        f"Ruling {reference} should be from the VEKN forum: "
+                        f"only RTR and RBK rulings are allowed otherwise. ({url})"
+                    )
+                )
+    # The newsgroup references moved to the archive; the handful still on Google
+    # Groups are the ones Google's own copy lost, and fetching them only earns a
+    # rate limit. They are checked as URLs and no further.
+    check_archive_references(archive_references)
     print("checking rulings sources on the web... this takes a few minutes")
     async with aiohttp.ClientSession() as session:
-        # Can't gather on google groups or we hit google rate limit
         ret = await asyncio.gather(
             *[fetch_ruling_parameters(session, **params) for params in to_check],
             return_exceptions=True,
@@ -362,23 +452,7 @@ async def check_references_are_valid(references: dict):
         for i, item in enumerate(ret):
             if isinstance(item, Exception):
                 warnings.warn(
-                    HTTPError(f"{to_check[i]['reference']}failed to fetch: {item}")
-                )
-        ret = []
-        random.seed()
-        for params in slow_check:
-            try:
-                ret.append(await fetch_ruling_parameters(session, **params))
-            except HTTPError as e:
-                ret.append(e)
-                break
-            except Exception as e:  # noqa: BLE001
-                ret.append(e)
-            await asyncio.sleep(random.random() * 5)
-        for i, item in enumerate(ret):
-            if isinstance(item, Exception):
-                warnings.warn(
-                    HTTPError(f"{slow_check[i]['reference']}failed to fetch: {item}")
+                    HTTPError(f"{to_check[i]['reference']} failed to fetch: {item}")
                 )
 
 

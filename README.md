@@ -30,6 +30,8 @@ and is more readable than JSON, if anyone has to pick the project up without con
    where the key is `200041|Alan Sovereign`)
 3. A ruling usually ends with one or more rulings reference IDs in brackets (eg. `[LSJ 20040518]`).
    References URLs are listed in the [references.yaml](rulings/references.yaml) file.
+   The newsgroup-era rulings point to [usenet.krcg.org](https://usenet.krcg.org/), a preserved copy of
+   `rec.games.trading-cards.jyhad`, rather than to Google Groups.
    Reminder rulings (see below) are the exception and may carry no reference.
 4. Rulings are attached to a card, the format of the key is `<card_id>|<card_name>`, using the VEKN CSV cards IDs,
    or to group of cards, using the `<id>|<name>` format, with an ID beginning with `G`. Cards groups are listed in
