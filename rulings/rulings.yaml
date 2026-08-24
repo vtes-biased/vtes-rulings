@@ -4534,10 +4534,13 @@ G00105|Triggered by block:
       or effect can be used (eg. {Crypt's Sons}, {Change of Target}). [ANK 20220116] [ANK 20211207] [ANK 20210627] [RTR 19991206]
       [LSJ 20091125]
 G00106|Change the target of a bleed:
-  - 'Can be used when failing to block because of stealth: it is still declining to block. [ANK 20211003]'
+  - Can be used after a block attempt fails (after declining to block). [ANK 20211003] [REMINDER]
   - Must be used before action resolution, ie. before any modifier or reaction played "as the action/bleed would be successful"
     are played. It cannot be played after a {Spying Mission} on the vampire triggers. [LSJ 19980105]
   - Cannot be used to direct a bleed to a Methuselah who would be an invalid target for a bleed. [PIB 20130711]
+  - Cannot be used before all blocks have been declined. [LSJ 20061213] [REMINDER]
+  - No blocks can be attempted if it is canceled as it is played (as blocks have been declined) unless another effect subsequently
+    changes the target of the bleed. [LSJ 20061211] [REMINDER]
 G00107|Ability active in torpor:
   - The passive ability applies even if the vampire is in torpor. [LSJ 20011022]
 G00108|Can steal minion during an action:
