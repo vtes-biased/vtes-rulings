@@ -3148,7 +3148,8 @@
   - You only search your library if the action is successful. [TOM 19951107]
   - Paying for the equipment found is not optional. If paying the cost will oust the controlling Methuselah, then she is ousted.
     [RTR 19941109] [RTR 20010710]
-  - If the equipment cannot be legally placed on the vampire, it is burned without cost. [TOM 19950407]
+  - If the equipment cannot be legally placed on the vampire (e.g. a second vehicle or a second {Laptop Computer}), it is
+    burned without cost. [TOM 19950407]
   - Vast Wealth's ability is not usable if the vampire does not share the same controller as Vast Wealth. [RTR 19951017]
   - You do not show cards when you search. [PIB 20121028]
 102093|Vaticination:
@@ -3561,6 +3562,9 @@
   - '[MERGED] Is Anarch. If the base version was the one in play, it changes sect as it is merged. [ANK 20180524]'
 200319|Danylo:
   - Cannot fetch equipments that are locations while in play (locquipments). [LSJ 20080114] [ANK 20221210]
+200320|Darius Styx:
+  - If the equipment cannot be legally placed on the vampire (e.g. a second vehicle or a second {Laptop Computer}), it is
+    burned without cost. [TOM 19950407]
 200327|De Sade:
   - His ability applies only to the first time a vampire casts hist votes, not if they change afterwards (eg. {Kindred Manipulation}).
     [ANK 20221019]
