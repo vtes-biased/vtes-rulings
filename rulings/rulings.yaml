@@ -3820,8 +3820,6 @@
   - His ability is not applied if his controller is ousted by the referendum effects (reversal of previous rulings). [ANK
     20220808]
 200913|Marciana Giovanni, Investigator:
-  - She can lock to grant herself the ability to burn blood for intercept. She would need a wake or unlock effect to attempt
-    to block. [LSJ 20100527]
   - The beneficiary of her ability can choose to burn a blood for intercept for the duration of the action. [LSJ 20100604-2]
     [LSJ 20100611]
   - Her ability to give intercept can be used when she is in torpor. [LSJ 20010813-2]
@@ -4660,7 +4658,7 @@ G00135|Allocate points for pool damage:
   - Can allocate more points than a Methuselah has pool. [LSJ 20020819]
 G00136|Lock a minion during block attempt:
   - If a minion who is attempting to block is locked, then that block will fail, unless they woke earlier during the action.
-    [LSJ 20010702] [TOM 19951007] [LSJ 19991025]
+    [LSJ 20010702] [TOM 19951007] [LSJ 19991025] [LSJ 20100527]
 G00137|Prohibits additional strikes:
   - "The affected minion cannot play a card that provides an additional strike, even if just to benefit from another effect\
     \ (e.g.\n{Acrobatics}). [LSJ 20011214-5]"
