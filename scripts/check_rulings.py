@@ -6,7 +6,8 @@ import asyncio
 import aiohttp
 import datetime
 import html.parser
-import krcg.vtes
+import krcg.collections
+import krcg.loader
 import pathlib
 import random
 import re
@@ -49,12 +50,60 @@ class URLMoved(UserWarning): ...
 class HTTPError(UserWarning): ...
 
 
-def check_cards(ruling: dict, groups: dict):
-    krcg_cards = krcg.vtes.VTES
-    krcg_cards.load_from_vekn()
+RE_CARD = re.compile(r"{[^}]+}")
+
+
+def ruling_texts(entry: str | dict) -> list[str]:
+    """A ruling entry is a plain string, or a {text, overrides} map for group overrides."""
+    if isinstance(entry, str):
+        return [entry]
+    return [entry["text"], *(entry.get("overrides") or {}).values()]
+
+
+def check_card_name(context: str, nid: str, cards: krcg.collections.CardDict) -> None:
+    id_, _, name = nid.partition("|")
+    try:
+        official_name = cards[int(id_)].printed_name
+    except (KeyError, ValueError):
+        warnings.warn(UnknownCard(f"In {context}: {nid}"))
+        return
+    if name != official_name:
+        warnings.warn(
+            WrongName(f'In {context}: "{nid}" should be named "{id_}|{official_name}"')
+        )
+
+
+def check_card_tokens(
+    context: str, text: str, cards: krcg.collections.CardDict
+) -> None:
+    """Tokens carry the unique name, not the printed one the keys use: a token names a card
+    inside a sentence, so it keeps the suffix telling two same-named cards apart.
+    """
+    for token in RE_CARD.findall(text):
+        id_, pipe, name = token[1:-1].partition("|")
+        if not (pipe and id_.isdigit()):
+            warnings.warn(
+                WrongName(f"In {context}: {token} should be {{<card_id>|<card_name>}}")
+            )
+            continue
+        try:
+            official_name = cards[int(id_)].unique_name
+        except KeyError:
+            warnings.warn(UnknownCard(f"In {context}: {token}"))
+            continue
+        if name != official_name:
+            warnings.warn(
+                WrongName(
+                    f'In {context}: "{token}" should be "{{{id_}|{official_name}}}"'
+                )
+            )
+
+
+def check_cards(rulings: dict, groups: dict):
+    cards = krcg.loader.load_local()
     used = set()
-    for item, rulings in ruling.items():
-        id_, name = item.split("|")
+    for item, item_rulings in rulings.items():
+        id_, _, _ = item.partition("|")
         if id_.startswith("G"):
             if item not in groups:
                 warnings.warn(
@@ -62,36 +111,24 @@ def check_cards(ruling: dict, groups: dict):
                 )
             used.add(item)
         else:
-            try:
-                official_name = krcg_cards[int(id_)]._name
-            except KeyError:
-                warnings.warn(UnknownCard(f"In rulings: {item}"))
-            if name != official_name:
-                warnings.warn(
-                    WrongName(
-                        f'In rulings: "{item}" should be named "{id_}|{official_name}"'
-                    )
-                )
-        if not rulings:
+            check_card_name("rulings", item, cards)
+        if not item_rulings:
             warnings.warn(Empty(f"{item} is listed in rulings.yaml but has no rulings"))
+        for entry in item_rulings:
+            if isinstance(entry, str):
+                check_card_tokens(f"{item} rulings", entry, cards)
+                continue
+            check_card_tokens(f"{item} rulings", entry["text"], cards)
+            for override, text in (entry.get("overrides") or {}).items():
+                check_card_name(f"{item} overrides", override, cards)
+                check_card_tokens(f"{item} override {override}", text, cards)
 
     for unused in set(groups.keys()) - used:
         warnings.warn(UnusedGroup(unused))
 
-    for group, cards in groups.items():
-        for card in cards:
-            id_, name = card.split("|")
-            try:
-                official_name = krcg_cards[int(id_)]._name
-            except KeyError:
-                warnings.warn(UnknownCard(f"In group: {group}"))
-            if name != official_name:
-                warnings.warn(
-                    WrongName(
-                        f'In group {group}: "{card}" should be named '
-                        f'"{id_}|{official_name}"'
-                    )
-                )
+    for group, group_cards in groups.items():
+        for card in group_cards:
+            check_card_name(f"group {group}", card, cards)
 
 
 class SmartParser(html.parser.HTMLParser):
@@ -371,15 +408,9 @@ RE_RULING_REFERENCE = re.compile(
 
 def check_references_are_used(rulings: dict, references: dict):
     used = set()
-    for item, rulings in rulings.items():
-        for ruling in rulings:
-            # An entry is a plain string, or a {text, overrides} map for group overrides;
-            # scan the default text and every override text for reference tokens.
-            if isinstance(ruling, str):
-                texts = [ruling]
-            else:
-                texts = [ruling["text"], *ruling.get("overrides", {}).values()]
-            for text in texts:
+    for item, item_rulings in rulings.items():
+        for ruling in item_rulings:
+            for text in ruling_texts(ruling):
                 for token in RE_RULING_REFERENCE.findall(text):
                     reference = token[1:-1]
                     if reference not in references:
