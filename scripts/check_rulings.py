@@ -248,7 +248,6 @@ UNREACHABLE = {
 
 LEGAL_DOMAINS = {
     "boardgamegeek.com",
-    "groups.google.com",
     "usenet.krcg.org",
     "www.blackchantry.com",
     "www.boardgamegeek.com",
@@ -439,9 +438,8 @@ async def check_references_are_valid(references: dict):
                         f"only RTR and RBK rulings are allowed otherwise. ({url})"
                     )
                 )
-    # The newsgroup references moved to the archive; the handful still on Google
-    # Groups are the ones Google's own copy lost, and fetching them only earns a
-    # rate limit. They are checked as URLs and no further.
+    # Every newsgroup reference now lives in the archive, which is read as data
+    # rather than fetched page by page.
     check_archive_references(archive_references)
     print("checking rulings sources on the web... this takes a few minutes")
     async with aiohttp.ClientSession() as session:
