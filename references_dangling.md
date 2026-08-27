@@ -1,17 +1,13 @@
 # References whose source is out of reach
 
-13 references have no working source: 12 on Google Groups that
+12 references have no working source: 11 on Google Groups that
 nothing in the newsgroup archive matches, and
 1 whose page has since disappeared. Between them they back
-14 rulings on 14 cards and groups, and 11 of those rulings have
+13 rulings on 13 cards and groups, and 10 of those rulings have
 no other reference at all.
 
-The Google ones fail in two ways, and they call for different work:
-
-- **thread absent** (11) — the thread id is intact but no copy of that
-  thread exists anywhere in the newsgroup dump.
-- **no thread id** (1) — a pre-2010 `/msg/<hex>` permalink, or a post
-  in another newsgroup. There is nothing to match a thread against.
+The Google ones fail one way: **thread absent** (11) — the thread id is
+intact but no copy of that thread exists anywhere in the newsgroup dump.
 
 Where a ruling carries other references those still stand and it keeps its
 footing; only the ones marked **only reference** lose their sole support.
@@ -156,13 +152,3 @@ carries whole newsgroups as mbox files (`archive.org/details/usenet-rec`).
 - [Rötschreck](https://rulings.krcg.org/index.html?uid=101654) — also [LSJ 19990217] [LSJ 20060803]
   > Combat ends immediately, strikes are not resolved (including strike: combat ends), damage prevention cannot be played, and a second Rötschreck cannot be played.
 
----
-
-## LSJ 20090215
-
-- old-style URL, no thread id
-- <http://groups.google.com/group/rec.games.trading-cards.jyhad/msg/945f61ee4b1581c0?hl=fr&lr=&ie=UTF-8>
-- backs 1 ruling(s) on 1 card(s)/group(s)
-
-- [Violet Tremain](https://rulings.krcg.org/index.html?uid=201449) — **only reference**
-  > Capacity reduction happens at end of combat even if {101507|Psyche!} Is used
