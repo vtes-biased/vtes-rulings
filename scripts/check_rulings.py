@@ -9,6 +9,7 @@ import os
 import pathlib
 import re
 import sys
+import typing
 import urllib.parse
 import urllib.request
 import warnings
@@ -246,10 +247,8 @@ class VEKNParser(SmartParser):
 UNREACHABLE: dict[str, str] = {}
 
 LEGAL_DOMAINS = {
-    "boardgamegeek.com",
     "usenet.krcg.org",
     "www.blackchantry.com",
-    "www.boardgamegeek.com",
     "www.vekn.net",
 }
 
@@ -261,38 +260,56 @@ DEFAULT_ARCHIVE = pathlib.Path(__file__).resolve().parents[2] / "newsgroup-archi
 ARCHIVE_INDEX = "https://usenet.krcg.org/threads.json"
 
 RE_ARCHIVE_PATH = re.compile(r"^/t/([A-Za-z0-9_-]+)/$")
+#: `#m0` is the first message of a thread, wherever the thread came from.
 RE_ANCHOR = re.compile(r"^m(\d+)$")
+#: A thread copied from a forum keeps the number that forum gave each post, and
+#: a citation written against the forum keeps its own anchor by pointing at it.
+RE_POST = re.compile(r"^\d+$")
 
 
-def archive_message_counts(thread_ids: set[str]) -> dict[str, int]:
-    """How many messages each cited thread holds.
+class ArchivedThread(typing.NamedTuple):
+    messages: int
+    #: The post numbers a forum gave, where there are any. Only the JSON records
+    #: them, so a run against the published index has None rather than a set:
+    #: unknown, which is not the same as empty.
+    posts: set[str] | None
+
+
+def archived_threads(thread_ids: set[str]) -> dict[str, ArchivedThread]:
+    """What each cited thread holds.
 
     The thread id is in the file name, so the local clone is read by name and only
     the cited threads are opened.
     """
     root = pathlib.Path(os.environ.get(ARCHIVE_ENV) or DEFAULT_ARCHIVE)
     if (root / "threads").is_dir():
-        counts = {}
+        threads = {}
         for path in (root / "threads").glob("*/*.json"):
             # threads/<year>/<date>_<time>_<ThreadId>.json
             thread_id = path.stem.split("_", 2)[-1]
             if thread_id in thread_ids:
-                counts[thread_id] = len(json.loads(path.read_text())["Messages"])
-        return counts
+                messages = json.loads(path.read_text())["Messages"]
+                threads[thread_id] = ArchivedThread(
+                    len(messages), {m["Id"] for m in messages if "Id" in m}
+                )
+        return threads
     print(f"no archive in {root}, using {ARCHIVE_INDEX}")
     with urllib.request.urlopen(ARCHIVE_INDEX) as response:
         index = json.loads(response.read())
     # [thread id, title, first date, authors, message count]
-    return {row[0]: row[4] for row in index if row[0] in thread_ids}
+    return {
+        row[0]: ArchivedThread(row[4], None) for row in index if row[0] in thread_ids
+    }
 
 
 def check_archive_references(archive_references: dict[str, urllib.parse.ParseResult]):
     """Check the newsgroup citations still point at a message that exists.
 
-    Anchors are positional (`#m0` is the first message of the thread), so a thread
-    losing or gaining a message silently moves every citation after it. Author and
-    date are deliberately not checked: a citation may point at a post quoting the
-    Rules Director when his own post was never archived.
+    A `#m0` anchor is positional, so a thread losing or gaining a message silently
+    moves every citation after it. A citation into a thread copied from a forum
+    names the post by the number that forum gave it instead, which does not move.
+    Author and date are deliberately not checked: a citation may point at a post
+    quoting the Rules Director when his own post was never archived.
     """
     threads = {}
     for reference, url in archive_references.items():
@@ -304,26 +321,38 @@ def check_archive_references(archive_references: dict[str, urllib.parse.ParseRes
             continue
         threads[reference] = match.group(1)
     try:
-        counts = archive_message_counts(set(threads.values()))
+        archived = archived_threads(set(threads.values()))
     except OSError as e:
         warnings.warn(HTTPError(f"cannot read the newsgroup archive: {e}"))
         return
     for reference, thread_id in threads.items():
-        if thread_id not in counts:
+        if thread_id not in archived:
             warnings.warn(
                 UnknownThread(f"Reference {reference}: no thread {thread_id}")
             )
             continue
+        thread = archived[thread_id]
         fragment = archive_references[reference].fragment
         if not fragment:
             # The thread survived but the cited reply did not: no anchor to check.
             continue
         match = RE_ANCHOR.match(fragment)
-        if not match or int(match.group(1)) >= counts[thread_id]:
+        if match:
+            if int(match.group(1)) >= thread.messages:
+                warnings.warn(
+                    BadAnchor(
+                        f"Reference {reference}: #{fragment} is not a message of "
+                        f"{thread_id} ({thread.messages} messages)"
+                    )
+                )
+        elif not RE_POST.match(fragment):
+            warnings.warn(
+                BadAnchor(f"Reference {reference}: #{fragment} is not an anchor")
+            )
+        elif thread.posts is not None and fragment not in thread.posts:
             warnings.warn(
                 BadAnchor(
-                    f"Reference {reference}: #{fragment} is not a message of "
-                    f"{thread_id} ({counts[thread_id]} messages)"
+                    f"Reference {reference}: #{fragment} is not a post of {thread_id}"
                 )
             )
 
@@ -437,8 +466,8 @@ async def check_references_are_valid(references: dict):
                         f"only RTR and RBK rulings are allowed otherwise. ({url})"
                     )
                 )
-    # Every newsgroup reference now lives in the archive, which is read as data
-    # rather than fetched page by page.
+    # Every reference but the forum's now lives in the archive, which is read as
+    # data rather than fetched page by page.
     check_archive_references(archive_references)
     print("checking rulings sources on the web... this takes a few minutes")
     async with aiohttp.ClientSession() as session:
