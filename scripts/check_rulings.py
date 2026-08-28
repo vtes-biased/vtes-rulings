@@ -239,12 +239,11 @@ class VEKNParser(SmartParser):
 
 
 #: References whose source is gone for good: the page 404s and no copy of it is
-#: known. They are listed in references_dangling.md with what rests on them, so
-#: failing the check for each of them again says nothing new. One that starts
-#: answering again is worth knowing about, and is reported.
-UNREACHABLE = {
-    "ANK 20210529": "the forum topic no longer exists (404)",
-}
+#: known. Every reference resolves at the moment -- the last one that did not,
+#: ANK 20210529, was a VEKN forum topic the forum dropped, and it was copied
+#: into the newsgroup archive from the Internet Archive's capture rather than
+#: left dangling. The mechanism stays for the next one.
+UNREACHABLE: dict[str, str] = {}
 
 LEGAL_DOMAINS = {
     "boardgamegeek.com",
@@ -354,7 +353,7 @@ async def fetch_ruling_parameters(
         warnings.warn(
             URLMoved(
                 f"Reference {reference} reads again: {UNREACHABLE[reference]} is no "
-                f"longer true, take it out of UNREACHABLE and references_dangling.md"
+                f"longer true, take it out of UNREACHABLE"
             )
         )
     # The forum stamps posts in its own timezone, so a ruling given late in the
