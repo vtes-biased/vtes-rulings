@@ -19,6 +19,9 @@
 # Rulings from the rec.games.trading-cards.jyhad newsgroup point to https://usenet.krcg.org/, a preserved copy of it,
 # rather than to Google Groups: `/t/<ThreadId>/` is the thread, `#m0` the first message, `#m1` the second, and so on.
 # Those anchors are positional, so the message order in the archive is part of the contract.
+# The archive also holds threads copied from a forum: `/t/bgg-<ThreadId>/` for BoardGameGeek, `/t/vekn-<TopicId>/` for
+# the VEKN forum. Those answer to the number their own forum gave each post as well, but are cited by position like
+# every other thread here.
 # A link with no anchor means the thread survives but the cited reply does not.
 ANK 20170105: https://www.vekn.net/forum/rules-questions/75512-raptor-obedience#80020
 ANK 20170111: https://www.vekn.net/forum/rules-questions/72635-dam-the-heart-s-river-and-catatonic-fear?start=6#80117

@@ -1105,8 +1105,6 @@
 100669|Ex Nihilo:
   - During the master phase, the controller chooses between paying the blood or burning the vampire. Reversal of previous
     rulings. [ANK 20220503]
-  - Any effect that would give more blood to the vampire is a gain of blood, so does not apply (eg. {100908|Heidelberg Castle,
-    Germany}). [ANK 20221019-2]
   - If the owner treats aggravated damage as normal, he is immune to them too. [LSJ 20040120]
 100673|Exile:
   - "[PRE] You may lock Orun cards the vampire has even if they're not Laibon. [ANK 20221208]"
@@ -4809,3 +4807,6 @@ G00162|Reduce stealth to 0:
   - Can be played on a minion with zero or negative stealth, leaving the stealth unchanged. [LSJ 20021211]
   - Effectively gives a -X stealth modifier to the action, where X is the amount of stealth that was reduced when this card
     was played. [RTR 20030519]
+G00163|Cannot gain blood:
+  - Any effect that gives a vampire more blood counts as gaining blood (e.g. moving blood with {100908|Heidelberg Castle,
+    Germany}, stealing blood with {101966|Theft of Vitae}, etc.) and the blood is moved to the blood bank instead. [ANK 20221019-2]
