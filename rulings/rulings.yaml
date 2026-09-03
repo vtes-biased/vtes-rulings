@@ -2166,8 +2166,6 @@
     He immediately yields the title if it is contested or he receives a new one. [LSJ 20060904]
 101338|Outside the Hourglass:
   - The damage is inflicted by the minion (not environmental). [PIB 20120426]
-  - Both minions can play prevention and non-prevention pre-range effects before mending the damage. If another pre-range
-    damaging effect is played then, all damages are prevented and mended together. [ANK 20170930]
   - The damage is applied even if the combat ends prematurely (eg. {100954|Illusions of the Kindred}) [ANK 20180104] [LSJ
     19971110]
 101342|Pack Alpha:
@@ -4810,3 +4808,6 @@ G00162|Reduce stealth to 0:
 G00163|Cannot gain blood:
   - Any effect that gives a vampire more blood counts as gaining blood (e.g. moving blood with {100908|Heidelberg Castle,
     Germany}, stealing blood with {101966|Theft of Vitae}, etc.) and the blood is moved to the blood bank instead. [ANK 20221019-2]
+G00164|Damage before range is determined:
+  - Both minions can play prevention and non-prevention pre-range effects before mending the damage. If another pre-range
+    damaging effect is played then, all damages are prevented and mended together. [ANK 20170930]
