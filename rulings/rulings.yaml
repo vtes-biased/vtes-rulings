@@ -3000,6 +3000,8 @@
   - The blood comes from the blood bank. [ANK 20190311]
 101958|Tension in the Ranks:
   - Pool is not paid when an imbued is incapacitated. [LSJ 20060409-2]
+  - When several minions burn or enter Torpor simultaneously, the acting Methuselah sets the order in wich the pool is burned.
+    [LSJ 20090208-2]
 101960|Terror Frenzy:
   - '[ANI] Also affects the cost of combat cards played at then of a round or combat (eg. {100549|Disarm}, {101950|Telepathic
     Tracking}, {101507|Psyche!}, {101945|Taste of Vitae}). [ANK 20180910-3]'
