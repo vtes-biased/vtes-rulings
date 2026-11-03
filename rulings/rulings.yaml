@@ -1954,6 +1954,8 @@
   - '[vic] The opponent still unlocks if an effect continues the combat or begins a new combat. [RTR 20020501] [LSJ 20030717]'
 101200|Memory's Fading Glimpse:
   - Any cards on the target minion are burned. [SFC 19960919]
+  - When played on a merged vamprie that was banished (see {100131|Banishment}), move both copies to the bottom of your crypt
+    (advanced copy on the bottom). They are then treated as separate vampire cards once again. [LSJ 20030422]
 101201|Mental Maze:
   - Can be played if the requirement was met at the time of block, even if an older slave replaced the acting vampire since.
     [ANK 20171212]
