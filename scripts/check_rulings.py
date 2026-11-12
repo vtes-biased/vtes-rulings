@@ -251,6 +251,11 @@ LEGAL_DOMAINS = {
     "www.vekn.net",
 }
 
+#: The official rulebook: a rulebook reference links one of its headings, by the id archon's
+#: renderer gives it, and nothing else does.
+RULEBOOK = "https://archon.vekn.net/help/rules"
+RE_RULEBOOK = re.compile(re.escape(RULEBOOK) + r"#[\w-]+")
+
 #: The newsgroup archive the newsgroup-era references point into. A local clone is
 #: checked first -- it is what the maintainer edits against -- and the index the
 #: site publishes is the fallback for anyone who has not cloned it.
@@ -382,6 +387,15 @@ async def check_references_are_valid(references: dict):
     to_check = []
     archive_references = {}
     for reference, url in references.items():
+        if reference.startswith("RBK "):
+            if not RE_RULEBOOK.fullmatch(url):
+                warnings.warn(
+                    UnknownSource(
+                        f"Ruling {reference} should link a heading of {RULEBOOK}: "
+                        f"{url}"
+                    )
+                )
+            continue
         parsed_url = urllib.parse.urlparse(url)
         hostname = parsed_url.hostname
         if hostname not in LEGAL_DOMAINS:
@@ -400,13 +414,11 @@ async def check_references_are_valid(references: dict):
                 )
             )
             continue
-        date = None
-        if source != "RBK":
-            try:
-                date = datetime.date.fromisoformat(reference[4:12]).isoformat()
-            except ValueError as e:
-                warnings.warn(DateError(f"Ruling {reference} has a wrong date: {e}"))
-                continue
+        try:
+            date = datetime.date.fromisoformat(reference[4:12]).isoformat()
+        except ValueError as e:
+            warnings.warn(DateError(f"Ruling {reference} has a wrong date: {e}"))
+            continue
         name, date_from, date_to = RULING_SOURCES[source]
         if date and (date_from or date_to):
             ref_date = datetime.date.fromisoformat(date)
@@ -426,7 +438,7 @@ async def check_references_are_valid(references: dict):
                 )
         if hostname == "usenet.krcg.org":
             archive_references[reference] = parsed_url
-        elif hostname == "www.vekn.net" and source not in {"RBK", "RTR"}:
+        elif hostname == "www.vekn.net" and source != "RTR":
             if parsed_url.path.startswith("/forum"):
                 to_check.append(
                     {"reference": reference, "url": url, "date": date, "source": source}
@@ -435,7 +447,7 @@ async def check_references_are_valid(references: dict):
                 warnings.warn(
                     UnknownSource(
                         f"Ruling {reference} should be from the VEKN forum: "
-                        f"only RTR and RBK rulings are allowed otherwise. ({url})"
+                        f"only RTR rulings are allowed otherwise. ({url})"
                     )
                 )
     # Every reference but the forum's now lives in the archive, which is read as
