@@ -1,0 +1,42 @@
+[tools]
+python = "3.15"
+uv = "0.13"
+
+[tasks.test]
+description = "Lint the scripts and the YAML, then check the rulings in depth (reads the archive and the VEKN forum)"
+run = [
+  "uv run --frozen black --check scripts",
+  "uv run --frozen ruff check scripts",
+  "uv run --frozen yamllint rulings",
+  "uv run --frozen python scripts/check_rulings.py",
+]
+
+[tasks.fmt]
+description = "Format the YAML files as the rulings site writes them"
+run = "uv run --frozen yamlfix rulings"
+
+[tasks.update]
+description = "Upgrade the locked dependencies"
+run = "uv lock --upgrade && uv sync"
+
+[tasks.release-local]
+description = "Tag the next version and build it into dist/, from a clean tree"
+run = '''
+set -eu
+git diff --exit-code --quiet || { echo "commit or stash your changes first" >&2; exit 1; }
+rm -rf dist
+uv run --with check-manifest check-manifest
+version=$(uv run --with setuptools-scm python -m setuptools_scm --strip-dev)
+git tag "$version"
+uv build
+'''
+
+[tasks.release]
+description = "Tag, build, push the tag, and publish to TestPyPI then PyPI (twine, ~/.pypirc)"
+depends = ["release-local"]
+run = '''
+set -eu
+git push origin "$(git describe --tags --exact-match)"
+uv run --with twine twine upload -r test-pypi dist/*
+uv run --with twine twine upload dist/*
+'''

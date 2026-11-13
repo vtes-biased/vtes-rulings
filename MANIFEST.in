@@ -3,7 +3,8 @@ include LICENSE README.md
 graft rulings
 prune scripts
 
-exclude Makefile
+exclude mise.toml
+exclude uv.lock
 exclude .yamllint.yaml
 exclude .gitignore
 

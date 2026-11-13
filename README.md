@@ -101,37 +101,20 @@ We discarded some options after careful consideration:
 
 ## Scripts
 
-To run the scripts, use a [Python3 virtual environment](https://docs.python.org/3/library/venv.html):
-
-```bash
-> python3 -m venv .venv
-> source .venv/bin/activate
-> pip install -e "."
-```
+The tools come from [mise](https://mise.jdx.dev): `mise install` in the checkout installs Python and
+[uv](https://docs.astral.sh/uv/), which runs everything below in the locked environment.
 
 ### Rulings format and consistency
 
-Run
-
 ```bash
-> yamlfix rulings/*.yaml
+> mise run fmt
 ```
 
-to format the `YAML` files cleanly, and
+formats the `YAML` files cleanly (`yamlfix`), and
 
 ```bash
-> yamllint rulings
+> mise run test
 ```
 
-to check the formatting. Additionally, you can use
-
-```bash
-> python scripts/check_rulings.py
-```
-
-to check the rulings files consistency in more depth.
-If you have `make`, you can run all checks easily with
-
-```bash
-> make test
-```
+lints the scripts and the `YAML` files, then checks the rulings files consistency in more depth
+(`scripts/check_rulings.py`, which reads the newsgroup archive and the VEKN forum).
