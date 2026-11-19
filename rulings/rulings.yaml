@@ -2205,6 +2205,8 @@
   - Any decrease in pool (burning, paying, ...) is considered "losing pool". [ANK 20180719-2]
   - Gaining pool does not count as a negative loss. If the effects of the referendum results in both gain and loss (eg. {100064|Ancient
     Influence}), only the loss is counted, not the difference. [ANK 20180813] [LSJ 20041025]
+101414|Political Flux:
+  - In case of simultaneous ousts, all beneficiaries get the alternate amount. [LSJ 20100116] [LSJ 20010612]
 101416|Political Seizure:
   - If you yield the Political Seizure, the location it was contesting does not come into play under your control. [LSJ 19980223]
 101418|Political Struggle:
