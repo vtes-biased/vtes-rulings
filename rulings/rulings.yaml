@@ -4802,3 +4802,5 @@ G00166|Action ended by an effect:
       101062|The Kiss of Ra: The action ends immediately, no other action modifier or reaction can be played afterwards.
     text: The action ends unsuccessfully immediately, no other action modifier or reaction can be played afterwards. [RTR
       20180719] [ANK 20200207]
+G00167|Recruit an ally as if fulfilling requirements:
+  - The recruitment ability applies to non-standard recruitments (e.g. {101401|Piper}, {101902|The Summoning}). [LSJ 20100413]
