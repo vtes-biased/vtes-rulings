@@ -563,7 +563,8 @@
   - '[PRE] Damage is done by the vampire (not environmental). [RTR 19970630] [LSJ 19990723]'
   - '[PRE] If the strike is dodged, no damage is done. [LSJ 19980526] [RTR 20041202] [LSJ 20070124]'
 100308|Cats' Guidance:
-  - '[ani] Is played after all combats are handled. [RTR 19980623] [LSJ 20040219] [ANK 20221130]'
+  - '[ani] Is played after all combats are handled (including queued combats, eg. {102328|Hedonism} or {101507|Psyche!}).
+    [RTR 19980623] [LSJ 20040219] [ANK 20221130] [ANK 20250613]'
   - '[ani] Cannot be played if the vampire is in torpor, for example if he went into torpor during the combat resulting from
     the block. [RBK reaction-cards]'
 100309|Cauldron of Blood:
@@ -2109,8 +2110,8 @@
     targets the equipments: if one equipment is the same, the action is the same. [RTR 19950509] [LSJ 20080710] [ANK 20200502]'
   - Actions provided by cards in play are not the same if the card is not the same, even if the cards have the same name.
     [LSJ 20080725]
-  - Can be played by an unlocked older vampire to avoid a new combat queued after a preceding combat, if the opponent is still
-    the acting vampire. [LSJ 19991025]
+  - Cannot be used to cancel a combat queued by {102328|Hedonism} or {101786|Siren's Lure}, as it is not entering combat with
+    an acting minion. [LSJ 19991025] [ANK 20250710]
   - Cannot be played if the opponent is not the acting vampire, for example if a slave took his place. [ANK 20171212]
 101315|Of Noble Blood:
   - Is a directed action if a vampire controlled by another Methuselah is chosen. [ANK 20190606]
@@ -2703,6 +2704,8 @@
   - '[mel]/[MEL] Combat does not occur if the action ends prematurely. [LSJ 20090826]'
   - '[mel]/[MEL] The new combat is still part of the action (eg. {100908|Heidelberg Castle, Germany} cannot be used between
     combats). [ANK 20170918-2]'
+  - '[mel]/[MEL] The new combat starts after action resolution, by card text. This takes precedence over the rulebook rules
+    on queued combat. [ANK 20250614] [RBK resolve-the-action]'
 101794|Skin of the Chameleon:
   - '[tha] Cards and effects that are played "as the action is announced" must be played before playing "regular" action modifier
     or reaction cards. [ANK 20190425]'
@@ -3413,10 +3416,13 @@
   - The acting vampire's controller can choose not to remove a minion from his or her ash heap and thus burn the Rotting Behemoth.
     [LSJ 20030701-2]
 102328|Hedonism:
-  - '[for]/[pre] Other effects that queue a combat cannot be used until the new combat begins. [LSJ 20021121]'
+  - '[for]/[pre] Other effects that queue a combat (eg. {101507|Psyche!}) cannot be used until the Hedonism combat. [LSJ 20021121]
+    [ANK 20250613]'
   - '[for]/[pre] Combat does not occur if the action ends prematurely. [LSJ 20090826]'
   - '[for]/[pre] The new combat is still part of the action (eg. {100908|Heidelberg Castle, Germany} cannot be used between
     combats). [ANK 20170918-2]'
+  - '[for]/[pre] The slave rule can be used after queuing a combat with {102328|Hedonism}. [ANK 20251103]'
+  - '[for]/[pre] {100916|Hidden Lurker} cannot be used after any subsequent block nor after the queued combat. [ANK 20250613]'
 102329|Hunting the Quarry:
   - '[cel]/[tha] effects that are played when a combat "would end" (eg. {101950|Telepathic Tracking}) cannot be play afterwards.
     [ANK 20191219]'
@@ -4430,8 +4436,9 @@ G00070|Impersonating title for non-existent sect:
   - Can meet a sect-specific title (e.g. Justicar) requirement even if the sect does not exist anymore (eg. {100695|Fall of
     the Camarilla}). [ANK 20230503] [LSJ 20050124]
 G00071|After Combat Ends:
-  - "If the combat continues or a new combat begins, the after combat effect does not happen/is not usable (e.g. {101507|Psyche!},\
-    \ {101950|Telepathic Tracking}).\n(Partial reversal of RTR 20010711) [RTR 20020501] [LSJ 19980109]"
+  - If the combat continues or another combat is queued, the after combat effect does not happen/is not usable (e.g. {101507|Psyche!},
+    {101950|Telepathic Tracking}, {102328|Hedonism}). (Partial reversal of RTR 20010711). [RTR 20020501] [LSJ 19980109] [ANK
+    20250613]
 G00072|Impersonating requirements for cards not played normally:
   - The ability ability cannot be used to fulfill card requirements if they are not played normally, like when using {100392|Concealed
     Weapon} for an equipment or {101401|Piper} or {101902|The Summoning} for an ally. [LSJ 20050119]
