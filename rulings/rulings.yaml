@@ -191,6 +191,8 @@
     played (eg. cannot be played after a {101857|Spying Mission} on the vampire triggers). [LSJ 19980105]
   - Targets the bleeding vampire (eg. costs one more against {101711|Secure Haven}, cannot be played on {200991|Mimir}). [LSJ
     20010817] [PIB 20131013]
+  - Cannot be played before all blocks have been declined (like {100518|Deflection}), since attempting to end the action implies
+    deciding not to block. [LSJ 20070203]
 100088|Armor of Terra:
   - '[vis], [VIS] Can be used by a non-slave Gargoyle. [LSJ 20011204-2]'
 100096|The Art of Love:
@@ -337,6 +339,8 @@
     all clot counters are burned. [PIB 20150122]
   - The controller of a vampire with a clot counter in torpor chooses whether they stay there or burn. Allies cannot go to
     torpor, so they must burn. [LSJ 20080612-3]
+  - '"Inflicts" means "successfully inflicts": damage done to a minion who is immune to the damage (eg. {200984|Mictlantecuhtli},
+    {102053|Tye Cooper}) is not successfully inflicted and does not place a clot counter. [LSJ 20080820]'
 100176|Blade of Enoch:
   - Can be equipped by a vampire with capacity less than 6, although he cannot use it to strike and does not gain immunity
     to frenzy cards. [LSJ 20030607]
@@ -564,7 +568,7 @@
   - '[PRE] If the strike is dodged, no damage is done. [LSJ 19980526] [RTR 20041202] [LSJ 20070124]'
 100308|Cats' Guidance:
   - '[ani] Is played after all combats are handled (including queued combats, eg. {102328|Hedonism} or {101507|Psyche!}).
-    [RTR 19980623] [LSJ 20040219] [ANK 20221130] [ANK 20250613]'
+    [RTR 19980623] [LSJ 20040219] [ANK 20221130] [ANK 20250613] [ANK 20250716]'
   - '[ani] Cannot be played if the vampire is in torpor, for example if he went into torpor during the combat resulting from
     the block. [RBK reaction-cards]'
 100309|Cauldron of Blood:
@@ -712,6 +716,9 @@
   - Only affects votes, and not ballots. [PIB 20110802]
 100405|Confusion:
   - '[DEM] Can only be used during a bleed action. [ANK 20171023] [RTR 19941109]'
+100408|Conquer the Beast:
+  - The press is provided by the combatant, not the combat itself (unlike {102012|Trap}), so an effect preventing the minion
+    from pressing (eg. inferior {101960|Terror Frenzy}) prevents using its press to continue. [LSJ 19981130] [LSJ 20040618]
 100412|Conscripted Statue:
   - '[vis] Damage is environmental. [RTR 19970630]'
   - '[vis] Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as will
@@ -975,6 +982,7 @@
 100589|Drink the Blood of Ahriman:
   - During the unlock phase, the controller chooses between burning 1 blood or the card. Reversal of previous rulings. [ANK
     20220503]
+  - Ranged aggravated damage is still inflicted even if the vampire is immune to it, so this card still burns. [ANK 20210324-2]
 100591|Drum of Xipe Totec:
   - The minion cannot use the discipline nor the maneuver provided if some effect prevents him to use the equipment (eg. {100585|Drawing
     Out the Beast}). [RTR 20010711]
@@ -1251,6 +1259,9 @@
     only have a lingering effect (+3 bleed if the target happens to have 9 or less). [PIB 20110817] [RTR 20191031]'
   - '[DOM] If the bleed bonus is lost during the action (eg. {100518|Deflection} to another target), it does not count against
     the limit anymore and an additional bleed modifier can be used. [RTR 20191031] [ANK 20211019-2]'
+  - '[DOM] If played alongside another limited bleed modifier (eg. {100401|Conditioning}, {100031|Aire of Elation}) while
+    the target has 10 or more pool, both bonuses apply if the target later has 9 or fewer pool during the action (eg. after
+    {100518|Deflection} or {100018|Aching Beauty}). [ANK 20191024] [ANK 20191025-2]'
 100766|Forest of Shadows:
   - May be used anytime it is unlocked, even if it has been used previously during the same action (it must be unlocked by
     some method, of course). [TOM 19960109]
@@ -2457,6 +2468,7 @@
   - Does not count environmental damage. [ANK 20200925]
   - Can be played by a vampire going to torpor. Can be played by a vampire who is about to burn. [ANK 20201122] [ANK 20200926]
   - Does not allow to take control of the opponent. [ANK 20200925] [ANK 20211105]
+  - Damage is still inflicted even if the minion is immune to it, so it counts for this card. [ANK 20210324-2]
 101627|Revelations:
   - '[aus] You do not get to see the card drawn as replacement. [LSJ 20100119] [PIB 20121031]'
 101631|Revolutionary Council:
@@ -2682,6 +2694,8 @@
 101771|Shoulder Drop:
   - Is played and inflicts damage after the strikes have been resolved and inflicted damage, before any other pair of strikes
     and before the press step. [ANK 20171225]
+  - Must be played during the heal damage step (after both combatants pass impulse in the prevent damage step), before any
+    additional strikes. [ANK 20171226]
 101773|Shroud Mastery:
   - '[NEC] Cards and effects that are played "as the action is announced" must be played before playing "regular" action modifier
     or reaction cards. [ANK 20190425]'
@@ -3058,6 +3072,8 @@
 102012|Trap:
   - A minion that cannot play or use presses (eg. {201021|Mukhtar Bey}) can play it and does provide the presses, the minion
     is not the one pressing. [LSJ 20040521]
+  - The press to end can come from either minion (including the player who played {102012|Trap}), since the press to continue
+    is provided by the combat itself, not by either combatant (unlike {100408|Conquer the Beast}). [LSJ 19981130]
 102013|Travelers Obey the Tenets:
   - The acting player decides the order of (and can play other) "after resolving the action" effects. [ANK 20180206]
 102014|Treachery:
@@ -3096,6 +3112,8 @@
   - Damage done from stealing blood to the Runner is environmental. [RTR 19970630]
   - 'Damage done from stealing blood is done at the same time strike damage is done: a single instantaneous prevention card
     (eg. {101817|Soak}) can prevent both. [ANK 20200517-2]'
+102051|Twisting the Knife:
+  - Damage that is dodged or prevented is not successfully inflicted. [LSJ 20020215]
 102055|Unacceptable Appearance:
   - The action to enter combat with this vampire is considered to be an action requiring Nosferatu antitribu. [LSJ 20080604]
 102058|Uncontrollable Rage:
@@ -3281,6 +3299,8 @@
   - If the damage is reduced (eg. {101272|Nephandus}) or not inflicted (eg. {100201|Blood Fury}), the corresponding token
     is not burned (contrary to prevented damage). [LSJ 20100519]
   - Full damage is applied if there are any counter left, even just 1. [ANK 20201229-2]
+  - Damage done to a minion who is immune to it (eg. {200984|Mictlantecuhtli}) is still inflicted (unsuccessfully), so counters
+    are still burned. [ANK 20210324-1]
 102175|Whispers from the Dead:
   - The card to retrieve must be announced when declaring the action. [LSJ 20010627]
 102179|White Phosphorus Grenade:
@@ -4438,7 +4458,7 @@ G00070|Impersonating title for non-existent sect:
 G00071|After Combat Ends:
   - If the combat continues or another combat is queued, the after combat effect does not happen/is not usable (e.g. {101507|Psyche!},
     {101950|Telepathic Tracking}, {102328|Hedonism}). (Partial reversal of RTR 20010711). [RTR 20020501] [LSJ 19980109] [ANK
-    20250613]
+    20250613] [ANK 20250613-2]
 G00072|Impersonating requirements for cards not played normally:
   - The ability ability cannot be used to fulfill card requirements if they are not played normally, like when using {100392|Concealed
     Weapon} for an equipment or {101401|Piper} or {101902|The Summoning} for an ally. [LSJ 20050119]
@@ -4534,7 +4554,7 @@ G00095|Play stored card as if from hand:
     action cards for votes). [LSJ 20050118]
   - A card played "as if from hand" can be canceled "as played" [LSJ 20060106]
 G00096|Optional press:
-  - The optional press can only be used during the current round. [TOM 19960521]
+  - The optional press can only be used during the current round. [TOM 19960521] [ANK 20180110]
 G00097|Burn blood for effect (mandatory):
   - The card cannot be played if the minion cannot afford to burn the blood. [ANK 20210226]
 G00098|Action continues not specifically from block:
@@ -4737,6 +4757,9 @@ G00145|Continue combat:
 G00146|Vote reduction:
   - A vampire can have net negative votes, but net negative votes do not subtract from the total when votes are tallied. [ANK
     20251125] [LSJ 20050221-2]
+  - "\"Gets -X votes\" (eg. {100400|Condemnation: Mute}) can bring a vampire's votes below 0 (so subsequent vote bonuses add\
+    \ to the negative total), whereas \"title is worth -X votes\" (eg. {101546|Rastacourere}, {100790|Free States Rant}) cannot\
+    \ make a title worth fewer than 0 votes. [ANK 20251220]"
 G00147|Fail an action as announced:
   - The ability to fail an action must be used before action modifiers or reactions that are not explicitly played "as the
     action is announced". [ANK 20190425]
