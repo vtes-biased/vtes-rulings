@@ -4745,11 +4745,7 @@ G00145|Continue combat:
     the end of it. [ANK 20191219]
   - Must be played after presses, can be played if the round ends prematurely. [RTR 20030519]
 G00146|Vote reduction:
-  - A vampire can have net negative votes, but net negative votes do not subtract from the total when votes are tallied. [ANK
-    20251125] [LSJ 20050221-2]
-  - "\"Gets -X votes\" (eg. {100400|Condemnation: Mute}) can bring a vampire's votes below 0 (so subsequent vote bonuses add\
-    \ to the negative total), whereas \"title is worth -X votes\" (eg. {101546|Rastacourere}, {100790|Free States Rant}) cannot\
-    \ make a title worth fewer than 0 votes. [ANK 20251220]"
+- A vampire can have net negative votes, but net negative votes do not subtract from the total when votes are tallied. [ANK 20251125] [ANK 20251220] [LSJ 20050221-2]
 G00147|Fail an action as announced:
   - The ability to fail an action must be used before action modifiers or reactions that are not explicitly played "as the
     action is announced". [ANK 20190425]
