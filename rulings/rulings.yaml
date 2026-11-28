@@ -338,8 +338,7 @@
     all clot counters are burned. [PIB 20150122]
   - The controller of a vampire with a clot counter in torpor chooses whether they stay there or burn. Allies cannot go to
     torpor, so they must burn. [LSJ 20080612-3]
-  - '"Inflicts" means "successfully inflicts": damage done to a minion who is immune to the damage (eg. {200984|Mictlantecuhtli},
-    {102053|Tye Cooper}) is not successfully inflicted and does not place a clot counter. [LSJ 20080820]'
+  - '"Inflicts" means "successfully inflicts": damage prevented or done to a minion who is immune (eg. {102053|Tye Cooper}) does not place a clot counter. [LSJ 20080820]'
 100176|Blade of Enoch:
   - Can be equipped by a vampire with capacity less than 6, although he cannot use it to strike and does not gain immunity
     to frenzy cards. [LSJ 20030607]
