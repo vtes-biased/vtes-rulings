@@ -1253,7 +1253,7 @@
   - Can be used to unlock if the action is successful, even if it has no effect due to lack of a suitable target. [LSJ 20070411]
 100765|Foreshadowing Destruction:
   - '[DOM] Can be played against a target with 10 or more pool and does not count against the limit in this case: it will
-    only have a lingering effect (+3 bleed if the target happens to have 9 or less). [PIB 20110817] [RTR 20191031]'
+- '[DOM] Can be played against a target with 10 or more pool and does not count against the limit in that case: it will only have a lingering effect (+3 bleed if the target later has 9 or less pool). [PIB 20110817] [RTR 20191031] [ANK 20191024] [ANK 20191025-2]'
   - '[DOM] If the bleed bonus is lost during the action (eg. {100518|Deflection} to another target), it does not count against
     the limit anymore and an additional bleed modifier can be used. [RTR 20191031] [ANK 20211019-2]'
   - '[DOM] If played alongside another limited bleed modifier (eg. {100401|Conditioning}, {100031|Aire of Elation}) while
