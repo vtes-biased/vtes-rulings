@@ -1252,8 +1252,9 @@
     resolution" can be played before or after it. [LSJ 19981028] [ANK 20190425]'
   - Can be used to unlock if the action is successful, even if it has no effect due to lack of a suitable target. [LSJ 20070411]
 100765|Foreshadowing Destruction:
-  - '[DOM] Can be played against a target with 10 or more pool and does not count against the limit in this case: it will
-- '[DOM] Can be played against a target with 10 or more pool and does not count against the limit in that case: it will only have a lingering effect (+3 bleed if the target later has 9 or less pool). [PIB 20110817] [RTR 20191031] [ANK 20191024] [ANK 20191025-2]'
+  - '[DOM] Can be played against a target with 10 or more pool and does not count against the limit in that case: it will
+    only have a lingering effect (+3 bleed if the target later has 9 or less pool). [PIB 20110817] [RTR 20191031] [ANK 20191024]
+    [ANK 20191025-2]'
   - '[DOM] If the bleed bonus is lost during the action (eg. {100518|Deflection} to another target), it does not count against
     the limit anymore and an additional bleed modifier can be used. [RTR 20191031] [ANK 20211019-2]'
 100766|Forest of Shadows:
@@ -2686,7 +2687,7 @@
   - If it is not equipped but merely put into play (eg. {100038|Alastor}), it does not get 2 cards. It does is if it is equipped
     (eg. {101143|Magic of the Smith}). [LSJ 20090506]
 101771|Shoulder Drop:
-- Is played and inflicts damage after both strikes have been resolved and inflicted damage, before any additional strike or press. [ANK 20171225] [ANK 20171226]
+  - Is played and inflicts damage after both strikes have been resolved and inflicted damage, before any additional strike or press. [ANK 20171225] [ANK 20171226]
 101773|Shroud Mastery:
   - '[NEC] Cards and effects that are played "as the action is announced" must be played before playing "regular" action modifier
     or reaction cards. [ANK 20190425]'
@@ -4744,7 +4745,7 @@ G00145|Continue combat:
     the end of it. [ANK 20191219]
   - Must be played after presses, can be played if the round ends prematurely. [RTR 20030519]
 G00146|Vote reduction:
-- A vampire can have net negative votes, but net negative votes do not subtract from the total when votes are tallied. [ANK 20251125] [ANK 20251220] [LSJ 20050221-2]
+  - A vampire can have net negative votes, but net negative votes do not subtract from the total when votes are tallied. [ANK 20251125] [ANK 20251220] [LSJ 20050221-2]
 G00147|Fail an action as announced:
   - The ability to fail an action must be used before action modifiers or reactions that are not explicitly played "as the
     action is announced". [ANK 20190425]
