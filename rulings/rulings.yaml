@@ -2688,8 +2688,6 @@
 101771|Shoulder Drop:
   - Is played and inflicts damage after the strikes have been resolved and inflicted damage, before any other pair of strikes
     and before the press step. [ANK 20171225]
-  - Must be played during the heal damage step (after both combatants pass impulse in the prevent damage step), before any
-    additional strikes. [ANK 20171226]
 101773|Shroud Mastery:
   - '[NEC] Cards and effects that are played "as the action is announced" must be played before playing "regular" action modifier
     or reaction cards. [ANK 20190425]'
