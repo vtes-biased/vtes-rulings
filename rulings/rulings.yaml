@@ -2686,8 +2686,7 @@
   - If it is not equipped but merely put into play (eg. {100038|Alastor}), it does not get 2 cards. It does is if it is equipped
     (eg. {101143|Magic of the Smith}). [LSJ 20090506]
 101771|Shoulder Drop:
-  - Is played and inflicts damage after the strikes have been resolved and inflicted damage, before any other pair of strikes
-    and before the press step. [ANK 20171225]
+- Is played and inflicts damage after both strikes have been resolved and inflicted damage, before any additional strike or press. [ANK 20171225] [ANK 20171226]
 101773|Shroud Mastery:
   - '[NEC] Cards and effects that are played "as the action is announced" must be played before playing "regular" action modifier
     or reaction cards. [ANK 20190425]'
