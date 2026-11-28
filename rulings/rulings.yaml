@@ -191,8 +191,7 @@
     played (eg. cannot be played after a {101857|Spying Mission} on the vampire triggers). [LSJ 19980105]
   - Targets the bleeding vampire (eg. costs one more against {101711|Secure Haven}, cannot be played on {200991|Mimir}). [LSJ
     20010817] [PIB 20131013]
-  - Cannot be played before all blocks have been declined (like {100518|Deflection}), since attempting to end the action implies
-    deciding not to block. [LSJ 20070203]
+  - Is played only after all blocks have been declined. [LSJ 20070203]
 100088|Armor of Terra:
   - '[vis], [VIS] Can be used by a non-slave Gargoyle. [LSJ 20011204-2]'
 100096|The Art of Love:
