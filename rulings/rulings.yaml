@@ -3290,8 +3290,7 @@
   - If the damage is reduced (eg. {101272|Nephandus}) or not inflicted (eg. {100201|Blood Fury}), the corresponding token
     is not burned (contrary to prevented damage). [LSJ 20100519]
   - Full damage is applied if there are any counter left, even just 1. [ANK 20201229-2]
-  - Damage done to a minion who is immune to it (eg. {200984|Mictlantecuhtli}) is still inflicted (unsuccessfully), so counters
-    are still burned. [ANK 20210324-1]
+  - Damage done to a minion who is immune to it is still inflicted (unsuccessfully), so counters are still burned. [ANK 20210324-1]
 102175|Whispers from the Dead:
   - The card to retrieve must be announced when declaring the action. [LSJ 20010627]
 102179|White Phosphorus Grenade:
