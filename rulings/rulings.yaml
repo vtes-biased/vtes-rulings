@@ -2462,7 +2462,7 @@
   - Does not count environmental damage. [ANK 20200925]
   - Can be played by a vampire going to torpor. Can be played by a vampire who is about to burn. [ANK 20201122] [ANK 20200926]
   - Does not allow to take control of the opponent. [ANK 20200925] [ANK 20211105]
-  - Damage is still inflicted even if the minion is immune to it, so it counts for this card. [ANK 20210324-2]
+  - Also counts damage the minion is immune to. [ANK 20210324-2]
 101627|Revelations:
   - '[aus] You do not get to see the card drawn as replacement. [LSJ 20100119] [PIB 20121031]'
 101631|Revolutionary Council:
