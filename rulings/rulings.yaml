@@ -715,8 +715,7 @@
 100405|Confusion:
   - '[DEM] Can only be used during a bleed action. [ANK 20171023] [RTR 19941109]'
 100408|Conquer the Beast:
-  - The press is provided by the combatant, not the combat itself (unlike {102012|Trap}), so an effect preventing the minion
-    from pressing (eg. inferior {101960|Terror Frenzy}) prevents using its press to continue. [LSJ 19981130] [LSJ 20040618]
+  - The press is provided by the combatant, so an effect preventing the minion from pressing (eg. inferior {101960|Terror Frenzy}) prevents using it. [LSJ 19981130] [LSJ 20040618]
 100412|Conscripted Statue:
   - '[vis] Damage is environmental. [RTR 19970630]'
   - '[vis] Damage is inflicted even against a dodge. A "strike: combat ends" ends combat before damage is applied, as will
